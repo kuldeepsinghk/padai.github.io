@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          publish_dir: ./resources/public # This is the key line
+          path: ./resources/public # This is the key line
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
