@@ -1,0 +1,31 @@
+/target
+/classes
+/checkouts
+profiles.clj
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+/.prepl-port
+.hgignore
+.hg/
+.idea
+
+# Elm specific
+/elm/elm-stuff/
+*.elmo
+*.elmi
+/elm/elm.js
+/elm/index.html
+resources/public/js/elm.js
+
+# If using npm for Elm tooling
+node_modules/
+package-lock.json
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride

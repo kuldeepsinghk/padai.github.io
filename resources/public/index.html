@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Math Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Fredoka', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(30, 30, 46, 0.8);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            border: 2px solid #ff7b25;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff7b25, #00a2ff, #ff7b25);
+            z-index: 10;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .roblox-logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff7b25, #ffcc00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(255, 123, 37, 0.5);
+        }
+        h1 {
+            color: #00a2ff;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+            text-shadow: 0 0 5px rgba(0, 162, 255, 0.5);
+        }
+        .description {
+            color: #cccccc;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .progress-container {
+            background: rgba(0, 162, 255, 0.2);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #00a2ff;
+        }
+        .progress-bar {
+            height: 20px;
+            background: #1e1e2e;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            border: 2px solid #ff7b25;
+        }
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #ff7b25 0%, #ffcc00 100%);
+            width: 4%;
+            transition: width 0.5s ease;
+            border-radius: 8px;
+        }
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            color: #ffcc00;
+        }
+        .question {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(37, 37, 58, 0.8);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 2px solid #ff7b25;
+            position: relative;
+        }
+        .question-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #ff7b25;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffcc00;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .option {
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid #00a2ff;
+            background: rgba(0, 162, 255, 0.2);
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .option:hover {
+            background: rgba(0, 162, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .option input {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        .feedback {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .correct {
+            background-color: rgba(0, 200, 83, 0.2);
+            color: #00c853;
+            border: 2px solid #00c853;
+        }
+        .incorrect {
+            background-color: rgba(255, 0, 0, 0.2);
+            color: #ff5252;
+            border: 2px solid #ff5252;
+        }
+        .rationale {
+            margin-top: 10px;
+            font-style: italic;
+            color: #cccccc;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            background: linear-gradient(45deg, #ff7b25, #ffcc00);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(255, 123, 37, 0.4);
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 123, 37, 0.6);
+        }
+        button:active {
+            transform: translateY(1px);
+        }
+        #prev {
+            background: linear-gradient(45deg, #00a2ff, #0077cc);
+        }
+        #submit {
+            background: linear-gradient(45deg, #00c853, #009688);
+        }
+        #results {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(37, 37, 58, 0.8);
+            border-radius: 15px;
+            display: none;
+            border: 2px solid #ffcc00;
+        }
+        .wrong-answer {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 82, 82, 0.2);
+            border-radius: 10px;
+            border-left: 5px solid #ff5252;
+        }
+        .score-display {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+        }
+        .category {
+            display: inline-block;
+            background: #ff7b25;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            color: #cccccc;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .roblox-character {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 120px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120"><rect x="30" y="20" width="40" height="50" fill="%23ff7b25" rx="5"/><rect x="20" y="70" width="60" height="30" fill="%2300a2ff" rx="5"/><circle cx="40" cy="40" r="5" fill="white"/><circle cx="60" cy="40" r="5" fill="white"/><rect x="45" y="50" width="10" height="5" fill="%23333"/></svg>');
+            background-repeat: no-repeat;
+            z-index: 100;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .particle {
+            position: absolute;
+            background: #ffcc00;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: particle-float 5s infinite;
+        }
+        @keyframes particle-float {
+            0% { transform: translateY(0) translateX(0); opacity: 0; }
+            50% { opacity: 0.6; }
+            100% { transform: translateY(-100px) translateX(20px); opacity: 0; }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .roblox-logo {
+                font-size: 2.5rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .options {
+                grid-template-columns: 1fr;
+            }
+            .controls {
+                flex-direction: column;
+                gap: 10px;
+            }
+            button {
+                width: 100%;
+            }
+            .roblox-character {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="roblox-logo">ROBLOX</div>
+        <h1>Math Adventure Quest</h1>
+        <p class="description">Embark on an epic math journey through the Roblox universe!</p>
+    </header>
+
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="progress-text">
+            <span id="progress-status">Level 1 of 25</span>
+            <span id="score">Robux: 0/25</span>
+        </div>
+    </div>
+
+    <div id="quiz"></div>
+
+    <div class="controls">
+        <button id="prev">← Previous</button>
+        <button id="next">Next →</button>
+        <button id="submit">Complete Quest</button>
+    </div>
+
+    <div id="results"></div>
+</div>
+
+<div class="roblox-character"></div>
+
+<footer>
+    <p>© 2023 Roblox Math Adventure | Designed for Educational Purposes</p>
+</footer>
+
+<script>
+    // Quiz questions data - 25 questions
+    const quizData = [
+        {
+            category: "Whole Numbers",
+            question: "Which of the following is a whole number?",
+            options: ["-5", "0.75", "0", "1/2"],
+            correct: 2,
+            rationale: "Whole numbers are non-negative integers, including zero. They do not include fractions, decimals, or negative numbers."
+        },
+        {
+            category: "Integers",
+            question: "What is the value of |−8|?",
+            options: ["-8", "8", "0", "None of the above"],
+            correct: 1,
+            rationale: "The absolute value of a number is its distance from zero on the number line, which is always positive. So |−8| = 8."
+        },
+        {
+            category: "Fractions",
+            question: "Which fraction is equivalent to 0.6?",
+            options: ["1/6", "3/5", "2/3", "6/10"],
+            correct: 3,
+            rationale: "0.6 as a fraction is 6/10, which can be simplified to 3/5. But 3/5 is not listed, so 6/10 is the correct choice."
+        },
+        {
+            category: "Whole Numbers",
+            question: "What is the least common multiple (LCM) of 4 and 6?",
+            options: ["2", "12", "24", "48"],
+            correct: 1,
+            rationale: "The multiples of 4 are 4, 8, 12, 16, 20... The multiples of 6 are 6, 12, 18, 24... The smallest common multiple is 12."
+        },
+        {
+            category: "Algebra",
+            question: "If x = 3, what is the value of 2x + 4?",
+            options: ["9", "10", "12", "14"],
+            correct: 1,
+            rationale: "Substitute x with 3: 2(3) + 4 = 6 + 4 = 10."
+        },
+        {
+            category: "Algebra",
+            question: "Which expression represents '5 more than twice a number x'?",
+            options: ["5x + 2", "2x + 5", "2(x + 5)", "5(x + 2)"],
+            correct: 1,
+            rationale: "'Twice a number x' is 2x, and '5 more than' that would be 2x + 5."
+        },
+        {
+            category: "Integers",
+            question: "What is the product of 7 and −6?",
+            options: ["-42", "42", "-1", "13"],
+            correct: 0,
+            rationale: "The product of a positive number and a negative number is negative. 7 × 6 = 42, so 7 × (−6) = −42."
+        },
+        {
+            category: "Fractions",
+            question: "Which of the following is a proper fraction?",
+            options: ["7/4", "5/5", "3/2", "2/3"],
+            correct: 3,
+            rationale: "A proper fraction has a numerator smaller than its denominator. Among the options, only 2/3 has a numerator (2) smaller than the denominator (3)."
+        },
+        {
+            category: "Algebra",
+            question: "Simplify: 3(2x - 4) + 6",
+            options: ["6x - 6", "6x + 6", "6x - 18", "6x + 18"],
+            correct: 0,
+            rationale: "First distribute: 3 × 2x = 6x, 3 × (-4) = -12. Then combine: 6x - 12 + 6 = 6x - 6."
+        },
+        {
+            category: "Whole Numbers",
+            question: "What is the greatest common factor (GCF) of 24 and 36?",
+            options: ["4", "6", "12", "18"],
+            correct: 2,
+            rationale: "The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. The factors of 36 are 1, 2, 3, 4, 6, 9, 12, 18, 36. The greatest common factor is 12."
+        },
+        {
+            category: "Integers",
+            question: "What is the result of (-10) - (-15)?",
+            options: ["-25", "-5", "5", "25"],
+            correct: 2,
+            rationale: "Subtracting a negative is the same as adding a positive: (-10) - (-15) = (-10) + 15 = 5."
+        },
+        {
+            category: "Fractions",
+            question: "What is 2/3 + 1/4?",
+            options: ["3/7", "11/12", "3/4", "5/7"],
+            correct: 1,
+            rationale: "Find a common denominator (12): 2/3 = 8/12, 1/4 = 3/12. So 8/12 + 3/12 = 11/12."
+        },
+        {
+            category: "Algebra",
+            question: "If y = 2x - 1 and x = 5, what is the value of y?",
+            options: ["8", "9", "10", "11"],
+            correct: 1,
+            rationale: "Substitute x with 5: y = 2(5) - 1 = 10 - 1 = 9."
+        },
+        {
+            category: "Whole Numbers",
+            question: "Which of these numbers is prime?",
+            options: ["1", "9", "17", "21"],
+            correct: 2,
+            rationale: "A prime number has exactly two distinct positive divisors: 1 and itself. 17 meets this criteria."
+        },
+        {
+            category: "Integers",
+            question: "On a number line, which number is to the right of -3?",
+            options: ["-5", "-4", "-2", "-3.5"],
+            correct: 2,
+            rationale: "On a number line, numbers increase as we move to the right. So -2 is to the right of -3."
+        },
+        {
+            category: "Fractions",
+            question: "What is 3/5 ÷ 2/5?",
+            options: ["6/25", "1.5", "3/2", "10/15"],
+            correct: 2,
+            rationale: "Dividing by a fraction is the same as multiplying by its reciprocal: 3/5 ÷ 2/5 = 3/5 × 5/2 = 15/10 = 3/2."
+        },
+        {
+            category: "Algebra",
+            question: "Which of these is an algebraic expression?",
+            options: ["2 + 3 = 5", "3x - 7", "4² = 16", "7 > 5"],
+            correct: 1,
+            rationale: "An algebraic expression contains variables, numbers, and operations. 3x - 7 fits this definition."
+        },
+        {
+            category: "Whole Numbers",
+            question: "What is the value of 5! (5 factorial)?",
+            options: ["25", "60", "120", "240"],
+            correct: 2,
+            rationale: "5! = 5 × 4 × 3 × 2 × 1 = 120."
+        },
+        {
+            category: "Integers",
+            question: "What is the result of (-8) × (-3)?",
+            options: ["-24", "24", "-11", "11"],
+            correct: 1,
+            rationale: "The product of two negative numbers is positive. So (-8) × (-3) = 24."
+        },
+        {
+            category: "Fractions",
+            question: "Which fraction is the smallest?",
+            options: ["3/4", "2/3", "5/6", "7/12"],
+            correct: 3,
+            rationale: "Convert to decimals: 3/4=0.75, 2/3≈0.67, 5/6≈0.83, 7/12≈0.58. So 7/12 is the smallest."
+        },
+        {
+            category: "Algebra",
+            question: "Solve for x: x + 7 = 15",
+            options: ["x = 8", "x = 22", "x = -8", "x = 12"],
+            correct: 0,
+            rationale: "Subtract 7 from both sides: x + 7 - 7 = 15 - 7, so x = 8."
+        },
+        {
+            category: "Whole Numbers",
+            question: "What is the square root of 144?",
+            options: ["12", "14", "16", "18"],
+            correct: 0,
+            rationale: "12 × 12 = 144, so the square root of 144 is 12."
+        },
+        {
+            category: "Integers",
+            question: "What is the result of 15 + (-20)?",
+            options: ["-35", "-5", "5", "35"],
+            correct: 1,
+            rationale: "Adding a negative number is like subtracting: 15 + (-20) = 15 - 20 = -5."
+        },
+        {
+            category: "Fractions",
+            question: "What is 2 1/3 as an improper fraction?",
+            options: ["7/3", "5/3", "4/3", "8/3"],
+            correct: 0,
+            rationale: "2 1/3 = (2 × 3 + 1)/3 = (6 + 1)/3 = 7/3."
+        },
+        {
+            category: "Algebra",
+            question: "Simplify: 4x + 3 - 2x + 5",
+            options: ["6x + 8", "2x + 8", "2x - 2", "6x - 2"],
+            correct: 1,
+            rationale: "Combine like terms: (4x - 2x) + (3 + 5) = 2x + 8."
+        }
+    ];
+
+    // Initialize variables
+    let currentQuestion = 0;
+    let score = 0;
+    let userAnswers = Array(quizData.length).fill(null);
+    let wrongAnswers = [];
+
+    // Function to load the current question
+    function loadQuestion() {
+        const quizElement = document.getElementById('quiz');
+        const questionData = quizData[currentQuestion];
+
+        let optionsHTML = '';
+        questionData.options.forEach((option, index) => {
+            optionsHTML += `
+                <div class="option">
+                    <input type="radio" name="question" id="option${index}" value="${index}"
+                        ${userAnswers[currentQuestion] === index ? 'checked' : ''}>
+                    <label for="option${index}">${option}</label>
+                </div>
+            `;
+        });
+
+        quizElement.innerHTML = `
+            <div class="question">
+                <div class="question-number">Level ${currentQuestion + 1}</div>
+                <span class="category">${questionData.category}</span>
+                <div class="question-text">${questionData.question}</div>
+                <div class="options">${optionsHTML}</div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+        `;
+
+        // Update progress
+        document.getElementById('progress').style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+        document.getElementById('progress-status').textContent = `Level ${currentQuestion + 1} of ${quizData.length}`;
+        document.getElementById('score').textContent = `Robux: ${score}/${quizData.length}`;
+
+        // Show feedback if already answered
+        if (userAnswers[currentQuestion] !== null) {
+            showFeedback();
+        }
+
+        // Update button states
+        document.getElementById('prev').disabled = currentQuestion === 0;
+        document.getElementById('next').disabled = false;
+
+        if (currentQuestion === quizData.length - 1) {
+            document.getElementById('next').style.display = 'none';
+            document.getElementById('submit').style.display = 'block';
+        } else {
+            document.getElementById('next').style.display = 'block';
+            document.getElementById('submit').style.display = 'none';
+        }
+
+        // Add event listeners to options
+        const options = quizElement.querySelectorAll('input[type="radio"]');
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                userAnswers[currentQuestion] = parseInt(option.value);
+                checkAnswer();
+                createParticles();
+            });
+        });
+    }
+
+    // Function to create particles for celebration
+    function createParticles() {
+        for (let i = 0; i < 10; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.width = `${Math.random() * 10 + 5}px`;
+            particle.style.height = particle.style.width;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.bottom = '0';
+            particle.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            document.body.appendChild(particle);
+
+            // Remove particle after animation completes
+            setTimeout(() => {
+                particle.remove();
+            }, 5000);
+        }
+    }
+
+    // Function to check the answer
+    function checkAnswer() {
+        const questionData = quizData[currentQuestion];
+        const selectedOption = userAnswers[currentQuestion];
+
+        if (selectedOption === questionData.correct) {
+            score++;
+            document.getElementById('feedback').innerHTML = `
+                <div class="correct">
+                    ✅ Correct! +1 Robux
+                    <div class="rationale">${questionData.rationale}</div>
+                </div>
+            `;
+        } else {
+            document.getElementById('feedback').innerHTML = `
+                <div class="incorrect">
+                    ❌ Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
+                    <div class="rationale">${questionData.rationale}</div>
+                </div>
+            `;
+        }
+
+        document.getElementById('feedback').style.display = 'block';
+        document.getElementById('score').textContent = `Robux: ${score}/${quizData.length}`;
+    }
+
+    // Function to show feedback
+    function showFeedback() {
+        const questionData = quizData[currentQuestion];
+        const selectedOption = userAnswers[currentQuestion];
+
+        if (selectedOption === questionData.correct) {
+            document.getElementById('feedback').innerHTML = `
+                <div class="correct">
+                    ✅ Correct! +1 Robux
+                    <div class="rationale">${questionData.rationale}</div>
+                </div>
+            `;
+        } else {
+            document.getElementById('feedback').innerHTML = `
+                <div class="incorrect">
+                    ❌ Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
+                    <div class="rationale">${questionData.rationale}</div>
+                </div>
+            `;
+        }
+
+        document.getElementById('feedback').style.display = 'block';
+    }
+
+    // Function to show results
+    function showResults() {
+        // Calculate final score and wrong answers
+        wrongAnswers = [];
+        for (let i = 0; i < quizData.length; i++) {
+            if (userAnswers[i] !== quizData[i].correct) {
+                wrongAnswers.push({
+                    question: quizData[i].question,
+                    userAnswer: userAnswers[i] !== null ? quizData[i].options[userAnswers[i]] : "Not answered",
+                    correctAnswer: quizData[i].options[quizData[i].correct],
+                    rationale: quizData[i].rationale
+                });
+            }
+        }
+
+        // Show results
+        const resultsElement = document.getElementById('results');
+        resultsElement.innerHTML = `
+            <div class="score-display">🏆 Quest Complete! 🏆</div>
+            <div class="score-display">You earned ${score} out of ${quizData.length} Robux!</div>
+        `;
+
+        // Show badge based on score
+        if (score >= 23) {
+            resultsElement.innerHTML += `<div class="score-display">🎖️ Math Master Badge Unlocked! 🎖️</div>`;
+        } else if (score >= 18) {
+            resultsElement.innerHTML += `<div class="score-display">🎖️ Math Adventurer Badge Unlocked! 🎖️</div>`;
+        } else if (score >= 15) {
+            resultsElement.innerHTML += `<div class="score-display">🎖️ Math Explorer Badge Unlocked! 🎖️</div>`;
+        }
+
+        // Show wrong answers summary if any
+        if (wrongAnswers.length > 0) {
+            resultsElement.innerHTML += `
+                <h3 style="color: #ffcc00; text-align: center;">Areas to Improve:</h3>
+                <div id="wrong-answers-summary"></div>
+            `;
+
+            const wrongAnswersSummary = document.getElementById('wrong-answers-summary');
+            wrongAnswers.forEach((wrong, index) => {
+                wrongAnswersSummary.innerHTML += `
+                    <div class="wrong-answer">
+                        <p><strong>Question:</strong> ${wrong.question}</p>
+                        <p><strong>Your Answer:</strong> ${wrong.userAnswer}</p>
+                        <p><strong>Correct Answer:</strong> ${wrong.correctAnswer}</p>
+                        <p><strong>Explanation:</strong> ${wrong.rationale}</p>
+                    </div>
+                `;
+            });
+        } else {
+            resultsElement.innerHTML += `
+                <div style="text-align: center; padding: 20px;">
+                    <h3>Perfect! You mastered all challenges! 🌟</h3>
+                    <p>You're ready for more advanced math quests!</p>
+                </div>
+            `;
+        }
+
+        resultsElement.style.display = 'block';
+
+        // Hide quiz and show results
+        document.getElementById('quiz').style.display = 'none';
+        document.getElementById('prev').style.display = 'none';
+        document.getElementById('next').style.display = 'none';
+        document.getElementById('submit').style.display = 'none';
+        document.querySelector('.progress-container').style.display = 'none';
+
+        // Create celebration particles
+        for (let i = 0; i < 30; i++) {
+            createParticles();
+        }
+    }
+
+    // Initialize the quiz
+    window.onload = function() {
+        loadQuestion();
+
+        // Add event listeners to navigation buttons
+        document.getElementById('prev').addEventListener('click', () => {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                loadQuestion();
+            }
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            if (currentQuestion < quizData.length - 1) {
+                currentQuestion++;
+                loadQuestion();
+            }
+        });
+
+        document.getElementById('submit').addEventListener('click', showResults);
+    };
+</script>
+</body>
+</html>
