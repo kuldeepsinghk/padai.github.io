@@ -1,16 +1,9 @@
 # math-quiz-server
 
-FIXME: description
 
-## Installation
-
-Download from http://example.com/FIXME.
-
+## Run the test generation
+1.  lein run -m math-quiz-server.gemini-test
 ## Usage
-
-FIXME: explanation
-
-    $ java -jar math-quiz-server-0.1.0-standalone.jar [args]
 
 ## Options
 

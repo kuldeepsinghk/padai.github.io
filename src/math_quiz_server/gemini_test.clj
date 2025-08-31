@@ -34,8 +34,8 @@
 
 
 (defn -main []
-  (let [topics ["Fractions" "Algebra" "Whole Numbers" "Integers"]
-        num-questions 2
+  (let [topics ["Fractions" "LCM and HCF" "Whole Numbers" "Integers" "Number Line"]
+        num-questions 5
         file (io/file "resources/public/quiz-data-1.json")
         all-questions (atom [])]
 
