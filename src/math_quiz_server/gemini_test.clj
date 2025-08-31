@@ -15,7 +15,7 @@
       (clojure.string/trim)))                    ; Remove any extra whitespace
 
 (defn generate-text [topic num-questions]
-  (let [prompt (str "Generate " num-questions " multiple-choice questions about " topic " for 6th-grade students in JSON format. "
+  (let [prompt (str "Generate " num-questions " multiple-choice questions about " topic " for 7th-grade students in JSON format. "
                     "Each question should have a 'category', 'question', 'options' (an array of four strings), 'correct' (the index of the correct option), and 'rationale'. "
                     "The JSON should be an array of question objects, like this: "
                     "[{\"category\": \"" topic "\", \"question\": \"question text\", \"options\": [\"option1\", \"option2\", \"option3\", \"option4\"], \"correct\": 0, \"rationale\": \"explanation\"}]")]
