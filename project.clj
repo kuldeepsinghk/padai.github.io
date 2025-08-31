@@ -9,7 +9,10 @@
                  ;; ["my-custom-maven-repo" "https://my.company.com/maven-repo/"]
                  ]
   :dependencies [[org.clojure/clojure "1.11.1"]
-                 [ring/ring-jetty-adapter "1.9.5"]]
+                 [ring/ring-jetty-adapter "1.9.5"]
+                 [cheshire "5.11.0"]
+                 [clj-http "3.12.3"]
+                 ]
   :main ^:skip-aot math-quiz-server.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
