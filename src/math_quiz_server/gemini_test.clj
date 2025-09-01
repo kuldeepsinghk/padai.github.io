@@ -3,7 +3,7 @@
             [cheshire.core :as json]
             [clojure.java.io :as io]))
 
-(def api-key "AIzaSyCH_YCEP4Lm9CA4sFb6c1eAmXLlkJWHCtY") ; Replace with your actual API key
+(def api-key "") ; Replace with your actual API key
 (def gemini-api-url "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent")
 
 
@@ -34,7 +34,7 @@
 
 
 (defn -main []
-  (let [topics ["Fractions" "LCM and HCF" "Whole Numbers" "Integers" "Number Line"]
+  (let [topics ["LCM and HCF" "Whole Numbers" "Integers" "Number Line" "Prime Number" "Fractions"]
         num-questions 5
         file (io/file "resources/public/quiz-data-1.json")
         all-questions (atom [])]
