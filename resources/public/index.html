@@ -331,17 +331,54 @@
 <div class="roblox-character"></div>
 
 <footer>
-    <p>© 2023 Roblox Math Adventure | Designed for Educational Purposes</p>
+    <p> 2023 Roblox Math Adventure | Designed for Educational Purposes</p>
 </footer>
 
 <script>
-    // Quiz questions data - 25 questions
-    const quizData = [{"category":"Fractions","question":"What is the simplified form of the fraction 12/18?","options":["1/3","2/3","3/4","5/6"],"correct":1,"rationale":"Both 12 and 18 are divisible by 6. Dividing both numerator and denominator by 6 gives 2/3."},{"category":"Fractions","question":"What is the result of adding 1/4 and 2/5?","options":["3/9","3/20","13/20","11/20"],"correct":2,"rationale":"To add fractions, they need a common denominator. The least common denominator of 4 and 5 is 20.  1/4 = 5/20 and 2/5 = 8/20. Therefore, 5/20 + 8/20 = 13/20."},{"category":"Fractions","question":"What is the product of 2/3 and 3/4?","options":["5/7","1/2","6/7","5/12"],"correct":1,"rationale":"To multiply fractions, multiply the numerators and the denominators. (2/3) * (3/4) = 6/12. Simplify 6/12 to 1/2."},{"category":"Fractions","question":"What is the value of 2 1/2 divided by 1/4?","options":["5/8","1/8","10","2 1/8"],"correct":2,"rationale":"First convert 2 1/2 to an improper fraction: 5/2. Dividing by a fraction is the same as multiplying by its reciprocal.  So, (5/2) / (1/4) = (5/2) * (4/1) = 20/2 = 10."},{"category":"Fractions","question":"Which of the following fractions is greater than 1/2?","options":["3/8","4/9","5/12","7/12"],"correct":3,"rationale":"1/2 is equal to 6/12. Comparing the fractions, 3/8 < 1/2, 4/9 < 1/2, 5/12 < 1/2, and 7/12 > 1/2. Therefore, 7/12 is the answer."},{"category":"LCM and HCF","question":"What is the LCM of 6 and 8?","options":["12","24","48","36"],"correct":1,"rationale":"The LCM (Least Common Multiple) is the smallest number that is a multiple of both 6 and 8. Multiples of 6 are 6, 12, 18, 24, 30,... and multiples of 8 are 8, 16, 24, 32,... The smallest number they both have in common is 24."},{"category":"LCM and HCF","question":"What is the HCF (Highest Common Factor) of 12 and 18?","options":["3","4","6","9"],"correct":2,"rationale":"The HCF is the largest number that divides both 12 and 18 without leaving a remainder. The factors of 12 are 1, 2, 3, 4, 6, and 12. The factors of 18 are 1, 2, 3, 6, 9, and 18. The largest factor they have in common is 6."},{"category":"LCM and HCF","question":"Which pair of numbers has an LCM of 20?","options":["2 and 5","4 and 5","2 and 10","10 and 20"],"correct":1,"rationale":"The LCM of 4 and 5 is 20. Multiples of 4 are 4, 8, 12, 16, 20,... and multiples of 5 are 5, 10, 15, 20,... The smallest number they both have in common is 20."},{"category":"LCM and HCF","question":"Find the HCF of 15 and 25.","options":["3","5","10","15"],"correct":1,"rationale":"The HCF is the largest number that divides both 15 and 25. The factors of 15 are 1, 3, 5, and 15. The factors of 25 are 1, 5, and 25. The largest factor they have in common is 5."},{"category":"LCM and HCF","question":"What is the smallest number that is divisible by both 4 and 9?","options":["13","18","36","72"],"correct":2,"rationale":"The smallest number divisible by both 4 and 9 is their LCM. Multiples of 4 are 4, 8, 12, 16, 20, 24, 28, 32, 36,... and multiples of 9 are 9, 18, 27, 36,... The smallest number they both have in common is 36."},{"category":"Whole Numbers","question":"What is the value of (-5) x (-4) x (-2)?","options":["40","-40","-11","11"],"correct":1,"rationale":"The product of two negative numbers is positive. So, (-5) x (-4) = 20. Then, 20 x (-2) = -40."},{"category":"Whole Numbers","question":"Which of the following numbers is a multiple of both 6 and 8?","options":["18","20","24","30"],"correct":2,"rationale":"A multiple of both 6 and 8 must be divisible by both. 18 is divisible by 6 but not 8. 20 is not divisible by 6 or 8. 24 is divisible by both 6 and 8 (6 x 4 = 24, 8 x 3 = 24). 30 is divisible by 6 but not 8."},{"category":"Whole Numbers","question":"What is the greatest common factor (GCF) of 36 and 48?","options":["6","12","24","144"],"correct":1,"rationale":"The factors of 36 are 1, 2, 3, 4, 6, 9, 12, 18, and 36. The factors of 48 are 1, 2, 3, 4, 6, 8, 12, 16, 24, and 48. The greatest common factor is 12."},{"category":"Whole Numbers","question":"Which expression is equivalent to 7 + 7 + 7 + 7 + 7 + 7?","options":["7^6","6^7","7 x 6","7 + 6"],"correct":2,"rationale":"Repeated addition is the same as multiplication. Adding 7 six times is the same as 7 multiplied by 6 (7 x 6)."},{"category":"Whole Numbers","question":"What is the result of 15 ÷ 0?","options":["0","15","1","Undefined"],"correct":3,"rationale":"Division by zero is undefined. There is no number that, when multiplied by 0, results in 15."},{"category":"Integers","question":"What is the value of -8 + 5?","options":["-13","-3","3","13"],"correct":1,"rationale":"When adding integers with different signs, subtract the smaller absolute value from the larger absolute value and give the result the sign of the integer with the larger absolute value. | -8 | - | 5 | = 8 - 5 = 3. Since -8 has a larger absolute value, the answer is -3."},{"category":"Integers","question":"Which of the following numbers is the largest?","options":["-10","-5","0","-15"],"correct":2,"rationale":"On the number line, numbers increase as you move to the right. 0 is to the right of all negative numbers, and -5 is to the right of -10 and -15. Therefore, 0 is the largest number in the list."},{"category":"Integers","question":"What is the result of -6 x -4?","options":["-24","24","-10","10"],"correct":1,"rationale":"The product of two negative integers is a positive integer. -6 x -4 = 24."},{"category":"Integers","question":"What is the absolute value of -12?","options":["-12","0","12","24"],"correct":2,"rationale":"The absolute value of a number is its distance from 0 on the number line. The absolute value of -12 is 12."},{"category":"Integers","question":"What is -20 ÷ 5?","options":["-4","4","-25","25"],"correct":0,"rationale":"When dividing integers with different signs, the quotient is negative. -20 ÷ 5 = -4."},{"category":"Number Line","question":"What number is represented by point A on the number line below?  (Imagine a number line with A at -2.5, markers every 0.5 from -4 to 0)","options":["-3","-2.5","-2","-3.5"],"correct":1,"rationale":"The point A is located halfway between -3 and -2 on the number line. Halfway between -3 and -2 is -2.5."},{"category":"Number Line","question":"Which of the following inequalities is represented by the number line shown? (Imagine a number line with a closed circle at 3, and shading to the left)","options":["x > 3","x < 3","x ≥ 3","x ≤ 3"],"correct":3,"rationale":"The shaded portion to the left of 3 represents values less than 3. The closed circle at 3 indicates that 3 is included in the solution.  Therefore, the inequality is x ≤ 3."},{"category":"Number Line","question":"Which of the following numbers is located farthest from zero on the number line?","options":["-5","3","-2","4"],"correct":0,"rationale":"The number farthest from zero is the number with the largest absolute value. |-5| = 5, |3| = 3, |-2| = 2, |4| = 4. Since 5 is the largest, -5 is farthest from zero."},{"category":"Number Line","question":"On a number line, what is the distance between -7 and 3?","options":["-10","4","10","-4"],"correct":2,"rationale":"The distance between two numbers on a number line is found by taking the absolute value of their difference.  |3 - (-7)| = |3 + 7| = |10| = 10. Alternatively, you can count the spaces from -7 to 0 (7 spaces) and from 0 to 3 (3 spaces), totaling 10 spaces."},{"category":"Number Line","question":"Which number line correctly shows the location of the numbers -2, 0, and 3? (Assume a basic horizontal number line, with numbers increasing to the right)","options":["A number line with -2 on the right, 0 in the middle, and 3 on the left.","A number line with 3 on the right, 0 in the middle, and -2 on the left.","A number line with -2 on the left, 0 in the middle, and 3 on the right.","A number line with 0 on the left, 3 in the middle, and -2 on the right."],"correct":2,"rationale":"On a number line, numbers increase in value as you move from left to right. Negative numbers are to the left of zero, and positive numbers are to the right. Therefore, -2 must be the farthest to the left, then 0, and then 3 farthest to the right."}];
     // Initialize variables
     let currentQuestion = 0;
     let score = 0;
-    let userAnswers = Array(quizData.length).fill(null);
+    let userAnswers = [];
     let wrongAnswers = [];
+    let quizData = [];
+
+    // Function to load quiz data using fetch
+    async function loadQuizData() {
+        try {
+            const response = await fetch('quiz-data.json');
+            if (!response.ok) {
+                throw new Error('Failed to load quiz data');
+            }
+            const allQuestions = await response.json();
+            
+            // Randomly select 5 questions
+            quizData = getRandomQuestions(allQuestions, 25);
+            
+            userAnswers = Array(quizData.length).fill(null);
+            // Initialize the quiz once data is loaded
+            loadQuestion();
+            // Update button states
+            updateButtons();
+        } catch (error) {
+            console.error('Error loading quiz data:', error);
+            document.getElementById('quiz').innerHTML = '<p>Error loading quiz data. Please try again later.</p>';
+        }
+    }
+    
+    // Function to randomly select n questions from an array
+    function getRandomQuestions(questions, n) {
+        // Make a copy of the array to avoid modifying the original
+        const shuffled = [...questions];
+        
+        // Fisher-Yates (Knuth) shuffle algorithm
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        
+        // Return the first n elements
+        return shuffled.slice(0, n);
+    }
 
     // Function to load the current question
     function loadQuestion() {
@@ -430,14 +467,14 @@
             score++;
             document.getElementById('feedback').innerHTML = `
                 <div class="correct">
-                    ✅ Correct! +1 Robux
+                    Correct! +1 Robux
                     <div class="rationale">${questionData.rationale}</div>
                 </div>
             `;
         } else {
             document.getElementById('feedback').innerHTML = `
                 <div class="incorrect">
-                    ❌ Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
+                    Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
                     <div class="rationale">${questionData.rationale}</div>
                 </div>
             `;
@@ -455,14 +492,14 @@
         if (selectedOption === questionData.correct) {
             document.getElementById('feedback').innerHTML = `
                 <div class="correct">
-                    ✅ Correct! +1 Robux
+                    Correct! +1 Robux
                     <div class="rationale">${questionData.rationale}</div>
                 </div>
             `;
         } else {
             document.getElementById('feedback').innerHTML = `
                 <div class="incorrect">
-                    ❌ Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
+                    Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
                     <div class="rationale">${questionData.rationale}</div>
                 </div>
             `;
@@ -489,17 +526,17 @@
         // Show results
         const resultsElement = document.getElementById('results');
         resultsElement.innerHTML = `
-            <div class="score-display">🏆 Quest Complete! 🏆</div>
+            <div class="score-display"> Quest Complete! </div>
             <div class="score-display">You earned ${score} out of ${quizData.length} Robux!</div>
         `;
 
         // Show badge based on score
-        if (score >= 23) {
-            resultsElement.innerHTML += `<div class="score-display">🎖️ Math Master Badge Unlocked! 🎖️</div>`;
-        } else if (score >= 18) {
-            resultsElement.innerHTML += `<div class="score-display">🎖️ Math Adventurer Badge Unlocked! 🎖️</div>`;
-        } else if (score >= 15) {
-            resultsElement.innerHTML += `<div class="score-display">🎖️ Math Explorer Badge Unlocked! 🎖️</div>`;
+        if (score >= 4) {
+            resultsElement.innerHTML += `<div class="score-display"> Math Master Badge Unlocked! </div>`;
+        } else if (score >= 3) {
+            resultsElement.innerHTML += `<div class="score-display"> Math Adventurer Badge Unlocked! </div>`;
+        } else if (score >= 2) {
+            resultsElement.innerHTML += `<div class="score-display"> Math Explorer Badge Unlocked! </div>`;
         }
 
         // Show wrong answers summary if any
@@ -523,7 +560,7 @@
         } else {
             resultsElement.innerHTML += `
                 <div style="text-align: center; padding: 20px;">
-                    <h3>Perfect! You mastered all challenges! 🌟</h3>
+                    <h3>Perfect! You mastered all challenges! </h3>
                     <p>You're ready for more advanced math quests!</p>
                 </div>
             `;
@@ -544,9 +581,24 @@
         }
     }
 
+    // Function to update button states
+    function updateButtons() {
+        document.getElementById('prev').disabled = currentQuestion === 0;
+        document.getElementById('next').disabled = currentQuestion === quizData.length - 1;
+
+        if (currentQuestion === quizData.length - 1) {
+            document.getElementById('next').style.display = 'none';
+            document.getElementById('submit').style.display = 'block';
+        } else {
+            document.getElementById('next').style.display = 'block';
+            document.getElementById('submit').style.display = 'none';
+        }
+    }
+
     // Initialize the quiz
     window.onload = function() {
-        loadQuestion();
+        // Load quiz data using fetch
+        loadQuizData();
 
         // Add event listeners to navigation buttons
         document.getElementById('prev').addEventListener('click', () => {
@@ -564,16 +616,6 @@
         });
 
         document.getElementById('submit').addEventListener('click', showResults);
-
-        // Fetch quiz data from JSON file
-        fetch('quiz-data.json')
-            .then(response => response.json())
-            .then(data => {
-                console.log('Number of questions loaded:', data.questions.length);
-            })
-            .catch(error => {
-                console.error('Failed to load quiz data:', error);
-            });
     };
 </script>
 </body>
