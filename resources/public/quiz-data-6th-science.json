@@ -1,0 +1,72 @@
+[
+  {
+    "category": "Living World",
+    "question": "Which of these is a characteristic of living things?",
+    "options": ["They breathe", "They are all green", "They can fly", "They are all visible to the naked eye"],
+    "correct": 0,
+    "rationale": "All living things breathe (respire) to get energy from food."
+  },
+  {
+    "category": "Living World",
+    "question": "Plants make their food through which process?",
+    "options": ["Photosynthesis", "Digestion", "Respiration", "Transpiration"],
+    "correct": 0,
+    "rationale": "Plants produce their own food through photosynthesis using sunlight, water, and carbon dioxide."
+  },
+  {
+    "category": "Materials",
+    "question": "Which of these materials is natural?",
+    "options": ["Cotton", "Plastic", "Nylon", "Polyester"],
+    "correct": 0,
+    "rationale": "Cotton is a natural material obtained from cotton plants, while the others are synthetic."
+  },
+  {
+    "category": "Materials",
+    "question": "Which state of matter has a definite shape and volume?",
+    "options": ["Solid", "Liquid", "Gas", "Plasma"],
+    "correct": 0,
+    "rationale": "Solids have a definite shape and volume, unlike liquids and gases."
+  },
+  {
+    "category": "Food",
+    "question": "Which nutrient is mainly responsible for building and repairing body tissues?",
+    "options": ["Proteins", "Carbohydrates", "Fats", "Vitamins"],
+    "correct": 0,
+    "rationale": "Proteins are the building blocks of the body and help in growth and repair of tissues."
+  },
+  {
+    "category": "Food",
+    "question": "Which vitamin is known as ascorbic acid?",
+    "options": ["Vitamin C", "Vitamin A", "Vitamin D", "Vitamin B"],
+    "correct": 0,
+    "rationale": "Vitamin C is also known as ascorbic acid and is found in citrus fruits."
+  },
+  {
+    "category": "The Earth",
+    "question": "What is the outermost layer of the Earth called?",
+    "options": ["Crust", "Mantle", "Core", "Atmosphere"],
+    "correct": 0,
+    "rationale": "The Earth's crust is the outermost solid layer on which we live."
+  },
+  {
+    "category": "Solar System",
+    "question": "Which is the largest planet in our solar system?",
+    "options": ["Jupiter", "Saturn", "Earth", "Neptune"],
+    "correct": 0,
+    "rationale": "Jupiter is the largest planet in our solar system."
+  },
+  {
+    "category": "Light",
+    "question": "What color is formed when all colors of the spectrum combine?",
+    "options": ["White", "Black", "Red", "Blue"],
+    "correct": 0,
+    "rationale": "When all the colors of light combine, they form white light."
+  },
+  {
+    "category": "Force and Motion",
+    "question": "What force pulls objects toward the center of the Earth?",
+    "options": ["Gravity", "Magnetism", "Friction", "Electrical force"],
+    "correct": 0,
+    "rationale": "Gravity is the force that pulls objects toward the Earth's center."
+  }
+]

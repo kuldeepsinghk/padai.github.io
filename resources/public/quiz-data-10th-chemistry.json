@@ -1,0 +1,72 @@
+[
+  {
+    "category": "Periodic Table",
+    "question": "Which element has the chemical symbol 'Na'?",
+    "options": ["Sodium", "Nitrogen", "Nickel", "Neon"],
+    "correct": 0,
+    "rationale": "Na is the chemical symbol for Sodium (Natrium in Latin)."
+  },
+  {
+    "category": "Periodic Table",
+    "question": "Which group contains the noble gases?",
+    "options": ["Group 18", "Group 1", "Group 17", "Group 2"],
+    "correct": 0,
+    "rationale": "Noble gases are found in Group 18 of the periodic table."
+  },
+  {
+    "category": "Chemical Bonding",
+    "question": "What type of bond forms when electrons are shared between atoms?",
+    "options": ["Covalent bond", "Ionic bond", "Metallic bond", "Hydrogen bond"],
+    "correct": 0,
+    "rationale": "A covalent bond forms when electrons are shared between atoms."
+  },
+  {
+    "category": "Chemical Bonding",
+    "question": "Which bond is formed by the complete transfer of electrons from one atom to another?",
+    "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Metallic bond"],
+    "correct": 0,
+    "rationale": "An ionic bond is formed by the complete transfer of electrons from one atom to another."
+  },
+  {
+    "category": "Acids and Bases",
+    "question": "On the pH scale, which value represents a neutral solution?",
+    "options": ["7", "0", "14", "10"],
+    "correct": 0,
+    "rationale": "A neutral solution has a pH value of 7."
+  },
+  {
+    "category": "Acids and Bases",
+    "question": "What is the chemical formula for sulfuric acid?",
+    "options": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
+    "correct": 0,
+    "rationale": "The chemical formula for sulfuric acid is H₂SO₄."
+  },
+  {
+    "category": "Organic Chemistry",
+    "question": "What is the general formula for alkanes?",
+    "options": ["CnH2n+2", "CnH2n", "CnH2n-2", "CnHn"],
+    "correct": 0,
+    "rationale": "The general formula for alkanes is CnH2n+2, where n is the number of carbon atoms."
+  },
+  {
+    "category": "Organic Chemistry",
+    "question": "Which functional group is present in alcohols?",
+    "options": ["-OH", "-COOH", "-CHO", "-NH2"],
+    "correct": 0,
+    "rationale": "Alcohols contain the hydroxyl (-OH) functional group."
+  },
+  {
+    "category": "Chemical Reactions",
+    "question": "What type of reaction occurs when two or more substances combine to form a single product?",
+    "options": ["Synthesis reaction", "Decomposition reaction", "Single replacement reaction", "Double replacement reaction"],
+    "correct": 0,
+    "rationale": "A synthesis (or combination) reaction occurs when two or more substances combine to form a single product."
+  },
+  {
+    "category": "Chemical Reactions",
+    "question": "In a redox reaction, the substance that loses electrons is said to be:",
+    "options": ["Oxidized", "Reduced", "Neutralized", "Precipitated"],
+    "correct": 0,
+    "rationale": "In a redox reaction, the substance that loses electrons is oxidized (OIL RIG: Oxidation Is Loss, Reduction Is Gain)."
+  }
+]

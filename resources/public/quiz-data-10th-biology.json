@@ -1,0 +1,72 @@
+[
+  {
+    "category": "Cell Biology",
+    "question": "What is the control center of the cell?",
+    "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
+    "correct": 0,
+    "rationale": "The nucleus is the control center of the cell containing DNA and genetic information."
+  },
+  {
+    "category": "Cell Biology",
+    "question": "Which organelle is known as the 'powerhouse of the cell'?",
+    "options": ["Mitochondria", "Nucleus", "Chloroplast", "Ribosome"],
+    "correct": 0,
+    "rationale": "Mitochondria are known as the powerhouse of the cell as they generate energy in the form of ATP."
+  },
+  {
+    "category": "Genetics",
+    "question": "What are the building blocks of DNA?",
+    "options": ["Nucleotides", "Amino acids", "Glucose", "Fatty acids"],
+    "correct": 0,
+    "rationale": "Nucleotides are the building blocks of DNA, consisting of a sugar, a phosphate group, and a nitrogenous base."
+  },
+  {
+    "category": "Genetics",
+    "question": "Who proposed the theory of natural selection?",
+    "options": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Alexander Fleming"],
+    "correct": 0,
+    "rationale": "Charles Darwin proposed the theory of natural selection in his book 'On the Origin of Species'."
+  },
+  {
+    "category": "Human Physiology",
+    "question": "Which blood cells are responsible for producing antibodies?",
+    "options": ["B lymphocytes", "Red blood cells", "Platelets", "T lymphocytes"],
+    "correct": 0,
+    "rationale": "B lymphocytes (B cells) are responsible for producing antibodies to fight infections."
+  },
+  {
+    "category": "Human Physiology",
+    "question": "What is the main function of the kidneys?",
+    "options": ["Filter blood and remove waste", "Produce insulin", "Digest food", "Transport oxygen"],
+    "correct": 0,
+    "rationale": "The main function of the kidneys is to filter blood and remove waste products as urine."
+  },
+  {
+    "category": "Ecology",
+    "question": "What is the term for all the living organisms in an area interacting with the non-living environment?",
+    "options": ["Ecosystem", "Community", "Population", "Species"],
+    "correct": 0,
+    "rationale": "An ecosystem consists of all living organisms in an area interacting with the non-living environment."
+  },
+  {
+    "category": "Ecology",
+    "question": "Which of the following is a renewable resource?",
+    "options": ["Solar energy", "Coal", "Petroleum", "Natural gas"],
+    "correct": 0,
+    "rationale": "Solar energy is a renewable resource that comes from the sun and is virtually inexhaustible."
+  },
+  {
+    "category": "Diseases",
+    "question": "Which of the following diseases is caused by a virus?",
+    "options": ["Influenza", "Tuberculosis", "Cholera", "Malaria"],
+    "correct": 0,
+    "rationale": "Influenza (flu) is caused by the influenza virus."
+  },
+  {
+    "category": "Diseases",
+    "question": "Which disease is caused by a deficiency of vitamin C?",
+    "options": ["Scurvy", "Rickets", "Night blindness", "Beriberi"],
+    "correct": 0,
+    "rationale": "Scurvy is caused by a deficiency of vitamin C in the diet."
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "category": "Mechanics",
+    "question": "What is the SI unit of force?",
+    "options": ["Newton", "Joule", "Watt", "Pascal"],
+    "correct": 0,
+    "rationale": "The SI unit of force is the Newton (N)."
+  },
+  {
+    "category": "Mechanics",
+    "question": "According to Newton's Second Law of Motion, force is equal to:",
+    "options": ["mass × acceleration", "mass / acceleration", "mass + acceleration", "mass - acceleration"],
+    "correct": 0,
+    "rationale": "Newton's Second Law states that F = ma, where F is force, m is mass, and a is acceleration."
+  },
+  {
+    "category": "Work and Energy",
+    "question": "What is the formula for kinetic energy?",
+    "options": ["1/2 × mass × velocity²", "mass × gravity × height", "force × distance", "mass × velocity"],
+    "correct": 0,
+    "rationale": "Kinetic energy (KE) = 1/2 × m × v², where m is mass and v is velocity."
+  },
+  {
+    "category": "Work and Energy",
+    "question": "What is the principle of conservation of energy?",
+    "options": ["Energy cannot be created or destroyed, only transformed", "Energy can be created but not destroyed", "Energy can be destroyed but not created", "Energy can be both created and destroyed"],
+    "correct": 0,
+    "rationale": "The principle of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another."
+  },
+  {
+    "category": "Light",
+    "question": "What is the speed of light in vacuum?",
+    "options": ["3 × 10⁸ m/s", "3 × 10⁴ m/s", "3 × 10⁶ m/s", "3 × 10¹⁰ m/s"],
+    "correct": 0,
+    "rationale": "The speed of light in vacuum is approximately 3 × 10⁸ meters per second."
+  },
+  {
+    "category": "Light",
+    "question": "Which phenomenon explains the bending of light when it passes from one medium to another?",
+    "options": ["Refraction", "Reflection", "Diffraction", "Dispersion"],
+    "correct": 0,
+    "rationale": "Refraction is the phenomenon where light bends when passing from one medium to another due to a change in speed."
+  },
+  {
+    "category": "Electricity",
+    "question": "What is Ohm's Law?",
+    "options": ["V = IR", "V = I/R", "V = R/I", "V = I+R"],
+    "correct": 0,
+    "rationale": "Ohm's Law states that V = IR, where V is voltage, I is current, and R is resistance."
+  },
+  {
+    "category": "Electricity",
+    "question": "In a series circuit, how does the current compare across different components?",
+    "options": ["The current is the same across all components", "The current increases across components", "The current decreases across components", "The current varies randomly"],
+    "correct": 0,
+    "rationale": "In a series circuit, the current is the same through each component."
+  },
+  {
+    "category": "Magnetism",
+    "question": "Which of the following is not a magnetic material?",
+    "options": ["Copper", "Iron", "Cobalt", "Nickel"],
+    "correct": 0,
+    "rationale": "Copper is not a magnetic material, while Iron, Cobalt, and Nickel are ferromagnetic materials."
+  },
+  {
+    "category": "Modern Physics",
+    "question": "What does E = mc² represent?",
+    "options": ["Mass-energy equivalence", "Gravitational potential energy", "Kinetic energy", "Electric potential energy"],
+    "correct": 0,
+    "rationale": "E = mc² is Einstein's formula for mass-energy equivalence, where E is energy, m is mass, and c is the speed of light."
+  }
+]

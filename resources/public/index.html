@@ -320,6 +320,25 @@
             </div>
         </div>
 
+        <div class="selection-container" style="margin-bottom: 20px; background: rgba(0, 162, 255, 0.2); border-radius: 15px; padding: 15px; border: 2px solid #00a2ff;">
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <div style="flex: 1;">
+                    <label for="class-select" style="display: block; margin-bottom: 5px; color: #ffcc00; font-weight: bold;">Select Class:</label>
+                    <select id="class-select" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #ff7b25; background: rgba(37, 37, 58, 0.8); color: white;">
+                        <option value="">-- Select Class --</option>
+                        <option value="6th">6th Class</option>
+                        <option value="10th">10th Class</option>
+                    </select>
+                </div>
+                <div style="flex: 1;">
+                    <label for="subject-select" style="display: block; margin-bottom: 5px; color: #ffcc00; font-weight: bold;">Select Subject:</label>
+                    <select id="subject-select" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #ff7b25; background: rgba(37, 37, 58, 0.8); color: white;" disabled>
+                        <option value="">-- Select Subject --</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
         <div id="quiz"></div>
 
         <div class="controls">
@@ -344,32 +363,110 @@
         let userAnswers = [];
         let wrongAnswers = [];
         let quizData = [];
-
+        let quizStarted = false;
+        
+        // Subject mapping based on class
+        const subjectsByClass = {
+            '6th': ['Maths', 'Science'],
+            '10th': ['Maths', 'Physics', 'Chemistry', 'Biology']
+        };
+        
+        // Function to populate subject dropdown based on selected class
+        function populateSubjects() {
+            const classSelect = document.getElementById('class-select');
+            const subjectSelect = document.getElementById('subject-select');
+            
+            // Clear existing options
+            subjectSelect.innerHTML = '<option value="">-- Select Subject --</option>';
+            
+            // If no class is selected, disable the subject dropdown
+            if (!classSelect.value) {
+                subjectSelect.disabled = true;
+                return;
+            }
+            
+            // Get subjects for the selected class
+            const subjects = subjectsByClass[classSelect.value];
+            
+            // Add new options
+            subjects.forEach(subject => {
+                const option = document.createElement('option');
+                option.value = subject.toLowerCase();
+                option.textContent = subject;
+                subjectSelect.appendChild(option);
+            });
+            
+            // Enable the subject dropdown
+            subjectSelect.disabled = false;
+        }
+        
         // Function to load quiz data using fetch
-        async function loadQuizData() {
+        async function loadQuizData(classValue, subjectValue) {
             try {
-                const response = await fetch('quiz-data.json');
+                // Clear existing quiz data
+                document.getElementById('quiz').innerHTML = '';
+                
+                // Reset question counter and score when loading a new quiz
+                currentQuestion = 0;
+                console.log("Reset currentQuestion to 0");
+                score = 0;
+                wrongAnswers = [];
+                
+                // Create file name based on class and subject
+                const fileName = `quiz-data-${classValue}-${subjectValue}.json`;
+                
+                const response = await fetch(fileName);
                 if (!response.ok) {
-                    throw new Error('Failed to load quiz data');
+                    throw new Error(`Failed to load quiz data for ${classValue} class ${subjectValue}`);
                 }
                 const allQuestions = await response.json();
                 
-                // Randomly select 5 questions
-                quizData = getRandomQuestions(allQuestions, 25);
+                // Randomly select 25 questions (or fewer if there aren't enough)
+                const numQuestions = Math.min(allQuestions.length, 25);
+                quizData = getRandomQuestions(allQuestions, numQuestions);
                 
                 userAnswers = Array(quizData.length).fill(null);
+                
+                // IMPORTANT: Ensure currentQuestion is definitely 0 before loading the question
+                currentQuestion = 0;
+                console.log("Before loadQuestion, currentQuestion =", currentQuestion);
+                
                 // Initialize the quiz once data is loaded
                 loadQuestion();
+                console.log("After loadQuestion, currentQuestion =", currentQuestion);
+                
                 // Update button states
                 updateButtons();
+                
+                // Set quiz as started
+                quizStarted = true;
+                
+                // Show quiz elements
+                document.getElementById('quiz').style.display = 'block';
+                document.querySelector('.controls').style.display = 'flex';
+                
+                // Force a re-render of the question display to ensure Level 1 is shown
+                setTimeout(() => {
+                    if (currentQuestion !== 0) {
+                        console.log("Correcting currentQuestion back to 0");
+                        currentQuestion = 0;
+                        loadQuestion();
+                    }
+                }, 100);
             } catch (error) {
                 console.error('Error loading quiz data:', error);
-                document.getElementById('quiz').innerHTML = '<p>Error loading quiz data. Please try again later.</p>';
+                document.getElementById('quiz').innerHTML = 
+                    `<p style="color: #ff5252; padding: 15px; background: rgba(255, 0, 0, 0.2); border-radius: 10px;">
+                    Error loading quiz data: ${error.message}. Please try a different selection.</p>`;
             }
         }
         
         // Function to load the current question
         function loadQuestion() {
+            if (!quizStarted || quizData.length === 0) {
+                return; // Don't load questions if quiz hasn't started
+            }
+            
             const quizElement = document.getElementById('quiz');
             const questionData = quizData[currentQuestion];
 
@@ -571,22 +668,42 @@
 
         // Function to update button states
         function updateButtons() {
-            document.getElementById('prev').disabled = currentQuestion === 0;
-            document.getElementById('next').disabled = currentQuestion === quizData.length - 1;
-
-            if (currentQuestion === quizData.length - 1) {
-                document.getElementById('next').style.display = 'none';
-                document.getElementById('submit').style.display = 'block';
-            } else {
-                document.getElementById('next').style.display = 'block';
-                document.getElementById('submit').style.display = 'none';
-            }
+            document.getElementById('prev').style.display = currentQuestion === 0 ? 'none' : 'block';
+            document.getElementById('next').style.display = currentQuestion === quizData.length - 1 ? 'none' : 'block';
+            document.getElementById('submit').style.display = currentQuestion === quizData.length - 1 ? 'block' : 'none';
         }
 
         // Initialize the quiz
-        window.onload = function() {
-            // Load quiz data using fetch
-            loadQuizData();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initially hide quiz and control elements
+            document.getElementById('quiz').style.display = 'none';
+            document.querySelector('.controls').style.display = 'none';
+            document.getElementById('results').style.display = 'none';
+            
+            // Reset progress bar
+            document.getElementById('progress').style.width = '0%';
+            document.getElementById('progress-status').textContent = 'Select Class and Subject';
+            document.getElementById('score').textContent = 'Robux: 0/0';
+            
+            // Add event listener to class dropdown
+            document.getElementById('class-select').addEventListener('change', function() {
+                populateSubjects();
+                // Reset the quiz when class changes
+                document.getElementById('quiz').style.display = 'none';
+                document.querySelector('.controls').style.display = 'none';
+                quizStarted = false;
+            });
+            
+            // Add event listener to subject dropdown
+            document.getElementById('subject-select').addEventListener('change', function() {
+                const classValue = document.getElementById('class-select').value;
+                const subjectValue = this.value;
+                
+                if (classValue && subjectValue) {
+                    // Load quiz data when both class and subject are selected
+                    loadQuizData(classValue, subjectValue);
+                }
+            });
 
             // Add event listeners to navigation buttons
             document.getElementById('prev').addEventListener('click', () => {
@@ -604,7 +721,7 @@
             });
 
             document.getElementById('submit').addEventListener('click', showResults);
-        };
+        });
     </script>
 </body>
 </html>
