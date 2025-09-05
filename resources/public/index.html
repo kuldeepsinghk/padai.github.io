@@ -300,323 +300,311 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="roblox-logo">ROBLOX</div>
-        <h1>Math Adventure Quest</h1>
-        <p class="description">Embark on an epic math journey through the Roblox universe!</p>
-    </header>
+    <!-- Include the external JavaScript file -->
+    <script src="js/quiz.js"></script>
 
-    <div class="progress-container">
-        <div class="progress-bar">
-            <div class="progress" id="progress"></div>
-        </div>
-        <div class="progress-text">
-            <span id="progress-status">Level 1 of 25</span>
-            <span id="score">Robux: 0/25</span>
-        </div>
-    </div>
+    <div class="container">
+        <header>
+            <div class="roblox-logo">ROBLOX</div>
+            <h1>Math Adventure Quest</h1>
+            <p class="description">Embark on an epic math journey through the Roblox universe!</p>
+        </header>
 
-    <div id="quiz"></div>
-
-    <div class="controls">
-        <button id="prev">← Previous</button>
-        <button id="next">Next →</button>
-        <button id="submit">Complete Quest</button>
-    </div>
-
-    <div id="results"></div>
-</div>
-
-<div class="roblox-character"></div>
-
-<footer>
-    <p> 2023 Roblox Math Adventure | Designed for Educational Purposes</p>
-</footer>
-
-<script>
-    // Initialize variables
-    let currentQuestion = 0;
-    let score = 0;
-    let userAnswers = [];
-    let wrongAnswers = [];
-    let quizData = [];
-
-    // Function to load quiz data using fetch
-    async function loadQuizData() {
-        try {
-            const response = await fetch('quiz-data.json');
-            if (!response.ok) {
-                throw new Error('Failed to load quiz data');
-            }
-            const allQuestions = await response.json();
-            
-            // Randomly select 5 questions
-            quizData = getRandomQuestions(allQuestions, 25);
-            
-            userAnswers = Array(quizData.length).fill(null);
-            // Initialize the quiz once data is loaded
-            loadQuestion();
-            // Update button states
-            updateButtons();
-        } catch (error) {
-            console.error('Error loading quiz data:', error);
-            document.getElementById('quiz').innerHTML = '<p>Error loading quiz data. Please try again later.</p>';
-        }
-    }
-    
-    // Function to randomly select n questions from an array
-    function getRandomQuestions(questions, n) {
-        // Make a copy of the array to avoid modifying the original
-        const shuffled = [...questions];
-        
-        // Fisher-Yates (Knuth) shuffle algorithm
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        
-        // Return the first n elements
-        return shuffled.slice(0, n);
-    }
-
-    // Function to load the current question
-    function loadQuestion() {
-        const quizElement = document.getElementById('quiz');
-        const questionData = quizData[currentQuestion];
-
-        let optionsHTML = '';
-        questionData.options.forEach((option, index) => {
-            optionsHTML += `
-                <div class="option">
-                    <input type="radio" name="question" id="option${index}" value="${index}"
-                        ${userAnswers[currentQuestion] === index ? 'checked' : ''}>
-                    <label for="option${index}">${option}</label>
-                </div>
-            `;
-        });
-
-        quizElement.innerHTML = `
-            <div class="question">
-                <div class="question-number">Level ${currentQuestion + 1}</div>
-                <span class="category">${questionData.category}</span>
-                <div class="question-text">${questionData.question}</div>
-                <div class="options">${optionsHTML}</div>
-                <div class="feedback" id="feedback"></div>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
             </div>
-        `;
+            <div class="progress-text">
+                <span id="progress-status">Level 1 of 25</span>
+                <span id="score">Robux: 0/25</span>
+            </div>
+        </div>
 
-        // Update progress
-        document.getElementById('progress').style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
-        document.getElementById('progress-status').textContent = `Level ${currentQuestion + 1} of ${quizData.length}`;
-        document.getElementById('score').textContent = `Robux: ${score}/${quizData.length}`;
+        <div id="quiz"></div>
 
-        // Show feedback if already answered
-        if (userAnswers[currentQuestion] !== null) {
-            showFeedback();
-        }
+        <div class="controls">
+            <button id="prev">← Previous</button>
+            <button id="next">Next →</button>
+            <button id="submit">Complete Quest</button>
+        </div>
 
-        // Update button states
-        document.getElementById('prev').disabled = currentQuestion === 0;
-        document.getElementById('next').disabled = false;
+        <div id="results"></div>
+    </div>
 
-        if (currentQuestion === quizData.length - 1) {
-            document.getElementById('next').style.display = 'none';
-            document.getElementById('submit').style.display = 'block';
-        } else {
-            document.getElementById('next').style.display = 'block';
-            document.getElementById('submit').style.display = 'none';
-        }
+    <div class="roblox-character"></div>
 
-        // Add event listeners to options
-        const options = quizElement.querySelectorAll('input[type="radio"]');
-        options.forEach(option => {
-            option.addEventListener('change', () => {
-                userAnswers[currentQuestion] = parseInt(option.value);
-                checkAnswer();
-                createParticles();
-            });
-        });
-    }
+    <footer>
+        <p> 2023 Roblox Math Adventure | Designed for Educational Purposes</p>
+    </footer>
 
-    // Function to create particles for celebration
-    function createParticles() {
-        for (let i = 0; i < 10; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.width = `${Math.random() * 10 + 5}px`;
-            particle.style.height = particle.style.width;
-            particle.style.left = `${Math.random() * 100}%`;
-            particle.style.bottom = '0';
-            particle.style.animationDuration = `${Math.random() * 3 + 2}s`;
-            document.body.appendChild(particle);
+    <script>
+        // Initialize variables
+        let currentQuestion = 0;
+        let score = 0;
+        let userAnswers = [];
+        let wrongAnswers = [];
+        let quizData = [];
 
-            // Remove particle after animation completes
-            setTimeout(() => {
-                particle.remove();
-            }, 5000);
-        }
-    }
-
-    // Function to check the answer
-    function checkAnswer() {
-        const questionData = quizData[currentQuestion];
-        const selectedOption = userAnswers[currentQuestion];
-
-        if (selectedOption === questionData.correct) {
-            score++;
-            document.getElementById('feedback').innerHTML = `
-                <div class="correct">
-                    Correct! +1 Robux
-                    <div class="rationale">${questionData.rationale}</div>
-                </div>
-            `;
-        } else {
-            document.getElementById('feedback').innerHTML = `
-                <div class="incorrect">
-                    Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
-                    <div class="rationale">${questionData.rationale}</div>
-                </div>
-            `;
-        }
-
-        document.getElementById('feedback').style.display = 'block';
-        document.getElementById('score').textContent = `Robux: ${score}/${quizData.length}`;
-    }
-
-    // Function to show feedback
-    function showFeedback() {
-        const questionData = quizData[currentQuestion];
-        const selectedOption = userAnswers[currentQuestion];
-
-        if (selectedOption === questionData.correct) {
-            document.getElementById('feedback').innerHTML = `
-                <div class="correct">
-                    Correct! +1 Robux
-                    <div class="rationale">${questionData.rationale}</div>
-                </div>
-            `;
-        } else {
-            document.getElementById('feedback').innerHTML = `
-                <div class="incorrect">
-                    Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
-                    <div class="rationale">${questionData.rationale}</div>
-                </div>
-            `;
-        }
-
-        document.getElementById('feedback').style.display = 'block';
-    }
-
-    // Function to show results
-    function showResults() {
-        // Calculate final score and wrong answers
-        wrongAnswers = [];
-        for (let i = 0; i < quizData.length; i++) {
-            if (userAnswers[i] !== quizData[i].correct) {
-                wrongAnswers.push({
-                    question: quizData[i].question,
-                    userAnswer: userAnswers[i] !== null ? quizData[i].options[userAnswers[i]] : "Not answered",
-                    correctAnswer: quizData[i].options[quizData[i].correct],
-                    rationale: quizData[i].rationale
-                });
+        // Function to load quiz data using fetch
+        async function loadQuizData() {
+            try {
+                const response = await fetch('quiz-data.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load quiz data');
+                }
+                const allQuestions = await response.json();
+                
+                // Randomly select 5 questions
+                quizData = getRandomQuestions(allQuestions, 25);
+                
+                userAnswers = Array(quizData.length).fill(null);
+                // Initialize the quiz once data is loaded
+                loadQuestion();
+                // Update button states
+                updateButtons();
+            } catch (error) {
+                console.error('Error loading quiz data:', error);
+                document.getElementById('quiz').innerHTML = '<p>Error loading quiz data. Please try again later.</p>';
             }
         }
+        
+        // Function to load the current question
+        function loadQuestion() {
+            const quizElement = document.getElementById('quiz');
+            const questionData = quizData[currentQuestion];
 
-        // Show results
-        const resultsElement = document.getElementById('results');
-        resultsElement.innerHTML = `
-            <div class="score-display"> Quest Complete! </div>
-            <div class="score-display">You earned ${score} out of ${quizData.length} Robux!</div>
-        `;
-
-        // Show badge based on score
-        if (score >= 4) {
-            resultsElement.innerHTML += `<div class="score-display"> Math Master Badge Unlocked! </div>`;
-        } else if (score >= 3) {
-            resultsElement.innerHTML += `<div class="score-display"> Math Adventurer Badge Unlocked! </div>`;
-        } else if (score >= 2) {
-            resultsElement.innerHTML += `<div class="score-display"> Math Explorer Badge Unlocked! </div>`;
-        }
-
-        // Show wrong answers summary if any
-        if (wrongAnswers.length > 0) {
-            resultsElement.innerHTML += `
-                <h3 style="color: #ffcc00; text-align: center;">Areas to Improve:</h3>
-                <div id="wrong-answers-summary"></div>
-            `;
-
-            const wrongAnswersSummary = document.getElementById('wrong-answers-summary');
-            wrongAnswers.forEach((wrong, index) => {
-                wrongAnswersSummary.innerHTML += `
-                    <div class="wrong-answer">
-                        <p><strong>Question:</strong> ${wrong.question}</p>
-                        <p><strong>Your Answer:</strong> ${wrong.userAnswer}</p>
-                        <p><strong>Correct Answer:</strong> ${wrong.correctAnswer}</p>
-                        <p><strong>Explanation:</strong> ${wrong.rationale}</p>
+            let optionsHTML = '';
+            questionData.options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="option">
+                        <input type="radio" name="question" id="option${index}" value="${index}"
+                            ${userAnswers[currentQuestion] === index ? 'checked' : ''}>
+                        <label for="option${index}">${option}</label>
                     </div>
                 `;
             });
-        } else {
-            resultsElement.innerHTML += `
-                <div style="text-align: center; padding: 20px;">
-                    <h3>Perfect! You mastered all challenges! </h3>
-                    <p>You're ready for more advanced math quests!</p>
+
+            quizElement.innerHTML = `
+                <div class="question">
+                    <div class="question-number">Level ${currentQuestion + 1}</div>
+                    <span class="category">${questionData.category}</span>
+                    <div class="question-text">${questionData.question}</div>
+                    <div class="options">${optionsHTML}</div>
+                    <div class="feedback" id="feedback"></div>
                 </div>
             `;
+
+            // Update progress
+            document.getElementById('progress').style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+            document.getElementById('progress-status').textContent = `Level ${currentQuestion + 1} of ${quizData.length}`;
+            document.getElementById('score').textContent = `Robux: ${score}/${quizData.length}`;
+
+            // Show feedback if already answered
+            if (userAnswers[currentQuestion] !== null) {
+                showFeedback();
+            }
+
+            // Update button states
+            document.getElementById('prev').disabled = currentQuestion === 0;
+            document.getElementById('next').disabled = false;
+
+            if (currentQuestion === quizData.length - 1) {
+                document.getElementById('next').style.display = 'none';
+                document.getElementById('submit').style.display = 'block';
+            } else {
+                document.getElementById('next').style.display = 'block';
+                document.getElementById('submit').style.display = 'none';
+            }
+
+            // Add event listeners to options
+            const options = quizElement.querySelectorAll('input[type="radio"]');
+            options.forEach(option => {
+                option.addEventListener('change', () => {
+                    userAnswers[currentQuestion] = parseInt(option.value);
+                    checkAnswer();
+                    createParticles();
+                });
+            });
         }
 
-        resultsElement.style.display = 'block';
+        // Function to create particles for celebration
+        function createParticles() {
+            for (let i = 0; i < 10; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.width = `${Math.random() * 10 + 5}px`;
+                particle.style.height = particle.style.width;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.bottom = '0';
+                particle.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                document.body.appendChild(particle);
 
-        // Hide quiz and show results
-        document.getElementById('quiz').style.display = 'none';
-        document.getElementById('prev').style.display = 'none';
-        document.getElementById('next').style.display = 'none';
-        document.getElementById('submit').style.display = 'none';
-        document.querySelector('.progress-container').style.display = 'none';
-
-        // Create celebration particles
-        for (let i = 0; i < 30; i++) {
-            createParticles();
+                // Remove particle after animation completes
+                setTimeout(() => {
+                    particle.remove();
+                }, 5000);
+            }
         }
-    }
 
-    // Function to update button states
-    function updateButtons() {
-        document.getElementById('prev').disabled = currentQuestion === 0;
-        document.getElementById('next').disabled = currentQuestion === quizData.length - 1;
+        // Function to check the answer
+        function checkAnswer() {
+            const questionData = quizData[currentQuestion];
+            const selectedOption = userAnswers[currentQuestion];
 
-        if (currentQuestion === quizData.length - 1) {
+            if (selectedOption === questionData.correct) {
+                score++;
+                document.getElementById('feedback').innerHTML = `
+                    <div class="correct">
+                        Correct! +1 Robux
+                        <div class="rationale">${questionData.rationale}</div>
+                    </div>
+                `;
+            } else {
+                document.getElementById('feedback').innerHTML = `
+                    <div class="incorrect">
+                        Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
+                        <div class="rationale">${questionData.rationale}</div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('feedback').style.display = 'block';
+            document.getElementById('score').textContent = `Robux: ${score}/${quizData.length}`;
+        }
+
+        // Function to show feedback
+        function showFeedback() {
+            const questionData = quizData[currentQuestion];
+            const selectedOption = userAnswers[currentQuestion];
+
+            if (selectedOption === questionData.correct) {
+                document.getElementById('feedback').innerHTML = `
+                    <div class="correct">
+                        Correct! +1 Robux
+                        <div class="rationale">${questionData.rationale}</div>
+                    </div>
+                `;
+            } else {
+                document.getElementById('feedback').innerHTML = `
+                    <div class="incorrect">
+                        Incorrect. The correct answer is: ${questionData.options[questionData.correct]}
+                        <div class="rationale">${questionData.rationale}</div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('feedback').style.display = 'block';
+        }
+
+        // Function to show results
+        function showResults() {
+            // Calculate final score and wrong answers
+            wrongAnswers = [];
+            for (let i = 0; i < quizData.length; i++) {
+                if (userAnswers[i] !== quizData[i].correct) {
+                    wrongAnswers.push({
+                        question: quizData[i].question,
+                        userAnswer: userAnswers[i] !== null ? quizData[i].options[userAnswers[i]] : "Not answered",
+                        correctAnswer: quizData[i].options[quizData[i].correct],
+                        rationale: quizData[i].rationale
+                    });
+                }
+            }
+
+            // Show results
+            const resultsElement = document.getElementById('results');
+            resultsElement.innerHTML = `
+                <div class="score-display"> Quest Complete! </div>
+                <div class="score-display">You earned ${score} out of ${quizData.length} Robux!</div>
+            `;
+
+            // Show badge based on score
+            if (score >= 4) {
+                resultsElement.innerHTML += `<div class="score-display"> Math Master Badge Unlocked! </div>`;
+            } else if (score >= 3) {
+                resultsElement.innerHTML += `<div class="score-display"> Math Adventurer Badge Unlocked! </div>`;
+            } else if (score >= 2) {
+                resultsElement.innerHTML += `<div class="score-display"> Math Explorer Badge Unlocked! </div>`;
+            }
+
+            // Show wrong answers summary if any
+            if (wrongAnswers.length > 0) {
+                resultsElement.innerHTML += `
+                    <h3 style="color: #ffcc00; text-align: center;">Areas to Improve:</h3>
+                    <div id="wrong-answers-summary"></div>
+                `;
+
+                const wrongAnswersSummary = document.getElementById('wrong-answers-summary');
+                wrongAnswers.forEach((wrong, index) => {
+                    wrongAnswersSummary.innerHTML += `
+                        <div class="wrong-answer">
+                            <p><strong>Question:</strong> ${wrong.question}</p>
+                            <p><strong>Your Answer:</strong> ${wrong.userAnswer}</p>
+                            <p><strong>Correct Answer:</strong> ${wrong.correctAnswer}</p>
+                            <p><strong>Explanation:</strong> ${wrong.rationale}</p>
+                        </div>
+                    `;
+                });
+            } else {
+                resultsElement.innerHTML += `
+                    <div style="text-align: center; padding: 20px;">
+                        <h3>Perfect! You mastered all challenges! </h3>
+                        <p>You're ready for more advanced math quests!</p>
+                    </div>
+                `;
+            }
+
+            resultsElement.style.display = 'block';
+
+            // Hide quiz and show results
+            document.getElementById('quiz').style.display = 'none';
+            document.getElementById('prev').style.display = 'none';
             document.getElementById('next').style.display = 'none';
-            document.getElementById('submit').style.display = 'block';
-        } else {
-            document.getElementById('next').style.display = 'block';
             document.getElementById('submit').style.display = 'none';
+            document.querySelector('.progress-container').style.display = 'none';
+
+            // Create celebration particles
+            for (let i = 0; i < 30; i++) {
+                createParticles();
+            }
         }
-    }
 
-    // Initialize the quiz
-    window.onload = function() {
-        // Load quiz data using fetch
-        loadQuizData();
+        // Function to update button states
+        function updateButtons() {
+            document.getElementById('prev').disabled = currentQuestion === 0;
+            document.getElementById('next').disabled = currentQuestion === quizData.length - 1;
 
-        // Add event listeners to navigation buttons
-        document.getElementById('prev').addEventListener('click', () => {
-            if (currentQuestion > 0) {
-                currentQuestion--;
-                loadQuestion();
+            if (currentQuestion === quizData.length - 1) {
+                document.getElementById('next').style.display = 'none';
+                document.getElementById('submit').style.display = 'block';
+            } else {
+                document.getElementById('next').style.display = 'block';
+                document.getElementById('submit').style.display = 'none';
             }
-        });
+        }
 
-        document.getElementById('next').addEventListener('click', () => {
-            if (currentQuestion < quizData.length - 1) {
-                currentQuestion++;
-                loadQuestion();
-            }
-        });
+        // Initialize the quiz
+        window.onload = function() {
+            // Load quiz data using fetch
+            loadQuizData();
 
-        document.getElementById('submit').addEventListener('click', showResults);
-    };
-</script>
+            // Add event listeners to navigation buttons
+            document.getElementById('prev').addEventListener('click', () => {
+                if (currentQuestion > 0) {
+                    currentQuestion--;
+                    loadQuestion();
+                }
+            });
+
+            document.getElementById('next').addEventListener('click', () => {
+                if (currentQuestion < quizData.length - 1) {
+                    currentQuestion++;
+                    loadQuestion();
+                }
+            });
+
+            document.getElementById('submit').addEventListener('click', showResults);
+        };
+    </script>
 </body>
 </html>
