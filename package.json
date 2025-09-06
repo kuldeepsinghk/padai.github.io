@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "prebuild": "mkdir -p resources/public/js/generated",
+    "build": "tsc && cp -r dist/* resources/public/js/generated/",
     "watch": "tsc -w"
   },
   "keywords": [],

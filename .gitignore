@@ -27,6 +27,7 @@ package-lock.json
 
 # TypeScript compiled output
 /dist/
+resources/public/js/generated/
 
 # macOS system files
 .DS_Store
