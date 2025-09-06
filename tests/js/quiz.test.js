@@ -3,7 +3,14 @@
  */
 
 // Import the functions to test
-const { getRandomQuestions } = require('../../resources/public/js/quiz');
+const { getRandomQuestions, loadCurriculumDataFromQuizJS } = require('../../resources/public/js/quiz');
+
+// Mock the fetch API for testing
+global.fetch = jest.fn();
+
+// Setup console mocks to avoid cluttering test output
+global.console.log = jest.fn();
+global.console.error = jest.fn();
 
 describe('getRandomQuestions', () => {
   // Test that the function returns the correct number of questions
@@ -81,5 +88,89 @@ describe('getRandomQuestions', () => {
     // n > array length
     const result = getRandomQuestions(questions, 5);
     expect(result.length).toBe(2); // Should return only what's available
+  });
+});
+
+describe('loadCurriculumDataFromQuizJS', () => {
+  // Reset mocks before each test
+  beforeEach(() => {
+    fetch.mockClear();
+    console.log.mockClear();
+    console.error.mockClear();
+  });
+
+  // Test successful data loading
+  test('should load curriculum data successfully', async () => {
+    // Mock data for the test
+    const mockData = {
+      "6th": {
+        "Mathematics": ["algebra", "geometry"],
+        "Science": ["physics", "biology"]
+      },
+      "10th": {
+        "Mathematics": ["calculus", "statistics"],
+        "Science": ["chemistry", "physics"]
+      }
+    };
+
+    // Mock the fetch response
+    fetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => mockData
+    });
+
+    // Call the function
+    const result = await loadCurriculumDataFromQuizJS();
+
+    // Verify fetch was called with correct URL
+    expect(fetch).toHaveBeenCalledWith('grade-subjects.json');
+    
+    // Verify the correct data was returned
+    expect(result).toEqual(mockData);
+    
+    // Verify log was called
+    expect(console.log).toHaveBeenCalledWith('Curriculum data loaded:', mockData);
+  });
+
+  // Test failed fetch due to network error
+  test('should handle network errors', async () => {
+    // Mock a network error
+    const networkError = new Error('Network error');
+    fetch.mockRejectedValueOnce(networkError);
+
+    // Call the function and expect it to throw
+    await expect(loadCurriculumDataFromQuizJS()).rejects.toThrow('Network error');
+    
+    // Verify error was logged
+    expect(console.error).toHaveBeenCalledWith('Error loading curriculum data:', networkError);
+  });
+
+  // Test failed fetch due to bad response
+  test('should handle non-ok response', async () => {
+    // Mock a non-ok response
+    fetch.mockResolvedValueOnce({
+      ok: false,
+      status: 404,
+      statusText: 'Not Found'
+    });
+
+    // Call the function and expect it to throw
+    await expect(loadCurriculumDataFromQuizJS()).rejects.toThrow('Failed to load curriculum data');
+  });
+  
+  // Test failed JSON parsing
+  test('should handle invalid JSON response', async () => {
+    // Mock a response with invalid JSON
+    const jsonError = new Error('Invalid JSON');
+    fetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => { throw jsonError; }
+    });
+
+    // Call the function and expect it to throw
+    await expect(loadCurriculumDataFromQuizJS()).rejects.toThrow('Invalid JSON');
+    
+    // Verify error was logged
+    expect(console.error).toHaveBeenCalledWith('Error loading curriculum data:', jsonError);
   });
 });

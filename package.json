@@ -8,12 +8,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^30.1.2"
+    "jest": "^30.1.2",
+    "typescript": "^5.3.3"
   }
 }

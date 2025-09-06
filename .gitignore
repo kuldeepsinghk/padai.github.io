@@ -25,6 +25,9 @@ resources/public/js/elm.js
 node_modules/
 package-lock.json
 
+# TypeScript compiled output
+/dist/
+
 # macOS system files
 .DS_Store
 .AppleDouble

@@ -76,34 +76,6 @@
         // Initialize curriculum data
         let curriculumData = {};
         
-        // Function to load curriculum data
-        async function loadCurriculumData() {
-            try {
-                const response = await fetch('grade-subjects.json');
-                if (!response.ok) {
-                    throw new Error('Failed to load curriculum data');
-                }
-                curriculumData = await response.json();
-                console.log('Curriculum data loaded:', curriculumData);
-                
-                // Initialize the class dropdown options now that we have the data
-                const classSelect = document.getElementById('class-select');
-                classSelect.innerHTML = '<option value="">-- Select Class --</option>';
-                
-                // Add class options based on the loaded data
-                Object.keys(curriculumData).forEach(className => {
-                    const option = document.createElement('option');
-                    option.value = className;
-                    option.textContent = `${className} Class`;
-                    classSelect.appendChild(option);
-                });
-                
-            } catch (error) {
-                console.error('Error loading curriculum data:', error);
-                alert('Failed to load curriculum data. Please refresh the page and try again.');
-            }
-        }
-        
         // Function to populate subject dropdown based on selected class
         function populateSubjects() {
             const classSelect = document.getElementById('class-select');
@@ -484,8 +456,24 @@
 
         // Initialize the quiz
         document.addEventListener('DOMContentLoaded', async function() {
-            // Load curriculum data first
-            await loadCurriculumData();
+            // Load curriculum data first using the external function
+            try {
+                curriculumData = await loadCurriculumDataFromQuizJS();
+                
+                // Initialize the class dropdown options now that we have the data
+                const classSelect = document.getElementById('class-select');
+                classSelect.innerHTML = '<option value="">-- Select Class --</option>';
+                
+                // Add class options based on the loaded data
+                Object.keys(curriculumData).forEach(className => {
+                    const option = document.createElement('option');
+                    option.value = className;
+                    option.textContent = `${className} Class`;
+                    classSelect.appendChild(option);
+                });
+            } catch (error) {
+                alert('Failed to load curriculum data. Please refresh the page and try again.');
+            }
             
             // Initially hide quiz and control elements
             document.getElementById('quiz').style.display = 'none';
