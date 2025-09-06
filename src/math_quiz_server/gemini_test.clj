@@ -41,7 +41,7 @@
       (do
         (println "Reading existing questions from" (.getAbsolutePath file))
         (with-open [reader (io/reader file)]
-          (json/parse-stream reader true)))
+          (doall (json/parse-stream reader true))))
       (do
         (println "File does not exist yet:" (.getAbsolutePath file))
         []))
