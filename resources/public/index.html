@@ -34,8 +34,6 @@
                     <label for="class-select">Select Class:</label>
                     <select id="class-select">
                         <option value="">-- Select Class --</option>
-                        <option value="6th">6th Class</option>
-                        <option value="10th">10th Class</option>
                     </select>
                 </div>
                 <div class="flex-item">
@@ -73,17 +71,46 @@
         let quizData = [];
         let quizStarted = false;
         
+        // Initialize subjects mapping
+        let subjectsByClass = {};
+        
         // Function to get random questions from an array
         function getRandomQuestions(questions, count) {
             const shuffled = [...questions].sort(() => 0.5 - Math.random());
             return shuffled.slice(0, count);
         }
         
-        // Subject mapping based on class
-        const subjectsByClass = {
-            '6th': ['Math', 'Science'],
-            '10th': ['Math', 'Physics', 'Chemistry', 'Biology']
-        };
+        // Function to load grade-subject mapping
+        async function loadGradeSubjectMapping() {
+            try {
+                const response = await fetch('grade-subjects.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load grade-subject mapping');
+                }
+                subjectsByClass = await response.json();
+                console.log('Grade-subject mapping loaded:', subjectsByClass);
+                
+                // Initialize the class dropdown options now that we have the data
+                const classSelect = document.getElementById('class-select');
+                classSelect.innerHTML = '<option value="">-- Select Class --</option>';
+                
+                // Add class options based on the loaded mapping
+                Object.keys(subjectsByClass).forEach(className => {
+                    const option = document.createElement('option');
+                    option.value = className;
+                    option.textContent = `${className} Class`;
+                    classSelect.appendChild(option);
+                });
+                
+            } catch (error) {
+                console.error('Error loading grade-subject mapping:', error);
+                // Fallback to hardcoded values in case the JSON fails to load
+                subjectsByClass = {
+                    '6th': ['Math', 'Science'],
+                    '10th': ['Math', 'Physics', 'Chemistry', 'Biology']
+                };
+            }
+        }
         
         // Function to populate subject dropdown based on selected class
         function populateSubjects() {
@@ -103,15 +130,20 @@
             const subjects = subjectsByClass[classSelect.value];
             
             // Add new options
-            subjects.forEach(subject => {
-                const option = document.createElement('option');
-                option.value = subject.toLowerCase();
-                option.textContent = subject;
-                subjectSelect.appendChild(option);
-            });
-            
-            // Enable the subject dropdown
-            subjectSelect.disabled = false;
+            if (subjects) {
+                subjects.forEach(subject => {
+                    const option = document.createElement('option');
+                    option.value = subject.toLowerCase();
+                    option.textContent = subject;
+                    subjectSelect.appendChild(option);
+                });
+                
+                // Enable the subject dropdown
+                subjectSelect.disabled = false;
+            } else {
+                console.error('No subjects found for class:', classSelect.value);
+                subjectSelect.disabled = true;
+            }
         }
         
         // Function to load quiz data using fetch
@@ -388,7 +420,10 @@
         }
 
         // Initialize the quiz
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Load grade-subject mapping first
+            await loadGradeSubjectMapping();
+            
             // Initially hide quiz and control elements
             document.getElementById('quiz').style.display = 'none';
             document.querySelector('.controls').style.display = 'none';
