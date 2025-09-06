@@ -17,9 +17,32 @@ function getRandomQuestions(questions, n) {
     return shuffled.slice(0, n);
 }
 
-// Export the function for testing environments while keeping browser compatibility
+/**
+ * Creates animated particle effects for celebrations
+ * Used when user answers questions correctly
+ */
+function createParticles() {
+    for (let i = 0; i < 10; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.width = `${Math.random() * 10 + 5}px`;
+        particle.style.height = particle.style.width;
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.bottom = '0';
+        particle.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        document.body.appendChild(particle);
+
+        // Remove particle after animation completes
+        setTimeout(() => {
+            particle.remove();
+        }, 5000);
+    }
+}
+
+// Export the functions for testing environments while keeping browser compatibility
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
     module.exports = {
-        getRandomQuestions
+        getRandomQuestions,
+        createParticles
     };
 }
