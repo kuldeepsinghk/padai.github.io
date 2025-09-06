@@ -4,8 +4,9 @@
             [clojure.java.io :as io]
             [math-quiz-server.models :as models]
             [math-quiz-server.constants :as const]))
-
-(def api-key "AIzaSyAA_FmmPaX6L86Oo1T7h6ydyfNEXFQYYU4") ; Replace with your actual API key
+(def api-key
+  (or (System/getenv "GEMINI_API_KEY")
+      (throw (Exception. "GEMINI_API_KEY environment variable not set"))))
 (def gemini-api-url "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent")
 
 (defn clean-json-text [text]
@@ -16,7 +17,7 @@
 
 (defn generate-text [topic num-questions curriculum-spec]
   (let [grade (:grade curriculum-spec)
-        prompt (str "Generate " num-questions " multiple-choice questions about " topic " for " grade "-grade students in JSON format. "
+        prompt (str "Generate " num-questions " multiple-choice questions from NCERT sllyabus about " topic " for " grade "-grade students in JSON format. "
                     "Each question should have a 'category', 'question', 'options' (an array of four strings), 'correct' (the index of the correct option), and 'rationale'. "
                     "The JSON should be an array of question objects, like this: "
                     "[{\"category\": \"" topic "\", \"question\": \"question text\", \"options\": [\"option1\", \"option2\", \"option3\", \"option4\"], \"correct\": 0, \"rationale\": \"explanation\"}]")]
@@ -40,7 +41,7 @@
                 7) ;; Default to 7th grade if not specified
         ;; Get the curriculum for the specified grade
         curriculum-spec (const/curriculum-for-grade grade)
-        num-questions 5]
+        num-questions 50]
     
     (println "Generating questions for grade:" grade)
     
