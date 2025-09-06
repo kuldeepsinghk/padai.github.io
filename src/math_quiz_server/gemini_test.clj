@@ -4,6 +4,7 @@
             [clojure.java.io :as io]
             [math-quiz-server.models :as models]
             [math-quiz-server.constants :as const]))
+
 (def api-key
   (or (System/getenv "GEMINI_API_KEY")
       (throw (Exception. "GEMINI_API_KEY environment variable not set"))))
@@ -34,26 +35,39 @@
         (println "Error:" (.getMessage e))
         nil))))
 
+(defn read-existing-questions [file]
+  (try
+    (if (.exists file)
+      (do
+        (println "Reading existing questions from" (.getAbsolutePath file))
+        (with-open [reader (io/reader file)]
+          (json/parse-stream reader true)))
+      (do
+        (println "File does not exist yet:" (.getAbsolutePath file))
+        []))
+    (catch Exception e
+      (println "Error reading existing questions:" (.getMessage e))
+      [])))
+
 (defn -main [& args]
-  ;; Get the grade from command line args or use a default
   (let [grade (if (seq args)
                 (Integer/parseInt (first args))
                 7) ;; Default to 7th grade if not specified
         ;; Get the curriculum for the specified grade
         curriculum-spec (const/curriculum-for-grade grade)
         num-questions 50]
-    
+
     (println "Generating questions for grade:" grade)
-    
+
     ;; Process each subject separately
     (doseq [subject (:subjects curriculum-spec)]
       (let [topics (get (:subject-topics curriculum-spec) subject)
             subject-questions (atom [])
             subject-lower (clojure.string/lower-case subject)
             file (io/file (str "resources/public/quiz-data-" grade "th-" subject-lower ".json"))]
-        
+
         (println "Processing subject:" subject)
-        
+
         ;; Generate questions for all topics in this subject
         (doseq [topic topics]
           (println (str "Generating questions for topic: " topic " in subject: " subject))
@@ -66,13 +80,23 @@
                 (swap! subject-questions concat questions))
               (catch Exception e
                 (println "Error parsing JSON for topic" topic ":" (.getMessage e))))))
-        
+
         ;; Print status for this subject
         (println "Total questions collected for" subject ":" (count @subject-questions))
-        
+
         ;; Write subject-specific questions to their own file
         (when (seq @subject-questions)
           (println "Writing" (count @subject-questions) "questions for" subject "to file" (.getName file))
-          (with-open [writer (io/writer file)]
-            (json/generate-stream @subject-questions writer))
-          (println "Done writing" subject "questions to" (.getAbsolutePath file)))))))
+
+          ;; Read existing questions if file exists
+          (let [existing-questions (read-existing-questions file)
+                combined-questions (concat existing-questions @subject-questions)]
+
+            (println "Found" (count existing-questions) "existing questions")
+            (println "Total questions after merge:" (count combined-questions))
+
+            ;; Write combined questions back to the file
+            (with-open [writer (io/writer file)]
+              (json/generate-stream combined-questions writer))
+
+            (println "Done writing" (count combined-questions) "questions to" (.getAbsolutePath file))))))))

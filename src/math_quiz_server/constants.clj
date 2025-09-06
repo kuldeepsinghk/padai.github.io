@@ -13,9 +13,9 @@
    
    ;; 10th grade topics
    10 {
-       "Math" ["Real Numbers" "Polynomials" ]
+;;        "Math" ["Real Numbers" "Polynomials" ]
 ;;        "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World" "Electricity" "Magnetic Effects of Electric Current"]
-       "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World"]
+;;        "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World"]
 ;;        "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts" "Metals and Non-metals" "Carbon and Its Compounds"]
        "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts"]
 ;;        "biology" ["Life Processes" "Control and Coordination" "How Do Organisms Reproduce" "Heredity and Evolution" "Our Environment"]

@@ -1,1 +1,1178 @@
-[{"category":"Chemical Reactions and Equations","question":"Which of the following is a chemical reaction?","options":["Melting of ice","Rusting of iron","Dissolving sugar in water","Boiling of water"],"correct":1,"rationale":"Rusting of iron involves the formation of a new substance (iron oxide) through a chemical change, while the others are physical changes."},{"category":"Chemical Reactions and Equations","question":"A balanced chemical equation has equal number of atoms of all elements on:","options":["Reactant side only","Product side only","Both reactant and product sides","Neither reactant nor product sides"],"correct":2,"rationale":"A balanced chemical equation follows the law of conservation of mass, which states that matter cannot be created or destroyed in a chemical reaction."},{"category":"Chemical Reactions and Equations","question":"Which of the following is an example of a decomposition reaction?","options":["N2 + 3H2 → 2NH3","2H2O → 2H2 + O2","NaOH + HCl → NaCl + H2O","C + O2 → CO2"],"correct":1,"rationale":"A decomposition reaction involves the breakdown of a single reactant into two or more products."},{"category":"Chemical Reactions and Equations","question":"In the reaction CuO + H2 → Cu + H2O, which substance is being reduced?","options":["CuO","H2","Cu","H2O"],"correct":0,"rationale":"CuO is being reduced because it is losing oxygen. Reduction is the gain of electrons or loss of oxygen."},{"category":"Chemical Reactions and Equations","question":"Which gas is evolved when zinc reacts with dilute hydrochloric acid?","options":["Oxygen","Hydrogen","Carbon dioxide","Nitrogen"],"correct":1,"rationale":"Zinc reacts with dilute hydrochloric acid to produce zinc chloride and hydrogen gas."},{"category":"Chemical Reactions and Equations","question":"What type of reaction is represented by: A + BC → AC + B?","options":["Combination reaction","Decomposition reaction","Displacement reaction","Double displacement reaction"],"correct":2,"rationale":"This represents a displacement reaction where A displaces B from BC."},{"category":"Chemical Reactions and Equations","question":"Which of the following is an example of a redox reaction?","options":["NaOH + HCl → NaCl + H2O","CaCO3 → CaO + CO2","2Mg + O2 → 2MgO","BaCl2 + Na2SO4 → BaSO4 + 2NaCl"],"correct":2,"rationale":"In the reaction 2Mg + O2 → 2MgO, Magnesium is oxidized (loses electrons) and Oxygen is reduced (gains electrons)."},{"category":"Chemical Reactions and Equations","question":"What is the chemical formula of rust?","options":["Fe2O3","Fe2O3.xH2O","FeO","Fe(OH)2"],"correct":1,"rationale":"Rust is hydrated iron(III) oxide, represented by Fe2O3.xH2O, where x is the number of water molecules."},{"category":"Chemical Reactions and Equations","question":"Which of the following helps in preventing rancidity?","options":["Oxidation","Reduction","Adding antioxidants","Adding catalysts"],"correct":2,"rationale":"Antioxidants prevent oxidation, which is the primary cause of rancidity in food containing fats and oils."},{"category":"Chemical Reactions and Equations","question":"What is the name of the substance formed when carbon dioxide is passed through lime water?","options":["Calcium hydroxide","Calcium carbonate","Calcium oxide","Calcium chloride"],"correct":1,"rationale":"Carbon dioxide reacts with lime water (calcium hydroxide) to form calcium carbonate, which makes the lime water milky."},{"category":"Chemical Reactions and Equations","question":"Which of the following is an endothermic reaction?","options":["Burning of fuel","Respiration","Neutralization reaction","Melting of ice"],"correct":3,"rationale":"Melting of ice requires absorption of heat from the surroundings, making it an endothermic reaction."},{"category":"Chemical Reactions and Equations","question":"What is the coefficient of O2 when C3H8 is burned completely?","options":["3","4","5","6"],"correct":2,"rationale":"The balanced equation is C3H8 + 5O2 -> 3CO2 + 4H2O, so the coefficient of O2 is 5."},{"category":"Chemical Reactions and Equations","question":"Which of the following is a precipitation reaction?","options":["Acid-base reaction","Combustion reaction","Reaction that forms an insoluble salt","Decomposition reaction"],"correct":3,"rationale":"A precipitation reaction is a type of double displacement reaction where two soluble salts react to form an insoluble salt (a precipitate)."},{"category":"Chemical Reactions and Equations","question":"What is the purpose of balancing chemical equations?","options":["To satisfy the law of conservation of energy","To satisfy the law of conservation of mass","To make the reaction faster","To increase the yield of the products"],"correct":1,"rationale":"Balancing ensures that the number of atoms of each element is the same on both sides, fulfilling the law of conservation of mass."},{"category":"Chemical Reactions and Equations","question":"Which of the following metals is most reactive?","options":["Copper","Iron","Magnesium","Silver"],"correct":2,"rationale":"Magnesium is more reactive than copper, iron, and silver based on the reactivity series of metals."},{"category":"Chemical Reactions and Equations","question":"What does the symbol (aq) represent in a chemical equation?","options":["Solid","Liquid","Gas","Aqueous solution"],"correct":3,"rationale":"(aq) indicates that the substance is dissolved in water."},{"category":"Chemical Reactions and Equations","question":"What is the role of a catalyst in a chemical reaction?","options":["To increase the amount of products formed","To decrease the amount of products formed","To speed up or slow down the reaction rate","To shift the equilibrium towards reactants"],"correct":2,"rationale":"A catalyst alters the rate of a chemical reaction without being consumed in the process. It usually speeds up the reaction."},{"category":"Chemical Reactions and Equations","question":"Which of the following is a combination reaction?","options":["2KCl → 2K + Cl2","H2 + Cl2 → 2HCl","AgNO3 + NaCl → AgCl + NaNO3","Zn + H2SO4 → ZnSO4 + H2"],"correct":1,"rationale":"A combination reaction involves two or more reactants combining to form a single product."},{"category":"Chemical Reactions and Equations","question":"What is the oxidation state of oxygen in O2?","options":["-2","+2","0","-1"],"correct":2,"rationale":"The oxidation state of an element in its elemental form is always 0."},{"category":"Chemical Reactions and Equations","question":"Which process is responsible for the black coating on silver articles?","options":["Corrosion","Rancidity","Sublimation","Evaporation"],"correct":0,"rationale":"Corrosion is the process where a metal is gradually destroyed by chemical reactions with its environment, leading to coatings like silver sulfide on silver."},{"category":"Chemical Reactions and Equations","question":"What type of reaction is burning of natural gas?","options":["Combination","Decomposition","Displacement","Combustion"],"correct":3,"rationale":"Burning of natural gas (methane) is a combustion reaction, where it reacts rapidly with oxygen to produce heat and light."},{"category":"Chemical Reactions and Equations","question":"Which of the following is NOT a physical change?","options":["Dissolving salt in water","Melting wax","Digestion of food","Freezing water"],"correct":2,"rationale":"Digestion of food involves chemical reactions that break down complex molecules into simpler ones, so it's a chemical change."},{"category":"Chemical Reactions and Equations","question":"In the reaction Pb + CuCl2 -> PbCl2 + Cu, which element is being oxidized?","options":["Pb","Cu","Cl","None"],"correct":0,"rationale":"Lead (Pb) is losing electrons and its oxidation state is increasing, therefore it is being oxidized."},{"category":"Chemical Reactions and Equations","question":"Which of the following is a double displacement reaction?","options":["A + B -> AB","AB -> A + B","A + BC -> AC + B","AB + CD -> AD + CB"],"correct":3,"rationale":"A double displacement reaction involves the exchange of ions between two reactants."},{"category":"Chemical Reactions and Equations","question":"Why are food packages flushed with nitrogen gas?","options":["To increase the taste","To prevent oxidation","To increase the moisture","To decrease the moisture"],"correct":1,"rationale":"Nitrogen gas is an inert gas, used to prevent oxidation of food substances which cause rancidity."},{"category":"Chemical Reactions and Equations","question":"Which of the following is an example of a thermal decomposition reaction?","options":["Burning of coal","Electrolysis of water","Heating of lead nitrate","Reaction of acid and base"],"correct":2,"rationale":"Heating lead nitrate results in its decomposition into lead oxide, nitrogen dioxide, and oxygen gas. This reaction is initiated by heat."},{"category":"Chemical Reactions and Equations","question":"The process of coating iron with zinc to prevent rusting is called:","options":["Painting","Galvanization","Electroplating","Annealing"],"correct":1,"rationale":"Galvanization is the process of coating iron with zinc to protect it from corrosion."},{"category":"Chemical Reactions and Equations","question":"What is the chemical formula for quicklime?","options":["CaCO3","CaO","Ca(OH)2","CaCl2"],"correct":1,"rationale":"Quicklime is calcium oxide, and its chemical formula is CaO."},{"category":"Chemical Reactions and Equations","question":"What is formed when slaked lime reacts with chlorine?","options":["Bleaching powder","Washing soda","Baking soda","Plaster of Paris"],"correct":0,"rationale":"Slaked lime (calcium hydroxide) reacts with chlorine to produce bleaching powder (calcium oxychloride)."},{"category":"Chemical Reactions and Equations","question":"A substance that oxidizes itself and reduces other is called?","options":["Oxidizing agent","Reducing agent","Catalyst","Inhibitor"],"correct":1,"rationale":"A reducing agent loses electrons (oxidizes itself) and causes the reduction of another substance."},{"category":"Chemical Reactions and Equations","question":"Which of the following is required for corrosion to occur?","options":["Only air","Only water","Air and water","Only acid"],"correct":2,"rationale":"Corrosion typically requires both oxygen (from air) and moisture (water) to occur."},{"category":"Chemical Reactions and Equations","question":"What does a plus sign (+) indicate in a chemical equation?","options":["Reacts with","Forms","Reversible reaction","Catalyst"],"correct":0,"rationale":"A plus sign (+) in a chemical equation indicates that the substances listed are reacting together."},{"category":"Chemical Reactions and Equations","question":"Which of the following is used to slow down the rate of a chemical reaction?","options":["Catalyst","Inhibitor","Promoter","Electrolyte"],"correct":1,"rationale":"Inhibitors are substances that slow down or prevent chemical reactions from occurring."},{"category":"Chemical Reactions and Equations","question":"The process of obtaining oxygen from potassium chlorate is an example of:","options":["Combination reaction","Decomposition reaction","Displacement reaction","Redox reaction"],"correct":1,"rationale":"Potassium chlorate decomposes upon heating to give potassium chloride and oxygen. This is a decomposition reaction as a single substance breaks down into two or more."},{"category":"Chemical Reactions and Equations","question":"Which of the following statements is true regarding exothermic reactions?","options":["They absorb energy","They release energy","They require a catalyst","They are always slow"],"correct":1,"rationale":"Exothermic reactions release energy in the form of heat, light, or sound."},{"category":"Chemical Reactions and Equations","question":"What is the role of oxygen in combustion reactions?","options":["To act as a catalyst","To provide heat","To support burning","To cool down the reaction"],"correct":2,"rationale":"Oxygen is a crucial reactant in combustion, acting as an oxidizing agent and supporting the burning process."},{"category":"Chemical Reactions and Equations","question":"What is the chemical formula of baking soda?","options":["NaOH","Na2CO3","NaHCO3","Ca(OH)2"],"correct":2,"rationale":"Baking soda is sodium bicarbonate, and its chemical formula is NaHCO3."},{"category":"Chemical Reactions and Equations","question":"Which of the following factors does NOT affect the rate of a chemical reaction?","options":["Temperature","Concentration of reactants","Presence of a catalyst","Color of the reactants"],"correct":3,"rationale":"Color does not generally influence the rate of a chemical reaction; factors like temperature, concentration, and catalysts have a direct impact."},{"category":"Chemical Reactions and Equations","question":"What type of reaction involves the transfer of electrons?","options":["Neutralization reaction","Precipitation reaction","Redox reaction","Decomposition reaction"],"correct":2,"rationale":"Redox reactions involve both oxidation (loss of electrons) and reduction (gain of electrons)."},{"category":"Chemical Reactions and Equations","question":"The reaction between an acid and a base is called:","options":["Oxidation","Reduction","Neutralization","Combustion"],"correct":2,"rationale":"The reaction between an acid and a base to form salt and water is called neutralization."},{"category":"Chemical Reactions and Equations","question":"Which of the following represents a displacement reaction?","options":["2H2 + O2 -> 2H2O","CaCO3 -> CaO + CO2","Zn + CuSO4 -> ZnSO4 + Cu","NaOH + HCl -> NaCl + H2O"],"correct":2,"rationale":"Zinc (Zn) displaces copper (Cu) from copper sulfate (CuSO4) in this reaction."},{"category":"Chemical Reactions and Equations","question":"What is the name given to the insoluble solid formed in a precipitation reaction?","options":["Solute","Solvent","Precipitate","Residue"],"correct":3,"rationale":"The insoluble solid formed in a precipitation reaction is called the residue."},{"category":"Chemical Reactions and Equations","question":"Which of these is an example of an exothermic reaction?","options":["Photosynthesis","Melting of ice","Respiration","Electrolysis"],"correct":2,"rationale":"Respiration breaks down glucose to release energy, making it an exothermic process."},{"category":"Chemical Reactions and Equations","question":"What gas is released during the decomposition of calcium carbonate?","options":["Hydrogen","Oxygen","Carbon dioxide","Nitrogen"],"correct":2,"rationale":"Calcium carbonate decomposes to form calcium oxide and carbon dioxide gas."},{"category":"Chemical Reactions and Equations","question":"What is the general formula for a metal oxide?","options":["MOH","MCO3","MO","MSO4"],"correct":2,"rationale":"Metal oxide is a compound containing a metal and oxygen. Therefore, the general formula is MO where 'M' is the metal."},{"category":"Chemical Reactions and Equations","question":"Which of the following is the correct balanced equation for the burning of methane (CH4)?","options":["CH4 + O2 -> CO2 + H2O","CH4 + 2O2 -> CO2 + 2H2O","2CH4 + O2 -> 2CO2 + 4H2O","CH4 + 3O2 -> CO2 + 3H2O"],"correct":1,"rationale":"In the balanced equation, the number of atoms of each element is the same on both sides of the arrow."},{"category":"Chemical Reactions and Equations","question":"Which of the following reactions is used in black and white photography?","options":["Combination","Decomposition","Displacement","Double Displacement"],"correct":1,"rationale":"Decomposition reactions using light (photodecomposition) are used in black and white photography."},{"category":"Chemical Reactions and Equations","question":"What is the color of copper sulfate solution?","options":["Green","Blue","Yellow","Colorless"],"correct":1,"rationale":"Copper sulfate solution is typically blue in color."},{"category":"Chemical Reactions and Equations","question":"What is the product formed when iron reacts with steam?","options":["FeO","Fe2O3","Fe3O4","Fe(OH)2"],"correct":3,"rationale":"Iron reacts with steam to produce iron(II,III) oxide (Fe3O4) and hydrogen gas."},{"category":"Acids, Bases, and Salts","question":"Which of the following is a strong acid?","options":["CH3COOH","H2CO3","HCl","H2S"],"correct":2,"rationale":"HCl (Hydrochloric acid) is a strong acid, which completely dissociates in water. The others are weak acids."},{"category":"Acids, Bases, and Salts","question":"What is the pH of a neutral solution?","options":["0","7","14","Between 0 and 7"],"correct":1,"rationale":"A neutral solution has a pH of 7, indicating equal concentrations of H+ and OH- ions."},{"category":"Acids, Bases, and Salts","question":"Which indicator turns red in acidic solution?","options":["Methyl orange","Phenolphthalein","Litmus","All of the above"],"correct":3,"rationale":"Methyl orange turns red in acidic solutions, litmus paper turns red, and some forms of universal indicator will display red tones."},{"category":"Acids, Bases, and Salts","question":"What is the chemical formula of baking soda?","options":["NaOH","NaHCO3","Na2CO3","Ca(OH)2"],"correct":1,"rationale":"Baking soda is sodium bicarbonate, which has the chemical formula NaHCO3."},{"category":"Acids, Bases, and Salts","question":"Which of the following oxides is acidic in nature?","options":["Na2O","MgO","Al2O3","SO2"],"correct":3,"rationale":"Sulfur dioxide (SO2) is a non-metal oxide that forms an acidic solution when dissolved in water."},{"category":"Acids, Bases, and Salts","question":"What is the process of adding water to a concentrated acid or base called?","options":["Neutralization","Hydration","Dilution","Titration"],"correct":2,"rationale":"Adding water to a concentrated acid or base reduces its concentration, which is called dilution. It's an exothermic reaction and should be done carefully."},{"category":"Acids, Bases, and Salts","question":"Which of the following is an example of a base?","options":["HCl","H2SO4","KOH","HNO3"],"correct":2,"rationale":"KOH (Potassium hydroxide) is a base because it produces hydroxide ions (OH-) in solution."},{"category":"Acids, Bases, and Salts","question":"What is the salt formed when hydrochloric acid reacts with sodium hydroxide?","options":["KCl","NaCl","Na2SO4","CaCl2"],"correct":1,"rationale":"The reaction between HCl and NaOH forms sodium chloride (NaCl), which is common salt, and water."},{"category":"Acids, Bases, and Salts","question":"Which gas is evolved when an acid reacts with a metal?","options":["Oxygen","Carbon dioxide","Hydrogen","Nitrogen"],"correct":2,"rationale":"Acids react with metals to produce a metal salt and hydrogen gas."},{"category":"Acids, Bases, and Salts","question":"What is the chemical formula of washing soda?","options":["NaHCO3","Na2CO3.10H2O","NaOH","Ca(OH)2"],"correct":1,"rationale":"Washing soda is sodium carbonate decahydrate, which has the chemical formula Na2CO3.10H2O."},{"category":"Acids, Bases, and Salts","question":"The pH of gastric juice in our stomach is approximately:","options":["7","2","9","14"],"correct":1,"rationale":"Gastric juice contains hydrochloric acid (HCl), making it highly acidic with a pH around 2."},{"category":"Acids, Bases, and Salts","question":"What type of reaction occurs when an acid reacts with a base?","options":["Oxidation","Reduction","Neutralization","Precipitation"],"correct":2,"rationale":"The reaction between an acid and a base is called neutralization, forming salt and water."},{"category":"Acids, Bases, and Salts","question":"Which of the following is a weak base?","options":["NaOH","KOH","NH4OH","Ca(OH)2"],"correct":2,"rationale":"Ammonium hydroxide (NH4OH) is a weak base because it only partially dissociates in water."},{"category":"Acids, Bases, and Salts","question":"What is the common name for calcium oxide (CaO)?","options":["Baking soda","Washing soda","Quicklime","Slaked lime"],"correct":2,"rationale":"Calcium oxide (CaO) is commonly known as quicklime."},{"category":"Acids, Bases, and Salts","question":"Which of the following is an antacid?","options":["HCl","NaOH","Mg(OH)2","H2SO4"],"correct":2,"rationale":"Magnesium hydroxide (Mg(OH)2) is a base used as an antacid to neutralize excess stomach acid."},{"category":"Acids, Bases, and Salts","question":"What is the process of titrating a solution used for?","options":["Measuring pH","Determining the concentration of a solution","Identifying the solution","Changing the color of the solution"],"correct":1,"rationale":"Titration is a quantitative chemical analysis used to determine the concentration of a substance by reacting it with a solution of known concentration."},{"category":"Acids, Bases, and Salts","question":"What is the pH of a solution that has a high concentration of hydroxide ions (OH-)?","options":["Less than 7","Equal to 7","Greater than 7","Equal to 0"],"correct":2,"rationale":"A solution with a high concentration of hydroxide ions is basic and has a pH greater than 7."},{"category":"Acids, Bases, and Salts","question":"Which of the following is used to test for the presence of carbon dioxide?","options":["Red litmus paper","Blue litmus paper","Lime water","Phenolphthalein"],"correct":2,"rationale":"Carbon dioxide turns lime water milky (calcium carbonate precipitate)."},{"category":"Acids, Bases, and Salts","question":"What is the chemical formula of plaster of Paris?","options":["CaSO4","CaSO4.2H2O","CaSO4.1/2H2O","CaCO3"],"correct":2,"rationale":"Plaster of Paris is calcium sulfate hemihydrate, with the chemical formula CaSO4.1/2H2O."},{"category":"Acids, Bases, and Salts","question":"Which of the following is a property of acids?","options":["Bitter taste","Soapy feel","Turns blue litmus red","Turns red litmus blue"],"correct":2,"rationale":"Acids have a sour taste and turn blue litmus paper red."},{"category":"Acids, Bases, and Salts","question":"What is the role of water in dissociation of acids and bases?","options":["Catalyst","Solvent for reaction","Provides H+ or OH- ions","All of the above"],"correct":3,"rationale":"Water acts as a solvent, facilitates the dissociation by hydrating ions, and accepts H+ ions from acids to form hydronium ions (H3O+)."},{"category":"Acids, Bases, and Salts","question":"What happens when dilute acid is added to a metal carbonate?","options":["Hydrogen gas is evolved","Carbon dioxide gas is evolved","No reaction occurs","Oxygen gas is evolved"],"correct":1,"rationale":"Metal carbonates react with dilute acids to produce a salt, carbon dioxide gas, and water."},{"category":"Acids, Bases, and Salts","question":"Why is tooth enamel corroded when pH is low in the mouth?","options":["Due to presence of acid","Due to the presence of base","Due to the presence of salt","Due to the presence of sugar"],"correct":0,"rationale":"Tooth enamel (calcium phosphate) is corroded by acids, which are formed by bacteria acting on sugars present in the mouth."},{"category":"Acids, Bases, and Salts","question":"Which of the following is used for bleaching cotton and linen in the textile industry?","options":["Baking soda","Washing soda","Bleaching powder","Plaster of Paris"],"correct":2,"rationale":"Bleaching powder (calcium oxychloride, CaOCl2) is used for bleaching cotton and linen due to its oxidizing properties."},{"category":"Acids, Bases, and Salts","question":"Which acid is present in tomato?","options":["Acetic acid","Citric acid","Oxalic acid","Tartaric acid"],"correct":2,"rationale":"Tomatoes contain oxalic acid, which contributes to their slightly sour taste."},{"category":"Acids, Bases, and Salts","question":"What is 'aqua regia'?","options":["Dilute sulfuric acid","A mixture of hydrochloric acid and nitric acid","Concentrated nitric acid","Concentrated sulfuric acid"],"correct":1,"rationale":"Aqua regia is a highly corrosive mixture of concentrated nitric acid and hydrochloric acid, optimally in a molar ratio of 1:3. It is used to dissolve noble metals like gold and platinum."},{"category":"Acids, Bases, and Salts","question":"What is the function of olfactory indicators?","options":["To indicate the presence of acid","To indicate the presence of base","To indicate acidity or basicity through change in smell","To indicate neutrality"],"correct":3,"rationale":"Olfactory indicators change their smell when added to an acidic or basic solution, allowing us to identify the nature of the solution."},{"category":"Acids, Bases, and Salts","question":"Which one of the following can be used as an acid-base indicator by a visually impaired student?","options":["Litmus","Turmeric","Phenolphthalein","Vanilla essence"],"correct":3,"rationale":"Vanilla essence can be used as an olfactory indicator. Its smell changes in acidic or basic medium allowing visually imparied to identify the nature of the solution."},{"category":"Acids, Bases, and Salts","question":"A solution turns red litmus blue, its pH is likely to be","options":["1","4","5","10"],"correct":3,"rationale":"A solution that turns red litmus blue is basic in nature, and its pH should be greater than 7. Out of the given options only 10 is greater than 7."},{"category":"Acids, Bases, and Salts","question":"Curd contains _______ acid.","options":["Lactic","Citric","Acetic","Oxalic"],"correct":0,"rationale":"Curd contains Lactic acid, which gives it a sour taste."},{"category":"Acids, Bases, and Salts","question":"Which acid is used in car batteries?","options":["Hydrochloric acid","Nitric acid","Sulfuric acid","Acetic acid"],"correct":2,"rationale":"Sulfuric acid is used as an electrolyte in lead-acid batteries in cars."},{"category":"Acids, Bases, and Salts","question":"What is the chemical name of Gypsum?","options":["Calcium Sulfate Hemihydrate","Calcium Carbonate","Calcium Sulfate Dihydrate","Magnesium Hydroxide"],"correct":2,"rationale":"Gypsum is Calcium Sulfate Dihydrate. Its formula is CaSO4.2H2O."},{"category":"Acids, Bases, and Salts","question":"The strength of an acid or a base can be measured by using a scale called:","options":["Volumetric Scale","pH scale","Richter scale","Mohs scale"],"correct":1,"rationale":"The pH scale is used to measure the acidity or basicity of a solution. It ranges from 0 to 14."},{"category":"Acids, Bases, and Salts","question":"Which of the following is used to cure indigestion?","options":["Sodium Chloride","Magnesium Hydroxide","Potassium Hydroxide","Hydrochloric Acid"],"correct":1,"rationale":"Magnesium Hydroxide (Milk of Magnesia) is a base and is used as an antacid to neutralize excess acid in the stomach."},{"category":"Acids, Bases, and Salts","question":"What is the byproduct when acids react with metal oxides?","options":["Hydrogen","Oxygen","Salt","Water"],"correct":3,"rationale":"Acids react with metal oxides to form salt and water."},{"category":"Acids, Bases, and Salts","question":"When copper oxide reacts with hydrochloric acid, the solution turns bluish-green because:","options":["Copper oxide is basic","Copper oxide is acidic","Formation of copper chloride","Formation of water"],"correct":2,"rationale":"The bluish-green color is due to the formation of copper(II) chloride (CuCl2), which is soluble in water and gives the solution this characteristic color."},{"category":"Acids, Bases, and Salts","question":"Vinegar is a solution of:","options":["Acetic acid in water","Hydrochloric acid in water","Citric acid in water","Sulfuric acid in water"],"correct":0,"rationale":"Vinegar is a solution primarily composed of acetic acid and water. It typically contains around 5-8% acetic acid."},{"category":"Acids, Bases, and Salts","question":"Which gas is liberated when acid reacts with metal?","options":["Carbon dioxide","Hydrogen","Nitrogen","Oxygen"],"correct":1,"rationale":"When an acid reacts with a metal, hydrogen gas is liberated along with the formation of a metallic salt."},{"category":"Acids, Bases, and Salts","question":"The chemical name of bleaching powder is","options":["Calcium sulfate","Calcium oxychloride","Calcium chloride","Sodium chloride"],"correct":1,"rationale":"The chemical name of bleaching powder is Calcium oxychloride. Its formula is CaOCl2."},{"category":"Acids, Bases, and Salts","question":"Which of the following salts does not contain water of crystallization?","options":["Blue vitriol","Baking soda","Washing soda","Gypsum"],"correct":1,"rationale":"Baking soda (NaHCO3) does not contain water of crystallization. Blue vitriol (CuSO4.5H2O), Washing soda (Na2CO3.10H2O), and Gypsum (CaSO4.2H2O) do."},{"category":"Acids, Bases, and Salts","question":"Brine is an aqueous solution of","options":["Sodium chloride","Sodium hydroxide","Sodium carbonate","Sodium bicarbonate"],"correct":0,"rationale":"Brine is a high-concentration solution of sodium chloride (NaCl) in water."},{"category":"Acids, Bases, and Salts","question":"Which one of the following is present in dilute aqueous solution of hydrochloric acid?","options":["Cl- and H3O+","H3O+ and OH-","Cl- and H2O","H3O+ and H2O"],"correct":0,"rationale":"In a dilute aqueous solution of hydrochloric acid, HCl ionizes to form chloride ions (Cl-) and hydronium ions (H3O+). The hydronium ion is formed when a proton (H+) from HCl combines with water (H2O)."},{"category":"Acids, Bases, and Salts","question":"The decomposition of vegetable matter into compost is an example of:","options":["Endothermic reaction","Exothermic reaction","Neutralization reaction","Displacement reaction"],"correct":1,"rationale":"The decomposition of vegetable matter into compost releases heat, making it an exothermic reaction."},{"category":"Acids, Bases, and Salts","question":"Which substance is added to plaster of Paris to set it?","options":["Water","Salt","Acid","Base"],"correct":0,"rationale":"Plaster of Paris (calcium sulfate hemihydrate) sets when water is added, forming gypsum (calcium sulfate dihydrate)."},{"category":"Acids, Bases, and Salts","question":"What is the chemical formula for carbonic acid?","options":["HCl","H2SO4","HNO3","H2CO3"],"correct":3,"rationale":"Carbonic acid has the chemical formula H2CO3. It is a weak acid formed when carbon dioxide dissolves in water."},{"category":"Acids, Bases, and Salts","question":"Which of the following solutions has the highest pH value?","options":["1M HCl","1M NaOH","1M CH3COOH","1M NaCl"],"correct":1,"rationale":"1M NaOH is a strong base and will therefore have the highest pH value compared to the other options which are an acid, weak acid, and salt respectively."},{"category":"Acids, Bases, and Salts","question":"What happens to the pH of the solution when an acid is diluted with water?","options":["Increases","Decreases","Remains the same","Becomes neutral"],"correct":0,"rationale":"When an acid is diluted with water, the concentration of hydrogen ions (H+) decreases, leading to an increase in the pH value, moving it closer to neutral (pH 7)."},{"category":"Acids, Bases, and Salts","question":"Which of the following is NOT a property of bases?","options":["Bitter taste","Soapy to touch","Turns red litmus blue","Corrosive to metals"],"correct":3,"rationale":"While strong bases can be corrosive, it's primarily acids that are known for their corrosive action on metals."},{"category":"Acids, Bases, and Salts","question":"Which type of reaction happens when acid is mixed with water?","options":["Endothermic","Exothermic","Reversible","Neutral"],"correct":1,"rationale":"Mixing a concentrated acid with water is an exothermic reaction, meaning it releases heat. This is why it's important to add acid slowly to water, not the other way around, to prevent splattering."}]
+[
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is a chemical reaction?",
+    "options": [
+      "Melting of ice",
+      "Rusting of iron",
+      "Dissolving sugar in water",
+      "Boiling of water"
+    ],
+    "correct": 1,
+    "rationale": "Rusting of iron involves the formation of a new substance (iron oxide) through a chemical change, while the others are physical changes."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "A balanced chemical equation has equal number of atoms of all elements on:",
+    "options": [
+      "Reactant side only",
+      "Product side only",
+      "Both reactant and product sides",
+      "Neither reactant nor product sides"
+    ],
+    "correct": 2,
+    "rationale": "A balanced chemical equation follows the law of conservation of mass, which states that matter cannot be created or destroyed in a chemical reaction."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is an example of a decomposition reaction?",
+    "options": [
+      "N2 + 3H2 → 2NH3",
+      "2H2O → 2H2 + O2",
+      "NaOH + HCl → NaCl + H2O",
+      "C + O2 → CO2"
+    ],
+    "correct": 1,
+    "rationale": "A decomposition reaction involves the breakdown of a single reactant into two or more products."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "In the reaction CuO + H2 → Cu + H2O, which substance is being reduced?",
+    "options": [
+      "CuO",
+      "H2",
+      "Cu",
+      "H2O"
+    ],
+    "correct": 0,
+    "rationale": "CuO is being reduced because it is losing oxygen. Reduction is the gain of electrons or loss of oxygen."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which gas is evolved when zinc reacts with dilute hydrochloric acid?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correct": 1,
+    "rationale": "Zinc reacts with dilute hydrochloric acid to produce zinc chloride and hydrogen gas."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What type of reaction is represented by: A + BC → AC + B?",
+    "options": [
+      "Combination reaction",
+      "Decomposition reaction",
+      "Displacement reaction",
+      "Double displacement reaction"
+    ],
+    "correct": 2,
+    "rationale": "This represents a displacement reaction where A displaces B from BC."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is an example of a redox reaction?",
+    "options": [
+      "NaOH + HCl → NaCl + H2O",
+      "CaCO3 → CaO + CO2",
+      "2Mg + O2 → 2MgO",
+      "BaCl2 + Na2SO4 → BaSO4 + 2NaCl"
+    ],
+    "correct": 2,
+    "rationale": "In the reaction 2Mg + O2 → 2MgO, Magnesium is oxidized (loses electrons) and Oxygen is reduced (gains electrons)."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the chemical formula of rust?",
+    "options": [
+      "Fe2O3",
+      "Fe2O3.xH2O",
+      "FeO",
+      "Fe(OH)2"
+    ],
+    "correct": 1,
+    "rationale": "Rust is hydrated iron(III) oxide, represented by Fe2O3.xH2O, where x is the number of water molecules."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following helps in preventing rancidity?",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Adding antioxidants",
+      "Adding catalysts"
+    ],
+    "correct": 2,
+    "rationale": "Antioxidants prevent oxidation, which is the primary cause of rancidity in food containing fats and oils."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the name of the substance formed when carbon dioxide is passed through lime water?",
+    "options": [
+      "Calcium hydroxide",
+      "Calcium carbonate",
+      "Calcium oxide",
+      "Calcium chloride"
+    ],
+    "correct": 1,
+    "rationale": "Carbon dioxide reacts with lime water (calcium hydroxide) to form calcium carbonate, which makes the lime water milky."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is an endothermic reaction?",
+    "options": [
+      "Burning of fuel",
+      "Respiration",
+      "Neutralization reaction",
+      "Melting of ice"
+    ],
+    "correct": 3,
+    "rationale": "Melting of ice requires absorption of heat from the surroundings, making it an endothermic reaction."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the coefficient of O2 when C3H8 is burned completely?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 2,
+    "rationale": "The balanced equation is C3H8 + 5O2 -> 3CO2 + 4H2O, so the coefficient of O2 is 5."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is a precipitation reaction?",
+    "options": [
+      "Acid-base reaction",
+      "Combustion reaction",
+      "Reaction that forms an insoluble salt",
+      "Decomposition reaction"
+    ],
+    "correct": 3,
+    "rationale": "A precipitation reaction is a type of double displacement reaction where two soluble salts react to form an insoluble salt (a precipitate)."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the purpose of balancing chemical equations?",
+    "options": [
+      "To satisfy the law of conservation of energy",
+      "To satisfy the law of conservation of mass",
+      "To make the reaction faster",
+      "To increase the yield of the products"
+    ],
+    "correct": 1,
+    "rationale": "Balancing ensures that the number of atoms of each element is the same on both sides, fulfilling the law of conservation of mass."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following metals is most reactive?",
+    "options": [
+      "Copper",
+      "Iron",
+      "Magnesium",
+      "Silver"
+    ],
+    "correct": 2,
+    "rationale": "Magnesium is more reactive than copper, iron, and silver based on the reactivity series of metals."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What does the symbol (aq) represent in a chemical equation?",
+    "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Aqueous solution"
+    ],
+    "correct": 3,
+    "rationale": "(aq) indicates that the substance is dissolved in water."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the role of a catalyst in a chemical reaction?",
+    "options": [
+      "To increase the amount of products formed",
+      "To decrease the amount of products formed",
+      "To speed up or slow down the reaction rate",
+      "To shift the equilibrium towards reactants"
+    ],
+    "correct": 2,
+    "rationale": "A catalyst alters the rate of a chemical reaction without being consumed in the process. It usually speeds up the reaction."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is a combination reaction?",
+    "options": [
+      "2KCl → 2K + Cl2",
+      "H2 + Cl2 → 2HCl",
+      "AgNO3 + NaCl → AgCl + NaNO3",
+      "Zn + H2SO4 → ZnSO4 + H2"
+    ],
+    "correct": 1,
+    "rationale": "A combination reaction involves two or more reactants combining to form a single product."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the oxidation state of oxygen in O2?",
+    "options": [
+      "-2",
+      "+2",
+      "0",
+      "-1"
+    ],
+    "correct": 2,
+    "rationale": "The oxidation state of an element in its elemental form is always 0."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which process is responsible for the black coating on silver articles?",
+    "options": [
+      "Corrosion",
+      "Rancidity",
+      "Sublimation",
+      "Evaporation"
+    ],
+    "correct": 0,
+    "rationale": "Corrosion is the process where a metal is gradually destroyed by chemical reactions with its environment, leading to coatings like silver sulfide on silver."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What type of reaction is burning of natural gas?",
+    "options": [
+      "Combination",
+      "Decomposition",
+      "Displacement",
+      "Combustion"
+    ],
+    "correct": 3,
+    "rationale": "Burning of natural gas (methane) is a combustion reaction, where it reacts rapidly with oxygen to produce heat and light."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is NOT a physical change?",
+    "options": [
+      "Dissolving salt in water",
+      "Melting wax",
+      "Digestion of food",
+      "Freezing water"
+    ],
+    "correct": 2,
+    "rationale": "Digestion of food involves chemical reactions that break down complex molecules into simpler ones, so it's a chemical change."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "In the reaction Pb + CuCl2 -> PbCl2 + Cu, which element is being oxidized?",
+    "options": [
+      "Pb",
+      "Cu",
+      "Cl",
+      "None"
+    ],
+    "correct": 0,
+    "rationale": "Lead (Pb) is losing electrons and its oxidation state is increasing, therefore it is being oxidized."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is a double displacement reaction?",
+    "options": [
+      "A + B -> AB",
+      "AB -> A + B",
+      "A + BC -> AC + B",
+      "AB + CD -> AD + CB"
+    ],
+    "correct": 3,
+    "rationale": "A double displacement reaction involves the exchange of ions between two reactants."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Why are food packages flushed with nitrogen gas?",
+    "options": [
+      "To increase the taste",
+      "To prevent oxidation",
+      "To increase the moisture",
+      "To decrease the moisture"
+    ],
+    "correct": 1,
+    "rationale": "Nitrogen gas is an inert gas, used to prevent oxidation of food substances which cause rancidity."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is an example of a thermal decomposition reaction?",
+    "options": [
+      "Burning of coal",
+      "Electrolysis of water",
+      "Heating of lead nitrate",
+      "Reaction of acid and base"
+    ],
+    "correct": 2,
+    "rationale": "Heating lead nitrate results in its decomposition into lead oxide, nitrogen dioxide, and oxygen gas. This reaction is initiated by heat."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "The process of coating iron with zinc to prevent rusting is called:",
+    "options": [
+      "Painting",
+      "Galvanization",
+      "Electroplating",
+      "Annealing"
+    ],
+    "correct": 1,
+    "rationale": "Galvanization is the process of coating iron with zinc to protect it from corrosion."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the chemical formula for quicklime?",
+    "options": [
+      "CaCO3",
+      "CaO",
+      "Ca(OH)2",
+      "CaCl2"
+    ],
+    "correct": 1,
+    "rationale": "Quicklime is calcium oxide, and its chemical formula is CaO."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is formed when slaked lime reacts with chlorine?",
+    "options": [
+      "Bleaching powder",
+      "Washing soda",
+      "Baking soda",
+      "Plaster of Paris"
+    ],
+    "correct": 0,
+    "rationale": "Slaked lime (calcium hydroxide) reacts with chlorine to produce bleaching powder (calcium oxychloride)."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "A substance that oxidizes itself and reduces other is called?",
+    "options": [
+      "Oxidizing agent",
+      "Reducing agent",
+      "Catalyst",
+      "Inhibitor"
+    ],
+    "correct": 1,
+    "rationale": "A reducing agent loses electrons (oxidizes itself) and causes the reduction of another substance."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is required for corrosion to occur?",
+    "options": [
+      "Only air",
+      "Only water",
+      "Air and water",
+      "Only acid"
+    ],
+    "correct": 2,
+    "rationale": "Corrosion typically requires both oxygen (from air) and moisture (water) to occur."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What does a plus sign (+) indicate in a chemical equation?",
+    "options": [
+      "Reacts with",
+      "Forms",
+      "Reversible reaction",
+      "Catalyst"
+    ],
+    "correct": 0,
+    "rationale": "A plus sign (+) in a chemical equation indicates that the substances listed are reacting together."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is used to slow down the rate of a chemical reaction?",
+    "options": [
+      "Catalyst",
+      "Inhibitor",
+      "Promoter",
+      "Electrolyte"
+    ],
+    "correct": 1,
+    "rationale": "Inhibitors are substances that slow down or prevent chemical reactions from occurring."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "The process of obtaining oxygen from potassium chlorate is an example of:",
+    "options": [
+      "Combination reaction",
+      "Decomposition reaction",
+      "Displacement reaction",
+      "Redox reaction"
+    ],
+    "correct": 1,
+    "rationale": "Potassium chlorate decomposes upon heating to give potassium chloride and oxygen. This is a decomposition reaction as a single substance breaks down into two or more."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following statements is true regarding exothermic reactions?",
+    "options": [
+      "They absorb energy",
+      "They release energy",
+      "They require a catalyst",
+      "They are always slow"
+    ],
+    "correct": 1,
+    "rationale": "Exothermic reactions release energy in the form of heat, light, or sound."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the role of oxygen in combustion reactions?",
+    "options": [
+      "To act as a catalyst",
+      "To provide heat",
+      "To support burning",
+      "To cool down the reaction"
+    ],
+    "correct": 2,
+    "rationale": "Oxygen is a crucial reactant in combustion, acting as an oxidizing agent and supporting the burning process."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the chemical formula of baking soda?",
+    "options": [
+      "NaOH",
+      "Na2CO3",
+      "NaHCO3",
+      "Ca(OH)2"
+    ],
+    "correct": 2,
+    "rationale": "Baking soda is sodium bicarbonate, and its chemical formula is NaHCO3."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+    "options": [
+      "Temperature",
+      "Concentration of reactants",
+      "Presence of a catalyst",
+      "Color of the reactants"
+    ],
+    "correct": 3,
+    "rationale": "Color does not generally influence the rate of a chemical reaction; factors like temperature, concentration, and catalysts have a direct impact."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What type of reaction involves the transfer of electrons?",
+    "options": [
+      "Neutralization reaction",
+      "Precipitation reaction",
+      "Redox reaction",
+      "Decomposition reaction"
+    ],
+    "correct": 2,
+    "rationale": "Redox reactions involve both oxidation (loss of electrons) and reduction (gain of electrons)."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "The reaction between an acid and a base is called:",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Neutralization",
+      "Combustion"
+    ],
+    "correct": 2,
+    "rationale": "The reaction between an acid and a base to form salt and water is called neutralization."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following represents a displacement reaction?",
+    "options": [
+      "2H2 + O2 -> 2H2O",
+      "CaCO3 -> CaO + CO2",
+      "Zn + CuSO4 -> ZnSO4 + Cu",
+      "NaOH + HCl -> NaCl + H2O"
+    ],
+    "correct": 2,
+    "rationale": "Zinc (Zn) displaces copper (Cu) from copper sulfate (CuSO4) in this reaction."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the name given to the insoluble solid formed in a precipitation reaction?",
+    "options": [
+      "Solute",
+      "Solvent",
+      "Precipitate",
+      "Residue"
+    ],
+    "correct": 3,
+    "rationale": "The insoluble solid formed in a precipitation reaction is called the residue."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of these is an example of an exothermic reaction?",
+    "options": [
+      "Photosynthesis",
+      "Melting of ice",
+      "Respiration",
+      "Electrolysis"
+    ],
+    "correct": 2,
+    "rationale": "Respiration breaks down glucose to release energy, making it an exothermic process."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What gas is released during the decomposition of calcium carbonate?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correct": 2,
+    "rationale": "Calcium carbonate decomposes to form calcium oxide and carbon dioxide gas."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the general formula for a metal oxide?",
+    "options": [
+      "MOH",
+      "MCO3",
+      "MO",
+      "MSO4"
+    ],
+    "correct": 2,
+    "rationale": "Metal oxide is a compound containing a metal and oxygen. Therefore, the general formula is MO where 'M' is the metal."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following is the correct balanced equation for the burning of methane (CH4)?",
+    "options": [
+      "CH4 + O2 -> CO2 + H2O",
+      "CH4 + 2O2 -> CO2 + 2H2O",
+      "2CH4 + O2 -> 2CO2 + 4H2O",
+      "CH4 + 3O2 -> CO2 + 3H2O"
+    ],
+    "correct": 1,
+    "rationale": "In the balanced equation, the number of atoms of each element is the same on both sides of the arrow."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "Which of the following reactions is used in black and white photography?",
+    "options": [
+      "Combination",
+      "Decomposition",
+      "Displacement",
+      "Double Displacement"
+    ],
+    "correct": 1,
+    "rationale": "Decomposition reactions using light (photodecomposition) are used in black and white photography."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the color of copper sulfate solution?",
+    "options": [
+      "Green",
+      "Blue",
+      "Yellow",
+      "Colorless"
+    ],
+    "correct": 1,
+    "rationale": "Copper sulfate solution is typically blue in color."
+  },
+  {
+    "category": "Chemical Reactions and Equations",
+    "question": "What is the product formed when iron reacts with steam?",
+    "options": [
+      "FeO",
+      "Fe2O3",
+      "Fe3O4",
+      "Fe(OH)2"
+    ],
+    "correct": 3,
+    "rationale": "Iron reacts with steam to produce iron(II,III) oxide (Fe3O4) and hydrogen gas."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is a strong acid?",
+    "options": [
+      "CH3COOH",
+      "H2CO3",
+      "HCl",
+      "H2S"
+    ],
+    "correct": 2,
+    "rationale": "HCl (Hydrochloric acid) is a strong acid, which completely dissociates in water. The others are weak acids."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the pH of a neutral solution?",
+    "options": [
+      "0",
+      "7",
+      "14",
+      "Between 0 and 7"
+    ],
+    "correct": 1,
+    "rationale": "A neutral solution has a pH of 7, indicating equal concentrations of H+ and OH- ions."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which indicator turns red in acidic solution?",
+    "options": [
+      "Methyl orange",
+      "Phenolphthalein",
+      "Litmus",
+      "All of the above"
+    ],
+    "correct": 3,
+    "rationale": "Methyl orange turns red in acidic solutions, litmus paper turns red, and some forms of universal indicator will display red tones."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the chemical formula of baking soda?",
+    "options": [
+      "NaOH",
+      "NaHCO3",
+      "Na2CO3",
+      "Ca(OH)2"
+    ],
+    "correct": 1,
+    "rationale": "Baking soda is sodium bicarbonate, which has the chemical formula NaHCO3."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following oxides is acidic in nature?",
+    "options": [
+      "Na2O",
+      "MgO",
+      "Al2O3",
+      "SO2"
+    ],
+    "correct": 3,
+    "rationale": "Sulfur dioxide (SO2) is a non-metal oxide that forms an acidic solution when dissolved in water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the process of adding water to a concentrated acid or base called?",
+    "options": [
+      "Neutralization",
+      "Hydration",
+      "Dilution",
+      "Titration"
+    ],
+    "correct": 2,
+    "rationale": "Adding water to a concentrated acid or base reduces its concentration, which is called dilution. It's an exothermic reaction and should be done carefully."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is an example of a base?",
+    "options": [
+      "HCl",
+      "H2SO4",
+      "KOH",
+      "HNO3"
+    ],
+    "correct": 2,
+    "rationale": "KOH (Potassium hydroxide) is a base because it produces hydroxide ions (OH-) in solution."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the salt formed when hydrochloric acid reacts with sodium hydroxide?",
+    "options": [
+      "KCl",
+      "NaCl",
+      "Na2SO4",
+      "CaCl2"
+    ],
+    "correct": 1,
+    "rationale": "The reaction between HCl and NaOH forms sodium chloride (NaCl), which is common salt, and water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which gas is evolved when an acid reacts with a metal?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Hydrogen",
+      "Nitrogen"
+    ],
+    "correct": 2,
+    "rationale": "Acids react with metals to produce a metal salt and hydrogen gas."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the chemical formula of washing soda?",
+    "options": [
+      "NaHCO3",
+      "Na2CO3.10H2O",
+      "NaOH",
+      "Ca(OH)2"
+    ],
+    "correct": 1,
+    "rationale": "Washing soda is sodium carbonate decahydrate, which has the chemical formula Na2CO3.10H2O."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "The pH of gastric juice in our stomach is approximately:",
+    "options": [
+      "7",
+      "2",
+      "9",
+      "14"
+    ],
+    "correct": 1,
+    "rationale": "Gastric juice contains hydrochloric acid (HCl), making it highly acidic with a pH around 2."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What type of reaction occurs when an acid reacts with a base?",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Neutralization",
+      "Precipitation"
+    ],
+    "correct": 2,
+    "rationale": "The reaction between an acid and a base is called neutralization, forming salt and water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is a weak base?",
+    "options": [
+      "NaOH",
+      "KOH",
+      "NH4OH",
+      "Ca(OH)2"
+    ],
+    "correct": 2,
+    "rationale": "Ammonium hydroxide (NH4OH) is a weak base because it only partially dissociates in water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the common name for calcium oxide (CaO)?",
+    "options": [
+      "Baking soda",
+      "Washing soda",
+      "Quicklime",
+      "Slaked lime"
+    ],
+    "correct": 2,
+    "rationale": "Calcium oxide (CaO) is commonly known as quicklime."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is an antacid?",
+    "options": [
+      "HCl",
+      "NaOH",
+      "Mg(OH)2",
+      "H2SO4"
+    ],
+    "correct": 2,
+    "rationale": "Magnesium hydroxide (Mg(OH)2) is a base used as an antacid to neutralize excess stomach acid."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the process of titrating a solution used for?",
+    "options": [
+      "Measuring pH",
+      "Determining the concentration of a solution",
+      "Identifying the solution",
+      "Changing the color of the solution"
+    ],
+    "correct": 1,
+    "rationale": "Titration is a quantitative chemical analysis used to determine the concentration of a substance by reacting it with a solution of known concentration."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the pH of a solution that has a high concentration of hydroxide ions (OH-)?",
+    "options": [
+      "Less than 7",
+      "Equal to 7",
+      "Greater than 7",
+      "Equal to 0"
+    ],
+    "correct": 2,
+    "rationale": "A solution with a high concentration of hydroxide ions is basic and has a pH greater than 7."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is used to test for the presence of carbon dioxide?",
+    "options": [
+      "Red litmus paper",
+      "Blue litmus paper",
+      "Lime water",
+      "Phenolphthalein"
+    ],
+    "correct": 2,
+    "rationale": "Carbon dioxide turns lime water milky (calcium carbonate precipitate)."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the chemical formula of plaster of Paris?",
+    "options": [
+      "CaSO4",
+      "CaSO4.2H2O",
+      "CaSO4.1/2H2O",
+      "CaCO3"
+    ],
+    "correct": 2,
+    "rationale": "Plaster of Paris is calcium sulfate hemihydrate, with the chemical formula CaSO4.1/2H2O."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is a property of acids?",
+    "options": [
+      "Bitter taste",
+      "Soapy feel",
+      "Turns blue litmus red",
+      "Turns red litmus blue"
+    ],
+    "correct": 2,
+    "rationale": "Acids have a sour taste and turn blue litmus paper red."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the role of water in dissociation of acids and bases?",
+    "options": [
+      "Catalyst",
+      "Solvent for reaction",
+      "Provides H+ or OH- ions",
+      "All of the above"
+    ],
+    "correct": 3,
+    "rationale": "Water acts as a solvent, facilitates the dissociation by hydrating ions, and accepts H+ ions from acids to form hydronium ions (H3O+)."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What happens when dilute acid is added to a metal carbonate?",
+    "options": [
+      "Hydrogen gas is evolved",
+      "Carbon dioxide gas is evolved",
+      "No reaction occurs",
+      "Oxygen gas is evolved"
+    ],
+    "correct": 1,
+    "rationale": "Metal carbonates react with dilute acids to produce a salt, carbon dioxide gas, and water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Why is tooth enamel corroded when pH is low in the mouth?",
+    "options": [
+      "Due to presence of acid",
+      "Due to the presence of base",
+      "Due to the presence of salt",
+      "Due to the presence of sugar"
+    ],
+    "correct": 0,
+    "rationale": "Tooth enamel (calcium phosphate) is corroded by acids, which are formed by bacteria acting on sugars present in the mouth."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is used for bleaching cotton and linen in the textile industry?",
+    "options": [
+      "Baking soda",
+      "Washing soda",
+      "Bleaching powder",
+      "Plaster of Paris"
+    ],
+    "correct": 2,
+    "rationale": "Bleaching powder (calcium oxychloride, CaOCl2) is used for bleaching cotton and linen due to its oxidizing properties."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which acid is present in tomato?",
+    "options": [
+      "Acetic acid",
+      "Citric acid",
+      "Oxalic acid",
+      "Tartaric acid"
+    ],
+    "correct": 2,
+    "rationale": "Tomatoes contain oxalic acid, which contributes to their slightly sour taste."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is 'aqua regia'?",
+    "options": [
+      "Dilute sulfuric acid",
+      "A mixture of hydrochloric acid and nitric acid",
+      "Concentrated nitric acid",
+      "Concentrated sulfuric acid"
+    ],
+    "correct": 1,
+    "rationale": "Aqua regia is a highly corrosive mixture of concentrated nitric acid and hydrochloric acid, optimally in a molar ratio of 1:3. It is used to dissolve noble metals like gold and platinum."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the function of olfactory indicators?",
+    "options": [
+      "To indicate the presence of acid",
+      "To indicate the presence of base",
+      "To indicate acidity or basicity through change in smell",
+      "To indicate neutrality"
+    ],
+    "correct": 3,
+    "rationale": "Olfactory indicators change their smell when added to an acidic or basic solution, allowing us to identify the nature of the solution."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which one of the following can be used as an acid-base indicator by a visually impaired student?",
+    "options": [
+      "Litmus",
+      "Turmeric",
+      "Phenolphthalein",
+      "Vanilla essence"
+    ],
+    "correct": 3,
+    "rationale": "Vanilla essence can be used as an olfactory indicator. Its smell changes in acidic or basic medium allowing visually imparied to identify the nature of the solution."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "A solution turns red litmus blue, its pH is likely to be",
+    "options": [
+      "1",
+      "4",
+      "5",
+      "10"
+    ],
+    "correct": 3,
+    "rationale": "A solution that turns red litmus blue is basic in nature, and its pH should be greater than 7. Out of the given options only 10 is greater than 7."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Curd contains _______ acid.",
+    "options": [
+      "Lactic",
+      "Citric",
+      "Acetic",
+      "Oxalic"
+    ],
+    "correct": 0,
+    "rationale": "Curd contains Lactic acid, which gives it a sour taste."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which acid is used in car batteries?",
+    "options": [
+      "Hydrochloric acid",
+      "Nitric acid",
+      "Sulfuric acid",
+      "Acetic acid"
+    ],
+    "correct": 2,
+    "rationale": "Sulfuric acid is used as an electrolyte in lead-acid batteries in cars."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the chemical name of Gypsum?",
+    "options": [
+      "Calcium Sulfate Hemihydrate",
+      "Calcium Carbonate",
+      "Calcium Sulfate Dihydrate",
+      "Magnesium Hydroxide"
+    ],
+    "correct": 2,
+    "rationale": "Gypsum is Calcium Sulfate Dihydrate. Its formula is CaSO4.2H2O."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "The strength of an acid or a base can be measured by using a scale called:",
+    "options": [
+      "Volumetric Scale",
+      "pH scale",
+      "Richter scale",
+      "Mohs scale"
+    ],
+    "correct": 1,
+    "rationale": "The pH scale is used to measure the acidity or basicity of a solution. It ranges from 0 to 14."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is used to cure indigestion?",
+    "options": [
+      "Sodium Chloride",
+      "Magnesium Hydroxide",
+      "Potassium Hydroxide",
+      "Hydrochloric Acid"
+    ],
+    "correct": 1,
+    "rationale": "Magnesium Hydroxide (Milk of Magnesia) is a base and is used as an antacid to neutralize excess acid in the stomach."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the byproduct when acids react with metal oxides?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Salt",
+      "Water"
+    ],
+    "correct": 3,
+    "rationale": "Acids react with metal oxides to form salt and water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "When copper oxide reacts with hydrochloric acid, the solution turns bluish-green because:",
+    "options": [
+      "Copper oxide is basic",
+      "Copper oxide is acidic",
+      "Formation of copper chloride",
+      "Formation of water"
+    ],
+    "correct": 2,
+    "rationale": "The bluish-green color is due to the formation of copper(II) chloride (CuCl2), which is soluble in water and gives the solution this characteristic color."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Vinegar is a solution of:",
+    "options": [
+      "Acetic acid in water",
+      "Hydrochloric acid in water",
+      "Citric acid in water",
+      "Sulfuric acid in water"
+    ],
+    "correct": 0,
+    "rationale": "Vinegar is a solution primarily composed of acetic acid and water. It typically contains around 5-8% acetic acid."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which gas is liberated when acid reacts with metal?",
+    "options": [
+      "Carbon dioxide",
+      "Hydrogen",
+      "Nitrogen",
+      "Oxygen"
+    ],
+    "correct": 1,
+    "rationale": "When an acid reacts with a metal, hydrogen gas is liberated along with the formation of a metallic salt."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "The chemical name of bleaching powder is",
+    "options": [
+      "Calcium sulfate",
+      "Calcium oxychloride",
+      "Calcium chloride",
+      "Sodium chloride"
+    ],
+    "correct": 1,
+    "rationale": "The chemical name of bleaching powder is Calcium oxychloride. Its formula is CaOCl2."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following salts does not contain water of crystallization?",
+    "options": [
+      "Blue vitriol",
+      "Baking soda",
+      "Washing soda",
+      "Gypsum"
+    ],
+    "correct": 1,
+    "rationale": "Baking soda (NaHCO3) does not contain water of crystallization. Blue vitriol (CuSO4.5H2O), Washing soda (Na2CO3.10H2O), and Gypsum (CaSO4.2H2O) do."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Brine is an aqueous solution of",
+    "options": [
+      "Sodium chloride",
+      "Sodium hydroxide",
+      "Sodium carbonate",
+      "Sodium bicarbonate"
+    ],
+    "correct": 0,
+    "rationale": "Brine is a high-concentration solution of sodium chloride (NaCl) in water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which one of the following is present in dilute aqueous solution of hydrochloric acid?",
+    "options": [
+      "Cl- and H3O+",
+      "H3O+ and OH-",
+      "Cl- and H2O",
+      "H3O+ and H2O"
+    ],
+    "correct": 0,
+    "rationale": "In a dilute aqueous solution of hydrochloric acid, HCl ionizes to form chloride ions (Cl-) and hydronium ions (H3O+). The hydronium ion is formed when a proton (H+) from HCl combines with water (H2O)."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "The decomposition of vegetable matter into compost is an example of:",
+    "options": [
+      "Endothermic reaction",
+      "Exothermic reaction",
+      "Neutralization reaction",
+      "Displacement reaction"
+    ],
+    "correct": 1,
+    "rationale": "The decomposition of vegetable matter into compost releases heat, making it an exothermic reaction."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which substance is added to plaster of Paris to set it?",
+    "options": [
+      "Water",
+      "Salt",
+      "Acid",
+      "Base"
+    ],
+    "correct": 0,
+    "rationale": "Plaster of Paris (calcium sulfate hemihydrate) sets when water is added, forming gypsum (calcium sulfate dihydrate)."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What is the chemical formula for carbonic acid?",
+    "options": [
+      "HCl",
+      "H2SO4",
+      "HNO3",
+      "H2CO3"
+    ],
+    "correct": 3,
+    "rationale": "Carbonic acid has the chemical formula H2CO3. It is a weak acid formed when carbon dioxide dissolves in water."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following solutions has the highest pH value?",
+    "options": [
+      "1M HCl",
+      "1M NaOH",
+      "1M CH3COOH",
+      "1M NaCl"
+    ],
+    "correct": 1,
+    "rationale": "1M NaOH is a strong base and will therefore have the highest pH value compared to the other options which are an acid, weak acid, and salt respectively."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "What happens to the pH of the solution when an acid is diluted with water?",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains the same",
+      "Becomes neutral"
+    ],
+    "correct": 0,
+    "rationale": "When an acid is diluted with water, the concentration of hydrogen ions (H+) decreases, leading to an increase in the pH value, moving it closer to neutral (pH 7)."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which of the following is NOT a property of bases?",
+    "options": [
+      "Bitter taste",
+      "Soapy to touch",
+      "Turns red litmus blue",
+      "Corrosive to metals"
+    ],
+    "correct": 3,
+    "rationale": "While strong bases can be corrosive, it's primarily acids that are known for their corrosive action on metals."
+  },
+  {
+    "category": "Acids, Bases, and Salts",
+    "question": "Which type of reaction happens when acid is mixed with water?",
+    "options": [
+      "Endothermic",
+      "Exothermic",
+      "Reversible",
+      "Neutral"
+    ],
+    "correct": 1,
+    "rationale": "Mixing a concentrated acid with water is an exothermic reaction, meaning it releases heat. This is why it's important to add acid slowly to water, not the other way around, to prevent splattering."
+  }
+]
