@@ -1,0 +1,722 @@
+[
+  {
+    "category": "LCM and HCF",
+    "question": "What is the Least Common Multiple (LCM) of 6 and 8?",
+    "options": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct": 1,
+    "rationale": "The LCM is the smallest number that is a multiple of both numbers. Multiples of 6 are 6, 12, 18, 24, 30... Multiples of 8 are 8, 16, 24, 32... The smallest common multiple is 24."
+  },
+  {
+    "category": "LCM and HCF",
+    "question": "What is the Highest Common Factor (HCF) of 12 and 18?",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "9"
+    ],
+    "correct": 2,
+    "rationale": "The HCF is the largest number that divides both numbers. Factors of 12 are 1, 2, 3, 4, 6, 12. Factors of 18 are 1, 2, 3, 6, 9, 18. The largest common factor is 6."
+  },
+  {
+    "category": "LCM and HCF",
+    "question": "Find the LCM of 4, 5, and 10.",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "40"
+    ],
+    "correct": 2,
+    "rationale": "The multiples of 4 are 4, 8, 12, 16, 20,... The multiples of 5 are 5, 10, 15, 20,... The multiples of 10 are 10, 20, 30,... The smallest common multiple is 20."
+  },
+  {
+    "category": "LCM and HCF",
+    "question": "What is the HCF of 24 and 36?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct": 3,
+    "rationale": "The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. The factors of 36 are 1, 2, 3, 4, 6, 9, 12, 18, 36. The highest common factor is 12."
+  },
+  {
+    "category": "LCM and HCF",
+    "question": "Two bells ring at intervals of 12 minutes and 15 minutes. If they ring together at 9 AM, when will they ring together again?",
+    "options": [
+      "9:30 AM",
+      "10:00 AM",
+      "10:15 AM",
+      "10:30 AM"
+    ],
+    "correct": 1,
+    "rationale": "We need to find the LCM of 12 and 15. The multiples of 12 are 12, 24, 36, 48, 60,... The multiples of 15 are 15, 30, 45, 60,... The LCM is 60. So they will ring together again after 60 minutes, i.e., at 10:00 AM."
+  },
+  {
+    "category": "Whole Numbers",
+    "question": "What is the result of 2345 + 1678 - 987?",
+    "options": [
+      "3036",
+      "4036",
+      "3046",
+      "3026"
+    ],
+    "correct": 1,
+    "rationale": "First, add 2345 and 1678 to get 4023. Then, subtract 987 from 4023 to get 3036. So the correct answer is 3036."
+  },
+  {
+    "category": "Whole Numbers",
+    "question": "Which of the following numbers is divisible by both 3 and 5?",
+    "options": [
+      "16",
+      "25",
+      "30",
+      "32"
+    ],
+    "correct": 2,
+    "rationale": "A number is divisible by 3 if the sum of its digits is divisible by 3. A number is divisible by 5 if its last digit is 0 or 5. Of the options, only 30 is divisible by both 3 (3+0=3, which is divisible by 3) and 5 (ends in 0)."
+  },
+  {
+    "category": "Whole Numbers",
+    "question": "What is the prime factorization of 48?",
+    "options": [
+      "2 x 3 x 8",
+      "4 x 12",
+      "2 x 2 x 2 x 2 x 3",
+      "6 x 8"
+    ],
+    "correct": 2,
+    "rationale": "Prime factorization means expressing a number as a product of only prime numbers. 48 = 2 x 24 = 2 x 2 x 12 = 2 x 2 x 2 x 6 = 2 x 2 x 2 x 2 x 3. Therefore, the prime factorization of 48 is 2 x 2 x 2 x 2 x 3."
+  },
+  {
+    "category": "Whole Numbers",
+    "question": "What is the value of 12 squared (12²)?",
+    "options": [
+      "14",
+      "24",
+      "144",
+      "122"
+    ],
+    "correct": 2,
+    "rationale": "Squaring a number means multiplying it by itself. 12² = 12 x 12 = 144."
+  },
+  {
+    "category": "Whole Numbers",
+    "question": "Which of these numbers is a composite number?",
+    "options": [
+      "2",
+      "3",
+      "7",
+      "9"
+    ],
+    "correct": 3,
+    "rationale": "A composite number is a whole number that has more than two factors (1 and itself). 2, 3, and 7 are prime numbers, having only two factors: 1 and themselves. 9 has factors 1, 3, and 9, so it is composite."
+  },
+  {
+    "category": "Integers",
+    "question": "Which of the following numbers is the smallest?",
+    "options": [
+      "-5",
+      "2",
+      "-1",
+      "0"
+    ],
+    "correct": 0,
+    "rationale": "Negative numbers are smaller than positive numbers, and -5 is the most negative in the options."
+  },
+  {
+    "category": "Integers",
+    "question": "What is the result of -8 + 3?",
+    "options": [
+      "-11",
+      "5",
+      "-5",
+      "11"
+    ],
+    "correct": 2,
+    "rationale": "When adding a positive number to a negative number, you are essentially subtracting the positive number from the absolute value of the negative number and keeping the sign of the larger number.  |-8| - 3 = 5. Since -8 has a larger absolute value, the answer is -5."
+  },
+  {
+    "category": "Integers",
+    "question": "Which expression results in a negative number?",
+    "options": [
+      "-3 x -2",
+      "-4 + 7",
+      "5 - 1",
+      "-6 + 2"
+    ],
+    "correct": 3,
+    "rationale": "-3 x -2 = 6 (positive). -4 + 7 = 3 (positive). 5 - 1 = 4 (positive). -6 + 2 = -4 (negative)."
+  },
+  {
+    "category": "Integers",
+    "question": "What is the absolute value of -12?",
+    "options": [
+      "-12",
+      "0",
+      "12",
+      "24"
+    ],
+    "correct": 2,
+    "rationale": "The absolute value of a number is its distance from zero, which is always a non-negative value. Therefore, the absolute value of -12 is 12."
+  },
+  {
+    "category": "Integers",
+    "question": "What is the result of -5 - (-2)?",
+    "options": [
+      "-7",
+      "-3",
+      "3",
+      "7"
+    ],
+    "correct": 1,
+    "rationale": "Subtracting a negative number is the same as adding its positive counterpart. So, -5 - (-2) is the same as -5 + 2, which equals -3."
+  },
+  {
+    "category": "Number Line",
+    "question": "Which of the following number lines correctly represents the inequality x > -2?",
+    "options": [
+      "A number line with a closed circle at -2 and shading to the left.",
+      "A number line with an open circle at -2 and shading to the left.",
+      "A number line with a closed circle at -2 and shading to the right.",
+      "A number line with an open circle at -2 and shading to the right."
+    ],
+    "correct": 3,
+    "rationale": "The inequality x > -2 means x is greater than -2, but not equal to -2. Therefore, an open circle is used at -2, and the shading extends to the right (representing numbers greater than -2)."
+  },
+  {
+    "category": "Number Line",
+    "question": "What number is located exactly halfway between -5 and 3 on a number line?",
+    "options": [
+      "-4",
+      "-1",
+      "1",
+      "-2"
+    ],
+    "correct": 1,
+    "rationale": "The midpoint between two numbers on a number line is their average.  (-5 + 3) / 2 = -2 / 2 = -1."
+  },
+  {
+    "category": "Number Line",
+    "question": "A point is located at -3 on the number line. It moves 5 units to the right. Where is the point now located?",
+    "options": [
+      "-8",
+      "8",
+      "2",
+      "-2"
+    ],
+    "correct": 2,
+    "rationale": "Moving to the right on a number line means adding. -3 + 5 = 2."
+  },
+  {
+    "category": "Number Line",
+    "question": "Which inequality is represented by a number line with a closed circle at 1 and shading to the left?",
+    "options": [
+      "x > 1",
+      "x < 1",
+      "x ≥ 1",
+      "x ≤ 1"
+    ],
+    "correct": 3,
+    "rationale": "A closed circle indicates 'equal to', and shading to the left indicates 'less than'. Therefore, the inequality is x ≤ 1."
+  },
+  {
+    "category": "Number Line",
+    "question": "Which of the following statements is true about comparing -7 and -3 on a number line?",
+    "options": [
+      "-7 is to the right of -3, so -7 > -3",
+      "-7 is to the left of -3, so -7 > -3",
+      "-7 is to the right of -3, so -7 < -3",
+      "-7 is to the left of -3, so -7 < -3"
+    ],
+    "correct": 4,
+    "rationale": "On a number line, numbers increase as you move to the right. -7 is to the left of -3, meaning it is smaller, therefore -7 < -3."
+  },
+  {
+    "category": "Prime Number",
+    "question": "Which of the following numbers is a prime number?",
+    "options": [
+      "9",
+      "15",
+      "17",
+      "21"
+    ],
+    "correct": 2,
+    "rationale": "A prime number is a whole number greater than 1 that has only two divisors: 1 and itself. 17 is only divisible by 1 and 17."
+  },
+  {
+    "category": "Prime Number",
+    "question": "Which statement about prime numbers is ALWAYS true?",
+    "options": [
+      "Prime numbers are even.",
+      "Prime numbers are odd.",
+      "Prime numbers have only two factors.",
+      "Prime numbers are divisible by 4."
+    ],
+    "correct": 2,
+    "rationale": "By definition, a prime number is a whole number greater than 1 that has only two distinct positive divisors: 1 and itself."
+  },
+  {
+    "category": "Prime Number",
+    "question": "Which list contains only prime numbers?",
+    "options": [
+      "4, 6, 8, 10",
+      "1, 3, 5, 7",
+      "2, 3, 5, 7",
+      "9, 11, 13, 15"
+    ],
+    "correct": 2,
+    "rationale": "The numbers 2, 3, 5, and 7 are all only divisible by 1 and themselves. 1 is not a prime number."
+  },
+  {
+    "category": "Prime Number",
+    "question": "What is the smallest prime number greater than 20?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "correct": 2,
+    "rationale": "21 is divisible by 3 and 7, 22 is divisible by 2 and 11, and 24 is divisible by many numbers. 23 is only divisible by 1 and 23."
+  },
+  {
+    "category": "Prime Number",
+    "question": "How many even prime numbers are there?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "Infinite"
+    ],
+    "correct": 1,
+    "rationale": "The only even prime number is 2. All other even numbers are divisible by 2, and thus have more than two factors."
+  },
+  {
+    "category": "Fractions",
+    "question": "What is the simplest form of the fraction 12/18?",
+    "options": [
+      "6/9",
+      "4/6",
+      "2/3",
+      "1/2"
+    ],
+    "correct": 2,
+    "rationale": "To simplify a fraction, divide both the numerator and the denominator by their greatest common factor (GCF). The GCF of 12 and 18 is 6. Dividing both by 6 gives 2/3."
+  },
+  {
+    "category": "Fractions",
+    "question": "What is 1/4 + 2/5?",
+    "options": [
+      "3/9",
+      "3/20",
+      "13/20",
+      "3/5"
+    ],
+    "correct": 2,
+    "rationale": "To add fractions, they need a common denominator. The least common denominator of 4 and 5 is 20.  1/4 = 5/20 and 2/5 = 8/20.  5/20 + 8/20 = 13/20."
+  },
+  {
+    "category": "Fractions",
+    "question": "Which of the following fractions is greater than 1/2?",
+    "options": [
+      "3/8",
+      "4/9",
+      "5/12",
+      "7/12"
+    ],
+    "correct": 3,
+    "rationale": "1/2 is equivalent to 6/12. 7/12 is greater than 6/12. The other options are less than 1/2: 3/8 (4/8 = 1/2), 4/9 (4.5/9 = 1/2), 5/12 (6/12 = 1/2)."
+  },
+  {
+    "category": "Fractions",
+    "question": "What is 3/4 multiplied by 2/3?",
+    "options": [
+      "5/7",
+      "1/2",
+      "5/12",
+      "6/12"
+    ],
+    "correct": 1,
+    "rationale": "To multiply fractions, multiply the numerators and the denominators: (3 * 2) / (4 * 3) = 6/12. This simplifies to 1/2."
+  },
+  {
+    "category": "Fractions",
+    "question": "What is 5/6 divided by 2/3?",
+    "options": [
+      "10/18",
+      "5/9",
+      "15/12",
+      "5/4"
+    ],
+    "correct": 3,
+    "rationale": "To divide fractions, multiply by the reciprocal of the second fraction: 5/6 * 3/2 = 15/12. This simplifies to 5/4."
+  },
+  {
+    "category": "Matter",
+    "question": "Which of the following is the BEST definition of matter?",
+    "options": [
+      "Anything that has mass and takes up space.",
+      "Anything that has volume and can be seen.",
+      "Anything that has weight and can be touched.",
+      "Anything that is made of atoms."
+    ],
+    "correct": 0,
+    "rationale": "Matter is defined as anything that has mass and occupies volume (takes up space). While the other options are related, they are not the complete definition."
+  },
+  {
+    "category": "Matter",
+    "question": "Which state of matter has a definite volume but no definite shape?",
+    "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
+    "correct": 1,
+    "rationale": "Liquids maintain a constant volume but take the shape of their container. Solids have both definite volume and shape, gases have neither, and plasma is a superheated gas where electrons are stripped from atoms."
+  },
+  {
+    "category": "Matter",
+    "question": "What process describes a solid changing directly into a gas?",
+    "options": [
+      "Melting",
+      "Boiling",
+      "Sublimation",
+      "Condensation"
+    ],
+    "correct": 2,
+    "rationale": "Sublimation is the process where a solid transitions directly to a gas without passing through the liquid phase. Melting is solid to liquid, boiling is liquid to gas, and condensation is gas to liquid."
+  },
+  {
+    "category": "Matter",
+    "question": "Which of the following is an example of a chemical change?",
+    "options": [
+      "Water freezing into ice.",
+      "Sugar dissolving in water.",
+      "Wood burning in a fireplace.",
+      "Ice cream melting on a hot day."
+    ],
+    "correct": 3,
+    "rationale": "Burning wood is a chemical change because it creates new substances (ash, smoke, gases). The other options are physical changes; the chemical composition of the substance does not change."
+  },
+  {
+    "category": "Matter",
+    "question": "Which of the following is NOT a physical property of matter?",
+    "options": [
+      "Density",
+      "Flammability",
+      "Color",
+      "Melting Point"
+    ],
+    "correct": 1,
+    "rationale": "Flammability is a chemical property because it describes how readily a substance reacts with oxygen (combustion). Density, color, and melting point can be observed or measured without changing the composition of the substance."
+  },
+  {
+    "category": "Force",
+    "question": "Which of the following is the BEST definition of force?",
+    "options": [
+      "A push or pull that can change the motion of an object.",
+      "The amount of space an object takes up.",
+      "The measure of how hot or cold something is.",
+      "The color of an object."
+    ],
+    "correct": 0,
+    "rationale": "Force is a push or pull that can cause a change in an object's motion (speed or direction)."
+  },
+  {
+    "category": "Force",
+    "question": "What unit is used to measure force?",
+    "options": [
+      "Kilogram (kg)",
+      "Meter (m)",
+      "Newton (N)",
+      "Liter (L)"
+    ],
+    "correct": 2,
+    "rationale": "The Newton (N) is the standard unit of force in the International System of Units (SI)."
+  },
+  {
+    "category": "Force",
+    "question": "Which of these is an example of a force acting on an object?",
+    "options": [
+      "A book sitting still on a table.",
+      "A car accelerating down the street.",
+      "A rock at rest on the ground.",
+      "All of the above."
+    ],
+    "correct": 1,
+    "rationale": "Acceleration indicates a change in motion, which is caused by a force. The book at rest has balanced forces acting on it (gravity and the table's support). A rock at rest similarly has balanced forces."
+  },
+  {
+    "category": "Force",
+    "question": "What happens to an object's motion if the forces acting on it are balanced?",
+    "options": [
+      "It will speed up.",
+      "It will slow down.",
+      "It will remain at rest or continue moving at a constant velocity.",
+      "It will change direction."
+    ],
+    "correct": 3,
+    "rationale": "Balanced forces result in no net force, meaning there's no change in the object's motion. If it's at rest, it stays at rest; if it's moving, it continues at the same speed and in the same direction (Newton's First Law)."
+  },
+  {
+    "category": "Force",
+    "question": "Which of the following forces always opposes motion?",
+    "options": [
+      "Gravity",
+      "Applied Force",
+      "Friction",
+      "Magnetic Force"
+    ],
+    "correct": 2,
+    "rationale": "Friction is a force that opposes motion between two surfaces in contact. While gravity can affect motion, it doesn't always oppose it. Applied force causes motion and magnetic force can either attract or repel."
+  },
+  {
+    "category": "Energy",
+    "question": "Which of the following is the BEST example of potential energy?",
+    "options": [
+      "A rolling ball",
+      "A stretched rubber band",
+      "A light bulb turned on",
+      "A person running"
+    ],
+    "correct": 1,
+    "rationale": "Potential energy is stored energy. A stretched rubber band has stored energy due to its position (being stretched) and is ready to release that energy."
+  },
+  {
+    "category": "Energy",
+    "question": "What type of energy is associated with the movement of atoms and molecules?",
+    "options": [
+      "Chemical energy",
+      "Electrical energy",
+      "Thermal energy",
+      "Nuclear energy"
+    ],
+    "correct": 2,
+    "rationale": "Thermal energy is the energy of heat. Heat is generated by the movement of atoms and molecules within a substance. The faster they move, the more thermal energy the substance possesses."
+  },
+  {
+    "category": "Energy",
+    "question": "Which of the following is an example of kinetic energy being converted into potential energy?",
+    "options": [
+      "A ball rolling down a hill",
+      "A person jumping on a trampoline",
+      "A car speeding up on a highway",
+      "A child swinging on a swing set, reaching the highest point"
+    ],
+    "correct": 3,
+    "rationale": "As the child swings upward, their kinetic energy (energy of motion) is converted into potential energy (energy of position) due to increasing height. At the highest point, kinetic energy is at its lowest, and potential energy is at its highest."
+  },
+  {
+    "category": "Energy",
+    "question": "Which of the following is NOT a renewable energy source?",
+    "options": [
+      "Solar power",
+      "Wind power",
+      "Natural gas",
+      "Hydropower"
+    ],
+    "correct": 2,
+    "rationale": "Natural gas is a fossil fuel, which is a non-renewable resource. Solar, wind, and hydropower are all replenished naturally and are considered renewable."
+  },
+  {
+    "category": "Energy",
+    "question": "What energy transformation occurs in a battery-powered flashlight?",
+    "options": [
+      "Chemical energy to electrical energy to light energy",
+      "Electrical energy to chemical energy to light energy",
+      "Light energy to electrical energy to chemical energy",
+      "Chemical energy to light energy to electrical energy"
+    ],
+    "correct": 0,
+    "rationale": "The battery stores chemical energy. This chemical energy is converted into electrical energy, which then flows through the circuit to the light bulb, where it's converted into light energy (and some heat)."
+  },
+  {
+    "category": "Light",
+    "question": "Which of the following is NOT a type of electromagnetic wave?",
+    "options": [
+      "Radio waves",
+      "Sound waves",
+      "Visible light",
+      "X-rays"
+    ],
+    "correct": 1,
+    "rationale": "Sound waves are mechanical waves that require a medium to travel, unlike electromagnetic waves which can travel through a vacuum."
+  },
+  {
+    "category": "Light",
+    "question": "What happens when white light passes through a prism?",
+    "options": [
+      "It turns black.",
+      "It bends and separates into different colors.",
+      "It becomes more intense.",
+      "It passes straight through without changing."
+    ],
+    "correct": 1,
+    "rationale": "A prism refracts (bends) different colors of light at different angles, separating white light into a spectrum of colors."
+  },
+  {
+    "category": "Light",
+    "question": "Which of these objects would reflect the MOST light?",
+    "options": [
+      "A black t-shirt",
+      "A mirror",
+      "A green leaf",
+      "A wooden table"
+    ],
+    "correct": 2,
+    "rationale": "Mirrors are specifically designed to reflect light efficiently, while the other options absorb more light than they reflect."
+  },
+  {
+    "category": "Light",
+    "question": "What property of light determines its color?",
+    "options": [
+      "Speed",
+      "Intensity",
+      "Wavelength",
+      "Distance traveled"
+    ],
+    "correct": 2,
+    "rationale": "The wavelength of light determines its color. Shorter wavelengths correspond to blue and violet light, while longer wavelengths correspond to red light."
+  },
+  {
+    "category": "Light",
+    "question": "Which of the following is an example of light refraction?",
+    "options": [
+      "Seeing your reflection in a mirror.",
+      "The formation of a shadow.",
+      "A rainbow appearing after a rain shower.",
+      "The sun tanning your skin."
+    ],
+    "correct": 2,
+    "rationale": "Refraction is the bending of light as it passes from one medium to another. Rainbows are formed when sunlight refracts through raindrops, separating into different colors."
+  },
+  {
+    "category": "Sound",
+    "question": "What is the primary cause of sound?",
+    "options": [
+      "Light waves",
+      "Vibrations",
+      "Heat energy",
+      "Electrical currents"
+    ],
+    "correct": 1,
+    "rationale": "Sound is created when objects vibrate, causing disturbances in the surrounding medium (like air) that travel as waves."
+  },
+  {
+    "category": "Sound",
+    "question": "Through which medium does sound typically travel the fastest?",
+    "options": [
+      "Air",
+      "Water",
+      "Steel",
+      "Vacuum"
+    ],
+    "correct": 2,
+    "rationale": "Sound travels fastest through solids because the particles are more closely packed, allowing vibrations to be transferred more efficiently. Sound cannot travel through a vacuum because there are no particles to vibrate."
+  },
+  {
+    "category": "Sound",
+    "question": "Which characteristic of a sound wave determines its pitch?",
+    "options": [
+      "Amplitude",
+      "Wavelength",
+      "Speed",
+      "Intensity"
+    ],
+    "correct": 1,
+    "rationale": "Pitch is determined by the frequency of a sound wave, which is inversely proportional to the wavelength. Higher frequency (shorter wavelength) means higher pitch, and lower frequency (longer wavelength) means lower pitch."
+  },
+  {
+    "category": "Sound",
+    "question": "What unit is used to measure the loudness or intensity of sound?",
+    "options": [
+      "Hertz (Hz)",
+      "Watt (W)",
+      "Decibel (dB)",
+      "Ohm (Ω)"
+    ],
+    "correct": 2,
+    "rationale": "Decibels (dB) are the standard unit for measuring sound intensity or loudness. Hertz (Hz) measures frequency, Watts measure power, and Ohms measure electrical resistance."
+  },
+  {
+    "category": "Sound",
+    "question": "What happens when sound waves are reflected off a surface?",
+    "options": [
+      "Refraction",
+      "Absorption",
+      "Echo",
+      "Interference"
+    ],
+    "correct": 2,
+    "rationale": "When sound waves bounce off a surface, it is called reflection. If the reflected sound is distinct and delayed enough, it's perceived as an echo. Refraction is bending of waves, absorption is the sound being taken in, and interference happens when waves overlap."
+  },
+  {
+    "category": "Electricity",
+    "question": "What is the flow of electrons through a conductor called?",
+    "options": [
+      "Voltage",
+      "Resistance",
+      "Current",
+      "Power"
+    ],
+    "correct": 2,
+    "rationale": "Current is the measure of the flow of electric charge, which is typically electrons, through a conductor."
+  },
+  {
+    "category": "Electricity",
+    "question": "Which of the following materials is the best conductor of electricity?",
+    "options": [
+      "Rubber",
+      "Wood",
+      "Copper",
+      "Plastic"
+    ],
+    "correct": 2,
+    "rationale": "Copper is a metal with loosely bound electrons, making it an excellent conductor of electricity. Rubber, wood, and plastic are insulators."
+  },
+  {
+    "category": "Electricity",
+    "question": "What is the purpose of a circuit breaker or fuse?",
+    "options": [
+      "To increase the voltage in a circuit",
+      "To protect a circuit from overheating due to excessive current",
+      "To store electrical energy for later use",
+      "To decrease the resistance in a circuit"
+    ],
+    "correct": 1,
+    "rationale": "Circuit breakers and fuses are safety devices designed to interrupt the flow of electricity when the current exceeds a safe level, preventing overheating and potential fires."
+  },
+  {
+    "category": "Electricity",
+    "question": "What unit is used to measure voltage?",
+    "options": [
+      "Ampere (A)",
+      "Ohm (Ω)",
+      "Watt (W)",
+      "Volt (V)"
+    ],
+    "correct": 3,
+    "rationale": "Voltage, the electrical potential difference, is measured in volts (V). Amperes measure current, ohms measure resistance, and watts measure power."
+  },
+  {
+    "category": "Electricity",
+    "question": "Which of the following is NOT a source of electricity?",
+    "options": [
+      "Battery",
+      "Generator",
+      "Switch",
+      "Solar Panel"
+    ],
+    "correct": 2,
+    "rationale": "A switch is a device used to open or close an electrical circuit. Batteries, generators, and solar panels all generate electricity."
+  }
+]
