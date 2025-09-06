@@ -40,8 +40,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Compile TypeScript and copy to generated directory
+      - name: Ensure generated directory exists
+        run: mkdir -p resources/public/js/generated
+        
+      - name: Compile TypeScript
         run: npm run build
+      
+      - name: Debug - List generated files
+        run: |
+          echo "Contents of dist directory:"
+          ls -la dist/
+          echo "Contents of generated directory:"
+          ls -la resources/public/js/generated/
+        
+      - name: Manually copy compiled files to ensure they're present
+        run: cp -f dist/* resources/public/js/generated/
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
