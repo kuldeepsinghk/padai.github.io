@@ -1,24 +1,36 @@
 (ns math-quiz-server.constants
-  (:require [math-quiz-server.models :refer [create-curriculum-spec]]))
+  (:require [math-quiz-server.models :refer [create-curriculum-spec]]
+            [cheshire.core :as json]
+            [clojure.java.io :as io]))
 
-;; Define topics by grade and subject
-(def topics-by-grade-and-subject
-  {;; 6th grade topicsclea
-   6 {
-;;       "Math" ["Basic Arithmetic" "Decimals" "Fractions" "Geometry" "Measurement"]
-      "Science" ["Diversity in the living world" "Mindful Eating: A Path to a Healthy Body"]}
-   
-   ;; 7th grade topics
-   7 {"Math" ["LCM and HCF" "Whole Numbers" "Integers" "Number Line" "Prime Number" "Fractions"]
-      "Science" ["Matter" "Force" "Energy" "Light" "Sound" "Electricity"]}
-   
-   ;; 10th grade topics
-   10 {
-       "Math" ["Real Numbers" "Polynomials" ]
-       "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World" "Electricity" "Magnetic Effects of Electric Current"]
-       "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts" "Metals and Non-metals" "Carbon and Its Compounds"]
-       "biology" ["Life Processes" "Control and Coordination" "How Do Organisms Reproduce" "Heredity and Evolution" "Our Environment"]
-       }})
+;; Load curriculum data from JSON file
+(defn load-curriculum-data []
+  (try
+    (let [file (io/resource "public/grade-subjects.json")
+          content (slurp file)]
+      (json/parse-string content false)) 
+    (catch Exception e
+      (println "Error loading grade-subjects.json:" (.getMessage e)))))
+
+;; Convert grade strings like "6th" to integers like 6
+(defn grade-str-to-int [grade-str]
+  (let [grade-str-clean (if (keyword? grade-str)
+                          (name grade-str)
+                          (str grade-str))]
+    (Integer/parseInt (clojure.string/replace grade-str-clean #"th$" ""))))
+
+;; Convert the JSON format to the format needed for topics-by-grade-and-subject
+(defn convert-json-to-topics-format [json-data]
+  (reduce (fn [acc [grade-str subjects-map]]
+            (assoc acc 
+                   (grade-str-to-int grade-str) 
+                   subjects-map))
+          {}
+          json-data))
+
+;; Load the curriculum data and convert to our internal format
+(def curriculum-data (load-curriculum-data))
+(def topics-by-grade-and-subject (convert-json-to-topics-format curriculum-data))
 
 ;; Function to create a curriculum spec for a specific grade
 (defn get-grade-curriculum [grade]
@@ -31,9 +43,10 @@
 (def grade-7-curriculum (get-grade-curriculum 7))
 (def grade-10-curriculum (get-grade-curriculum 10))
 
-;; Alternatively, access them dynamically
+;; Function to get curriculum for a specific grade
 (defn curriculum-for-grade [grade]
-  (if (contains? topics-by-grade-and-subject grade)
-    (get-grade-curriculum grade)
-    (throw (ex-info (str "No curriculum defined for grade " grade) 
-                    {:grade grade :available-grades (keys topics-by-grade-and-subject)}))))
+  (case grade
+    6 grade-6-curriculum
+    7 grade-7-curriculum
+    10 grade-10-curriculum
+    grade-7-curriculum))

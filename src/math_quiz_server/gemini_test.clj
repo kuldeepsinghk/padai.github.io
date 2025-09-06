@@ -56,7 +56,7 @@
                 7) ;; Default to 7th grade if not specified
         ;; Get the curriculum for the specified grade
         curriculum-spec (const/curriculum-for-grade grade)
-        num-questions 50]
+        num-questions 2]
 
     (println "Generating questions for grade:" grade)
 
