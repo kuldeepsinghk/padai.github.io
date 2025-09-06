@@ -5,299 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roblox Math Adventure</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Fredoka', sans-serif;
-        }
-        body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
-            min-height: 100vh;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background: rgba(30, 30, 46, 0.8);
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            margin: 20px 0;
-            border: 2px solid #ff7b25;
-            position: relative;
-            overflow: hidden;
-        }
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #ff7b25, #00a2ff, #ff7b25);
-            z-index: 10;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 25px;
-            position: relative;
-        }
-        .roblox-logo {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff7b25, #ffcc00);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 10px rgba(255, 123, 37, 0.5);
-        }
-        h1 {
-            color: #00a2ff;
-            margin-bottom: 10px;
-            font-size: 2.2rem;
-            text-shadow: 0 0 5px rgba(0, 162, 255, 0.5);
-        }
-        .description {
-            color: #cccccc;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-        }
-        .progress-container {
-            background: rgba(0, 162, 255, 0.2);
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 2px solid #00a2ff;
-        }
-        .progress-bar {
-            height: 20px;
-            background: #1e1e2e;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 10px;
-            border: 2px solid #ff7b25;
-        }
-        .progress {
-            height: 100%;
-            background: linear-gradient(90deg, #ff7b25 0%, #ffcc00 100%);
-            width: 4%;
-            transition: width 0.5s ease;
-            border-radius: 8px;
-        }
-        .progress-text {
-            display: flex;
-            justify-content: space-between;
-            font-weight: 500;
-            color: #ffcc00;
-        }
-        .question {
-            margin-bottom: 25px;
-            padding: 20px;
-            border-radius: 15px;
-            background: rgba(37, 37, 58, 0.8);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border: 2px solid #ff7b25;
-            position: relative;
-        }
-        .question-number {
-            position: absolute;
-            top: -15px;
-            left: 20px;
-            background: #ff7b25;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        .question-text {
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #ffcc00;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        .options {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
-        }
-        .option {
-            padding: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s;
-            border: 2px solid #00a2ff;
-            background: rgba(0, 162, 255, 0.2);
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-        .option:hover {
-            background: rgba(0, 162, 255, 0.4);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-        .option input {
-            margin-right: 12px;
-            cursor: pointer;
-        }
-        .feedback {
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 15px;
-            display: none;
-            animation: fadeIn 0.5s;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .correct {
-            background-color: rgba(0, 200, 83, 0.2);
-            color: #00c853;
-            border: 2px solid #00c853;
-        }
-        .incorrect {
-            background-color: rgba(255, 0, 0, 0.2);
-            color: #ff5252;
-            border: 2px solid #ff5252;
-        }
-        .rationale {
-            margin-top: 10px;
-            font-style: italic;
-            color: #cccccc;
-        }
-        .controls {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        button {
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 600;
-            transition: all 0.3s;
-            background: linear-gradient(45deg, #ff7b25, #ffcc00);
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 5px 15px rgba(255, 123, 37, 0.4);
-        }
-        button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 123, 37, 0.6);
-        }
-        button:active {
-            transform: translateY(1px);
-        }
-        #prev {
-            background: linear-gradient(45deg, #00a2ff, #0077cc);
-        }
-        #submit {
-            background: linear-gradient(45deg, #00c853, #009688);
-        }
-        #results {
-            margin-top: 30px;
-            padding: 25px;
-            background: rgba(37, 37, 58, 0.8);
-            border-radius: 15px;
-            display: none;
-            border: 2px solid #ffcc00;
-        }
-        .wrong-answer {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: rgba(255, 82, 82, 0.2);
-            border-radius: 10px;
-            border-left: 5px solid #ff5252;
-        }
-        .score-display {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #ffcc00;
-            text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
-        }
-        .category {
-            display: inline-block;
-            background: #ff7b25;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            color: #cccccc;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-        .roblox-character {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 100px;
-            height: 120px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120"><rect x="30" y="20" width="40" height="50" fill="%23ff7b25" rx="5"/><rect x="20" y="70" width="60" height="30" fill="%2300a2ff" rx="5"/><circle cx="40" cy="40" r="5" fill="white"/><circle cx="60" cy="40" r="5" fill="white"/><rect x="45" y="50" width="10" height="5" fill="%23333"/></svg>');
-            background-repeat: no-repeat;
-            z-index: 100;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        .particle {
-            position: absolute;
-            background: #ffcc00;
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: particle-float 5s infinite;
-        }
-        @keyframes particle-float {
-            0% { transform: translateY(0) translateX(0); opacity: 0; }
-            50% { opacity: 0.6; }
-            100% { transform: translateY(-100px) translateX(20px); opacity: 0; }
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-            .roblox-logo {
-                font-size: 2.5rem;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            .options {
-                grid-template-columns: 1fr;
-            }
-            .controls {
-                flex-direction: column;
-                gap: 10px;
-            }
-            button {
-                width: 100%;
-            }
-            .roblox-character {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Include the external JavaScript file -->
@@ -320,19 +28,19 @@
             </div>
         </div>
 
-        <div class="selection-container" style="margin-bottom: 20px; background: rgba(0, 162, 255, 0.2); border-radius: 15px; padding: 15px; border: 2px solid #00a2ff;">
-            <div style="display: flex; gap: 20px; justify-content: center;">
-                <div style="flex: 1;">
-                    <label for="class-select" style="display: block; margin-bottom: 5px; color: #ffcc00; font-weight: bold;">Select Class:</label>
-                    <select id="class-select" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #ff7b25; background: rgba(37, 37, 58, 0.8); color: white;">
+        <div class="selection-container">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="class-select">Select Class:</label>
+                    <select id="class-select">
                         <option value="">-- Select Class --</option>
                         <option value="6th">6th Class</option>
                         <option value="10th">10th Class</option>
                     </select>
                 </div>
-                <div style="flex: 1;">
-                    <label for="subject-select" style="display: block; margin-bottom: 5px; color: #ffcc00; font-weight: bold;">Select Subject:</label>
-                    <select id="subject-select" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #ff7b25; background: rgba(37, 37, 58, 0.8); color: white;" disabled>
+                <div class="flex-item">
+                    <label for="subject-select">Select Subject:</label>
+                    <select id="subject-select" disabled>
                         <option value="">-- Select Subject --</option>
                     </select>
                 </div>
@@ -352,8 +60,8 @@
 
     <div class="roblox-character"></div>
 
-    <footer>clear
-        <p> 2023 Roblox Math Adventure | Designed for Educational Purposes</p>
+    <footer>
+        <p>2023 Roblox Math Adventure | Designed for Educational Purposes</p>
     </footer>
 
     <script>
@@ -364,6 +72,12 @@
         let wrongAnswers = [];
         let quizData = [];
         let quizStarted = false;
+        
+        // Function to get random questions from an array
+        function getRandomQuestions(questions, count) {
+            const shuffled = [...questions].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
         
         // Subject mapping based on class
         const subjectsByClass = {
@@ -456,8 +170,8 @@
             } catch (error) {
                 console.error('Error loading quiz data:', error);
                 document.getElementById('quiz').innerHTML = 
-                    `<p style="color: #ff5252; padding: 15px; background: rgba(255, 0, 0, 0.2); border-radius: 10px;">
-                    Error loading quiz data: ${error.message}. Please try a different selection.</p>`;
+                    `<div class="error-message">
+                    Error loading quiz data: ${error.message}. Please try a different selection.</div>`;
             }
         }
         
@@ -627,7 +341,7 @@
             // Show wrong answers summary if any
             if (wrongAnswers.length > 0) {
                 resultsElement.innerHTML += `
-                    <h3 style="color: #ffcc00; text-align: center;">Areas to Improve:</h3>
+                    <h3 class="improvement-header">Areas to Improve:</h3>
                     <div id="wrong-answers-summary"></div>
                 `;
 
@@ -644,7 +358,7 @@
                 });
             } else {
                 resultsElement.innerHTML += `
-                    <div style="text-align: center; padding: 20px;">
+                    <div class="perfect-score">
                         <h3>Perfect! You mastered all challenges! </h3>
                         <p>You're ready for more advanced math quests!</p>
                     </div>

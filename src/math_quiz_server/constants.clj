@@ -4,8 +4,9 @@
 ;; Define topics by grade and subject
 (def topics-by-grade-and-subject
   {;; 6th grade topicsclea
-   6 {"Math" ["Basic Arithmetic" "Decimals" "Fractions" "Geometry" "Measurement"]
-      "Science" ["Plants"]}
+   6 {
+;;       "Math" ["Basic Arithmetic" "Decimals" "Fractions" "Geometry" "Measurement"]
+      "Science" ["Diversity in the living world" "Mindful Eating: A Path to a Healthy Body"]}
    
    ;; 7th grade topics
    7 {"Math" ["LCM and HCF" "Whole Numbers" "Integers" "Number Line" "Prime Number" "Fractions"]
@@ -13,13 +14,10 @@
    
    ;; 10th grade topics
    10 {
-;;        "Math" ["Real Numbers" "Polynomials" ]
-;;        "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World" "Electricity" "Magnetic Effects of Electric Current"]
-;;        "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World"]
-;;        "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts" "Metals and Non-metals" "Carbon and Its Compounds"]
-       "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts"]
-;;        "biology" ["Life Processes" "Control and Coordination" "How Do Organisms Reproduce" "Heredity and Evolution" "Our Environment"]
-       "biology" ["Life Processes" "Control and Coordination" "How Do Organisms Reproduce"]
+       "Math" ["Real Numbers" "Polynomials" ]
+       "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World" "Electricity" "Magnetic Effects of Electric Current"]
+       "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts" "Metals and Non-metals" "Carbon and Its Compounds"]
+       "biology" ["Life Processes" "Control and Coordination" "How Do Organisms Reproduce" "Heredity and Evolution" "Our Environment"]
        }})
 
 ;; Function to create a curriculum spec for a specific grade
