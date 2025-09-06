@@ -5,7 +5,7 @@
             [math-quiz-server.models :as models]
             [math-quiz-server.constants :as const]))
 
-(def api-key "") ; Replace with your actual API key
+(def api-key "AIzaSyAA_FmmPaX6L86Oo1T7h6ydyfNEXFQYYU4") ; Replace with your actual API key
 (def gemini-api-url "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent")
 
 (defn clean-json-text [text]

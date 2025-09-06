@@ -5,15 +5,16 @@
 (def topics-by-grade-and-subject
   {;; 6th grade topics
    6 {"Math" ["Basic Arithmetic" "Decimals" "Fractions" "Geometry" "Measurement"]
-      "Science" ["Plants" "Animals" "Weather" "Solar System" "Simple Machines"]}
+      "Science" ["Plants"]}
    
    ;; 7th grade topics
    7 {"Math" ["LCM and HCF" "Whole Numbers" "Integers" "Number Line" "Prime Number" "Fractions"]
       "Science" ["Matter" "Force" "Energy" "Light" "Sound" "Electricity"]}
    
    ;; 10th grade topics
-   10 {"Math" ["Quadratic Equations" "Trigonometry" "Statistics" "Probability" "Coordinate Geometry"]
-       "Science" ["Genetics" "Periodic Table" "Electromagnetic Induction" "Carbon Compounds" "Evolution"]}})
+   10 {"Math" ["Number Systems" "Algebra" "Coordinate Geometry" "Geometry" "Trigonometry" "Mensuration" "Statistics & Probability"]
+       "Physics" ["Light:Reflection" "Light:Refraction" "The Human Eye and the Colourful World" "Electricity" "Magnetic Effects of Electric Current"]
+       "chemistry" ["Chemical Reactions and Equations" "Acids, Bases, and Salts" "Metals and Non-metals" "Carbon and Its Compounds"]}})
 
 ;; Function to create a curriculum spec for a specific grade
 (defn get-grade-curriculum [grade]
