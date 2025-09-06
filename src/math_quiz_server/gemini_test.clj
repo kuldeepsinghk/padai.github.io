@@ -18,7 +18,8 @@
 
 (defn generate-text [topic num-questions curriculum-spec]
   (let [grade (:grade curriculum-spec)
-        prompt (str "Generate " num-questions " multiple-choice questions from NCERT sllyabus about " topic " for " grade "-grade students in JSON format. "
+        prompt (str "You are an experienced CBSE Class " grade " " topic " teacher. Your task is to generate practice questions for students studying the NCERT syllabus. "
+                    "Generate " num-questions " multiple-choice questions from NCERT sllyabus about " topic " for " grade "-grade students in JSON format. "
                     "Each question should have a 'category', 'question', 'options' (an array of four strings), 'correct' (the index of the correct option), and 'rationale'. "
                     "The JSON should be an array of question objects, like this: "
                     "[{\"category\": \"" topic "\", \"question\": \"question text\", \"options\": [\"option1\", \"option2\", \"option3\", \"option4\"], \"correct\": 0, \"rationale\": \"explanation\"}]")]
