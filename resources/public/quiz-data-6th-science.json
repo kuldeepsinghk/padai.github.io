@@ -221,4 +221,382 @@
     "options": [
       "A magnet that loses its magnetism quickly",
       "A magnet that retains its magnetism for a long period",
-      ",
+      "A magnet made of plastic",
+      "A magnet that can be turned on and off"
+    ],
+    "correct": 1,
+    "rationale": "A permanent magnet is an object that remains magnetized for a long time, unlike a temporary magnet."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which statement about magnetic poles is correct?",
+    "options": [
+      "Opposite poles attract, like poles repel",
+      "Opposite poles repel, like poles attract",
+      "All poles attract each other",
+      "All poles repel each other"
+    ],
+    "correct": 0,
+    "rationale": "The fundamental law of magnetism states that opposite poles attract each other, and like poles repel each other."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is a natural magnet?",
+    "options": [
+      "A magnet made by humans",
+      "A magnet found in nature",
+      "A magnet that is very weak",
+      "A magnet that is very strong"
+    ],
+    "correct": 1,
+    "rationale": "A natural magnet is a mineral, like lodestone (magnetite), that is found naturally and has magnetic properties."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "A compass needle points in the direction of the Earth's magnetic poles. Which pole of the compass points towards the geographical North?",
+    "options": [
+      "The South pole of the compass",
+      "The North pole of the compass",
+      "It varies depending on location",
+      "Both poles point north"
+    ],
+    "correct": 1,
+    "rationale": "The North pole of a compass needle points towards the Earth's geographical North, which is near the Earth's magnetic South pole."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of these is a temporary magnet?",
+    "options": [
+      "Bar magnet",
+      "Refrigerator magnet",
+      "Compass needle",
+      "Electromagnet"
+    ],
+    "correct": 3,
+    "rationale": "An electromagnet is a temporary magnet that is only magnetic when an electric current flows through it."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of these devices uses the magnetic property of Earth to find direction?",
+    "options": [
+      "Thermometer",
+      "Barometer",
+      "Compass",
+      "Telescope"
+    ],
+    "correct": 2,
+    "rationale": "A compass uses a small, freely rotating magnet to align with the Earth's magnetic field, helping people find the North-South direction."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What happens to the magnetic strength of a magnet when it is heated?",
+    "options": [
+      "It increases",
+      "It remains the same",
+      "It decreases",
+      "It disappears completely"
+    ],
+    "correct": 2,
+    "rationale": "Heating a magnet can cause it to lose its magnetism, so its magnetic strength decreases."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of these is a way to make a magnet?",
+    "options": [
+      "Rubbing a piece of iron with a magnet in a specific direction",
+      "Heating a piece of plastic",
+      "Breaking a non-magnetic object",
+      "Dipping a magnet in water"
+    ],
+    "correct": 0,
+    "rationale": "Rubbing a piece of iron with a magnet in one direction is a simple method of creating a temporary magnet through induction."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which pair will repel each other?",
+    "options": [
+      "North pole of magnet and South pole of another magnet",
+      "North pole of magnet and North pole of another magnet",
+      "North pole of magnet and an iron nail",
+      "South pole of magnet and an iron nail"
+    ],
+    "correct": 1,
+    "rationale": "Like poles, such as two north poles, will repel each other. Opposite poles attract, and a magnet will attract a non-magnetized ferromagnetic material like an iron nail."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the name of the oldest known natural magnet?",
+    "options": [
+      "Hematite",
+      "Pyrite",
+      "Lodestone",
+      "Quartz"
+    ],
+    "correct": 2,
+    "rationale": "Lodestone, a form of the mineral magnetite, is the oldest known natural magnet."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "A piece of non-magnetic material is placed near a magnet. What will happen?",
+    "options": [
+      "It will be strongly attracted",
+      "It will be strongly repelled",
+      "It will show no effect",
+      "It will become magnetized"
+    ],
+    "correct": 2,
+    "rationale": "Non-magnetic materials are not attracted or repelled by a magnet, so there will be no effect."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the main use of a magnetic compass?",
+    "options": [
+      "Measuring temperature",
+      "Finding direction",
+      "Measuring weight",
+      "Predicting weather"
+    ],
+    "correct": 1,
+    "rationale": "The primary use of a magnetic compass is to determine the direction, as its needle aligns with the Earth's magnetic North."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which part of a bar magnet has the weakest magnetic strength?",
+    "options": [
+      "The poles",
+      "The center",
+      "The corners",
+      "The ends"
+    ],
+    "correct": 1,
+    "rationale": "The magnetic field is strongest at the poles and weakest at the center of the magnet."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of these is a way to store magnets properly?",
+    "options": [
+      "By placing them in a pile",
+      "By keeping them near electronic devices",
+      "By keeping them near heat sources",
+      "By placing a piece of non-magnetic material between them"
+    ],
+    "correct": 3,
+    "rationale": "Placing a piece of non-magnetic material between magnets helps prevent demagnetization. Magnets should be stored away from heat and other magnets to maintain their strength."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is magnetic repulsion?",
+    "options": [
+      "The force that pulls magnets together",
+      "The force that pushes magnets apart",
+      "The process of a magnet losing its power",
+      "The force that attracts iron"
+    ],
+    "correct": 1,
+    "rationale": "Magnetic repulsion is the force that pushes two magnets apart when their like poles are brought near each other."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "A magnet will attract a needle made of:",
+    "options": [
+      "Plastic",
+      "Glass",
+      "Iron",
+      "Copper"
+    ],
+    "correct": 2,
+    "rationale": "A magnet will attract a needle made of iron, as iron is a magnetic material."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the main reason a compass works?",
+    "options": [
+      "It is a magical device",
+      "The Earth acts as a giant magnet",
+      "It is powered by electricity",
+      "It is attracted by the sun"
+    ],
+    "correct": 1,
+    "rationale": "A compass works because the Earth itself has a massive magnetic field, causing the compass needle to align with it."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "When a magnet is broken, each piece becomes:",
+    "options": [
+      "A non-magnet",
+      "A new magnet with its own poles",
+      "A piece with only a north pole",
+      "A piece with only a south pole"
+    ],
+    "correct": 1,
+    "rationale": "No matter how many times a magnet is broken, each resulting piece will have its own complete set of north and south poles."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the process of making a non-magnetic material a magnet called?",
+    "options": [
+      "Induction",
+      "Magnetization",
+      "Polarization",
+      "Attraction"
+    ],
+    "correct": 1,
+    "rationale": "Magnetization is the process of making a material a magnet by arranging its internal magnetic domains."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the force exerted by a magnet on another magnet or magnetic material called?",
+    "options": [
+      "Gravitational force",
+      "Frictional force",
+      "Magnetic force",
+      "Electric force"
+    ],
+    "correct": 2,
+    "rationale": "The magnetic force is the push or pull that a magnet exerts on another magnetic object without touching it."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "A horseshoe magnet has poles located at:",
+    "options": [
+      "The middle",
+      "The two ends",
+      "The curve",
+      "Everywhere"
+    ],
+    "correct": 1,
+    "rationale": "Similar to a bar magnet, a horseshoe magnet also has its two poles located at its two ends, although they are bent towards each other."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the property of magnets that allows them to be used in cranes to lift heavy iron objects?",
+    "options": [
+      "Attraction",
+      "Repulsion",
+      "Demagnetization",
+      "Polarity"
+    ],
+    "correct": 0,
+    "rationale": "The property of attraction, where a magnet pulls in magnetic materials, is used in cranes to lift and move heavy iron objects."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of these materials is not suitable for making a magnet?",
+    "options": [
+      "Iron",
+      "Steel",
+      "Nickel",
+      "Wood"
+    ],
+    "correct": 3,
+    "rationale": "Iron, steel, and nickel are magnetic materials and can be magnetized. Wood is a non-magnetic material and cannot be used to make a magnet."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "A toy car with a magnet at its front will be attracted to another toy car with a magnet at its back if the poles facing each other are:",
+    "options": [
+      "North and North",
+      "South and South",
+      "North and South",
+      "Any poles"
+    ],
+    "correct": 2,
+    "rationale": "For attraction to occur, the opposite poles of the two magnets must face each other."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "If you hold an iron nail near the north pole of a magnet, the end of the nail closer to the magnet will become:",
+    "options": [
+      "A North pole",
+      "A South pole",
+      "A non-magnetic part",
+      "An East pole"
+    ],
+    "correct": 1,
+    "rationale": "Through magnetic induction, the end of the iron nail closer to the north pole of the magnet will acquire an opposite polarity, becoming a south pole."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What happens if you store two bar magnets with their unlike poles facing each other?",
+    "options": [
+      "They will be repelled",
+      "They will be attracted",
+      "Their strength will decrease",
+      "Their strength will increase"
+    ],
+    "correct": 1,
+    "rationale": "Storing magnets with unlike poles facing each other prevents them from losing their magnetism because they remain in a state of attraction."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the reason a compass needle points to the north?",
+    "options": [
+      "It is attracted by the Sun's rays",
+      "It aligns with the Earth's magnetic field",
+      "It points to the North Star",
+      "It is repelled by the South Pole"
+    ],
+    "correct": 1,
+    "rationale": "A compass needle is a small magnet that aligns with the Earth's large magnetic field, causing its north pole to point towards the Earth's magnetic south pole, which is near the geographical north pole."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of the following is an example of a magnetic pole pair that will repel?",
+    "options": [
+      "North and South",
+      "South and North",
+      "North and North",
+      "North and a non-magnetic material"
+    ],
+    "correct": 2,
+    "rationale": "Like poles, such as two north poles, will repel each other. Opposite poles attract, and a magnet will attract a magnetic material."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "Which of these is a way to protect a magnet from demagnetization?",
+    "options": [
+      "Dropping it frequently",
+      "Heating it in a fire",
+      "Using a magnetic keeper",
+      "Storing it in a moist place"
+    ],
+    "correct": 2,
+    "rationale": "A magnetic keeper, which is a piece of soft iron, is used to store magnets and help them retain their magnetism by providing a complete magnetic circuit."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "A piece of chalk is placed near a magnet. What will happen?",
+    "options": [
+      "It will be attracted",
+      "It will be repelled",
+      "Nothing will happen",
+      "It will become a magnet"
+    ],
+    "correct": 2,
+    "rationale": "Chalk is a non-magnetic material and will not be affected by a magnet."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "What is the phenomenon of a magnet attracting a piece of iron without touching it called?",
+    "options": [
+      "Contact force",
+      "Non-contact force",
+      "Mechanical force",
+      "Gravitational force"
+    ],
+    "correct": 1,
+    "rationale": "The magnetic force is an example of a non-contact force, as it can act on objects from a distance without physical contact."
+  },
+  {
+    "category": "Exploring Magnets",
+    "question": "If you hold a piece of iron near a magnet's north pole, what pole will be induced at the end of the iron piece closer to the magnet?",
+    "options": [
+      "North pole",
+      "South pole",
+      "It will not have a pole",
+      "It will become a non-magnetic part"
+    ],
+    "correct": 1,
+    "rationale": "When a magnetic material is brought near a magnet, it becomes a temporary magnet through induction, with the end closer to the magnet developing the opposite polarity."
+  }
+]
