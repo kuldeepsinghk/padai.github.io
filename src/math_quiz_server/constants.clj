@@ -22,9 +22,16 @@
 ;; Convert the JSON format to the format needed for topics-by-grade-and-subject
 (defn convert-json-to-topics-format [json-data]
   (reduce (fn [acc [grade-str subjects-map]]
-            (assoc acc 
-                   (grade-str-to-int grade-str) 
-                   subjects-map))
+            (let [grade-int (grade-str-to-int grade-str)
+                  subjects-with-topics (reduce (fn [subj-acc [subject chapters-map]]
+                                                (assoc subj-acc 
+                                                       subject 
+                                                       (mapcat (fn [[_ chapter-data]]
+                                                                (get chapter-data "key_topics"))
+                                                              chapters-map)))
+                                              {}
+                                              subjects-map)]
+              (assoc acc grade-int subjects-with-topics)))
           {}
           json-data))
 

@@ -1,16 +1,132 @@
 {
   "6th": {
-    "Math": ["Basic Arithmetic", "Decimals", "Fractions", "Geometry", "Measurement"],
-    "Science": ["Diversity in the living world", "Mindful Eating: A Path to a Healthy Body"]
+    "Math": {
+      "Basic Arithmetic": {
+        "key_topics": ["Addition", "Subtraction", "Multiplication", "Division"]
+      },
+      "Decimals": {
+        "key_topics": ["Decimal place value", "Addition and subtraction of decimals", "Multiplication of decimals", "Division of decimals"]
+      },
+      "Fractions": {
+        "key_topics": ["Equivalent fractions", "Adding fractions", "Subtracting fractions", "Multiplying fractions"]
+      },
+      "Geometry": {
+        "key_topics": ["Basic shapes", "Lines and angles", "Perimeter", "Area"]
+      },
+      "Measurement": {
+        "key_topics": ["Length", "Weight", "Capacity", "Time"]
+      }
+    },
+    "Science": {
+      "Diversity in the Living World": {
+        "key_topics": ["Classification of organisms", "Plants and animals", "Adaptation", "Habitats"]
+      },
+      "Mindful Eating": {
+        "key_topics": ["Nutrients", "Balanced diet", "Food groups", "Healthy eating habits"]
+      },
+      "Exploring Magnets": {
+        "key_topics": ["Magnetic materials", "Poles", "Attraction and repulsion", "Making a magnet"]
+      }
+    }
   },
   "7th": {
-    "Math": ["LCM and HCF", "Whole Numbers", "Integers", "Number Line", "Prime Number", "Fractions"],
-    "Science": ["Matter", "Force", "Energy", "Light", "Sound", "Electricity"]
+    "Math": {
+      "LCM and HCF": {
+        "key_topics": ["Finding factors", "Prime factorization", "Finding LCM", "Finding HCF"]
+      },
+      "Whole Numbers": {
+        "key_topics": ["Properties of whole numbers", "Operations with whole numbers", "Word problems"]
+      },
+      "Integers": {
+        "key_topics": ["Representation on number line", "Addition and subtraction", "Multiplication and division", "Properties of integers"]
+      },
+      "Number Line": {
+        "key_topics": ["Representation of numbers", "Operations using number line", "Distance between points"]
+      },
+      "Prime Number": {
+        "key_topics": ["Definition", "Identification", "Prime factorization", "Applications"]
+      },
+      "Fractions": {
+        "key_topics": ["Types of fractions", "Equivalent fractions", "Operations with fractions", "Word problems"]
+      }
+    },
+    "Science": {
+      "Matter": {
+        "key_topics": ["States of matter", "Properties", "Changes in matter", "Elements and compounds"]
+      },
+      "Force": {
+        "key_topics": ["Types of forces", "Balanced and unbalanced forces", "Friction", "Pressure"]
+      },
+      "Energy": {
+        "key_topics": ["Forms of energy", "Energy transformation", "Conservation of energy", "Renewable and non-renewable sources"]
+      },
+      "Light": {
+        "key_topics": ["Properties of light", "Reflection", "Refraction", "Dispersion"]
+      },
+      "Sound": {
+        "key_topics": ["Production of sound", "Propagation", "Characteristics", "Noise pollution"]
+      },
+      "Electricity": {
+        "key_topics": ["Electric current", "Circuits", "Conductors and insulators", "Safety measures"]
+      }
+    }
   },
   "10th": {
-    "Math": ["Real Numbers", "Polynomials"],
-    "Physics": ["Light:Reflection", "Light:Refraction", "The Human Eye and the Colourful World", "Electricity", "Magnetic Effects of Electric Current"],
-    "Chemistry": ["Chemical Reactions and Equations", "Acids, Bases, and Salts", "Metals and Non-metals", "Carbon and Its Compounds"],
-    "Biology": ["Life Processes", "Control and Coordination", "How Do Organisms Reproduce", "Heredity and Evolution", "Our Environment"]
+    "Math": {
+      "Real Numbers": {
+        "key_topics": ["Rational and irrational numbers", "Euclid's division lemma", "Fundamental theorem of arithmetic", "Decimal expansions"]
+      },
+      "Polynomials": {
+        "key_topics": ["Zeroes of polynomials", "Division algorithm", "Relationship between zeroes and coefficients", "Algebraic identities"]
+      }
+    },
+    "Physics": {
+      "Light: Reflection": {
+        "key_topics": ["Laws of reflection", "Spherical mirrors", "Mirror formula", "Magnification"]
+      },
+      "Light: Refraction": {
+        "key_topics": ["Laws of refraction", "Refractive index", "Lenses", "Lens formula"]
+      },
+      "The Human Eye and the Colourful World": {
+        "key_topics": ["Structure of human eye", "Defects of vision", "Dispersion of light", "Atmospheric refraction"]
+      },
+      "Electricity": {
+        "key_topics": ["Electric current", "Potential difference", "Ohm's law", "Resistance in series and parallel"]
+      },
+      "Magnetic Effects of Electric Current": {
+        "key_topics": ["Magnetic field", "Electromagnetism", "Electric motor", "Electromagnetic induction"]
+      }
+    },
+    "Chemistry": {
+      "Chemical Reactions and Equations": {
+        "key_topics": ["Balancing chemical equations", "Types of chemical reactions", "Oxidation and reduction", "Effects of oxidation"]
+      },
+      "Acids, Bases, and Salts": {
+        "key_topics": ["Properties of acids and bases", "pH scale", "Reactions of acids and bases", "Common salts"]
+      },
+      "Metals and Non-metals": {
+        "key_topics": ["Physical and chemical properties", "Reactivity series", "Extraction of metals", "Corrosion"]
+      },
+      "Carbon and Its Compounds": {
+        "key_topics": ["Covalent bonding", "Versatile nature of carbon", "Hydrocarbons", "Functional groups"]
+      }
+    },
+    "Biology": {
+      "Life Processes": {
+        "key_topics": ["Nutrition", "Respiration", "Transportation", "Excretion"]
+      },
+      "Control and Coordination": {
+        "key_topics": ["Nervous system", "Reflex action", "Human brain", "Hormones"]
+      },
+      "How Do Organisms Reproduce": {
+        "key_topics": ["Asexual reproduction", "Sexual reproduction", "Reproductive health", "Puberty"]
+      },
+      "Heredity and Evolution": {
+        "key_topics": ["Mendel's laws", "Inherited traits", "Sex determination", "Speciation"]
+      },
+      "Our Environment": {
+        "key_topics": ["Ecosystem", "Food chains and webs", "Environmental problems", "Conservation of resources"]
+      }
+    }
   }
 }

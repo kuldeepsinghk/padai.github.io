@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["category", "question", "options", "correct", "rationale"],
+    "properties": {
+      "category": {
+        "type": "string",
+        "description": "The topic category of the question"
+      },
+      "question": {
+        "type": "string",
+        "description": "The question text"
+      },
+      "options": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 4,
+        "maxItems": 4,
+        "description": "An array of exactly 4 possible answer options"
+      },
+      "correct": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3,
+        "description": "The index of the correct option (0-3)"
+      },
+      "rationale": {
+        "type": "string",
+        "description": "Explanation of why the correct answer is right"
+      }
+    },
+    "additionalProperties": false
+  },
+  "examples": [
+    [
+      {
+        "category": "Classification of organisms",
+        "question": "Which of the following is used as the primary basis for modern classification of living organisms?",
+        "options": ["Color", "Size", "Evolutionary relationships", "Habitat"],
+        "correct": 2,
+        "rationale": "Modern classification systems are based primarily on evolutionary relationships rather than physical appearance, using genetics and molecular biology to determine relationships between organisms."
+      },
+      {
+        "category": "Classification of organisms",
+        "question": "Which organism belongs to the kingdom Plantae?",
+        "options": ["Mushroom", "Bacteria", "Rose plant", "Amoeba"],
+        "correct": 2,
+        "rationale": "Rose plants belong to the kingdom Plantae as they are multicellular organisms that can prepare their own food through photosynthesis and have cell walls made of cellulose."
+      }
+    ]
+  ]
+}

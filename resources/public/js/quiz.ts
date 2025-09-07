@@ -2,11 +2,41 @@
  * Math Quiz Utility Functions
  */
 
+// Define enum for grades for better type safety
+enum Grade {
+  SixthGrade = "6th",
+  SeventhGrade = "7th",
+  TenthGrade = "10th"
+}
+
 // Define types for curriculum data
+interface Chapter {
+  key_topics: string[];
+}
+
 interface CurriculumData {
   [grade: string]: {
-    [subject: string]: string[];
+    [subject: string]: {
+      [strand: string]: {
+        [chapterKey: string]: Chapter;
+      };
+    };
   }
+}
+
+/**
+ * Gets available subjects for a specific grade
+ * @param grade The school grade
+ * @param curriculumData The loaded curriculum data
+ * @returns Array of available subjects for the grade
+ */
+function getSubjectsForGrade(grade: string, curriculumData: CurriculumData): string[] {
+  if (!curriculumData[grade]) {
+    console.error(`No data found for grade: ${grade}`);
+    return [];
+  }
+  
+  return Object.keys(curriculumData[grade]);
 }
 
 // Function to randomly select n questions from an array
@@ -71,6 +101,15 @@ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
     module.exports = {
         getRandomQuestions,
         createParticles,
-        loadCurriculumDataFromQuizJS
+        loadCurriculumDataFromQuizJS,
+        getSubjectsForGrade
     };
+}
+
+// Make functions available globally for browser access
+if (typeof window !== 'undefined') {
+    (window as any).getRandomQuestions = getRandomQuestions;
+    (window as any).createParticles = createParticles;
+    (window as any).loadCurriculumDataFromQuizJS = loadCurriculumDataFromQuizJS;
+    (window as any).getSubjectsForGrade = getSubjectsForGrade;
 }
