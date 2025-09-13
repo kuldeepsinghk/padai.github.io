@@ -11,24 +11,6 @@
                 (when ((:valid? Grade) value)
                   (str (subs (name value) 6))))})
 
-;; Define a record type for Grade
-(defrecord GradeType [value])
-
-;; Smart constructor that ensures only valid Grade values can be created
-(defn grade
-  "Creates a Grade instance with validation. Throws IllegalArgumentException if invalid."
-  [key-value]
-  (if ((:valid? Grade) key-value)
-    (->GradeType key-value)
-    (throw (IllegalArgumentException. 
-             (str "Invalid grade: " key-value 
-                  ". Must be one of: " (clojure.string/join ", " (:keys Grade)))))))
-
-;; Convenience helper constants for common grades
-(def grade-6 (grade :grade-6))
-(def grade-7 (grade :grade-7))
-(def grade-10 (grade :grade-10))
-
 ;; Define Subject as an enum with keyword values
 (def Subject
   {:keys #{:Math :Science :Physics :Chemistry :Biology}
@@ -86,11 +68,16 @@
   (subject kw))
 
 (defn get-subjects-for-grade
-  "Given a Grade instance, returns a list of SubjectType instances for that grade.
-   This function requires a proper Grade instance created with the grade function."
-  [^GradeType grade-instance]
-  (let [grade-key (:value grade-instance)
-        resource (io/resource "public/grade-subjects.json")]
+  "Returns a list of SubjectType instances for the specified grade.
+   This function accepts a grade keyword directly (e.g., :grade-6)."
+  [grade-key]
+  ;; Validate that the grade-key is valid
+  (when-not (m/validate grade-schema grade-key)
+    (throw (IllegalArgumentException. 
+           (str "Invalid grade: " grade-key 
+                ". Must be one of: " (clojure.string/join ", " (m/entries grade-schema))))))
+  
+  (let [resource (io/resource "public/grade-subjects.json")]
     (println "Resource path:" (if resource (.getPath resource) "Resource not found"))
     (if resource
       (let [content (slurp resource)
@@ -111,11 +98,17 @@
       nil)))
 
 (defn get-topics-for-subject
-  "Given a Grade instance and a Subject instance, returns a list of topics for that subject.
-   This function requires proper Grade and Subject instances created with their respective constructors."
-  [^GradeType grade-instance ^SubjectType subject-instance]
-  (let [grade-key (:value grade-instance)
-        subject-key (:value subject-instance)
+  "Returns a list of topics for the specified grade and subject.
+   This function accepts a grade keyword directly (e.g., :grade-6) 
+   and requires a proper Subject instance created with the subject function."
+  [grade-key ^SubjectType subject-instance]
+  ;; Validate that the grade-key is valid
+  (when-not (m/validate grade-schema grade-key)
+    (throw (IllegalArgumentException. 
+           (str "Invalid grade: " grade-key 
+                ". Must be one of: " (clojure.string/join ", " (m/entries grade-schema))))))
+  
+  (let [subject-key (:value subject-instance)
         subject-str ((:to-string Subject) subject-key)
         resource (io/resource "public/grade-subjects.json")]
     (println "Looking up topics for subject" subject-str "in grade" grade-key)
@@ -125,7 +118,7 @@
         ;; Validate data structure
         (if (m/validate grade-subjects-schema parsed-data)
           (let [grade-data (get parsed-data grade-key)
-                subject-data (get grade-data subject-key)]
+                subject-data (get grade-data (keyword subject-str))]
             (if subject-data
               ;; Return topic names as keywords
               (vec (keys subject-data)) 
