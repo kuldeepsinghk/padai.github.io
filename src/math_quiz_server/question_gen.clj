@@ -59,18 +59,11 @@
   "Returns a list of subject keywords for the specified grade.
    This function accepts a grade keyword directly (e.g., :grade-6)."
   [grade-key]
-  ;; Validate that the grade-key is valid
-  (when-not (m/validate grade-schema grade-key)
-    (throw (IllegalArgumentException. 
-           (str "Invalid grade: " grade-key 
-                ". Must be one of: " (clojure.string/join ", " (m/entries grade-schema))))))
-  
   (let [{:keys [data error resource-path]} (load-validated-curriculum-data)]
     (if data
-      (do
-        ;; Get subjects for the specified grade as plain keywords
-        (when-let [grade-data (get data grade-key)]
-          (vec (keys grade-data))))
+      ;; Get subjects for the specified grade as plain keywords
+      (when-let [grade-data (grade-key data)]
+        (vec (keys grade-data)))
       (do
         (println "Warning: JSON data does not match schema")
         (when error (println "Validation error:" error))
@@ -83,24 +76,12 @@
   "Returns a list of topics for the specified grade and subject.
    This function accepts grade and subject keywords directly (e.g., :grade-6, :Math)."
   [grade-key subject-key]
-  ;; Validate that the grade-key is valid
-  (when-not (m/validate grade-schema grade-key)
-    (throw (IllegalArgumentException. 
-           (str "Invalid grade: " grade-key 
-                ". Must be one of: " (clojure.string/join ", " (m/entries grade-schema))))))
-  
-  ;; Validate that the subject-key is valid
-  (when-not (m/validate subject-schema subject-key)
-    (throw (IllegalArgumentException. 
-           (str "Invalid subject: " subject-key 
-                ". Must be one of: " (clojure.string/join ", " (m/entries subject-schema))))))
-  
   (println "Looking up topics for subject" subject-key "in grade" grade-key)
   
-  (let [{:keys [data error resource-path]} (load-validated-curriculum-data)]
+  (let [{:keys [data error]} (load-validated-curriculum-data)]
     (if data
-      (let [grade-data (get data grade-key)
-            subject-data (get grade-data subject-key)]
+      (let [grade-data (grade-key data)
+            subject-data (subject-key grade-data)]
         (if subject-data
           ;; Return topic names as keywords
           (vec (keys subject-data)) 
@@ -113,3 +94,20 @@
         (println "Warning: Error loading JSON data")
         (when error (println "Error details:" error))
         []))))
+
+;; Instrumentation utilities for development and testing
+
+(defn instrument-all!
+  "Enable runtime validation for all functions with Malli type annotations.
+   Call this during development and testing to catch invalid inputs/outputs."
+  []
+  (mi/instrument!))
+
+(defn unstrument-all!
+  "Disable runtime validation for all functions.
+   Call this in production for better performance."
+  []
+  (mi/unstrument!))
+
+;; Comment out to enable validation in REPL sessions
+;; (instrument-all!)

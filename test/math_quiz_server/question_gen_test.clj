@@ -1,12 +1,15 @@
 (ns math-quiz-server.question-gen-test
   (:require [clojure.test :refer :all]
             [math-quiz-server.question-gen :as gen]
-            [clojure.set :as set])
- )
+            [clojure.set :as set]
+            [math-quiz-server.test-helper :as test-helper]))
+
+;; Use the Malli instrumentation fixture for all tests in this namespace
+(use-fixtures :once test-helper/instrument-fixture)
 
 (deftest test-get-subjects-for-grade
   (testing "Getting subjects using grade keywords directly"
-    (let [subjects (gen/get-subjects-for-grade :grade-7)]
+    (let [subjects (gen/get-subjects-for-grade :grade-6)]
       (is (not (nil? subjects)) "Subjects should not be nil")
       (is (vector? subjects) "Subjects should be a vector")
       (is (pos? (count subjects)) "Should have at least one subject")
