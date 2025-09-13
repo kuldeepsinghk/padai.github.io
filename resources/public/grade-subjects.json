@@ -1,5 +1,5 @@
 {
-  "6th": {
+  "grade-6": {
     "Math": {
       "Basic Arithmetic": {
         "key_topics": ["Addition", "Subtraction", "Multiplication", "Division"]
@@ -29,7 +29,7 @@
       }
     }
   },
-  "7th": {
+  "grade-7": {
     "Math": {
       "LCM and HCF": {
         "key_topics": ["Finding factors", "Prime factorization", "Finding LCM", "Finding HCF"]
@@ -71,7 +71,7 @@
       }
     }
   },
-  "10th": {
+  "grade-10": {
     "Math": {
       "Real Numbers": {
         "key_topics": ["Rational and irrational numbers", "Euclid's division lemma", "Fundamental theorem of arithmetic", "Decimal expansions"]

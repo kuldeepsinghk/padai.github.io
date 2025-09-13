@@ -4,9 +4,9 @@
 
 // Define enum for grades for better type safety
 enum Grade {
-  SixthGrade = "6th",
-  SeventhGrade = "7th",
-  TenthGrade = "10th"
+  SixthGrade = "grade-6",
+  SeventhGrade = "grade-7",
+  TenthGrade = "grade-10"
 }
 
 // Define types for curriculum data

@@ -156,6 +156,35 @@ For EVERY code change:
 7. If still failing, REVERT and seek user input
 ```
 
+### Prevention of Overly Broad Changes
+
+When modifying data files (JSON, XML, etc.):
+
+1. **Always Preview Changes First**
+   - Show the exact diff that will be applied before making changes
+   - Get explicit approval before proceeding with any bulk changes
+   - When in doubt, ask if the change scope matches expectations
+
+2. **Use Targeted Edit Approaches**
+   - Modify only specific keys/nodes that need changing
+   - Use tools that support precise targeting (e.g., jq for JSON)
+   - NEVER rewrite an entire file when only part of it needs changing
+
+3. **Staged Implementation for Data Files**
+   - Show a sample change for one entry first
+   - Get confirmation that the pattern is correct
+   - Apply the same pattern incrementally to other entries
+
+4. **Interactive Mode for Complex Changes**
+   - Break complex changes into interactive steps
+   - Ask for guidance when uncertain about scope
+   - Provide clear rollback instructions for each step
+
+5. **Validation After Each Targeted Change**
+   - Verify that only intended elements were modified
+   - Check that file structure remains valid (no syntax errors)
+   - Run minimal tests focused on the changed components
+
 ### Git Safety Net
 
 - Create a temporary branch for each change: `git checkout -b temp-change`

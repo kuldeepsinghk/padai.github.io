@@ -9,7 +9,7 @@
    :valid? (fn [value] (contains? #{:grade-6 :grade-7 :grade-10} value))
    :to-string (fn [value] 
                 (when ((:valid? Grade) value)
-                  (str (subs (name value) 6) "th")))})
+                  (str (subs (name value) 6))))})
 
 ;; Define a record type for Grade
 (defrecord GradeType [value])
@@ -73,11 +73,11 @@
 
 (def grade-subjects-schema
   [:map-of 
-   :keyword                     ; Grade (e.g., :7th) - Changed from :string
+   grade-schema                  ; Grade (e.g., :grade-6) - Now using grade-schema directly
    [:map-of 
-    :keyword                    ; Subject (e.g., :Math) - Changed from :string
+    :keyword                    ; Subject (e.g., :Math)
     [:map-of
-     :keyword                   ; Topic (e.g., :Fractions) - Changed from :string
+     :keyword                   ; Topic (e.g., :Fractions)
      topic-schema]]])           ; Topic details with key_topics
 
 (defn keyword->subject
@@ -90,7 +90,6 @@
    This function requires a proper Grade instance created with the grade function."
   [^GradeType grade-instance]
   (let [grade-key (:value grade-instance)
-        grade-str ((:to-string Grade) grade-key)
         resource (io/resource "public/grade-subjects.json")]
     (println "Resource path:" (if resource (.getPath resource) "Resource not found"))
     (if resource
@@ -103,7 +102,7 @@
             (do
               (println "JSON data is valid according to schema")
               ;; Get subjects for the specified grade and convert to SubjectType instances
-              (when-let [grade-data (get parsed-data (keyword ((:to-string Grade) grade-key)))]
+              (when-let [grade-data (get parsed-data grade-key)]
                 (mapv keyword->subject (keys grade-data))))
             (do
               (println "Warning: JSON data does not match schema")
@@ -117,23 +116,22 @@
   [^GradeType grade-instance ^SubjectType subject-instance]
   (let [grade-key (:value grade-instance)
         subject-key (:value subject-instance)
-        grade-str ((:to-string Grade) grade-key)
         subject-str ((:to-string Subject) subject-key)
         resource (io/resource "public/grade-subjects.json")]
-    (println "Looking up topics for subject" subject-str "in grade" grade-str)
+    (println "Looking up topics for subject" subject-str "in grade" grade-key)
     (if resource
       (let [content (slurp resource)
             parsed-data (json/parse-string content true)]
         ;; Validate data structure
         (if (m/validate grade-subjects-schema parsed-data)
-          (let [grade-data (get parsed-data (keyword grade-str))
+          (let [grade-data (get parsed-data grade-key)
                 subject-data (get grade-data (keyword subject-str))]
             (if subject-data
               ;; Return topic names as keywords
               (vec (keys subject-data)) 
               ;; Subject not found in this grade
               (do 
-                (println "Subject" subject-str "not found in grade" grade-str)
+                (println "Subject" subject-str "not found in grade" grade-key)
                 [])))
           ;; Invalid JSON structure
           (do
