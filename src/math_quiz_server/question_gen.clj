@@ -80,8 +80,13 @@
      :keyword                   ; Topic (e.g., :Fractions) - Changed from :string
      topic-schema]]])           ; Topic details with key_topics
 
+(defn keyword->subject
+  "Converts a simple subject keyword (e.g., :Math) to a SubjectType instance"
+  [kw]
+  (subject (keyword (str "subject-" (name kw)))))
+
 (defn get-subjects-for-grade
-  "Given a Grade instance, returns a list of subjects for that grade.
+  "Given a Grade instance, returns a list of SubjectType instances for that grade.
    This function requires a proper Grade instance created with the grade function."
   [^GradeType grade-instance]
   (let [grade-key (:value grade-instance)
@@ -97,9 +102,9 @@
           (if valid?
             (do
               (println "JSON data is valid according to schema")
-              ;; Get subjects for the specified grade
+              ;; Get subjects for the specified grade and convert to SubjectType instances
               (when-let [grade-data (get parsed-data (keyword ((:to-string Grade) grade-key)))]
-                (vec (keys grade-data))))
+                (mapv keyword->subject (keys grade-data))))
             (do
               (println "Warning: JSON data does not match schema")
               (println "Validation error:" explain-result)

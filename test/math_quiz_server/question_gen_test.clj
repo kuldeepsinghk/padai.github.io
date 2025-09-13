@@ -19,18 +19,23 @@
 
 (deftest test-get-subjects-for-grade
   (testing "Getting subjects using type-safe Grade instance"
-    (println "\n--- BEGIN TEST DEBUG INFO ---")
-    (println "Running test with type-safe grade instance: gen/grade-7")
-    
     (let [subjects (gen/get-subjects-for-grade gen/grade-7)]
-      (println "Subjects returned:" subjects)
-      (println "--- END TEST DEBUG INFO ---\n")
-      
       (is (not (nil? subjects)) "Subjects should not be nil")
       (is (vector? subjects) "Subjects should be a vector")
       (is (pos? (count subjects)) "Should have at least one subject")
-      (is (some #{:Math} subjects) "Should include Math subject")
-      (is (some #{:Science} subjects) "Should include Science subject"))))
+      (is (some #{gen/subject-Math} subjects) "Should include Math subject")
+      (is (some #{gen/subject-Science} subjects) "Should include Science subject"))
+
+    (let [subjects (gen/get-subjects-for-grade gen/grade-10)]
+      (is (not (nil? subjects)) "Subjects should not be nil")
+      (is (vector? subjects) "Subjects should be a vector")
+      (is (pos? (count subjects)) "Should have at least one subject")
+      (is (some #{gen/subject-Math} subjects) "Should include Math subject")
+      (is (some #{gen/subject-Physics} subjects) "Should include Physics subject")
+      (is (some #{gen/subject-Chemistry} subjects) "Should include Chemistry subject")
+      (is (some #{gen/subject-Biology} subjects) "Should include Biology subject"))
+    ))
+
 
 (deftest test-get-topics-for-subject
   (testing "Getting topics for a specific subject in a grade"
