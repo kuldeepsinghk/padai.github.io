@@ -1,6 +1,7 @@
 (ns math-quiz-server.question-gen-test
   (:require [clojure.test :refer :all]
-            [math-quiz-server.question-gen :as gen])
+            [math-quiz-server.question-gen :as gen]
+            [clojure.set :as set])
  )
 
 (deftest test-get-subjects-for-grade
@@ -33,5 +34,7 @@
       
       (is (not (nil? topics)) "Topics should not be nil")
       (is (vector? topics) "Topics should be a vector")
-      (is (pos? (count topics)) "Should have at least one topic")
-      (is (some #(= (name %) "Basic Arithmetic") (map name topics)) "Should include Basic Arithmetic as a topic"))))
+      (is (< 3 (count topics)) "Topic count should be more than 3")
+      (is (set/subset? #{:Fractions :Geometry :Measurement} (set topics))
+          "Should include Fractions, Geometry, and Measurement topics")
+      )))

@@ -1,7 +1,8 @@
 (ns math-quiz-server.question-gen
   (:require [cheshire.core :as json]
             [clojure.java.io :as io]
-            [malli.core :as m]))
+            [malli.core :as m]
+            [malli.instrument :as mi]))
 
 ;; Define schema for grade-subjects.json structure
 (def topic-schema 
@@ -25,6 +26,13 @@
      :keyword                  ; Topic (e.g., :Fractions)
      topic-schema]]])          ; Topic details with key_topics
 
+
+(m/=> load-validated-curriculum-data
+  [:=> [:cat]   [:map
+                 [:data {:optional true} [:maybe [:map]]]
+                 [:error {:optional true} [:maybe [:any]]]
+                 [:resource-path :string]]])
+
 (defn load-validated-curriculum-data
   "Loads curriculum data from JSON file and validates it against schema.
    Returns a map with :data, :error, and :resource-path keys.
@@ -44,6 +52,9 @@
           {:data nil :error explain-result :resource-path resource-path}))
       {:data nil :error "Resource not found" :resource-path resource-path})))
 
+(m/=> get-subjects-for-grade
+  [:=> [:cat grade-schema] [:vector subject-schema]])
+
 (defn get-subjects-for-grade
   "Returns a list of subject keywords for the specified grade.
    This function accepts a grade keyword directly (e.g., :grade-6)."
@@ -55,10 +66,8 @@
                 ". Must be one of: " (clojure.string/join ", " (m/entries grade-schema))))))
   
   (let [{:keys [data error resource-path]} (load-validated-curriculum-data)]
-    (println "Resource path:" resource-path)
     (if data
       (do
-        (println "JSON data is valid according to schema")
         ;; Get subjects for the specified grade as plain keywords
         (when-let [grade-data (get data grade-key)]
           (vec (keys grade-data))))
@@ -66,6 +75,9 @@
         (println "Warning: JSON data does not match schema")
         (when error (println "Validation error:" error))
         []))))
+
+(m/=> get-topics-for-subject
+  [:=> [:cat grade-schema subject-schema] [:vector :keyword]])
 
 (defn get-topics-for-subject
   "Returns a list of topics for the specified grade and subject.
