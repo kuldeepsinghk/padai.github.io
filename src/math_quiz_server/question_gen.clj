@@ -31,12 +31,12 @@
 
 ;; Define Subject as an enum with keyword values
 (def Subject
-  {:keys #{:subject-Math :subject-Science :subject-Physics :subject-Chemistry :subject-Biology}
-   :valid? (fn [value] (contains? #{:subject-Math :subject-Science :subject-Physics 
-                                   :subject-Chemistry :subject-Biology} value))
+  {:keys #{:Math :Science :Physics :Chemistry :Biology}
+   :valid? (fn [value] (contains? #{:Math :Science :Physics 
+                                   :Chemistry :Biology} value))
    :to-string (fn [value] 
                 (when ((:valid? Subject) value)
-                  (subs (name value) 8)))})
+                  (name value)))})
 
 ;; Define a record type for Subject
 (defrecord SubjectType [value])
@@ -52,11 +52,11 @@
                   ". Must be one of: " (clojure.string/join ", " (:keys Subject)))))))
 
 ;; Convenience helper constants for common subjects
-(def subject-Math (subject :subject-Math))
-(def subject-Science (subject :subject-Science)) 
-(def subject-Physics (subject :subject-Physics))
-(def subject-Chemistry (subject :subject-Chemistry))
-(def subject-Biology (subject :subject-Biology))
+(def subject-Math (subject :Math))
+(def subject-Science (subject :Science)) 
+(def subject-Physics (subject :Physics))
+(def subject-Chemistry (subject :Chemistry))
+(def subject-Biology (subject :Biology))
 
 ;; Define schema for grade-subjects.json structure
 (def topic-schema 
@@ -69,21 +69,21 @@
 
 ;; Define schema for Subject validation
 (def subject-schema
-  [:enum :subject-Math :subject-Science :subject-Physics :subject-Chemistry :subject-Biology])
+  [:enum :Math :Science :Physics :Chemistry :Biology])
 
 (def grade-subjects-schema
   [:map-of 
-   grade-schema                  ; Grade (e.g., :grade-6) - Now using grade-schema directly
+   grade-schema
    [:map-of 
-    :keyword                    ; Subject (e.g., :Math)
+    subject-schema             ; Now using subject-schema for validation
     [:map-of
-     :keyword                   ; Topic (e.g., :Fractions)
-     topic-schema]]])           ; Topic details with key_topics
+     :keyword                  ; Topic (e.g., :Fractions)
+     topic-schema]]])          ; Topic details with key_topics
 
 (defn keyword->subject
   "Converts a simple subject keyword (e.g., :Math) to a SubjectType instance"
   [kw]
-  (subject (keyword (str "subject-" (name kw)))))
+  (subject kw))
 
 (defn get-subjects-for-grade
   "Given a Grade instance, returns a list of SubjectType instances for that grade.
@@ -125,7 +125,7 @@
         ;; Validate data structure
         (if (m/validate grade-subjects-schema parsed-data)
           (let [grade-data (get parsed-data grade-key)
-                subject-data (get grade-data (keyword subject-str))]
+                subject-data (get grade-data subject-key)]
             (if subject-data
               ;; Return topic names as keywords
               (vec (keys subject-data)) 
