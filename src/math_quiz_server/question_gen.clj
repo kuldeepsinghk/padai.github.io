@@ -11,6 +11,24 @@
                 (when ((:valid? Grade) value)
                   (str (subs (name value) 6) "th")))})
 
+;; Define a record type for Grade
+(defrecord GradeType [value])
+
+;; Smart constructor that ensures only valid Grade values can be created
+(defn grade
+  "Creates a Grade instance with validation. Throws IllegalArgumentException if invalid."
+  [key-value]
+  (if ((:valid? Grade) key-value)
+    (->GradeType key-value)
+    (throw (IllegalArgumentException. 
+             (str "Invalid grade: " key-value 
+                  ". Must be one of: " (clojure.string/join ", " (:keys Grade)))))))
+
+;; Convenience helper constants for common grades
+(def grade-6 (grade :grade-6))
+(def grade-7 (grade :grade-7))
+(def grade-10 (grade :grade-10))
+
 ;; Define schema for grade-subjects.json structure
 (def topic-schema 
   [:map
@@ -30,33 +48,27 @@
      topic-schema]]])           ; Topic details with key_topics
 
 (defn get-subjects-for-grade
-  "Given a grade keyword (must be one of :grade-6, :grade-7, or :grade-10),
-   returns a list of subjects for that grade."
-  [grade-key]
-  ;; Use Malli schema to validate the input
-  (if (m/validate grade-schema grade-key)
-    (let [grade-str ((:to-string Grade) grade-key)
-          resource (io/resource "public/grade-subjects.json")]
-      (println "Resource path:" (if resource (.getPath resource) "Resource not found"))
-      (if resource
-        (let [content (slurp resource)
-              parsed-data (json/parse-string content true)]
-          ;; Validate with detailed explanation
-          (let [valid? (m/validate grade-subjects-schema parsed-data)
-                explain-result (when-not valid? (m/explain grade-subjects-schema parsed-data))]
-            (if valid?
-              (do
-                (println "JSON data is valid according to schema")
-                ;; Get subjects for the specified grade
-                (when-let [grade-data (get parsed-data (keyword ((:to-string Grade) grade-key)))]
-                  (vec (keys grade-data))))
-              (do
-                (println "Warning: JSON data does not match schema")
-                (println "Validation error:" explain-result)
-                []))))
-        nil))
-    (let [explain-result (m/explain grade-schema grade-key)]
-      (throw (IllegalArgumentException. 
-               (str "Invalid grade: " grade-key 
-                    ". Must be one of: " (clojure.string/join ", " (:keys Grade))
-                    "\nValidation error: " explain-result))))))
+  "Given a Grade instance, returns a list of subjects for that grade.
+   This function requires a proper Grade instance created with the grade function."
+  [^GradeType grade-instance]
+  (let [grade-key (:value grade-instance)
+        grade-str ((:to-string Grade) grade-key)
+        resource (io/resource "public/grade-subjects.json")]
+    (println "Resource path:" (if resource (.getPath resource) "Resource not found"))
+    (if resource
+      (let [content (slurp resource)
+            parsed-data (json/parse-string content true)]
+        ;; Validate with detailed explanation
+        (let [valid? (m/validate grade-subjects-schema parsed-data)
+              explain-result (when-not valid? (m/explain grade-subjects-schema parsed-data))]
+          (if valid?
+            (do
+              (println "JSON data is valid according to schema")
+              ;; Get subjects for the specified grade
+              (when-let [grade-data (get parsed-data (keyword ((:to-string Grade) grade-key)))]
+                (vec (keys grade-data))))
+            (do
+              (println "Warning: JSON data does not match schema")
+              (println "Validation error:" explain-result)
+              []))))
+      nil)))
