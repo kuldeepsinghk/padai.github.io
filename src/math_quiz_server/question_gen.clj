@@ -3,14 +3,6 @@
             [clojure.java.io :as io]
             [malli.core :as m]))
 
-;; Define Grade as an enum with keyword values
-(def Grade
-  {:keys #{:grade-6 :grade-7 :grade-10}
-   :valid? (fn [value] (contains? #{:grade-6 :grade-7 :grade-10} value))
-   :to-string (fn [value] 
-                (when ((:valid? Grade) value)
-                  (str (subs (name value) 6))))})
-
 ;; Define Subject as an enum with keyword values
 (def Subject
   {:keys #{:Math :Science :Physics :Chemistry :Biology}
@@ -19,26 +11,6 @@
    :to-string (fn [value] 
                 (when ((:valid? Subject) value)
                   (name value)))})
-
-;; Define a record type for Subject
-(defrecord SubjectType [value])
-
-;; Smart constructor that ensures only valid Subject values can be created
-(defn subject
-  "Creates a Subject instance with validation. Throws IllegalArgumentException if invalid."
-  [key-value]
-  (if ((:valid? Subject) key-value)
-    (->SubjectType key-value)
-    (throw (IllegalArgumentException. 
-             (str "Invalid subject: " key-value 
-                  ". Must be one of: " (clojure.string/join ", " (:keys Subject)))))))
-
-;; Convenience helper constants for common subjects
-(def subject-Math (subject :Math))
-(def subject-Science (subject :Science)) 
-(def subject-Physics (subject :Physics))
-(def subject-Chemistry (subject :Chemistry))
-(def subject-Biology (subject :Biology))
 
 ;; Define schema for grade-subjects.json structure
 (def topic-schema 
@@ -62,13 +34,8 @@
      :keyword                  ; Topic (e.g., :Fractions)
      topic-schema]]])          ; Topic details with key_topics
 
-(defn keyword->subject
-  "Converts a simple subject keyword (e.g., :Math) to a SubjectType instance"
-  [kw]
-  (subject kw))
-
 (defn get-subjects-for-grade
-  "Returns a list of SubjectType instances for the specified grade.
+  "Returns a list of subject keywords for the specified grade.
    This function accepts a grade keyword directly (e.g., :grade-6)."
   [grade-key]
   ;; Validate that the grade-key is valid
@@ -88,9 +55,9 @@
           (if valid?
             (do
               (println "JSON data is valid according to schema")
-              ;; Get subjects for the specified grade and convert to SubjectType instances
+              ;; Get subjects for the specified grade as plain keywords
               (when-let [grade-data (get parsed-data grade-key)]
-                (mapv keyword->subject (keys grade-data))))
+                (vec (keys grade-data))))
             (do
               (println "Warning: JSON data does not match schema")
               (println "Validation error:" explain-result)
@@ -99,32 +66,35 @@
 
 (defn get-topics-for-subject
   "Returns a list of topics for the specified grade and subject.
-   This function accepts a grade keyword directly (e.g., :grade-6) 
-   and requires a proper Subject instance created with the subject function."
-  [grade-key ^SubjectType subject-instance]
+   This function accepts grade and subject keywords directly (e.g., :grade-6, :Math)."
+  [grade-key subject-key]
   ;; Validate that the grade-key is valid
   (when-not (m/validate grade-schema grade-key)
     (throw (IllegalArgumentException. 
            (str "Invalid grade: " grade-key 
                 ". Must be one of: " (clojure.string/join ", " (m/entries grade-schema))))))
   
-  (let [subject-key (:value subject-instance)
-        subject-str ((:to-string Subject) subject-key)
-        resource (io/resource "public/grade-subjects.json")]
-    (println "Looking up topics for subject" subject-str "in grade" grade-key)
+  ;; Validate that the subject-key is valid
+  (when-not (m/validate subject-schema subject-key)
+    (throw (IllegalArgumentException. 
+           (str "Invalid subject: " subject-key 
+                ". Must be one of: " (clojure.string/join ", " (m/entries subject-schema))))))
+  
+  (let [resource (io/resource "public/grade-subjects.json")]
+    (println "Looking up topics for subject" subject-key "in grade" grade-key)
     (if resource
       (let [content (slurp resource)
             parsed-data (json/parse-string content true)]
         ;; Validate data structure
         (if (m/validate grade-subjects-schema parsed-data)
           (let [grade-data (get parsed-data grade-key)
-                subject-data (get grade-data (keyword subject-str))]
+                subject-data (get grade-data subject-key)]
             (if subject-data
               ;; Return topic names as keywords
               (vec (keys subject-data)) 
               ;; Subject not found in this grade
               (do 
-                (println "Subject" subject-str "not found in grade" grade-key)
+                (println "Subject" subject-key "not found in grade" grade-key)
                 [])))
           ;; Invalid JSON structure
           (do

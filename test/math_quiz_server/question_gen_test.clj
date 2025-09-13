@@ -9,17 +9,17 @@
       (is (not (nil? subjects)) "Subjects should not be nil")
       (is (vector? subjects) "Subjects should be a vector")
       (is (pos? (count subjects)) "Should have at least one subject")
-      (is (some #{gen/subject-Math} subjects) "Should include Math subject")
-      (is (some #{gen/subject-Science} subjects) "Should include Science subject"))
+      (is (some #{:Math} subjects) "Should include Math subject")
+      (is (some #{:Science} subjects) "Should include Science subject"))
 
     (let [subjects (gen/get-subjects-for-grade :grade-10)]
       (is (not (nil? subjects)) "Subjects should not be nil")
       (is (vector? subjects) "Subjects should be a vector")
       (is (pos? (count subjects)) "Should have at least one subject")
-      (is (some #{gen/subject-Math} subjects) "Should include Math subject")
-      (is (some #{gen/subject-Physics} subjects) "Should include Physics subject")
-      (is (some #{gen/subject-Chemistry} subjects) "Should include Chemistry subject")
-      (is (some #{gen/subject-Biology} subjects) "Should include Biology subject"))
+      (is (some #{:Math} subjects) "Should include Math subject")
+      (is (some #{:Physics} subjects) "Should include Physics subject")
+      (is (some #{:Chemistry} subjects) "Should include Chemistry subject")
+      (is (some #{:Biology} subjects) "Should include Biology subject"))
     ))
 
 (deftest test-get-topics-for-subject
@@ -27,7 +27,7 @@
     (println "\n--- BEGIN TEST DEBUG INFO ---")
     (println "Running test for Math topics in Grade 6")
     
-    (let [topics (gen/get-topics-for-subject :grade-6 gen/subject-Math)]
+    (let [topics (gen/get-topics-for-subject :grade-6 :Math)]
       (println "Topics returned:" topics)
       (println "--- END TEST DEBUG INFO ---\n")
       
