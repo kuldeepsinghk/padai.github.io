@@ -17,7 +17,7 @@
      :keyword                   ; Topic (e.g., :Fractions) - Changed from :string
      topic-schema]]])           ; Topic details with key_topics
 
-(defn git get-subjects-for-grade
+(defn get-subjects-for-grade
   "Given a grade (e.g., '6', '7', '10'), returns a list of subjects for that grade."
   [class]
   (let [grade-str (str class "th")

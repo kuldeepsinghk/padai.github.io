@@ -3,7 +3,7 @@
 
 ## Run the test generation
 1.  lein run -m math-quiz-server.gemini-test 7
-2. 1.  lein run -m math-quiz-server.question-gen7
+2. 1.  lein run -m math-quiz-server.question-gen 7
 ## Usage
 
 ## Options
