@@ -121,6 +121,54 @@ Before submitting any PR:
 3. Document test results for each change
 4. Ensure commit messages follow the standard format
 
+## Strict Enforcement Protocol
+
+To ensure strict adherence to these development guidelines and avoid common issues, follow this enforcement protocol:
+
+### Verification Before Implementation
+
+1. **Function Verification**
+   - Always check library documentation for your specific version
+   - Run `(doc function-name)` in a REPL to verify function existence
+   - Never assume a function exists without verification
+
+2. **Syntax Validation**
+   - Run `lein check` after each edit to catch syntax errors
+   - Use syntax highlighting and indentation as early warning signals
+   - Validate complex expressions in a REPL before adding to code
+
+### The Two-Strike Rule
+
+If a change fails twice:
+1. Immediately revert to the last working state
+2. Wait for explicit product owner input before proceeding
+
+### Strict Change Process
+
+For EVERY code change:
+```
+1. Define a single focused change (limited to 10 lines, not 20)
+2. Make the change
+3. Run `lein check` to verify syntax
+4. Run tests to verify behavior
+5. If tests fail, proceed to step 6, else DONE
+6. Try one focused fix
+7. If still failing, REVERT and seek user input
+```
+
+### Git Safety Net
+
+- Create a temporary branch for each change: `git checkout -b temp-change`
+- Make the change and test
+- If successful: `git checkout main && git merge temp-change`
+- If failed twice: `git checkout main` (discard changes)
+
+### Documentation First
+
+- Always check documentation for functions before using them
+- For library-specific features, verify syntax with examples
+- Never use functions or patterns without understanding them
+
 ---
 
 **IMPORTANT:** This document must be reviewed at the beginning of every development session to ensure strict adherence to the incremental development approach.
