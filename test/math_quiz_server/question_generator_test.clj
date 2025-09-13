@@ -1,9 +1,7 @@
-(ns math-quiz-server.gemini-test-test
+(ns math-quiz-server.question-generator-test
   (:require [clojure.test :refer :all]
-            [math-quiz-server.gemini-test :as gemini]
+            [math-quiz-server.question-generator :as gemini]
             [math-quiz-server.models :as models]
-            [clojure.java.io :as io]
-            [clojure.string :as str]
             [cheshire.core :as json]
             ))
 

@@ -12,9 +12,9 @@
                  [ring/ring-jetty-adapter "1.9.5"]
                  [cheshire "5.11.0"]
                  [clj-http "3.12.3"]
+                 [metosin/malli "0.13.0"]
                  ]
   :main ^:skip-aot math-quiz-server.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
-
