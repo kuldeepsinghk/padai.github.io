@@ -2,7 +2,8 @@
   (:require [clj-http.client :as client]
             [cheshire.core :as json]
             [clojure.string :as string]
-            [math-quiz-server.question-prompt-new :as prompt]))
+            [math-quiz-server.question-prompt-new :as prompt]
+            [math-quiz-server.question-gen :as curr]))
 
 (def api-key
   (or (System/getenv "GEMINI_API_KEY")
@@ -47,3 +48,30 @@
       (catch Exception e
         (println "Error generating questions:" (.getMessage e))
         nil))))
+
+(defn generate-questions-by-curriculum
+  "Generates questions for all topics in a curriculum for a given grade and subject.
+   
+   Parameters:
+   - grade: Keyword representing the grade level (:grade-6, :grade-7, etc.)
+   - subject: Keyword representing the subject (:Math, :Science, etc.)
+   
+   Returns:
+   - A vector of question objects from all topics, or nil if there was an error"
+  [grade subject]
+  (try
+    ;; Get all topics for the given grade and subject
+    (let [topics (curr/get-curriculum-items grade subject)]
+      (if (seq topics)
+        ;; For each topic, generate 2 questions and combine results
+        (->> topics
+             (mapcat #(generate-questions grade subject % 2))
+             (filter identity)  ; Remove any nil results
+             vec)
+        ;; No topics found
+        (do
+          (println "No topics found for grade" grade "and subject" subject)
+          [])))
+    (catch Exception e
+      (println "Error generating questions by curriculum:" (.getMessage e))
+      nil)))
