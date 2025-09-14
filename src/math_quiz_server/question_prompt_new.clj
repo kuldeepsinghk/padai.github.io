@@ -46,19 +46,32 @@
   (let [grade-str (subs (name grade) 6) ; Remove 'grade-' prefix
         subject-str (name subject)
         topic-str (name topic)
-        example-json (get-schema-example) ; No longer passing topic
-        min-options 4]
+        example-json (get-schema-example)
+        min-options 4
+        
+        ;; Break the prompt into logical sections
+        intro-section (str "You are an experienced Indian CBSE Class " grade-str 
+                          " and " subject-str " teacher.\n"
+                          "Your task is to generate practice questions for students studying the NCERT syllabus.\n\n")
+        
+        task-section (str "Generate " num-questions " multiple-choice math questions "
+                         "for grade " grade-str " students studying " subject-str ", "
+                         "specifically on the topic of " topic-str ". "
+                         "Provide a mix of easy, medium, and Hard problems. ")
+        
+        format-section (str "Format your response as a valid JSON array with the following structure for each question:\n\n"
+                           example-json "\n\n")
+        
+        rules-section (str "Rules:\n"
+                          "1. Each question must have EXACTLY " min-options " options\n"
+                          "2. Make sure questions are appropriate for grade " grade-str " students\n"
+                          "3. Include clear rationales that explain the solution process\n"
+                          "4. Ensure the JSON is valid and follows the schema exactly\n"
+                          "5. Make sure the topic \"" topic-str "\" is clearly related to all questions\n"
+                          "6. Do not use LaTeX syntax. Use a standard forward slash (e.g., 1/4) for fractions")]
     
-    (str "Generate " num-questions " multiple-choice math questions for grade " grade-str 
-         " students studying " subject-str ", specifically on the topic of " topic-str ". "
-         "Format your response as a valid JSON array with the following structure for each question:\n\n"
-         example-json "\n\n"
-         "Rules:\n"
-         "1. Each question must have EXACTLY " min-options " options\n"
-         "2. Make sure questions are appropriate for grade " grade-str " students\n"
-         "3. Include clear rationales that explain the solution process\n"
-         "4. Ensure the JSON is valid and follows the schema exactly\n"
-         "5. Make sure the topic \"" topic-str "\" is clearly related to all questions")))
+    ;; Combine sections
+    (str intro-section task-section format-section rules-section)))
 
 (defn validate-llm-response
   "Validates the LLM JSON response and filters out invalid elements.
