@@ -52,48 +52,42 @@
           {:data nil :error explain-result :resource-path resource-path}))
       {:data nil :error "Resource not found" :resource-path resource-path})))
 
-(m/=> get-subjects-for-grade
-  [:=> [:cat grade-schema] [:vector subject-schema]])
+(m/=> get-curriculum-items
+  [:function
+   [:=> [:cat grade-schema] [:vector subject-schema]]
+   [:=> [:cat grade-schema subject-schema] [:vector :keyword]]])
 
-(defn get-subjects-for-grade
-  "Returns a list of subject keywords for the specified grade.
-   This function accepts a grade keyword directly (e.g., :grade-6)."
-  [grade-key]
-  (let [{:keys [data error resource-path]} (load-validated-curriculum-data)]
-    (if data
-      ;; Get subjects for the specified grade as plain keywords
-      (when-let [grade-data (grade-key data)]
-        (vec (keys grade-data)))
-      (do
-        (println "Warning: JSON data does not match schema")
-        (when error (println "Validation error:" error))
-        []))))
-
-(m/=> get-topics-for-subject
-  [:=> [:cat grade-schema subject-schema] [:vector :keyword]])
-
-(defn get-topics-for-subject
-  "Returns a list of topics for the specified grade and subject.
-   This function accepts grade and subject keywords directly (e.g., :grade-6, :Math)."
-  [grade-key subject-key]
-  (println "Looking up topics for subject" subject-key "in grade" grade-key)
+(defn get-curriculum-items
+  "Unified function to retrieve curriculum items by navigation path.
+   With one argument, returns subjects for a grade.
+   With two arguments, returns topics for a subject within a grade."
   
-  (let [{:keys [data error]} (load-validated-curriculum-data)]
-    (if data
-      (let [grade-data (grade-key data)
-            subject-data (subject-key grade-data)]
-        (if subject-data
-          ;; Return topic names as keywords
-          (vec (keys subject-data)) 
-          ;; Subject not found in this grade
-          (do 
-            (println "Subject" subject-key "not found in grade" grade-key)
-            [])))
-      ;; Invalid JSON structure or resource not found
-      (do
-        (println "Warning: Error loading JSON data")
-        (when error (println "Error details:" error))
-        []))))
+  ;; First arity - Get subjects for a grade
+  ([grade-key]
+   (let [{:keys [data error]} (load-validated-curriculum-data)]
+     (if data
+       (some-> data grade-key keys vec)
+       (do
+         (println "Warning: Error loading curriculum data")
+         (when error (println "Details:" error))
+         []))))
+  
+  ;; Second arity - Get topics for a subject within a grade
+  ([grade-key subject-key]
+   (println "Looking up" subject-key "in" grade-key)
+   (let [{:keys [data error]} (load-validated-curriculum-data)]
+     (if data
+       (if-let [grade-data (grade-key data)]
+         (if-let [subject-data (subject-key grade-data)]
+           (vec (keys subject-data))
+           (do
+             (println "Subject" subject-key "not found in grade" grade-key)
+             []))
+         [])
+       (do
+         (println "Warning: Error loading curriculum data")
+         (when error (println "Details:" error))
+         [])))))
 
 ;; Instrumentation utilities for development and testing
 
