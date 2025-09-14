@@ -16,18 +16,6 @@
       (println "Error loading question schema:" (.getMessage e))
       nil)))
 
-;; Define the question schema using Malli based on loaded JSON schema
-(def question-schema
-  [:vector
-   [:map
-    [:category string?]
-    [:question string?]
-    [:options [:vector string? {:min (-> question-schema-json :items :properties :options :minItems)
-                                :max (-> question-schema-json :items :properties :options :maxItems)}]]
-    [:correct [:int {:min (-> question-schema-json :items :properties :correct :minimum)
-                     :max (-> question-schema-json :items :properties :correct :maximum)}]]
-    [:rationale string?]]])
-
 ;; Helper function to get example from schema JSON
 (defn get-schema-example
   "Gets an example directly from the schema JSON file without formatting"
@@ -35,6 +23,16 @@
   ;; Get the first example and convert it directly to JSON string
   (let [example (-> question-schema-json :examples first first)]
     (json/generate-string example {:pretty true})))
+
+;; Helper function for validating required fields
+(defn- has-required-fields?
+  "Checks if a question has all required fields"
+  [question]
+  (and (contains? question :category)
+       (contains? question :question)
+       (contains? question :options)
+       (contains? question :correct)
+       (contains? question :rationale)))
 
 (defn create-gemini-prompt
   "Creates a prompt for Gemini LLM to generate math questions.
@@ -63,35 +61,40 @@
          "5. Make sure the topic \"" topic-str "\" is clearly related to all questions")))
 
 (defn validate-llm-response
-  "Validates if the LLM response is valid JSON and has correct structure.
+  "Validates the LLM JSON response and filters out invalid elements.
+   
+   Validation steps:
+   1. Checks that the input is valid JSON
+   2. Ensures it's an array structure
+   3. Filters to keep only elements with all required fields: 
+      category, question, options, correct, and rationale
    
    Parameters:
    - response: String JSON response from the LLM
    
    Returns:
-   - If valid: The parsed questions as a Clojure data structure (vector)
-   - If invalid: nil and prints error message"
+   - If valid JSON: A vector containing only valid question elements (may be empty)
+   - If invalid JSON: nil and prints error message"
   [response]
   (try
-    ;; Parse the JSON string into Clojure data
-    (let [parsed-data (json/parse-string response true)
-          ;; Ensure we have a vector (convert from LazySeq if needed)
-          data-vec (vec parsed-data)]
-      
-      ;; Step 1: Check if it's a sequential collection (vector, list, seq, etc.)
-      (if (sequential? parsed-data)
-        ;; Step 2: Check each item has required fields
-        (if (every? #(contains? % :category) data-vec)
-          ;; Valid format with required fields
-          data-vec
-          ;; Missing required fields
-          (do
-            (println "Invalid response format: One or more questions missing required 'category' field")
-            nil))
-        ;; Not a sequential collection
+    (let [parsed-data (json/parse-string response true)]
+      (if-not (sequential? parsed-data)
         (do
           (println "Invalid response format: Not an array - Expected array of questions")
-          nil)))
+          nil)
+        
+        ;; Process valid data using threading macro for cleaner data flow
+        (let [valid-elements (->> parsed-data
+                                  (filter has-required-fields?)
+                                  (vec))
+              filtered-count (- (count parsed-data) (count valid-elements))]
+          
+          ;; Log only if we filtered anything out
+          (when (pos? filtered-count)
+            (println "Filtered out" filtered-count "invalid elements that were missing required fields"))
+          
+          valid-elements)))
+    
     (catch Exception e
       (println "Error parsing LLM response: Not valid JSON -" (.getMessage e))
       nil)))

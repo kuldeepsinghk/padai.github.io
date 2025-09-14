@@ -36,11 +36,11 @@
 
 (deftest test-validate-llm-response
   (testing "Validation of valid LLM response"
-    (let [valid-response "[{\"category\":\"Classification of organisms\",\"question\":\"Which of the following is used as the primary basis for modern classification of living organisms?\",\"options\":[\"Color\",\"Size\",\"Evolutionary relationships\",\"Habitat\"],\"correct\":2,\"rationale\":\"Modern classification systems are based primarily on evolutionary relationships rather than physical appearance, using genetics and molecular biology to determine relationships between organisms.\"},{\"category\":\"Classification of organisms\",\"question\":\"Which organism belongs to the kingdom Plantae?\",\"options\":[\"Mushroom\",\"Bacteria\",\"Rose plant\",\"Amoeba\"],\"correct\":2,\"rationale\":\"Rose plants belong to the kingdom Plantae as they are multicellular organisms that can prepare their own food through photosynthesis and have cell walls made of cellulose.\"}]"
+    (let [valid-response "[{\"category\":\"Fractions\",\"question\":\"A\",\"options\":[\"A\",\"B\",\"C\",\"D\"],\"correct\":2,\"rationale\":\"A\"},{\"category1\":\"B\",\"question\":\"B\",\"options\":[\"A\",\"B\",\"C\",\"D\"],\"correct\":2,\"rationale\":\"\"}]"
           validation-result (prompt/validate-llm-response valid-response)]
       
       (is (not (nil? validation-result)) "Valid response should not return nil")
       (is (vector? validation-result) "Result should be a vector")
-      (is (= 2 (count validation-result)) "Should have two question")
-      ;(is (= "Fractions" (-> validation-result first :category)) "Category should match")
+      (is (= 1 (count validation-result)) "Should have two question")
+      (is (= "Fractions" (-> validation-result first :category)) "Category should match")
       )))
