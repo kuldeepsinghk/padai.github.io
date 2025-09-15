@@ -2,6 +2,7 @@
   (:require [clj-http.client :as client]
             [cheshire.core :as json]
             [clojure.string :as string]
+            [clojure.java.io :as io]
             [math-quiz-server.question-prompt-new :as prompt]
             [math-quiz-server.question-gen :as curr]))
 
@@ -49,29 +50,67 @@
         (println "Error generating questions:" (.getMessage e))
         nil))))
 
+(defn save-questions-to-file
+  "Saves generated questions to a JSON file.
+   
+   Parameters:
+   - questions: Vector of question objects
+   - grade: Keyword representing the grade level
+   - subject: Keyword representing the subject
+   
+   Returns:
+   - Path to the saved file"
+  [questions grade subject]
+  (let [grade-str (if (keyword? grade) (name grade) grade)
+        subject-str (if (keyword? subject) (name subject) subject)
+        file-name (str "resources/public/quiz-data-" grade-str "-" subject-str ".json")
+        file (io/file file-name)]
+    ;; Create directories if they don't exist
+    (io/make-parents file)
+    
+    ;; Write questions to file with pretty formatting
+    (with-open [writer (io/writer file)]
+      (json/generate-stream questions writer {:pretty true}))
+    
+    ;; Return the path to the file
+    (.getAbsolutePath file)))
+
 (defn generate-questions-by-curriculum
   "Generates questions for all topics in a curriculum for a given grade and subject.
+   Saves the generated questions to a file named quiz-data-{grade}-{subject}.json
    
    Parameters:
    - grade: Keyword representing the grade level (:grade-6, :grade-7, etc.)
    - subject: Keyword representing the subject (:Math, :Science, etc.)
+   - save-to-file?: Optional boolean flag to save questions to file (default: true)
    
    Returns:
-   - A vector of question objects from all topics, or nil if there was an error"
-  [grade subject]
-  (try
-    ;; Get all topics for the given grade and subject
-    (let [topics (curr/get-curriculum-items grade subject)]
-      (if (seq topics)
-        ;; For each topic, generate 2 questions and combine results
-        (->> topics
-             (mapcat #(generate-questions grade subject % 2))
-             (filter identity)  ; Remove any nil results
-             vec)
-        ;; No topics found
-        (do
-          (println "No topics found for grade" grade "and subject" subject)
-          [])))
-    (catch Exception e
-      (println "Error generating questions by curriculum:" (.getMessage e))
-      nil)))
+   - If save-to-file? is true: A map with :questions (the question vector) and :file-path
+   - If save-to-file? is false: Just the vector of question objects
+   - If error: nil"
+  ([grade subject]
+   (generate-questions-by-curriculum grade subject true))
+  
+  ([grade subject save-to-file?]
+   (try
+     ;; Get all topics for the given grade and subject
+     (let [topics (curr/get-curriculum-items grade subject)]
+       (if (seq topics)
+         (let [;; Generate questions for each topic
+               questions (->> topics
+                             (mapcat #(generate-questions grade subject % 10))
+                             (filter identity)  ; Remove any nil results
+                             vec)]
+           ;; Save to file if requested
+           (if save-to-file?
+             (let [file-path (save-questions-to-file questions grade subject)]
+               {:questions questions
+                :file-path file-path})
+             questions))
+         ;; No topics found
+         (do
+           (println "No topics found for grade" grade "and subject" subject)
+           (if save-to-file? {:questions [] :file-path nil} []))))
+     (catch Exception e
+       (println "Error generating questions by curriculum:" (.getMessage e))
+       nil))))

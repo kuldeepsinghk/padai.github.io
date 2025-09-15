@@ -28,19 +28,23 @@
 
 ;; Test generate-questions-by-curriculum function
 (deftest test-generate-questions-by-curriculum
-  (testing "Generate questions for all topics in curriculum"
-    (let [grade :grade-6
+  (testing "Generate questions for all topics in curriculum and save to file"
+    (let [grade :grade-7
           subject :Math
           result (gen/generate-questions-by-curriculum grade subject)]
 
-      (println result)
+      (println "Generated questions:" (count (:questions result)))
+      (println "Saved to file:" (:file-path result))
       
       ;; Test that result is not nil
       (is (not (nil? result)) "Result should not be nil")
       
-      ;; Test that result is a vector
-      (is (vector? result) "Result should be a vector")
+      ;; Test that result contains questions
+      (is (vector? (:questions result)) "Questions should be a vector")
       
-      ;; The result should contain questions from multiple topics
-      (when (seq result)
-        (is (contains? (first result) :category) "Questions should have category field")))))
+      ;; Test that file path is returned
+      (is (string? (:file-path result)) "File path should be a string")
+      
+      ;; Test that questions have proper structure
+      (when (seq (:questions result))
+        (is (contains? (first (:questions result)) :category) "Questions should have category field")))))
