@@ -98,7 +98,7 @@
        (if (seq topics)
          (let [;; Generate questions for each topic
                questions (->> topics
-                             (mapcat #(generate-questions grade subject % 10))
+                             (mapcat #(generate-questions grade subject % 2))
                              (filter identity)  ; Remove any nil results
                              vec)]
            ;; Save to file if requested
