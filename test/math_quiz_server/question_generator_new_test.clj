@@ -73,7 +73,7 @@
 
 (deftest ^:skip test-generate-questions-for-all-subjects
   (testing "Generate questions for all subjects in a grade"
-    (let [grade :grade-7
+    (let [grade :grade-6
           subjects (curr/get-curriculum-items grade)]
       
       (is (seq subjects) (str "No subjects found for grade " (name grade)))

@@ -1,602 +1,241 @@
-[
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of the following materials is a magnetic substance?",
-    "options": [
-      "Plastic",
-      "Wood",
-      "Iron",
-      "Copper"
-    ],
-    "correct": 2,
-    "rationale": "Iron is a magnetic material because it is strongly attracted by a magnet. Plastic, wood, and copper are non-magnetic materials."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What happens when the north pole of one magnet is brought near the north pole of another magnet?",
-    "options": [
-      "They attract each other",
-      "They repel each other",
-      "Nothing happens",
-      "They neutralize each other"
-    ],
-    "correct": 1,
-    "rationale": "Similar poles (like poles) of magnets, such as a north pole and another north pole, always repel each other."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of the following is an example of a magnetic material?",
-    "options": [
-      "Paperclip",
-      "Rubber band",
-      "Glass marble",
-      "Wool"
-    ],
-    "correct": 0,
-    "rationale": "A paperclip is typically made of iron or steel, which are magnetic materials. The other options are non-magnetic."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Where is the magnetic strength of a bar magnet concentrated?",
-    "options": [
-      "In the middle",
-      "At the poles",
-      "At the corners",
-      "It is uniform all over"
-    ],
-    "correct": 1,
-    "rationale": "The magnetic force is strongest at the ends of a bar magnet, which are called the north and south poles."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A freely suspended bar magnet always rests in which direction?",
-    "options": [
-      "East-West direction",
-      "North-South direction",
-      "Any direction",
-      "Random direction"
-    ],
-    "correct": 1,
-    "rationale": "A freely suspended magnet aligns itself in the North-South direction. This property is used in a magnetic compass."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which pair of magnetic poles will show attraction?",
-    "options": [
-      "North-North",
-      "South-South",
-      "North-South",
-      "South-North, South-South"
-    ],
-    "correct": 2,
-    "rationale": "Unlike poles of magnets, such as a north pole and a south pole, attract each other."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the phenomenon called when a magnet loses its magnetic properties?",
-    "options": [
-      "Magnetism",
-      "Demagnetization",
-      "Polarization",
-      "Induction"
-    ],
-    "correct": 1,
-    "rationale": "Demagnetization is the process of a magnet losing its magnetic properties, often due to heating, hammering, or dropping it."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Magnets attract objects made of:",
-    "options": [
-      "Only iron",
-      "Iron, cobalt, and nickel",
-      "Only nickel",
-      "Iron and plastic"
-    ],
-    "correct": 1,
-    "rationale": "Magnets attract ferromagnetic materials such as iron, cobalt, and nickel. Plastic is a non-magnetic material."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of the following is a non-magnetic material?",
-    "options": [
-      "Steel nail",
-      "Iron filings",
-      "Aluminum foil",
-      "Cobalt strip"
-    ],
-    "correct": 2,
-    "rationale": "Steel, iron, and cobalt are all magnetic materials. Aluminum is a non-magnetic material."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What are the ends of a magnet called?",
-    "options": [
-      "Edges",
-      "Sides",
-      "Poles",
-      "Tips"
-    ],
-    "correct": 2,
-    "rationale": "The ends of a magnet where the magnetic force is strongest are called the poles."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Repulsion is a sure test for:",
-    "options": [
-      "Magnetism",
-      "Demagnetization",
-      "Magnetization",
-      "Polarity"
-    ],
-    "correct": 0,
-    "rationale": "Repulsion is the only definitive test for magnetism. An object could be attracted to a magnet if it is a magnetic material or if it is already a magnet."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A compass needle is a small magnet. What does it do when it is near a magnet?",
-    "options": [
-      "It points towards the west",
-      "It gets attracted or repelled",
-      "It always points north",
-      "It becomes demagnetized"
-    ],
-    "correct": 1,
-    "rationale": "A compass needle is a small magnet, so it will interact with another magnet, either being attracted or repelled depending on the poles."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these is a characteristic of a magnet?",
-    "options": [
-      "It has only one pole",
-      "It has two poles, North and South",
-      "It has three poles",
-      "It has no poles"
-    ],
-    "correct": 1,
-    "rationale": "Every magnet, regardless of its shape or size, has two poles: a North pole and a South pole."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "To demagnetize a magnet, you should:",
-    "options": [
-      "Heat it or hit it hard",
-      "Keep it in a cool place",
-      "Store it with other magnets",
-      "Wrap it in paper"
-    ],
-    "correct": 0,
-    "rationale": "Heating a magnet to a high temperature or hitting it with a hammer can cause it to lose its magnetic properties permanently."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What do we call the imaginary line passing through the poles of a magnet?",
-    "options": [
-      "Equator",
-      "Axis",
-      "Meridian",
-      "Tangent"
-    ],
-    "correct": 1,
-    "rationale": "The axis of a magnet is the imaginary line passing through its north and south poles."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these will NOT get attracted by a magnet?",
-    "options": [
-      "Iron nail",
-      "Nickel coin",
-      "Steel spoon",
-      "Wooden stick"
-    ],
-    "correct": 3,
-    "rationale": "Iron, nickel, and steel are magnetic materials and are attracted by a magnet. A wooden stick is non-magnetic."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "If you break a magnet into two pieces, what happens to the poles?",
-    "options": [
-      "Each piece becomes a new magnet with a North and South pole",
-      "One piece will be only a North pole, the other only a South pole",
-      "Both pieces will have no poles",
-      "The poles will disappear"
-    ],
-    "correct": 0,
-    "rationale": "When a magnet is broken, each piece becomes a new, complete magnet with its own North and South poles."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the name of the region around a magnet where its magnetic force can be felt?",
-    "options": [
-      "Magnetic field",
-      "Electric field",
-      "Gravitational field",
-      "Force zone"
-    ],
-    "correct": 0,
-    "rationale": "The magnetic field is the area around a magnet in which the magnetic force can be detected or felt."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is a permanent magnet?",
-    "options": [
-      "A magnet that loses its magnetism quickly",
-      "A magnet that retains its magnetism for a long period",
-      "A magnet made of plastic",
-      "A magnet that can be turned on and off"
-    ],
-    "correct": 1,
-    "rationale": "A permanent magnet is an object that remains magnetized for a long time, unlike a temporary magnet."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which statement about magnetic poles is correct?",
-    "options": [
-      "Opposite poles attract, like poles repel",
-      "Opposite poles repel, like poles attract",
-      "All poles attract each other",
-      "All poles repel each other"
-    ],
-    "correct": 0,
-    "rationale": "The fundamental law of magnetism states that opposite poles attract each other, and like poles repel each other."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is a natural magnet?",
-    "options": [
-      "A magnet made by humans",
-      "A magnet found in nature",
-      "A magnet that is very weak",
-      "A magnet that is very strong"
-    ],
-    "correct": 1,
-    "rationale": "A natural magnet is a mineral, like lodestone (magnetite), that is found naturally and has magnetic properties."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A compass needle points in the direction of the Earth's magnetic poles. Which pole of the compass points towards the geographical North?",
-    "options": [
-      "The South pole of the compass",
-      "The North pole of the compass",
-      "It varies depending on location",
-      "Both poles point north"
-    ],
-    "correct": 1,
-    "rationale": "The North pole of a compass needle points towards the Earth's geographical North, which is near the Earth's magnetic South pole."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these is a temporary magnet?",
-    "options": [
-      "Bar magnet",
-      "Refrigerator magnet",
-      "Compass needle",
-      "Electromagnet"
-    ],
-    "correct": 3,
-    "rationale": "An electromagnet is a temporary magnet that is only magnetic when an electric current flows through it."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these devices uses the magnetic property of Earth to find direction?",
-    "options": [
-      "Thermometer",
-      "Barometer",
-      "Compass",
-      "Telescope"
-    ],
-    "correct": 2,
-    "rationale": "A compass uses a small, freely rotating magnet to align with the Earth's magnetic field, helping people find the North-South direction."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What happens to the magnetic strength of a magnet when it is heated?",
-    "options": [
-      "It increases",
-      "It remains the same",
-      "It decreases",
-      "It disappears completely"
-    ],
-    "correct": 2,
-    "rationale": "Heating a magnet can cause it to lose its magnetism, so its magnetic strength decreases."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these is a way to make a magnet?",
-    "options": [
-      "Rubbing a piece of iron with a magnet in a specific direction",
-      "Heating a piece of plastic",
-      "Breaking a non-magnetic object",
-      "Dipping a magnet in water"
-    ],
-    "correct": 0,
-    "rationale": "Rubbing a piece of iron with a magnet in one direction is a simple method of creating a temporary magnet through induction."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which pair will repel each other?",
-    "options": [
-      "North pole of magnet and South pole of another magnet",
-      "North pole of magnet and North pole of another magnet",
-      "North pole of magnet and an iron nail",
-      "South pole of magnet and an iron nail"
-    ],
-    "correct": 1,
-    "rationale": "Like poles, such as two north poles, will repel each other. Opposite poles attract, and a magnet will attract a non-magnetized ferromagnetic material like an iron nail."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the name of the oldest known natural magnet?",
-    "options": [
-      "Hematite",
-      "Pyrite",
-      "Lodestone",
-      "Quartz"
-    ],
-    "correct": 2,
-    "rationale": "Lodestone, a form of the mineral magnetite, is the oldest known natural magnet."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A piece of non-magnetic material is placed near a magnet. What will happen?",
-    "options": [
-      "It will be strongly attracted",
-      "It will be strongly repelled",
-      "It will show no effect",
-      "It will become magnetized"
-    ],
-    "correct": 2,
-    "rationale": "Non-magnetic materials are not attracted or repelled by a magnet, so there will be no effect."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the main use of a magnetic compass?",
-    "options": [
-      "Measuring temperature",
-      "Finding direction",
-      "Measuring weight",
-      "Predicting weather"
-    ],
-    "correct": 1,
-    "rationale": "The primary use of a magnetic compass is to determine the direction, as its needle aligns with the Earth's magnetic North."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which part of a bar magnet has the weakest magnetic strength?",
-    "options": [
-      "The poles",
-      "The center",
-      "The corners",
-      "The ends"
-    ],
-    "correct": 1,
-    "rationale": "The magnetic field is strongest at the poles and weakest at the center of the magnet."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these is a way to store magnets properly?",
-    "options": [
-      "By placing them in a pile",
-      "By keeping them near electronic devices",
-      "By keeping them near heat sources",
-      "By placing a piece of non-magnetic material between them"
-    ],
-    "correct": 3,
-    "rationale": "Placing a piece of non-magnetic material between magnets helps prevent demagnetization. Magnets should be stored away from heat and other magnets to maintain their strength."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is magnetic repulsion?",
-    "options": [
-      "The force that pulls magnets together",
-      "The force that pushes magnets apart",
-      "The process of a magnet losing its power",
-      "The force that attracts iron"
-    ],
-    "correct": 1,
-    "rationale": "Magnetic repulsion is the force that pushes two magnets apart when their like poles are brought near each other."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A magnet will attract a needle made of:",
-    "options": [
-      "Plastic",
-      "Glass",
-      "Iron",
-      "Copper"
-    ],
-    "correct": 2,
-    "rationale": "A magnet will attract a needle made of iron, as iron is a magnetic material."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the main reason a compass works?",
-    "options": [
-      "It is a magical device",
-      "The Earth acts as a giant magnet",
-      "It is powered by electricity",
-      "It is attracted by the sun"
-    ],
-    "correct": 1,
-    "rationale": "A compass works because the Earth itself has a massive magnetic field, causing the compass needle to align with it."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "When a magnet is broken, each piece becomes:",
-    "options": [
-      "A non-magnet",
-      "A new magnet with its own poles",
-      "A piece with only a north pole",
-      "A piece with only a south pole"
-    ],
-    "correct": 1,
-    "rationale": "No matter how many times a magnet is broken, each resulting piece will have its own complete set of north and south poles."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the process of making a non-magnetic material a magnet called?",
-    "options": [
-      "Induction",
-      "Magnetization",
-      "Polarization",
-      "Attraction"
-    ],
-    "correct": 1,
-    "rationale": "Magnetization is the process of making a material a magnet by arranging its internal magnetic domains."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the force exerted by a magnet on another magnet or magnetic material called?",
-    "options": [
-      "Gravitational force",
-      "Frictional force",
-      "Magnetic force",
-      "Electric force"
-    ],
-    "correct": 2,
-    "rationale": "The magnetic force is the push or pull that a magnet exerts on another magnetic object without touching it."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A horseshoe magnet has poles located at:",
-    "options": [
-      "The middle",
-      "The two ends",
-      "The curve",
-      "Everywhere"
-    ],
-    "correct": 1,
-    "rationale": "Similar to a bar magnet, a horseshoe magnet also has its two poles located at its two ends, although they are bent towards each other."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the property of magnets that allows them to be used in cranes to lift heavy iron objects?",
-    "options": [
-      "Attraction",
-      "Repulsion",
-      "Demagnetization",
-      "Polarity"
-    ],
-    "correct": 0,
-    "rationale": "The property of attraction, where a magnet pulls in magnetic materials, is used in cranes to lift and move heavy iron objects."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these materials is not suitable for making a magnet?",
-    "options": [
-      "Iron",
-      "Steel",
-      "Nickel",
-      "Wood"
-    ],
-    "correct": 3,
-    "rationale": "Iron, steel, and nickel are magnetic materials and can be magnetized. Wood is a non-magnetic material and cannot be used to make a magnet."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A toy car with a magnet at its front will be attracted to another toy car with a magnet at its back if the poles facing each other are:",
-    "options": [
-      "North and North",
-      "South and South",
-      "North and South",
-      "Any poles"
-    ],
-    "correct": 2,
-    "rationale": "For attraction to occur, the opposite poles of the two magnets must face each other."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "If you hold an iron nail near the north pole of a magnet, the end of the nail closer to the magnet will become:",
-    "options": [
-      "A North pole",
-      "A South pole",
-      "A non-magnetic part",
-      "An East pole"
-    ],
-    "correct": 1,
-    "rationale": "Through magnetic induction, the end of the iron nail closer to the north pole of the magnet will acquire an opposite polarity, becoming a south pole."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What happens if you store two bar magnets with their unlike poles facing each other?",
-    "options": [
-      "They will be repelled",
-      "They will be attracted",
-      "Their strength will decrease",
-      "Their strength will increase"
-    ],
-    "correct": 1,
-    "rationale": "Storing magnets with unlike poles facing each other prevents them from losing their magnetism because they remain in a state of attraction."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the reason a compass needle points to the north?",
-    "options": [
-      "It is attracted by the Sun's rays",
-      "It aligns with the Earth's magnetic field",
-      "It points to the North Star",
-      "It is repelled by the South Pole"
-    ],
-    "correct": 1,
-    "rationale": "A compass needle is a small magnet that aligns with the Earth's large magnetic field, causing its north pole to point towards the Earth's magnetic south pole, which is near the geographical north pole."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of the following is an example of a magnetic pole pair that will repel?",
-    "options": [
-      "North and South",
-      "South and North",
-      "North and North",
-      "North and a non-magnetic material"
-    ],
-    "correct": 2,
-    "rationale": "Like poles, such as two north poles, will repel each other. Opposite poles attract, and a magnet will attract a magnetic material."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "Which of these is a way to protect a magnet from demagnetization?",
-    "options": [
-      "Dropping it frequently",
-      "Heating it in a fire",
-      "Using a magnetic keeper",
-      "Storing it in a moist place"
-    ],
-    "correct": 2,
-    "rationale": "A magnetic keeper, which is a piece of soft iron, is used to store magnets and help them retain their magnetism by providing a complete magnetic circuit."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "A piece of chalk is placed near a magnet. What will happen?",
-    "options": [
-      "It will be attracted",
-      "It will be repelled",
-      "Nothing will happen",
-      "It will become a magnet"
-    ],
-    "correct": 2,
-    "rationale": "Chalk is a non-magnetic material and will not be affected by a magnet."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "What is the phenomenon of a magnet attracting a piece of iron without touching it called?",
-    "options": [
-      "Contact force",
-      "Non-contact force",
-      "Mechanical force",
-      "Gravitational force"
-    ],
-    "correct": 1,
-    "rationale": "The magnetic force is an example of a non-contact force, as it can act on objects from a distance without physical contact."
-  },
-  {
-    "category": "Exploring Magnets",
-    "question": "If you hold a piece of iron near a magnet's north pole, what pole will be induced at the end of the iron piece closer to the magnet?",
-    "options": [
-      "North pole",
-      "South pole",
-      "It will not have a pole",
-      "It will become a non-magnetic part"
-    ],
-    "correct": 1,
-    "rationale": "When a magnetic material is brought near a magnet, it becomes a temporary magnet through induction, with the end closer to the magnet developing the opposite polarity."
-  }
-]
+[ {
+  "category" : "Classification of organisms",
+  "question" : "Which of the following is the broadest level of classification?",
+  "options" : [ "Species", "Kingdom", "Genus", "Family" ],
+  "correct" : 1,
+  "rationale" : "Kingdom is the highest and broadest level of classification, grouping together organisms with very general similarities. Species is the most specific."
+}, {
+  "category" : "Plant Diversity",
+  "question" : "Which type of plant has seeds that are enclosed in a fruit?",
+  "options" : [ "Gymnosperm", "Angiosperm", "Fern", "Moss" ],
+  "correct" : 1,
+  "rationale" : "Angiosperms are flowering plants and their seeds are enclosed within a fruit. Gymnosperms have naked seeds, not enclosed in a fruit."
+}, {
+  "category" : "Animal Diversity",
+  "question" : "Which of these animals breathes through gills?",
+  "options" : [ "Dog", "Cat", "Fish", "Bird" ],
+  "correct" : 2,
+  "rationale" : "Fish are aquatic animals and breathe through gills, which extract oxygen from water.  Dogs, cats, and birds breathe through lungs."
+}, {
+  "category" : "Adaptation",
+  "question" : "What helps a polar bear survive in a cold environment?",
+  "options" : [ "Thin fur", "Large ears", "White fur", "Short legs" ],
+  "correct" : 2,
+  "rationale" : "White fur acts as camouflage in snowy environments and helps polar bears to hunt and survive.  Thick fur also helps, but is not listed as an option here.  Large ears would increase heat loss."
+}, {
+  "category" : "Vertebrates",
+  "question" : "Which group of animals has feathers?",
+  "options" : [ "Reptiles", "Amphibians", "Birds", "Mammals" ],
+  "correct" : 2,
+  "rationale" : "Birds are the only group of animals that possess feathers. Feathers are used for flight and insulation."
+}, {
+  "category" : "Invertebrates",
+  "question" : "An earthworm belongs to which group of invertebrates?",
+  "options" : [ "Arthropods", "Mollusks", "Annelids", "Echinoderms" ],
+  "correct" : 2,
+  "rationale" : "Earthworms belong to the phylum Annelida, also known as segmented worms. Arthropods include insects and crustaceans."
+}, {
+  "category" : "Microorganisms",
+  "question" : "Which of the following is an example of a fungus?",
+  "options" : [ "Amoeba", "Yeast", "Bacteria", "Virus" ],
+  "correct" : 1,
+  "rationale" : "Yeast is a single-celled fungus. Amoeba is a protozoan, bacteria are prokaryotes, and viruses are non-cellular infectious agents."
+}, {
+  "category" : "Plant Diversity",
+  "question" : "What is the primary function of flowers in angiosperms?",
+  "options" : [ "Absorption of water", "Photosynthesis", "Reproduction", "Support" ],
+  "correct" : 2,
+  "rationale" : "Flowers are the reproductive structures of angiosperms (flowering plants). They are responsible for producing seeds."
+}, {
+  "category" : "Animal Diversity",
+  "question" : "Which characteristic is NOT common to all mammals?",
+  "options" : [ "Having hair or fur", "Giving birth to live young", "Breathing with lungs", "Having mammary glands" ],
+  "correct" : 1,
+  "rationale" : "While most mammals give birth to live young, there are exceptions like the platypus and echidna, which lay eggs. The other characteristics are common to all mammals."
+}, {
+  "category" : "Adaptation",
+  "question" : "A camel can survive for long periods without water because it can:",
+  "options" : [ "Store water in its hump", "Conserve water by producing less urine", "Sweat excessively", "Absorb water through its skin" ],
+  "correct" : 1,
+  "rationale" : "Camels primarily conserve water by producing concentrated urine and dry feces, and by minimizing water loss through sweating.  The hump stores fat, not water."
+}, {
+  "category" : "Vertebrates",
+  "question" : "Which of these is a characteristic of amphibians?",
+  "options" : [ "Scaly skin", "Laying eggs in water", "Breathing only with lungs", "Constant body temperature" ],
+  "correct" : 1,
+  "rationale" : "Amphibians typically lay their eggs in water. They often have smooth, moist skin.  They can breathe through their skin and lungs.  They are cold-blooded (ectothermic)."
+}, {
+  "category" : "Invertebrates",
+  "question" : "Which invertebrate group includes insects, spiders, and crustaceans?",
+  "options" : [ "Annelids", "Mollusks", "Arthropods", "Echinoderms" ],
+  "correct" : 2,
+  "rationale" : "Arthropods are characterized by having an exoskeleton, segmented body, and jointed appendages. This group contains a vast diversity of organisms, including insects, spiders, and crustaceans."
+}, {
+  "category" : "Microorganisms",
+  "question" : "Which type of microorganism is responsible for the common cold?",
+  "options" : [ "Bacteria", "Fungus", "Virus", "Protozoa" ],
+  "correct" : 2,
+  "rationale" : "Viruses, such as the rhinovirus, are the primary cause of the common cold. Bacteria cause other infections, while fungi and protozoa are less commonly associated with colds."
+}, {
+  "category" : "Classification of organisms",
+  "question" : "Which level of classification comes directly after Family?",
+  "options" : [ "Kingdom", "Genus", "Order", "Class" ],
+  "correct" : 2,
+  "rationale" : "The classification hierarchy is Kingdom, Phylum, Class, Order, Family, Genus, Species. Thus, Order comes directly after Family."
+}, {
+  "category" : "Plant Diversity",
+  "question" : "What is the primary role of xylem in plants?",
+  "options" : [ "Transporting sugars", "Transporting water and minerals", "Providing support", "Storing food" ],
+  "correct" : 1,
+  "rationale" : "Xylem tissue is responsible for transporting water and dissolved minerals from the roots to the rest of the plant. Phloem transports sugars."
+}, {
+  "category" : "Animal Diversity",
+  "question" : "Which of the following is a characteristic feature of reptiles?",
+  "options" : [ "Moist skin", "Laying eggs with soft shells", "Scales", "Giving birth to live young" ],
+  "correct" : 2,
+  "rationale" : "Reptiles typically have scales covering their body. Most reptiles lay eggs with leathery or hard shells. Amphibians have moist skin."
+}, {
+  "category" : "Adaptation",
+  "question" : "Why do cacti have spines instead of leaves?",
+  "options" : [ "To attract pollinators", "To increase photosynthesis", "To reduce water loss", "To store water" ],
+  "correct" : 2,
+  "rationale" : "Spines on cacti are modified leaves that reduce the surface area exposed to the environment, minimizing water loss through transpiration. This is an adaptation to arid climates."
+}, {
+  "category" : "Vertebrates",
+  "question" : "Which vertebrate group typically has a 3-chambered heart?",
+  "options" : [ "Fish", "Amphibians", "Reptiles", "Birds" ],
+  "correct" : 1,
+  "rationale" : "Amphibians typically have a 3-chambered heart. Most reptiles also have a 3-chambered heart (except for crocodiles which have 4), fish have 2, and birds and mammals have 4."
+}, {
+  "category" : "Invertebrates",
+  "question" : "What is the hard outer covering of an insect called?",
+  "options" : [ "Endoskeleton", "Exoskeleton", "Cartilage", "Chitin" ],
+  "correct" : 1,
+  "rationale" : "The hard outer covering of an insect is called an exoskeleton. It provides protection and support. This is made up of Chitin."
+}, {
+  "category" : "Microorganisms",
+  "question" : "Which microorganism is used to make yogurt?",
+  "options" : [ "Virus", "Bacteria", "Protozoa", "Algae" ],
+  "correct" : 1,
+  "rationale" : "Bacteria, particularly *Lactobacillus* and *Streptococcus* species, are used to ferment milk and produce yogurt."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Which of these activities best represents mindful eating?",
+  "options" : [ "Eating while watching TV.", "Eating quickly before school.", "Paying attention to the taste and texture of each bite.", "Eating from a very large plate." ],
+  "correct" : 2,
+  "rationale" : "Mindful eating is about being fully present and aware of your food and the experience of eating. Paying attention to taste and texture promotes this awareness."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "What is the primary benefit of practicing mindful eating?",
+  "options" : [ "Eating more food in one sitting.", "Improved digestion and greater satisfaction.", "Distraction from hunger cues.", "A faster meal time." ],
+  "correct" : 1,
+  "rationale" : "Mindful eating promotes better digestion by allowing you to chew properly and signals satiety more effectively, leading to greater satisfaction with your meal."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "If a mindful eating exercise suggests taking 5 minutes to eat one apple slice, approximately how many apple slices could you eat in 30 minutes if you continued at that pace?",
+  "options" : [ "3", "6", "10", "15" ],
+  "correct" : 1,
+  "rationale" : "Since it takes 5 minutes to eat one slice, in 30 minutes, you could eat 30 / 5 = 6 slices."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "You are eating a snack of 12 almonds. If you eat them mindfully, savoring each one for 30 seconds, how long will it take you to finish the snack?",
+  "options" : [ "3 minutes", "6 minutes", "12 minutes", "360 seconds" ],
+  "correct" : 1,
+  "rationale" : "It takes 30 seconds per almond, so for 12 almonds it will take 12 * 30 = 360 seconds, which is equal to 6 minutes (360/60 = 6)."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Which sense is MOST important to engage during mindful eating?",
+  "options" : [ "Hearing", "Sight", "Smell", "Touch" ],
+  "correct" : 1,
+  "rationale" : "While all senses contribute, sight (observing the food), smell (aroma), and touch (texture) contribute more directly to appreciating the food during mindful eating. Taste is also important, however, sight tends to be the immediate sense engaged."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Maria usually eats a sandwich in 2 minutes. If she practices mindful eating and doubles her eating time, how long will it take her to eat the sandwich?",
+  "options" : [ "1 minute", "2 minutes", "4 minutes", "6 minutes" ],
+  "correct" : 2,
+  "rationale" : "If she doubles her eating time of 2 minutes, it will take her 2 * 2 = 4 minutes."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "If you're eating a serving of vegetables that contains 5 carrots, 3 broccoli florets, and 2 bell pepper slices, and you decide to focus on each item equally during a mindful eating practice, what fraction of the overall serving does each bell pepper slice represent?",
+  "options" : [ "1/2", "1/5", "1/10", "1/3" ],
+  "correct" : 2,
+  "rationale" : "There are a total of 5 + 3 + 2 = 10 items. Each bell pepper slice represents 1/10 of the total serving."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Why is it important to chew your food thoroughly when practicing mindful eating?",
+  "options" : [ "To eat faster.", "To make more noise.", "To improve digestion.", "To make the food look smaller." ],
+  "correct" : 2,
+  "rationale" : "Thorough chewing breaks down food into smaller pieces, making it easier for your body to digest and absorb nutrients."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Which of the following is a distraction that should be minimized during mindful eating?",
+  "options" : [ "A quiet room.", "Soft music.", "A bright, colorful plate.", "A smartphone." ],
+  "correct" : 3,
+  "rationale" : "Smartphones and other electronic devices can distract you from paying attention to your food and the experience of eating. Quiet rooms and soft music are considered helpful ambient sounds to relax."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "A bag of chips has 150 calories per serving. If you mindfully eat only half a serving, how many calories are you consuming?",
+  "options" : [ "50 calories", "75 calories", "100 calories", "300 calories" ],
+  "correct" : 1,
+  "rationale" : "Half of 150 calories is 150 / 2 = 75 calories."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "If you divide your plate into four equal sections: 1/4 for protein, 1/4 for carbohydrates, 1/4 for vegetables, and 1/4 for fruit, and you eat each section mindfully, what percentage of your meal is dedicated to protein?",
+  "options" : [ "20%", "25%", "50%", "75%" ],
+  "correct" : 1,
+  "rationale" : "1/4 is equal to 25%. Therefore, 25% of your meal is dedicated to protein."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "You want to make a snack with 1/3 nuts, 1/3 seeds, and 1/3 dried fruit. While eating mindfully, which component should you focus on the most?",
+  "options" : [ "Nuts only", "Seeds only", "Dried fruit only", "Each component equally" ],
+  "correct" : 3,
+  "rationale" : "Mindful eating focuses on each part of the meal/snack equally to fully experience the flavors, textures, and overall enjoyment."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Which statement is FALSE regarding mindful eating?",
+  "options" : [ "It can help you recognize hunger cues.", "It can reduce overeating.", "It encourages eating quickly.", "It enhances the enjoyment of food." ],
+  "correct" : 2,
+  "rationale" : "Mindful eating encourages slowing down and savoring food, not eating quickly. The other options are benefits of mindful eating."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "If a mindful eating guide suggests taking 20 breaths before starting to eat and each breath takes 5 seconds, how long will the breathing exercise last?",
+  "options" : [ "20 seconds", "60 seconds", "100 seconds", "150 seconds" ],
+  "correct" : 2,
+  "rationale" : "20 breaths * 5 seconds/breath = 100 seconds."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "You have a plate of 20 grapes. If you eat 25% of them mindfully, how many grapes did you eat?",
+  "options" : [ "2", "4", "5", "10" ],
+  "correct" : 2,
+  "rationale" : "25% of 20 grapes is (25/100) * 20 = 5 grapes."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "If a recipe has 200 grams of vegetables and you choose to eat it mindfully in small portions. What portion is left after consuming 30% of the vegetables mindfully?",
+  "options" : [ "60 grams", "70 grams", "140 grams", "160 grams" ],
+  "correct" : 2,
+  "rationale" : "The portion consumed is 200 * (30/100) = 60 grams. The remaining portion will be 200 - 60 = 140 grams"
+}, {
+  "category" : "Mindful Eating",
+  "question" : "Imagine a small cookie weighs 10 grams and has 50 calories. If you mindfully break the cookie into 5 equal pieces and eat only 3 of them, how many grams and calories have you consumed?",
+  "options" : [ "2 grams, 10 calories", "3 grams, 15 calories", "6 grams, 30 calories", "15 grams, 75 calories" ],
+  "correct" : 2,
+  "rationale" : "Each piece weighs 10/5 = 2 grams and has 50/5 = 10 calories. Eating 3 pieces means consuming 3*2 = 6 grams and 3*10 = 30 calories."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "If you are eating a rainbow salad which has 1/4 red peppers, 1/4 yellow peppers, 1/4 green peppers and 1/4 lettuce, which of the following is correct if you want to eat more mindfully?",
+  "options" : [ "Eat red peppers quickly, and others slowly", "Eat yellow peppers slowly and others quickly", "Eat all peppers slowly, then eat lettuce quickly", "Eat all components equally slowly and savor each flavor" ],
+  "correct" : 3,
+  "rationale" : "Mindful eating encourages you to eat each component slowly and enjoy the textures and flavors."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "What happens to your body when you eat mindfully versus eating quickly?",
+  "options" : [ "Increase risk of indigestion", "The brain can register fullness", "Increase overeating", "Increase body weight" ],
+  "correct" : 1,
+  "rationale" : "Mindful eating will allow your body and brain to register when you are full. Eating quickly can increase the risk of indigestion, overeating, and increased body weight."
+}, {
+  "category" : "Mindful Eating",
+  "question" : "A handful of trail mix contains 20 raisins, 15 peanuts, and 5 chocolate chips. If you are mindfully eating, what percentage of each item are you eating in the mix?",
+  "options" : [ "30%, 30%, 30%", "50%, 25%, 25%", "50%, 37.5%, 12.5%", "33%, 33%, 33%" ],
+  "correct" : 2,
+  "rationale" : "There are a total of 20+15+5 = 40 items. The percentages are: raisins (20/40)*100 = 50%, peanuts (15/40)*100 = 37.5%, chocolate chips (5/40)*100 = 12.5%"
+} ]
