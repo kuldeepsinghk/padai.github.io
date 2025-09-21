@@ -1,483 +1,483 @@
 [ {
   "category" : "LCM and HCF",
   "question" : "What is the LCM of 4 and 6?",
-  "options" : [ "6", "12", "24", "10" ],
-  "correct" : 1,
-  "rationale" : "The multiples of 4 are 4, 8, 12, 16... The multiples of 6 are 6, 12, 18... The Least Common Multiple is 12."
+  "options" : [ "2", "10", "12", "24" ],
+  "correct" : 2,
+  "rationale" : "The multiples of 4 are 4, 8, 12, 16,... and the multiples of 6 are 6, 12, 18,... The least common multiple is 12."
 }, {
   "category" : "LCM and HCF",
   "question" : "What is the HCF of 12 and 18?",
-  "options" : [ "6", "3", "9", "2" ],
-  "correct" : 0,
-  "rationale" : "The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 18 are 1, 2, 3, 6, 9, 18. The Highest Common Factor is 6."
+  "options" : [ "2", "3", "6", "36" ],
+  "correct" : 2,
+  "rationale" : "The factors of 12 are 1, 2, 3, 4, 6, 12 and the factors of 18 are 1, 2, 3, 6, 9, 18. The highest common factor is 6."
 }, {
   "category" : "LCM and HCF",
   "question" : "Find the LCM of 5 and 10.",
-  "options" : [ "5", "10", "15", "20" ],
+  "options" : [ "5", "10", "15", "50" ],
   "correct" : 1,
-  "rationale" : "The multiples of 5 are 5, 10, 15... The multiples of 10 are 10, 20, 30... The Least Common Multiple is 10."
+  "rationale" : "The multiples of 5 are 5, 10, 15, ... and the multiples of 10 are 10, 20, 30, .... The least common multiple is 10."
 }, {
   "category" : "LCM and HCF",
-  "question" : "Find the HCF of 15 and 20.",
-  "options" : [ "5", "10", "15", "20" ],
-  "correct" : 0,
-  "rationale" : "The factors of 15 are 1, 3, 5, 15. The factors of 20 are 1, 2, 4, 5, 10, 20. The Highest Common Factor is 5."
+  "question" : "Find the HCF of 25 and 30.",
+  "options" : [ "1", "5", "10", "150" ],
+  "correct" : 1,
+  "rationale" : "The factors of 25 are 1, 5, 25 and the factors of 30 are 1, 2, 3, 5, 6, 10, 15, 30. The highest common factor is 5."
 }, {
   "category" : "LCM and HCF",
-  "question" : "What is the LCM of 2, 3, and 4?",
+  "question" : "What is the LCM of 3, 4, and 6?",
+  "options" : [ "6", "9", "12", "24" ],
+  "correct" : 2,
+  "rationale" : "The multiples of 3 are 3, 6, 9, 12,... The multiples of 4 are 4, 8, 12,... The multiples of 6 are 6, 12, 18,... The least common multiple is 12."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "The HCF of two numbers is 8. Which of the following could be the numbers?",
+  "options" : [ "10 and 12", "16 and 20", "24 and 32", "15 and 24" ],
+  "correct" : 2,
+  "rationale" : "The HCF of 24 and 32 is 8. The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. The factors of 32 are 1, 2, 4, 8, 16, 32. The highest common factor is 8."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "The LCM of two numbers is 30. Which of the following could be the numbers?",
+  "options" : [ "2 and 3", "3 and 5", "5 and 6", "10 and 20" ],
+  "correct" : 2,
+  "rationale" : "The multiples of 5 are 5, 10, 15, 20, 25, 30,... and the multiples of 6 are 6, 12, 18, 24, 30,... The LCM of 5 and 6 is 30."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "What is the HCF of 15, 20, and 30?",
+  "options" : [ "1", "3", "5", "10" ],
+  "correct" : 2,
+  "rationale" : "The factors of 15 are 1, 3, 5, 15. The factors of 20 are 1, 2, 4, 5, 10, 20. The factors of 30 are 1, 2, 3, 5, 6, 10, 15, 30. The highest common factor is 5."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "What is the LCM of 7 and 8?",
+  "options" : [ "1", "15", "56", "64" ],
+  "correct" : 2,
+  "rationale" : "The multiples of 7 are 7, 14, 21, 28, 35, 42, 49, 56,... The multiples of 8 are 8, 16, 24, 32, 40, 48, 56,... The least common multiple is 56."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "Find the HCF of 48 and 60.",
   "options" : [ "6", "8", "12", "24" ],
   "correct" : 2,
-  "rationale" : "The multiples of 2 are 2, 4, 6, 8, 10, 12... The multiples of 3 are 3, 6, 9, 12... The multiples of 4 are 4, 8, 12... The Least Common Multiple is 12."
+  "rationale" : "The factors of 48 are 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The factors of 60 are 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. The highest common factor is 12."
 }, {
   "category" : "LCM and HCF",
-  "question" : "What is the HCF of 8, 12, and 16?",
-  "options" : [ "2", "4", "6", "8" ],
-  "correct" : 1,
-  "rationale" : "The factors of 8 are 1, 2, 4, 8. The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 16 are 1, 2, 4, 8, 16. The Highest Common Factor is 4."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "The LCM of two numbers is 20. Their HCF is 1. If one of the numbers is 4, find the other number.",
-  "options" : [ "1", "5", "16", "20" ],
-  "correct" : 1,
-  "rationale" : "Product of two numbers = LCM * HCF.  So, 4 * other number = 20 * 1.  Other number = 20 / 4 = 5."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "Two numbers are in the ratio 2:3. If their HCF is 6, find the numbers.",
-  "options" : [ "2, 3", "6, 9", "12, 18", "3, 2" ],
+  "question" : "The LCM of two co-prime numbers is always their:",
+  "options" : [ "Sum", "Difference", "Product", "Quotient" ],
   "correct" : 2,
-  "rationale" : "Let the numbers be 2x and 3x. Their HCF is x, which is given as 6. So, the numbers are 2*6=12 and 3*6=18."
+  "rationale" : "Co-prime numbers have no common factors other than 1. Therefore, their LCM is simply their product."
 }, {
   "category" : "LCM and HCF",
-  "question" : "Find the least number which when divided by 6, 15, and 18 leaves remainder 5 in each case.",
-  "options" : [ "85", "90", "95", "100" ],
+  "question" : "What is the HCF of two consecutive even numbers?",
+  "options" : [ "0", "1", "2", "4" ],
   "correct" : 2,
-  "rationale" : "First find the LCM of 6, 15, and 18, which is 90.  Then add the remainder 5 to get 90 + 5 = 95."
+  "rationale" : "Consecutive even numbers differ by 2. Their only common factor is 2."
 }, {
   "category" : "LCM and HCF",
-  "question" : "Find the greatest number which will divide 285 and 1249 leaving remainders 9 and 7 respectively.",
-  "options" : [ "138", "276", "69", "34" ],
-  "correct" : 0,
-  "rationale" : "Subtract the remainders from the numbers: 285-9=276 and 1249-7=1242. Find the HCF of 276 and 1242, which is 138."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "What is the LCM of 12 and 15?",
-  "options" : [ "3", "60", "180", "30" ],
-  "correct" : 1,
-  "rationale" : "The multiples of 12 are 12, 24, 36, 48, 60... The multiples of 15 are 15, 30, 45, 60... The Least Common Multiple is 60."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "What is the HCF of 24 and 36?",
-  "options" : [ "6", "12", "2", "4" ],
-  "correct" : 1,
-  "rationale" : "The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. The factors of 36 are 1, 2, 3, 4, 6, 9, 12, 18, 36. The Highest Common Factor is 12."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "The HCF of two numbers is 8. Which of the following cannot be their LCM?",
-  "options" : [ "24", "48", "56", "60" ],
+  "question" : "What is the LCM of 2, 3, and 5?",
+  "options" : [ "6", "10", "15", "30" ],
   "correct" : 3,
-  "rationale" : "The LCM must be divisible by the HCF. 24, 48, and 56 are divisible by 8, but 60 is not."
+  "rationale" : "Since 2, 3, and 5 are all prime, their LCM is simply their product: 2 * 3 * 5 = 30."
 }, {
   "category" : "LCM and HCF",
-  "question" : "Find the LCM of 9 and 12.",
-  "options" : [ "3", "18", "36", "108" ],
+  "question" : "Find the smallest number which when divided by 6, 8, and 12 leaves a remainder of 5 in each case.",
+  "options" : [ "24", "29", "36", "41" ],
+  "correct" : 1,
+  "rationale" : "First find the LCM of 6, 8, and 12, which is 24. Then add the remainder 5 to get 24 + 5 = 29."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "What is the largest number that divides both 24 and 36 without leaving a remainder?",
+  "options" : [ "4", "6", "12", "18" ],
   "correct" : 2,
-  "rationale" : "The multiples of 9 are 9, 18, 27, 36... The multiples of 12 are 12, 24, 36... The Least Common Multiple is 36."
+  "rationale" : "This is the HCF of 24 and 36, which is 12."
 }, {
   "category" : "LCM and HCF",
-  "question" : "Find the HCF of 35 and 45.",
-  "options" : [ "5", "7", "9", "15" ],
-  "correct" : 0,
-  "rationale" : "The factors of 35 are 1, 5, 7, 35. The factors of 45 are 1, 3, 5, 9, 15, 45. The Highest Common Factor is 5."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "The LCM and HCF of two numbers are 180 and 6 respectively. If one number is 30, find the other number.",
-  "options" : [ "6", "36", "60", "90" ],
-  "correct" : 1,
-  "rationale" : "Product of two numbers = LCM * HCF. 30 * other number = 180 * 6. Other number = (180 * 6) / 30 = 36."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "Find the least number divisible by 12, 15 and 18.",
-  "options" : [ "90", "180", "360", "540" ],
-  "correct" : 1,
-  "rationale" : "This is asking for the LCM of 12, 15, and 18. Prime factorization: 12=2^2*3, 15=3*5, 18=2*3^2. LCM = 2^2 * 3^2 * 5 = 4 * 9 * 5 = 180."
-}, {
-  "category" : "LCM and HCF",
-  "question" : "Find the largest number that divides 24 and 32 without leaving a remainder.",
-  "options" : [ "2", "4", "8", "16" ],
+  "question" : "The product of two numbers is 216. If their HCF is 6, what is their LCM?",
+  "options" : [ "6", "12", "36", "216" ],
   "correct" : 2,
-  "rationale" : "This is asking for the HCF of 24 and 32. The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. The factors of 32 are 1, 2, 4, 8, 16, 32. The Highest Common Factor is 8."
+  "rationale" : "We know that the product of two numbers is equal to the product of their HCF and LCM.  Therefore, LCM = (Product of numbers) / HCF = 216 / 6 = 36."
 }, {
   "category" : "LCM and HCF",
-  "question" : "What is the smallest number that can be exactly divided by both 8 and 10?",
-  "options" : [ "2", "40", "80", "160" ],
+  "question" : "What is the LCM of 1/2 and 1/3?",
+  "options" : [ "1/6", "1", "5/6", "6" ],
   "correct" : 1,
-  "rationale" : "This is asking for the LCM of 8 and 10. Multiples of 8 are 8, 16, 24, 32, 40... Multiples of 10 are 10, 20, 30, 40... The LCM is 40."
+  "rationale" : "When finding the LCM of fractions consider the numerators and denominators. You are essentially taking LCM(1,1)/HCF(2,3) = 1/1 = 1"
 }, {
   "category" : "LCM and HCF",
-  "question" : "The product of two numbers is 216. If their HCF is 6, find their LCM.",
-  "options" : [ "6", "18", "36", "216" ],
+  "question" : "The HCF of two numbers is 12, and their LCM is 144. If one of the numbers is 36, find the other number.",
+  "options" : [ "12", "24", "48", "72" ],
   "correct" : 2,
-  "rationale" : "Product of two numbers = LCM * HCF. 216 = LCM * 6. Therefore, LCM = 216 / 6 = 36."
+  "rationale" : "The product of two numbers is equal to the product of their HCF and LCM. Let the other number be x. Then, 36 * x = 12 * 144. Solving for x, we get x = (12 * 144) / 36 = 48."
 }, {
-  "category" : "Whole Numbers",
-  "question" : "What is the smallest whole number?",
-  "options" : [ "-1", "0", "1", "No smallest whole number" ],
-  "correct" : 1,
-  "rationale" : "Whole numbers start from 0 and extend infinitely in the positive direction. Therefore, 0 is the smallest whole number."
+  "category" : "LCM and HCF",
+  "question" : "Which of the following pairs of numbers are co-prime?",
+  "options" : [ "4 and 6", "6 and 15", "8 and 9", "9 and 12" ],
+  "correct" : 2,
+  "rationale" : "Co-prime numbers have no common factors other than 1. The factors of 8 are 1, 2, 4, 8. The factors of 9 are 1, 3, 9. They only share the factor 1."
+}, {
+  "category" : "LCM and HCF",
+  "question" : "Find the least number that is divisible by all the numbers from 1 to 5 (both inclusive).",
+  "options" : [ "15", "30", "60", "120" ],
+  "correct" : 2,
+  "rationale" : "We need to find the LCM of 1, 2, 3, 4, and 5. The LCM is 2 * 2 * 3 * 5 = 60."
 }, {
   "category" : "Whole Numbers",
   "question" : "Which of the following is NOT a whole number?",
-  "options" : [ "5", "0", "3.14", "100" ],
-  "correct" : 2,
-  "rationale" : "Whole numbers are non-negative integers (0, 1, 2, 3,...). 3.14 is a decimal and thus not a whole number."
+  "options" : [ "0", "1", "100", "-1" ],
+  "correct" : 3,
+  "rationale" : "Whole numbers are non-negative integers starting from 0. -1 is a negative integer and therefore not a whole number."
 }, {
   "category" : "Whole Numbers",
-  "question" : "What is the successor of 999?",
-  "options" : [ "998", "1000", "1001", "999.1" ],
+  "question" : "What is the successor of 99?",
+  "options" : [ "98", "100", "101", "99" ],
   "correct" : 1,
-  "rationale" : "The successor of a whole number is the number that comes immediately after it. We find it by adding 1. 999 + 1 = 1000"
+  "rationale" : "The successor of a number is the number that comes immediately after it. Therefore, the successor of 99 is 99 + 1 = 100."
 }, {
   "category" : "Whole Numbers",
-  "question" : "What is the predecessor of 100?",
-  "options" : [ "99", "101", "98", "0" ],
+  "question" : "What is the predecessor of 101?",
+  "options" : [ "100", "102", "99", "101" ],
   "correct" : 0,
-  "rationale" : "The predecessor of a whole number is the number that comes immediately before it. We find it by subtracting 1. 100 - 1 = 99"
+  "rationale" : "The predecessor of a number is the number that comes immediately before it. Therefore, the predecessor of 101 is 101 - 1 = 100."
 }, {
   "category" : "Whole Numbers",
-  "question" : "Which property is illustrated by the equation 5 + 0 = 5?",
-  "options" : [ "Commutative Property", "Associative Property", "Additive Identity Property", "Distributive Property" ],
+  "question" : "What is the value of 0 divided by 5?",
+  "options" : [ "5", "0", "Not defined", "1" ],
+  "correct" : 1,
+  "rationale" : "Zero divided by any non-zero number is always zero. Therefore, 0 / 5 = 0."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "What is the value of 5 divided by 0?",
+  "options" : [ "5", "0", "Not defined", "1" ],
   "correct" : 2,
-  "rationale" : "The Additive Identity Property states that any number plus zero equals that number. Zero is the additive identity."
+  "rationale" : "Division by zero is undefined in mathematics. Therefore, 5 / 0 is not defined."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "What is the smallest whole number?",
+  "options" : [ "1", "0", "-1", "2" ],
+  "correct" : 1,
+  "rationale" : "The set of whole numbers starts from 0 and includes all positive integers. Therefore, the smallest whole number is 0."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "Which property is illustrated by the equation 2 + 3 = 3 + 2?",
+  "options" : [ "Associative property", "Commutative property", "Distributive property", "Identity property" ],
+  "correct" : 1,
+  "rationale" : "The commutative property states that the order of addition (or multiplication) does not change the result.  a + b = b + a."
 }, {
   "category" : "Whole Numbers",
   "question" : "Which property is illustrated by the equation 2 x (3 + 4) = (2 x 3) + (2 x 4)?",
-  "options" : [ "Commutative Property", "Associative Property", "Additive Identity Property", "Distributive Property" ],
-  "correct" : 3,
-  "rationale" : "The Distributive Property shows how multiplication distributes over addition: a x (b + c) = (a x b) + (a x c)"
+  "options" : [ "Associative property", "Commutative property", "Distributive property", "Identity property" ],
+  "correct" : 2,
+  "rationale" : "The distributive property states that multiplying a number by a sum is the same as multiplying the number by each addend and then adding the products. a x (b + c) = (a x b) + (a x c)"
 }, {
   "category" : "Whole Numbers",
-  "question" : "What is the value of 15 x 0?",
-  "options" : [ "15", "0", "1", "Undefined" ],
-  "correct" : 1,
-  "rationale" : "Any number multiplied by zero is equal to zero."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "Find the product of the smallest whole number and the largest single-digit whole number.",
-  "options" : [ "0", "9", "10", "1" ],
+  "question" : "What is the additive identity for whole numbers?",
+  "options" : [ "0", "1", "-1", "10" ],
   "correct" : 0,
-  "rationale" : "The smallest whole number is 0, and the largest single-digit whole number is 9. Their product is 0 x 9 = 0."
+  "rationale" : "The additive identity is a number that, when added to any number, leaves the original number unchanged.  For whole numbers, 0 is the additive identity because a + 0 = a."
 }, {
   "category" : "Whole Numbers",
-  "question" : "If a = 5, b = 7, and c = 2, what is the value of a x (b + c)?",
-  "options" : [ "45", "35", "19", "9" ],
-  "correct" : 0,
-  "rationale" : "a x (b + c) = 5 x (7 + 2) = 5 x 9 = 45."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "What is the sum of the first five whole numbers?",
-  "options" : [ "10", "15", "20", "25" ],
-  "correct" : 0,
-  "rationale" : "The first five whole numbers are 0, 1, 2, 3, and 4. Their sum is 0 + 1 + 2 + 3 + 4 = 10."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "Which of the following statements is always true for whole numbers a and b?",
-  "options" : [ "a - b = b - a", "a / b = b / a", "a + b = b + a", "a x b > a + b" ],
-  "correct" : 2,
-  "rationale" : "The commutative property of addition states that a + b = b + a for all numbers, including whole numbers. The other options are not always true."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "A shopkeeper sold 25 apples on Monday, 30 apples on Tuesday, and 20 apples on Wednesday. What is the total number of apples sold in these three days?",
-  "options" : [ "65", "70", "75", "80" ],
-  "correct" : 2,
-  "rationale" : "The total number of apples sold is 25 + 30 + 20 = 75."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "What is the result of dividing any whole number by 1?",
-  "options" : [ "0", "1", "The number itself", "Undefined" ],
-  "correct" : 2,
-  "rationale" : "Any number divided by 1 remains the same number. For example, 5 / 1 = 5."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "If a classroom has 3 rows of desks, and each row has 8 desks, how many desks are there in total?",
-  "options" : [ "11", "24", "38", "18" ],
+  "question" : "What is the multiplicative identity for whole numbers?",
+  "options" : [ "0", "1", "-1", "10" ],
   "correct" : 1,
-  "rationale" : "The total number of desks is 3 x 8 = 24."
+  "rationale" : "The multiplicative identity is a number that, when multiplied by any number, leaves the original number unchanged. For whole numbers, 1 is the multiplicative identity because a x 1 = a."
 }, {
   "category" : "Whole Numbers",
-  "question" : "What is the difference between the largest 3-digit whole number and the smallest 2-digit whole number?",
-  "options" : [ "899", "900", "989", "999" ],
+  "question" : "Find the value of 15 x 98 using distributive property.",
+  "options" : [ "1470", "1570", "1450", "1370" ],
   "correct" : 0,
-  "rationale" : "The largest 3-digit whole number is 999, and the smallest 2-digit whole number is 10. Their difference is 999 - 10 = 989."
+  "rationale" : "15 x 98 = 15 x (100 - 2) = (15 x 100) - (15 x 2) = 1500 - 30 = 1470."
 }, {
   "category" : "Whole Numbers",
-  "question" : "A farmer has 15 cows. Each cow gives 8 liters of milk a day. How many liters of milk does the farmer collect in total each day?",
-  "options" : [ "100", "120", "110", "130" ],
-  "correct" : 1,
-  "rationale" : "The total liters of milk collected is 15 x 8 = 120 liters."
+  "question" : "What is the product of the smallest whole number and the smallest natural number?",
+  "options" : [ "0", "1", "2", "3" ],
+  "correct" : 0,
+  "rationale" : "The smallest whole number is 0 and the smallest natural number is 1. Therefore, 0 x 1 = 0."
 }, {
   "category" : "Whole Numbers",
-  "question" : "What is the smallest whole number that is divisible by both 2 and 3?",
-  "options" : [ "1", "2", "3", "6" ],
-  "correct" : 3,
-  "rationale" : "A number divisible by both 2 and 3 must be divisible by their least common multiple, which is 6."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "John has 24 marbles. He wants to distribute them equally among his 6 friends. How many marbles will each friend get?",
-  "options" : [ "3", "4", "5", "6" ],
-  "correct" : 1,
-  "rationale" : "Each friend will get 24 / 6 = 4 marbles."
-}, {
-  "category" : "Whole Numbers",
-  "question" : "Which of the following operations will always result in a whole number when performed on two whole numbers?",
-  "options" : [ "Subtraction", "Division", "Addition", "None of these" ],
+  "question" : "Which of the following expression will result to an even number?",
+  "options" : [ "2 + 3", "5 x 3", "7 + 9", "1 + 5" ],
   "correct" : 2,
-  "rationale" : "Adding two whole numbers will always result in a whole number. Subtraction and division can result in negative numbers or fractions, which are not whole numbers."
+  "rationale" : "7 + 9 = 16, which is an even number. The sum of two odd numbers is always even."
 }, {
   "category" : "Whole Numbers",
-  "question" : "If a = 12 and b = 4, which of the following expressions results in the largest whole number?",
-  "options" : [ "a + b", "a - b", "a x b", "a / b" ],
+  "question" : "If a whole number is divided by itself, the quotient is always 1, except when the whole number is:",
+  "options" : [ "0", "1", "2", "10" ],
+  "correct" : 0,
+  "rationale" : "Any number divided by itself equals 1 (except 0). Division by 0 is undefined. Thus, the exception is when the whole number is 0."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "What is the value of 1 + 2 + 3 + ... + 10?",
+  "options" : [ "50", "55", "60", "65" ],
+  "correct" : 1,
+  "rationale" : "This is the sum of the first 10 natural numbers.  The formula is n(n+1)/2 = 10(10+1)/2 = 10(11)/2 = 110/2 = 55."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "A vendor sells 250 apples and 175 oranges. If each fruit costs ₹5, what is the total amount he earns?",
+  "options" : [ "₹2125", "₹2100", "₹2150", "₹2175" ],
+  "correct" : 0,
+  "rationale" : "Total fruits = 250 + 175 = 425. Total amount = 425 x ₹5 = ₹2125."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "A school has 500 students. If each student contributes ₹250 for a charity, how much money is collected?",
+  "options" : [ "₹12500", "₹125000", "₹1250000", "₹12500" ],
+  "correct" : 1,
+  "rationale" : "Total amount collected = 500 x ₹250 = ₹125000."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "Which number is the identity for multiplication?",
+  "options" : [ "0", "1", "-1", "The number itself" ],
+  "correct" : 1,
+  "rationale" : "The multiplicative identity is 1 because any whole number multiplied by 1 results in the same whole number."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "What is the remainder when 3456 is divided by 10?",
+  "options" : [ "0", "4", "6", "5" ],
   "correct" : 2,
-  "rationale" : "a + b = 16, a - b = 8, a x b = 48, a / b = 3.  Therefore, a x b yields the largest whole number (48)."
+  "rationale" : "The remainder when a number is divided by 10 is simply the digit in the ones place. In 3456, the ones digit is 6."
+}, {
+  "category" : "Whole Numbers",
+  "question" : "Find the value of 125 x 40 x 8 x 25",
+  "options" : [ "1000000", "100000", "10000", "1000" ],
+  "correct" : 0,
+  "rationale" : "125 x 8 = 1000 and 40 x 25 = 1000. Therefore, 1000 x 1000 = 1000000."
 }, {
   "category" : "Integers",
   "question" : "What is the value of -5 + 8?",
   "options" : [ "-13", "3", "-3", "13" ],
   "correct" : 1,
-  "rationale" : "Adding a positive number to a negative number. -5 + 8 = 8 - 5 = 3"
+  "rationale" : "Adding integers with different signs involves finding the difference between their absolute values and taking the sign of the integer with the larger absolute value. |8| > |-5|, so 8 - 5 = 3."
 }, {
   "category" : "Integers",
-  "question" : "What is the value of -7 - 3?",
-  "options" : [ "4", "-4", "-10", "10" ],
-  "correct" : 2,
-  "rationale" : "Subtracting a positive number from a negative number. -7 - 3 = -7 + (-3) = -10"
-}, {
-  "category" : "Integers",
-  "question" : "What is the value of 4 x (-6)?",
-  "options" : [ "24", "-24", "10", "-10" ],
-  "correct" : 1,
-  "rationale" : "Multiplying a positive number by a negative number results in a negative product. 4 x (-6) = -24"
-}, {
-  "category" : "Integers",
-  "question" : "What is the value of (-15) / (-3)?",
-  "options" : [ "-5", "5", "-45", "45" ],
-  "correct" : 1,
-  "rationale" : "Dividing a negative number by a negative number results in a positive quotient. (-15) / (-3) = 5"
-}, {
-  "category" : "Integers",
-  "question" : "Which integer is neither positive nor negative?",
-  "options" : [ "1", "-1", "0", "Any integer" ],
-  "correct" : 2,
-  "rationale" : "Zero (0) is neither positive nor negative. It's the additive identity."
-}, {
-  "category" : "Integers",
-  "question" : "What is the absolute value of -9?",
-  "options" : [ "-9", "0", "9", "1" ],
-  "correct" : 2,
-  "rationale" : "The absolute value of a number is its distance from zero, which is always non-negative. |-9| = 9"
-}, {
-  "category" : "Integers",
-  "question" : "Which of the following is the additive inverse of 6?",
-  "options" : [ "6", "0", "-6", "1/6" ],
-  "correct" : 2,
-  "rationale" : "The additive inverse of a number is the number that, when added to the original number, results in zero. 6 + (-6) = 0"
-}, {
-  "category" : "Integers",
-  "question" : "What is the value of -2 + 5 - 3?",
-  "options" : [ "0", "6", "-10", "-6" ],
+  "question" : "What is the additive inverse of -12?",
+  "options" : [ "12", "-12", "0", "1" ],
   "correct" : 0,
-  "rationale" : "Following the order of operations from left to right: -2 + 5 = 3, then 3 - 3 = 0"
+  "rationale" : "The additive inverse of a number is the number that, when added to it, results in zero. The additive inverse of -12 is 12 because -12 + 12 = 0."
 }, {
   "category" : "Integers",
-  "question" : "What is the value of (-3) x (-2) x (-1)?",
-  "options" : [ "6", "-6", "5", "-5" ],
+  "question" : "Evaluate: (-3) x (-4)",
+  "options" : [ "-12", "12", "-7", "7" ],
   "correct" : 1,
-  "rationale" : "Multiplying three negative numbers.  (-3) x (-2) = 6, then 6 x (-1) = -6. An odd number of negative factors results in a negative product."
+  "rationale" : "When multiplying two negative integers, the result is a positive integer. (-3) x (-4) = 12."
 }, {
   "category" : "Integers",
-  "question" : "Which is greater: -4 or -1?",
+  "question" : "What is the result of dividing -20 by 5?",
+  "options" : [ "4", "-4", "25", "-25" ],
+  "correct" : 1,
+  "rationale" : "When dividing a negative integer by a positive integer, the result is a negative integer. -20 / 5 = -4."
+}, {
+  "category" : "Integers",
+  "question" : "Which integer is greater: -7 or -3?",
+  "options" : [ "-7", "-3", "They are equal", "Cannot be determined" ],
+  "correct" : 1,
+  "rationale" : "On the number line, -3 is to the right of -7. Integers increase in value as you move to the right on the number line, so -3 is greater than -7."
+}, {
+  "category" : "Integers",
+  "question" : "What is the value of 0 - 9?",
+  "options" : [ "9", "-9", "0", "1" ],
+  "correct" : 1,
+  "rationale" : "Subtracting a number from 0 results in the negative of that number. 0 - 9 = -9."
+}, {
+  "category" : "Integers",
+  "question" : "Simplify: -10 + 5 - 2",
+  "options" : [ "-7", "7", "-17", "17" ],
+  "correct" : 0,
+  "rationale" : "First, -10 + 5 = -5. Then, -5 - 2 = -7."
+}, {
+  "category" : "Integers",
+  "question" : "What is the value of -1 x (-1) x (-1)?",
+  "options" : [ "1", "-1", "0", "3" ],
+  "correct" : 1,
+  "rationale" : "-1 x -1 = 1. Then, 1 x -1 = -1."
+}, {
+  "category" : "Integers",
+  "question" : "What is the next integer in the sequence: -5, -3, -1, ___?",
+  "options" : [ "0", "1", "2", "3" ],
+  "correct" : 1,
+  "rationale" : "The sequence increases by 2 each time: -5 + 2 = -3, -3 + 2 = -1, -1 + 2 = 1."
+}, {
+  "category" : "Integers",
+  "question" : "Which of the following expressions results in a negative integer?",
+  "options" : [ "-2 + 5", "3 x 4", "-6 - 2", "-1 x -1" ],
+  "correct" : 2,
+  "rationale" : "-2 + 5 = 3 (positive), 3 x 4 = 12 (positive), -6 - 2 = -8 (negative), -1 x -1 = 1 (positive). So, -6 - 2 results in a negative integer."
+}, {
+  "category" : "Integers",
+  "question" : "If a submarine is 200 meters below sea level and then descends another 150 meters, what is its new depth represented as an integer?",
+  "options" : [ "350", "-350", "50", "-50" ],
+  "correct" : 1,
+  "rationale" : "Below sea level is represented by negative integers. The submarine starts at -200 meters and descends 150 meters, so -200 - 150 = -350 meters."
+}, {
+  "category" : "Integers",
+  "question" : "What is the result of -4 + 4 - 7 + 7?",
+  "options" : [ "0", "14", "-14", "22" ],
+  "correct" : 0,
+  "rationale" : "-4 + 4 = 0 and -7 + 7 = 0. Therefore, 0 + 0 = 0."
+}, {
+  "category" : "Integers",
+  "question" : "Evaluate: (-2) x 3 + (-5)",
+  "options" : [ "1", "-11", "11", "-1" ],
+  "correct" : 1,
+  "rationale" : "First, multiply: (-2) x 3 = -6. Then, add: -6 + (-5) = -11."
+}, {
+  "category" : "Integers",
+  "question" : "Which number is further from zero: -10 or 8?",
+  "options" : [ "-10", "8", "They are the same distance", "Cannot be determined" ],
+  "correct" : 0,
+  "rationale" : "The distance from zero is the absolute value. |-10| = 10 and |8| = 8. Since 10 > 8, -10 is further from zero."
+}, {
+  "category" : "Integers",
+  "question" : "What is the sum of the first five negative integers?",
+  "options" : [ "15", "-15", "10", "-10" ],
+  "correct" : 1,
+  "rationale" : "The first five negative integers are -1, -2, -3, -4, and -5. Their sum is -1 - 2 - 3 - 4 - 5 = -15."
+}, {
+  "category" : "Integers",
+  "question" : "If the temperature is -3 degrees Celsius and it increases by 5 degrees, what is the new temperature?",
+  "options" : [ "-8 degrees", "2 degrees", "-2 degrees", "8 degrees" ],
+  "correct" : 1,
+  "rationale" : "Adding 5 to -3 results in: -3 + 5 = 2 degrees Celsius."
+}, {
+  "category" : "Integers",
+  "question" : "Simplify: 4 - (-2) + (-1)",
+  "options" : [ "7", "5", "3", "1" ],
+  "correct" : 1,
+  "rationale" : "Subtracting a negative number is the same as adding its positive: 4 - (-2) = 4 + 2 = 6. Then, 6 + (-1) = 6 - 1 = 5."
+}, {
+  "category" : "Integers",
+  "question" : "What is the value of (-15 + 5) / 2 ?",
+  "options" : [ "5", "-5", "10", "-10" ],
+  "correct" : 1,
+  "rationale" : "First, calculate inside the parentheses: -15 + 5 = -10. Then, divide: -10 / 2 = -5."
+}, {
+  "category" : "Integers",
+  "question" : "Which of the following is equivalent to -2 - (-5) ?",
+  "options" : [ "-7", "7", "3", "-3" ],
+  "correct" : 2,
+  "rationale" : "Subtracting a negative is the same as adding a positive: -2 - (-5) = -2 + 5 = 3."
+}, {
+  "category" : "Integers",
+  "question" : "Arrange the integers -4, 0, 5, -2, and 3 in ascending order.",
+  "options" : [ "5, 3, 0, -2, -4", "-4, -2, 0, 3, 5", "0, 3, 5, -2, -4", "-2, -4, 0, 3, 5" ],
+  "correct" : 1,
+  "rationale" : "Ascending order means arranging the integers from smallest to largest. The correct order is -4, -2, 0, 3, 5."
+}, {
+  "category" : "Number Line",
+  "question" : "Which number is located 5 units to the right of -2 on the number line?",
+  "options" : [ "-7", "3", "-3", "7" ],
+  "correct" : 1,
+  "rationale" : "Starting at -2 and moving 5 units to the right (positive direction) results in -2 + 5 = 3."
+}, {
+  "category" : "Number Line",
+  "question" : "Which number is greater: -4 or -1 on the number line?",
   "options" : [ "-4", "-1", "They are equal", "Cannot be determined" ],
   "correct" : 1,
-  "rationale" : "On the number line, -1 is to the right of -4, meaning -1 is greater than -4."
+  "rationale" : "On a number line, numbers to the right are greater. -1 is to the right of -4."
 }, {
-  "category" : "Integers",
-  "question" : "If the temperature is -3°C and it decreases by 5°C, what is the new temperature?",
-  "options" : [ "2°C", "-2°C", "8°C", "-8°C" ],
-  "correct" : 3,
-  "rationale" : "Decreasing by 5°C means subtracting 5 from -3.  -3 - 5 = -8°C"
-}, {
-  "category" : "Integers",
-  "question" : "What is the value of (-5) x 0 x 2?",
-  "options" : [ "10", "-10", "0", "7" ],
-  "correct" : 2,
-  "rationale" : "Any number multiplied by zero is zero. (-5) x 0 x 2 = 0"
-}, {
-  "category" : "Integers",
-  "question" : "Which expression has the largest value?",
-  "options" : [ "(-2) + 5", "(-2) - 5", "(-2) x 5", "(-2) / 5" ],
-  "correct" : 0,
-  "rationale" : "Let's calculate each expression:\n(-2) + 5 = 3\n(-2) - 5 = -7\n(-2) x 5 = -10\n(-2) / 5 = -0.4.  3 is the largest value."
-}, {
-  "category" : "Integers",
-  "question" : "The sum of two integers is -10. If one of the integers is 2, what is the other integer?",
-  "options" : [ "-12", "12", "-8", "8" ],
-  "correct" : 0,
-  "rationale" : "Let the other integer be x. Then, 2 + x = -10. Solving for x, we get x = -10 - 2 = -12"
-}, {
-  "category" : "Integers",
-  "question" : "What is the value of 15 - (-7)?",
-  "options" : [ "8", "-8", "22", "-22" ],
-  "correct" : 2,
-  "rationale" : "Subtracting a negative number is the same as adding its positive counterpart. 15 - (-7) = 15 + 7 = 22"
-}, {
-  "category" : "Integers",
-  "question" : "What is the reciprocal of the integer -1?",
-  "options" : [ "1", "-1", "0", "Does not exist" ],
+  "category" : "Number Line",
+  "question" : "What number is located halfway between -6 and 2 on the number line?",
+  "options" : [ "-4", "-2", "0", "-1" ],
   "correct" : 1,
-  "rationale" : "The reciprocal of a number is 1 divided by that number.  The reciprocal of -1 is 1/(-1) = -1."
+  "rationale" : "The midpoint is calculated as (-6 + 2) / 2 = -4 / 2 = -2."
 }, {
-  "category" : "Integers",
-  "question" : "Arrange the integers -3, 5, -1, 0, 2 in ascending order.",
-  "options" : [ "5, 2, 0, -1, -3", "-3, -1, 0, 2, 5", "0, 2, 5, -1, -3", "-1, -3, 0, 2, 5" ],
+  "category" : "Number Line",
+  "question" : "Which integer is closest to 3.7 on the number line?",
+  "options" : [ "3", "4", "3.5", "5" ],
   "correct" : 1,
-  "rationale" : "Ascending order means arranging the numbers from smallest to largest.  The correct order is -3, -1, 0, 2, 5."
+  "rationale" : "3.7 is between 3 and 4, but it's closer to 4."
 }, {
-  "category" : "Integers",
-  "question" : "A submarine is at -200 meters. It then rises 50 meters. What is its new depth?",
-  "options" : [ "-250 meters", "250 meters", "-150 meters", "150 meters" ],
-  "correct" : 2,
-  "rationale" : "Rising 50 meters means adding 50 to -200.  -200 + 50 = -150 meters."
-}, {
-  "category" : "Integers",
-  "question" : "Which of the following is the largest negative integer?",
-  "options" : [ "-1", "-10", "-100", "-2" ],
+  "category" : "Number Line",
+  "question" : "Arrange -5, 2, -1, and 0 in ascending order according to their position on the number line.",
+  "options" : [ "-5, -1, 0, 2", "2, 0, -1, -5", "0, -1, -5, 2", "-1, -5, 0, 2" ],
   "correct" : 0,
-  "rationale" : "Negative integers get smaller as their absolute value increases. Therefore, -1 is the largest negative integer among the given options."
-}, {
-  "category" : "Integers",
-  "question" : "Evaluate: |-3 + 5| - |-2|",
-  "options" : [ "0", "4", "1", "7" ],
-  "correct" : 0,
-  "rationale" : "First, evaluate inside the absolute values: |-3 + 5| = |2| = 2 and |-2| = 2. Then, 2 - 2 = 0."
+  "rationale" : "Ascending order means from smallest to largest. On the number line, this corresponds to moving from left to right."
 }, {
   "category" : "Number Line",
-  "question" : "Which of the following numbers is located to the right of -3 on a number line?",
-  "options" : [ "-5", "-4", "-3", "-2" ],
-  "correct" : 3,
-  "rationale" : "Numbers increase as you move from left to right on a number line. -2 is greater than -3, so it is located to the right."
-}, {
-  "category" : "Number Line",
-  "question" : "Which integer is represented by a point 5 units to the left of 2 on the number line?",
-  "options" : [ "-7", "-3", "3", "7" ],
+  "question" : "Which of the following represents -3/4 on a number line?",
+  "options" : [ "Between -1 and -2", "Between 0 and -1", "Between 0 and 1", "Between 1 and 2" ],
   "correct" : 1,
-  "rationale" : "Moving 5 units to the left of 2 means subtracting 5 from 2. 2 - 5 = -3."
+  "rationale" : "-3/4 is a negative fraction less than 1.  Therefore, it lies between 0 and -1."
 }, {
   "category" : "Number Line",
-  "question" : "Which of the following numbers is closest to 0 on the number line?",
-  "options" : [ "-5", "3", "-1", "4" ],
+  "question" : "If point A is at -4 and point B is at 6 on the number line, what is the distance between A and B?",
+  "options" : [ "2", "-10", "10", "-2" ],
   "correct" : 2,
-  "rationale" : "The closer a number is to 0, the smaller its absolute value. The absolute value of -1 is 1, which is the smallest among the options."
+  "rationale" : "The distance is the absolute value of the difference: |6 - (-4)| = |6 + 4| = 10."
 }, {
   "category" : "Number Line",
-  "question" : "What number is exactly halfway between -4 and 2 on the number line?",
-  "options" : [ "-3", "-1", "0", "1" ],
-  "correct" : 1,
-  "rationale" : "The midpoint between two numbers is their average. (-4 + 2)/2 = -2/2 = -1."
-}, {
-  "category" : "Number Line",
-  "question" : "If you start at -2 on the number line and move 4 units to the right, where will you end up?",
-  "options" : [ "-6", "-2", "2", "6" ],
+  "question" : "A point is 3 units to the left of 1 on the number line. What number does it represent?",
+  "options" : [ "4", "-4", "-2", "2" ],
   "correct" : 2,
-  "rationale" : "Moving 4 units to the right means adding 4. -2 + 4 = 2."
+  "rationale" : "Moving 3 units to the left from 1 means subtracting 3: 1 - 3 = -2."
 }, {
   "category" : "Number Line",
   "question" : "Which of the following numbers is furthest from 0 on the number line?",
   "options" : [ "-3", "2", "4", "-1" ],
   "correct" : 2,
-  "rationale" : "The distance from 0 is the absolute value.  |-3|=3, |2|=2, |4|=4, |-1|=1. 4 is the greatest distance."
+  "rationale" : "The distance from 0 is the absolute value. |-3| = 3, |2| = 2, |4| = 4, |-1| = 1.  4 is the greatest distance."
 }, {
   "category" : "Number Line",
-  "question" : "On a number line, which number lies between -1/2 and 1/2?",
-  "options" : [ "-1", "1", "0", "2" ],
-  "correct" : 2,
-  "rationale" : "0 is between -0.5 (-1/2) and 0.5 (1/2)."
-}, {
-  "category" : "Number Line",
-  "question" : "Which inequality correctly represents the positions of -5 and -2 on a number line?",
-  "options" : [ "-5 > -2", "-5 < -2", "-5 = -2", "None of these" ],
+  "question" : "On the number line, which of the following is true for any two numbers a and b, if a < b?",
+  "options" : [ "a is to the right of b", "a is to the left of b", "a and b are at the same point", "The distance between a and b is negative" ],
   "correct" : 1,
-  "rationale" : "On a number line, numbers to the left are smaller. -5 is to the left of -2, so -5 is less than -2."
+  "rationale" : "By definition, if a < b, a is smaller than b, and therefore is located to the left of b on the number line."
 }, {
   "category" : "Number Line",
-  "question" : "If point A is at -3 and point B is at 5 on the number line, what is the distance between A and B?",
-  "options" : [ "-8", "2", "8", "-2" ],
+  "question" : "Which of these numbers is between -1/2 and 1/2 on the number line?",
+  "options" : [ "1", "-1", "0", "2/3" ],
   "correct" : 2,
-  "rationale" : "The distance between two points is the absolute value of the difference. |5 - (-3)| = |5 + 3| = |8| = 8."
+  "rationale" : "-1/2 = -0.5 and 1/2 = 0.5.  0 falls between these values."
 }, {
   "category" : "Number Line",
-  "question" : "Which of the following fractions is closest to 1 on the number line?",
-  "options" : [ "1/4", "1/2", "3/4", "1/8" ],
+  "question" : "What number is the opposite of -7 on the number line?",
+  "options" : [ "-7", "0", "7", "1/7" ],
   "correct" : 2,
-  "rationale" : "3/4 (0.75) is closer to 1 than 1/4 (0.25), 1/2 (0.5) and 1/8 (0.125) is."
+  "rationale" : "The opposite of a number is its reflection across zero. The opposite of -7 is 7."
 }, {
   "category" : "Number Line",
-  "question" : "Starting from -6, you move 3 units to the right and then 5 units to the left. Where are you on the number line?",
-  "options" : [ "-8", "-4", "-2", "-14" ],
-  "correct" : 0,
-  "rationale" : "-6 + 3 = -3, then -3 - 5 = -8."
+  "question" : "If a number is to the left of 0 on the number line, is it positive or negative?",
+  "options" : [ "Positive", "Negative", "Zero", "Neither positive nor negative" ],
+  "correct" : 1,
+  "rationale" : "Numbers to the left of 0 on the number line are negative numbers."
 }, {
   "category" : "Number Line",
-  "question" : "Which of the following represents the largest number on the number line?",
-  "options" : [ "-10", "-5", "0", "5" ],
+  "question" : "Which statement accurately compares -5 and -2 on a number line?",
+  "options" : [ "-5 is to the right of -2, so -5 > -2", "-5 is to the left of -2, so -5 > -2", "-5 is to the right of -2, so -5 < -2", "-5 is to the left of -2, so -5 < -2" ],
   "correct" : 3,
-  "rationale" : "Numbers increase as you move to the right on a number line. 5 is the furthest to the right amongst the given options."
+  "rationale" : "-5 is to the left of -2 on the number line. Numbers on the left are smaller, so -5 < -2."
 }, {
   "category" : "Number Line",
-  "question" : "Arrange -4, 2, -1, and 0 in ascending order as they would appear on a number line.",
-  "options" : [ "2, 0, -1, -4", "-4, -1, 0, 2", "0, -1, 2, -4", "-1, -4, 0, 2" ],
+  "question" : "Represent 1 1/4 (one and one-fourth) on the number line. Between which two integers does it lie?",
+  "options" : [ "0 and 1", "1 and 2", "2 and 3", "-1 and 0" ],
   "correct" : 1,
-  "rationale" : "Ascending order means from smallest to largest. On a number line, this translates to from left to right: -4, -1, 0, 2."
+  "rationale" : "1 1/4 is greater than 1 but less than 2. Thus, it lies between the integers 1 and 2."
 }, {
   "category" : "Number Line",
-  "question" : "What integer lies exactly 3 units to the left of 1 on the number line?",
-  "options" : [ "-4", "-3", "-2", "4" ],
+  "question" : "If point P is at -3 and point Q is at 5, find the coordinate of the midpoint of the line segment PQ on the number line.",
+  "options" : [ "1", "4", "-4", "8" ],
+  "correct" : 1,
+  "rationale" : "The midpoint is the average of the two coordinates: (-3 + 5) / 2 = 2 / 2 = 1."
+}, {
+  "category" : "Number Line",
+  "question" : "Which number is located exactly 2.5 units to the left of 1 on the number line?",
+  "options" : [ "3.5", "-1.5", "1.5", "-3.5" ],
   "correct" : 2,
-  "rationale" : "Moving 3 units to the left of 1 means subtracting 3 from 1. 1 - 3 = -2."
+  "rationale" : "Moving 2.5 units to the left from 1 means subtracting 2.5: 1 - 2.5 = -1.5."
 }, {
   "category" : "Number Line",
-  "question" : "Which of the following statements is true about the position of -10 and -5 on a number line?",
-  "options" : [ "-10 is to the right of -5", "-10 is to the left of -5", "-10 is at the same position as -5", "There is no possible arrangement on the number line" ],
-  "correct" : 1,
-  "rationale" : "Negative numbers decrease as you move away from zero. Therefore, -10 is less than -5 and will be located to the left of -5 on the number line."
-}, {
-  "category" : "Number Line",
-  "question" : "If you are standing at -2 and facing the direction of positive numbers on the number line, which direction are you facing?",
-  "options" : [ "Left", "Right", "Up", "Down" ],
-  "correct" : 1,
-  "rationale" : "On a horizontal number line, positive numbers are to the right. Therefore, facing the direction of positive numbers means facing right."
-}, {
-  "category" : "Number Line",
-  "question" : "Which number when added to -5 will result in a number 2 units to the right of -5 on the number line?",
-  "options" : [ "-7", "-3", "2", "7" ],
-  "correct" : 2,
-  "rationale" : "Moving 2 units to the right from -5 means the new number is -5 + 2 = -3. We are looking for the number that makes this happen so the number must be 2."
-}, {
-  "category" : "Number Line",
-  "question" : "Which point on the number line represents the average of -6, -2, and 4?",
-  "options" : [ "-4", "-2", "0", "2" ],
+  "question" : "On a number line, which is further from zero: -8 or 6?",
+  "options" : [ "-8", "6", "They are the same distance", "Cannot be determined" ],
   "correct" : 0,
-  "rationale" : "The average is calculated by adding the numbers and dividing by the number of values.  (-6 + -2 + 4) / 3 = -4 / 3 =  approximately -1.33. The closest integer is -2. Correct Calculation = -4/3 therefore closest answer from given is -2. NOTE: Question must ask closest integer for the answer to match rational"
+  "rationale" : "The distance from zero is the absolute value. |-8| = 8, |6| = 6. 8 > 6, so -8 is further from zero."
 }, {
   "category" : "Number Line",
-  "question" : "A point is 4 units away from both 1 and x on the number line. What are the two possible values of x?",
-  "options" : [ "-5 and 5", "-3 and 5", "-3 and 3", "3 and 5" ],
-  "correct" : 1,
-  "rationale" : "If the point is 4 units away from 1, it can be either 1 + 4 = 5 or 1 - 4 = -3. Therefore, the two possible values of x are -3 and 5."
+  "question" : "Which of the following lists the numbers in decreasing order as they would appear from left to right on a number line?",
+  "options" : [ "5, 2, 0, -3, -7", "-7, -3, 0, 2, 5", "5, 2, -3, 0, -7", "-7, -3, 5, 2, 0" ],
+  "correct" : 0,
+  "rationale" : "Decreasing order means from largest to smallest. However, on a number line, smaller values are on the left. So the rightmost value must be the largest. Therefore largest to smallest (right to left) means from 5 to -7."
 }, {
   "category" : "Number Line",
-  "question" : "If a number 'n' is located between -1 and 0 on a number line, which of the following must be true?",
-  "options" : [ "n > 1", "n < -1", "-1 < n < 0", "n = 0" ],
+  "question" : "A frog jumps 2 units to the right, then 5 units to the left, starting from 0 on the number line. Where does the frog land?",
+  "options" : [ "7", "-7", "-3", "3" ],
   "correct" : 2,
-  "rationale" : "The statement '-1 < n < 0' correctly expresses that n is greater than -1 and less than 0, which means it lies between -1 and 0 on the number line."
+  "rationale" : "Jumping 2 units right means 0 + 2 = 2. Then, jumping 5 units left means 2 - 5 = -3."
 }, {
   "category" : "Prime Numbers",
   "question" : "Which of the following numbers is a prime number?",
@@ -486,236 +486,236 @@
   "rationale" : "A prime number has only two factors: 1 and itself. 17 is only divisible by 1 and 17."
 }, {
   "category" : "Prime Numbers",
-  "question" : "Which of the following is NOT a prime number?",
+  "question" : "Which of these is NOT a prime number?",
   "options" : [ "2", "3", "5", "9" ],
   "correct" : 3,
-  "rationale" : "9 is divisible by 1, 3, and 9. Therefore, it has more than two factors and is not prime."
+  "rationale" : "The number 9 is divisible by 1, 3, and 9. Hence, it has more than two factors and is not prime."
 }, {
   "category" : "Prime Numbers",
-  "question" : "What is the smallest prime number?",
+  "question" : "The smallest prime number is:",
   "options" : [ "0", "1", "2", "3" ],
   "correct" : 2,
-  "rationale" : "The smallest prime number is 2. 1 is not a prime number because it only has one factor."
+  "rationale" : "By definition, a prime number must be greater than 1. 2 is the smallest number satisfying the prime number criteria."
 }, {
   "category" : "Prime Numbers",
-  "question" : "How many even prime numbers are there?",
-  "options" : [ "0", "1", "2", "Infinite" ],
-  "correct" : 1,
-  "rationale" : "There is only one even prime number, which is 2. All other even numbers are divisible by 2, and therefore not prime."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which of these numbers is a prime number between 20 and 30?",
-  "options" : [ "21", "23", "25", "27" ],
-  "correct" : 1,
-  "rationale" : "23 is only divisible by 1 and itself, making it a prime number. 21 is divisible by 3 and 7, 25 by 5 and 27 by 3 and 9."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Identify the set containing only prime numbers.",
-  "options" : [ "{2, 4, 6}", "{3, 5, 7}", "{9, 11, 13}", "{15, 17, 19}" ],
-  "correct" : 1,
-  "rationale" : "The set {3, 5, 7} contains only prime numbers as each number is only divisible by 1 and itself."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which of the following statements is true about prime numbers?",
-  "options" : [ "All odd numbers are prime.", "All prime numbers are odd.", "2 is the only even prime number.", "1 is a prime number." ],
+  "question" : "Which of the following is a pair of twin primes?",
+  "options" : [ "4 and 6", "8 and 10", "11 and 13", "15 and 17" ],
   "correct" : 2,
-  "rationale" : "2 is the only even prime number. All other even numbers are divisible by 2.  1 is not a prime number, and not all odd numbers are prime (e.g., 9)."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "What are the prime factors of 14?",
-  "options" : [ "1, 2, 7", "2, 7", "1, 14", "2, 14" ],
-  "correct" : 1,
-  "rationale" : "The prime factors of 14 are 2 and 7. Both numbers are prime, and 2 x 7 = 14."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which of the following pairs are both prime numbers?",
-  "options" : [ "4 and 6", "9 and 10", "11 and 13", "15 and 16" ],
-  "correct" : 2,
-  "rationale" : "11 and 13 are both prime numbers. 4, 6, 9, 10, 15 and 16 are composite numbers."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which number is not a factor in the prime factorization of 30?",
-  "options" : [ "2", "3", "5", "7" ],
-  "correct" : 3,
-  "rationale" : "The prime factorization of 30 is 2 x 3 x 5. Therefore, 7 is not a factor."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which of the following numbers has prime factors 2, 3, and 5?",
-  "options" : [ "15", "20", "30", "45" ],
-  "correct" : 2,
-  "rationale" : "30 = 2 x 3 x 5. The other options do not have all three prime factors in their prime factorization."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which of the following is a composite number?",
-  "options" : [ "2", "7", "11", "12" ],
-  "correct" : 3,
-  "rationale" : "A composite number has more than two factors. 12 is divisible by 1, 2, 3, 4, 6, and 12. 2, 7, and 11 are only divisible by 1 and themselves."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "What is the greatest prime number less than 25?",
-  "options" : [ "21", "22", "23", "24" ],
-  "correct" : 2,
-  "rationale" : "23 is the largest prime number less than 25. 21 is divisible by 3 and 7, 22 by 2 and 11, and 24 by several numbers including 2, 3, 4, 6, 8, and 12."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Which of the following numbers is the product of two prime numbers?",
-  "options" : [ "8", "10", "12", "14" ],
-  "correct" : 3,
-  "rationale" : "14 = 2 x 7, where both 2 and 7 are prime numbers. 8 = 2 x 2 x 2, 10 = 2 x 5, 12 = 2 x 2 x 3."
+  "rationale" : "Twin primes are prime numbers that differ by 2. 11 and 13 are both prime and have a difference of 2."
 }, {
   "category" : "Prime Numbers",
   "question" : "How many prime numbers are there between 1 and 10?",
   "options" : [ "2", "3", "4", "5" ],
   "correct" : 3,
-  "rationale" : "The prime numbers between 1 and 10 are 2, 3, 5, and 7. Thus, there are 4 prime numbers."
+  "rationale" : "The prime numbers between 1 and 10 are 2, 3, 5, and 7. There are four prime numbers."
 }, {
   "category" : "Prime Numbers",
-  "question" : "The sum of two prime numbers is 20. What could these two prime numbers be?",
-  "options" : [ "2 and 18", "3 and 17", "5 and 15", "7 and 13" ],
+  "question" : "Which of the following numbers is an even prime number?",
+  "options" : [ "1", "2", "3", "4" ],
+  "correct" : 1,
+  "rationale" : "A prime number that is also even. The only even prime number is 2 as all other even number are divisible by 2 and hence not a prime number"
+}, {
+  "category" : "Prime Numbers",
+  "question" : "What is the sum of first three prime numbers?",
+  "options" : [ "5", "6", "10", "12" ],
+  "correct" : 2,
+  "rationale" : "The first three prime numbers are 2, 3, and 5. Their sum is 2 + 3 + 5 = 10."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Which of these numbers has exactly two factors?",
+  "options" : [ "1", "4", "7", "8" ],
+  "correct" : 2,
+  "rationale" : "The number 7 has only two factors: 1 and 7. Thus, it is a prime number."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Which of the following is a prime factor of 30?",
+  "options" : [ "4", "6", "7", "5" ],
   "correct" : 3,
-  "rationale" : "3 and 17 are both prime numbers and their sum is 20. 2, 5, 7, 13 and 17 are all prime but in the other cases the second number is not prime"
+  "rationale" : "The prime factors of 30 are 2, 3, and 5.  5 is the only prime factor present in the options."
 }, {
   "category" : "Prime Numbers",
-  "question" : "If n is a prime number greater than 2, then what can you say about (n+1)?",
-  "options" : [ "It is always prime", "It is always even", "It is always odd", "It is always divisible by 3" ],
+  "question" : "Which of the following numbers is neither prime nor composite?",
+  "options" : [ "0", "1", "2", "3" ],
   "correct" : 1,
-  "rationale" : "If n is a prime number greater than 2, it must be odd. Adding 1 to an odd number always results in an even number."
+  "rationale" : "The number 1 is neither prime nor composite because it only has one factor (itself)."
 }, {
   "category" : "Prime Numbers",
-  "question" : "Which is the smallest prime number greater than 50?",
-  "options" : [ "51", "53", "55", "57" ],
-  "correct" : 1,
-  "rationale" : "51 is divisible by 3 and 17, 55 is divisible by 5 and 11, 57 is divisible by 3 and 19. 53 is only divisible by 1 and itself."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "What is the product of the first three prime numbers?",
-  "options" : [ "6", "10", "30", "15" ],
-  "correct" : 2,
-  "rationale" : "The first three prime numbers are 2, 3, and 5. Their product is 2 x 3 x 5 = 30."
-}, {
-  "category" : "Prime Numbers",
-  "question" : "Determine which statement regarding prime numbers is FALSE.",
-  "options" : [ "Every prime number except 2 is odd.", "All prime numbers are positive.", "The sum of two prime numbers is always even.", "1 is not a prime number." ],
-  "correct" : 2,
-  "rationale" : "The sum of two prime numbers is not always even.  For example, 2 + 3 = 5, which is odd. The other statements are true."
-}, {
-  "category" : "Fractions",
-  "question" : "What is the simplest form of the fraction 12/18?",
-  "options" : [ "6/9", "4/6", "2/3", "1/2" ],
-  "correct" : 2,
-  "rationale" : "Both 12 and 18 are divisible by 6. Dividing both numerator and denominator by 6 gives 2/3."
-}, {
-  "category" : "Fractions",
-  "question" : "Which of the following fractions is equivalent to 1/4?",
-  "options" : [ "2/6", "3/12", "4/10", "5/15" ],
-  "correct" : 1,
-  "rationale" : "Multiplying both the numerator and denominator of 1/4 by 3 results in 3/12."
-}, {
-  "category" : "Fractions",
-  "question" : "What is the sum of 1/5 and 2/5?",
-  "options" : [ "3/10", "3/5", "2/25", "1/2" ],
-  "correct" : 1,
-  "rationale" : "When adding fractions with the same denominator, simply add the numerators: (1+2)/5 = 3/5."
-}, {
-  "category" : "Fractions",
-  "question" : "What is the difference between 3/4 and 1/4?",
-  "options" : [ "1/2", "2/8", "4/8", "1/4" ],
-  "correct" : 0,
-  "rationale" : "When subtracting fractions with the same denominator, subtract the numerators: (3-1)/4 = 2/4 = 1/2."
-}, {
-  "category" : "Fractions",
-  "question" : "What is 1/2 of 20?",
-  "options" : [ "5", "10", "15", "40" ],
-  "correct" : 1,
-  "rationale" : "To find 1/2 of 20, multiply 1/2 by 20: (1/2) * 20 = 10."
-}, {
-  "category" : "Fractions",
-  "question" : "Which fraction is greater: 2/3 or 3/5?",
-  "options" : [ "2/3", "3/5", "They are equal", "Cannot be determined" ],
-  "correct" : 0,
-  "rationale" : "To compare, find a common denominator (15). 2/3 = 10/15 and 3/5 = 9/15. 10/15 is greater than 9/15."
-}, {
-  "category" : "Fractions",
-  "question" : "What is 2/7 + 3/7 - 1/7?",
-  "options" : [ "4/7", "6/7", "5/7", "3/7" ],
-  "correct" : 0,
-  "rationale" : "Since the denominators are the same, perform the operations on the numerators: (2+3-1)/7 = 4/7."
-}, {
-  "category" : "Fractions",
-  "question" : "Express 3 1/2 as an improper fraction.",
-  "options" : [ "5/2", "6/2", "7/2", "8/2" ],
-  "correct" : 2,
-  "rationale" : "Multiply the whole number by the denominator and add the numerator: (3 * 2) + 1 = 7. Keep the same denominator: 7/2."
-}, {
-  "category" : "Fractions",
-  "question" : "What is 1/3 of 1/4?",
-  "options" : [ "1/7", "1/12", "2/7", "7/12" ],
-  "correct" : 1,
-  "rationale" : "To find a fraction of a fraction, multiply the fractions: (1/3) * (1/4) = 1/12."
-}, {
-  "category" : "Fractions",
-  "question" : "Which of the following is a proper fraction?",
-  "options" : [ "7/4", "5/5", "3/8", "9/2" ],
-  "correct" : 2,
-  "rationale" : "A proper fraction has a numerator smaller than its denominator. 3/8 fits this description."
-}, {
-  "category" : "Fractions",
-  "question" : "Simplify: 1/2 + 1/4 + 1/8",
-  "options" : [ "3/8", "4/14", "7/8", "1/16" ],
-  "correct" : 2,
-  "rationale" : "Find a common denominator (8). Convert the fractions: 4/8 + 2/8 + 1/8 = 7/8."
-}, {
-  "category" : "Fractions",
-  "question" : "If a pizza is cut into 10 slices and you eat 3, what fraction of the pizza did you eat?",
-  "options" : [ "3/7", "7/10", "3/10", "1/3" ],
-  "correct" : 2,
-  "rationale" : "You ate 3 slices out of a total of 10 slices, representing 3/10 of the pizza."
-}, {
-  "category" : "Fractions",
-  "question" : "What is 5/8 - 1/2?",
-  "options" : [ "4/6", "1/8", "2/6", "3/8" ],
-  "correct" : 1,
-  "rationale" : "Find a common denominator (8). 1/2 becomes 4/8. Then, 5/8 - 4/8 = 1/8."
-}, {
-  "category" : "Fractions",
-  "question" : "Which fraction is the smallest: 1/2, 1/3, 1/4, 1/5?",
-  "options" : [ "1/2", "1/3", "1/4", "1/5" ],
+  "question" : "What is the next prime number after 23?",
+  "options" : [ "24", "25", "27", "29" ],
   "correct" : 3,
-  "rationale" : "When the numerator is the same, the fraction with the largest denominator is the smallest. Therefore, 1/5 is the smallest."
+  "rationale" : "Checking numbers after 23, 24,25, and 27 are divisible by other numbers. 29 is only divisible by 1 and 29."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Express 12 as a product of its prime factors.",
+  "options" : [ "2 x 6", "3 x 4", "2 x 2 x 3", "1 x 12" ],
+  "correct" : 2,
+  "rationale" : "Prime factorization means breaking down a number into its prime factors. 12 = 2 x 2 x 3."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Is 51 a prime number?",
+  "options" : [ "Yes", "No", "Cannot be determined", "Sometimes" ],
+  "correct" : 1,
+  "rationale" : "51 is divisible by 3 (51 / 3 = 17). Since it has more than two factors (1, 3, 17, 51), it is not a prime number."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Which of the following statement is true for prime number greater than 2?",
+  "options" : [ "Always Even", "Always Odd", "Can be both Even and Odd", "Divisible by 4" ],
+  "correct" : 1,
+  "rationale" : "Prime numbers greater than 2, are always odd as even number is divisible by 2 and cannot be a prime except 2"
+}, {
+  "category" : "Prime Numbers",
+  "question" : "What is the largest prime number less than 20?",
+  "options" : [ "17", "19", "23", "13" ],
+  "correct" : 1,
+  "rationale" : "Checking number less than 20, 17 and 19 are prime number. 19 is the biggest number."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "If a number 'n' is prime, what are its only factors?",
+  "options" : [ "0 and n", "1 and 0", "1 and n", "n and n" ],
+  "correct" : 2,
+  "rationale" : "By definition, a prime number is only divisible by 1 and itself (n)."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Which set contains only prime numbers?",
+  "options" : [ "{2, 4, 6}", "{1, 3, 5}", "{3, 5, 7}", "{9, 11, 13}" ],
+  "correct" : 2,
+  "rationale" : "The set {3, 5, 7} contains only prime numbers. The other sets contain composite numbers (4, 6, 9)."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Find the prime factorization of 42.",
+  "options" : [ "2 x 3 x 7", "6 x 7", "2 x 21", "3 x 14" ],
+  "correct" : 0,
+  "rationale" : "The prime factorization of 42 is 2 x 3 x 7, as 2, 3, and 7 are all prime numbers."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Which of the following is the prime factorization of 100?",
+  "options" : [ "2 x 5 x 10", "4 x 5 x 5", "2 x 2 x 5 x 5", "10 x 10" ],
+  "correct" : 2,
+  "rationale" : "100 = 2 x 2 x 5 x 5 because 2 and 5 are both prime, and their product equals 100."
+}, {
+  "category" : "Prime Numbers",
+  "question" : "Which of the following numbers has the most number of prime factors?",
+  "options" : [ "6", "10", "14", "30" ],
+  "correct" : 3,
+  "rationale" : "6 = 2 x 3 (2 prime factors); 10 = 2 x 5 (2 prime factors); 14 = 2 x 7 (2 prime factors); 30 = 2 x 3 x 5 (3 prime factors)."
 }, {
   "category" : "Fractions",
-  "question" : "What is 2/3 multiplied by 9?",
-  "options" : [ "3", "6", "9/2", "27/2" ],
+  "question" : "What is the equivalent fraction of 1/2 with a denominator of 8?",
+  "options" : [ "2/8", "3/8", "4/8", "5/8" ],
+  "correct" : 2,
+  "rationale" : "To find an equivalent fraction, multiply both the numerator and denominator by the same number. 1/2 * (4/4) = 4/8"
+}, {
+  "category" : "Fractions",
+  "question" : "Which of the following fractions is the smallest?",
+  "options" : [ "1/4", "1/3", "1/2", "1/5" ],
+  "correct" : 3,
+  "rationale" : "When the numerators are the same, the fraction with the largest denominator is the smallest. Therefore, 1/5 is the smallest."
+}, {
+  "category" : "Fractions",
+  "question" : "What is the sum of 1/4 and 1/4?",
+  "options" : [ "1/8", "1/2", "2/8", "2/4" ],
+  "correct" : 3,
+  "rationale" : "When adding fractions with the same denominator, add the numerators and keep the denominator the same. 1/4 + 1/4 = 2/4, which simplifies to 1/2"
+}, {
+  "category" : "Fractions",
+  "question" : "What is 2/3 of 15?",
+  "options" : [ "5", "10", "30/3", "45/2" ],
   "correct" : 1,
-  "rationale" : "(2/3) * 9 = (2 * 9) / 3 = 18 / 3 = 6."
+  "rationale" : "To find 2/3 of 15, multiply 2/3 by 15. (2/3) * 15 = 30/3 = 10."
 }, {
   "category" : "Fractions",
   "question" : "What is the reciprocal of 5/7?",
-  "options" : [ "5/7", "7/5", "1/5", "1/7" ],
-  "correct" : 1,
-  "rationale" : "The reciprocal of a fraction is obtained by swapping the numerator and the denominator. Therefore, the reciprocal of 5/7 is 7/5."
-}, {
-  "category" : "Fractions",
-  "question" : "Solve for x: x + 1/3 = 5/6",
-  "options" : [ "1/2", "7/6", "4/3", "1/6" ],
+  "options" : [ "7/5", "5/7", "1/5", "1/7" ],
   "correct" : 0,
-  "rationale" : "Subtract 1/3 from both sides: x = 5/6 - 1/3. Convert 1/3 to 2/6: x = 5/6 - 2/6 = 3/6 = 1/2."
+  "rationale" : "The reciprocal of a fraction is obtained by swapping the numerator and the denominator. The reciprocal of 5/7 is 7/5."
 }, {
   "category" : "Fractions",
-  "question" : "How many halves are there in 4?",
-  "options" : [ "1", "2", "4", "8" ],
+  "question" : "Which of the following is an improper fraction?",
+  "options" : [ "2/5", "3/7", "7/3", "1/2" ],
+  "correct" : 2,
+  "rationale" : "An improper fraction is a fraction where the numerator is greater than or equal to the denominator. 7/3 is an improper fraction."
+}, {
+  "category" : "Fractions",
+  "question" : "Simplify the fraction 12/18.",
+  "options" : [ "2/6", "3/6", "4/6", "2/3" ],
   "correct" : 3,
-  "rationale" : "Dividing 4 by 1/2 is the same as multiplying 4 by 2, which equals 8. Therefore, there are eight halves in 4."
+  "rationale" : "To simplify a fraction, divide both the numerator and the denominator by their greatest common divisor (GCD). The GCD of 12 and 18 is 6. 12/6 = 2 and 18/6 = 3, so the simplified fraction is 2/3."
 }, {
   "category" : "Fractions",
-  "question" : "Arrange the following fractions in ascending order: 1/2, 1/4, 1/3",
-  "options" : [ "1/2, 1/3, 1/4", "1/4, 1/3, 1/2", "1/3, 1/2, 1/4", "1/4, 1/2, 1/3" ],
+  "question" : "What is 3/5 - 1/5?",
+  "options" : [ "2/10", "4/5", "2/5", "3/25" ],
+  "correct" : 2,
+  "rationale" : "When subtracting fractions with the same denominator, subtract the numerators and keep the denominator the same. 3/5 - 1/5 = 2/5."
+}, {
+  "category" : "Fractions",
+  "question" : "Which fraction is equivalent to 0.25?",
+  "options" : [ "1/2", "1/3", "1/4", "1/5" ],
+  "correct" : 2,
+  "rationale" : "0.25 is equivalent to 25/100, which simplifies to 1/4."
+}, {
+  "category" : "Fractions",
+  "question" : "What is 1/2 divided by 1/4?",
+  "options" : [ "1/8", "1/2", "2", "4" ],
+  "correct" : 2,
+  "rationale" : "Dividing by a fraction is the same as multiplying by its reciprocal.  (1/2) / (1/4) = (1/2) * (4/1) = 4/2 = 2."
+}, {
+  "category" : "Fractions",
+  "question" : "Express 3 1/4 as an improper fraction.",
+  "options" : [ "7/4", "13/4", "11/4", "31/4" ],
   "correct" : 1,
-  "rationale" : "Fractions with the same numerator are smaller when their denominator is larger. Therefore, 1/4 < 1/3 < 1/2."
+  "rationale" : "To convert a mixed number to an improper fraction, multiply the whole number by the denominator and add the numerator. Then, put the result over the original denominator. 3 1/4 = (3*4 + 1)/4 = 13/4."
+}, {
+  "category" : "Fractions",
+  "question" : "What is 2/5 + 1/10?",
+  "options" : [ "3/15", "3/10", "5/10", "1/5" ],
+  "correct" : 2,
+  "rationale" : "To add fractions with different denominators, find a common denominator. The least common denominator of 5 and 10 is 10. 2/5 = 4/10. Therefore, 4/10 + 1/10 = 5/10."
+}, {
+  "category" : "Fractions",
+  "question" : "Which is greater: 2/3 or 3/5?",
+  "options" : [ "2/3", "3/5", "They are equal", "Cannot be determined" ],
+  "correct" : 0,
+  "rationale" : "To compare fractions, find a common denominator. The least common denominator of 3 and 5 is 15. 2/3 = 10/15 and 3/5 = 9/15. Since 10/15 > 9/15, 2/3 is greater."
+}, {
+  "category" : "Fractions",
+  "question" : "John ate 1/3 of a pizza and Mary ate 1/4 of the same pizza. How much of the pizza did they eat together?",
+  "options" : [ "2/7", "7/12", "1/12", "2/12" ],
+  "correct" : 1,
+  "rationale" : "To find the total amount, add the fractions: 1/3 + 1/4. The common denominator is 12. 1/3 = 4/12 and 1/4 = 3/12.  4/12 + 3/12 = 7/12."
 }, {
   "category" : "Fractions",
   "question" : "A recipe calls for 2/3 cup of sugar. You only want to make half the recipe. How much sugar do you need?",
-  "options" : [ "1/6 cup", "1/3 cup", "4/6 cup", "1 cup" ],
+  "options" : [ "1/6 cup", "1/3 cup", "4/3 cup", "2/6 cup" ],
   "correct" : 1,
-  "rationale" : "Take half of 2/3 cup: (1/2)*(2/3) = 2/6, which simplifies to 1/3 cup."
+  "rationale" : "To find half of 2/3, multiply 2/3 by 1/2. (2/3) * (1/2) = 2/6 which simplifies to 1/3. Or Half of 2/3 = 1/3."
+}, {
+  "category" : "Fractions",
+  "question" : "Solve for x: x + 1/2 = 3/4",
+  "options" : [ "1/4", "5/4", "2/2", "4/6" ],
+  "correct" : 0,
+  "rationale" : "To solve for x, subtract 1/2 from both sides of the equation. x = 3/4 - 1/2. Convert 1/2 to 2/4. x = 3/4 - 2/4 = 1/4."
+}, {
+  "category" : "Fractions",
+  "question" : "If 1/5 of a number is 10, what is the number?",
+  "options" : [ "2", "50", "15", "0.2" ],
+  "correct" : 1,
+  "rationale" : "If 1/5 of a number is 10, the number is 10 * 5 = 50."
+}, {
+  "category" : "Fractions",
+  "question" : "What is 1 1/2 * 2 1/3?",
+  "options" : [ "3 1/6", "2 1/6", "3 1/2", "7/2" ],
+  "correct" : 3,
+  "rationale" : "Convert the mixed numbers to improper fractions: 1 1/2 = 3/2 and 2 1/3 = 7/3. Then, multiply: (3/2) * (7/3) = 21/6 = 7/2 * 3 / 3 = 7/2 (simplified form)."
+}, {
+  "category" : "Fractions",
+  "question" : "Arrange the following fractions in ascending order: 1/2, 2/5, 3/4",
+  "options" : [ "1/2, 2/5, 3/4", "2/5, 1/2, 3/4", "3/4, 1/2, 2/5", "3/4, 2/5, 1/2" ],
+  "correct" : 1,
+  "rationale" : "Convert the fractions to have a common denominator. The LCD is 20. So the fractions become 10/20, 8/20, and 15/20. In ascending order they are 8/20, 10/20, and 15/20, which is 2/5, 1/2, 3/4."
+}, {
+  "category" : "Fractions",
+  "question" : "What is the value of (1/2 + 1/3) / (1/4)?",
+  "options" : [ "5/6", "10/3", "5/2", "6/5" ],
+  "correct" : 1,
+  "rationale" : "First, find the sum of 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Then, divide 5/6 by 1/4, which is the same as multiplying 5/6 by 4/1.  (5/6) * (4/1) = 20/6 = 10/3."
 } ]

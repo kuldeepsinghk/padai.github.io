@@ -78,39 +78,39 @@
 (defn generate-questions-by-curriculum
   "Generates questions for all topics in a curriculum for a given grade and subject.
    Saves the generated questions to a file named quiz-data-{grade}-{subject}.json
-   
-   Parameters:
-   - grade: Keyword representing the grade level (:grade-6, :grade-7, etc.)
-   - subject: Keyword representing the subject (:Math, :Science, etc.)
-   - save-to-file?: Optional boolean flag to save questions to file (default: true)
-   
-   Returns:
-   - If save-to-file? is true: A map with :questions (the question vector) and :file-path
-   - If save-to-file? is false: Just the vector of question objects
-   - If error: nil"
-  ([grade subject]
-   (generate-questions-by-curriculum grade subject true))
-  
-  ([grade subject save-to-file?]
-   (try
-     ;; Get all topics for the given grade and subject
-     (let [topics (curr/get-curriculum-items grade subject)]
-       (if (seq topics)
-         (let [;; Generate questions for each topic
-               questions (->> topics
-                             (mapcat #(generate-questions grade subject % 2))
-                             (filter identity)  ; Remove any nil results
-                             vec)]
-           ;; Save to file if requested
-           (if save-to-file?
-             (let [file-path (save-questions-to-file questions grade subject)]
-               {:questions questions
-                :file-path file-path})
-             questions))
-         ;; No topics found
-         (do
-           (println "No topics found for grade" grade "and subject" subject)
-           (if save-to-file? {:questions [] :file-path nil} []))))
-     (catch Exception e
-       (println "Error generating questions by curriculum:" (.getMessage e))
-       nil))))
+
+ Parameters:
+ - grade: Keyword representing the grade level (:grade-6, :grade-7, etc.)
+ - subject: Keyword representing the subject (:Math, :Science, etc.)
+ - save-to-file?: Boolean flag to indicate whether to save questions to file
+ - num-questions: Number of questions to generate per topic (default: 2)
+
+ Returns:
+ - If save-to-file? is true: A map with :questions (the question vector) and :file-path
+ - If save-to-file? is false: Just the vector of question objects
+ - If error: nil"
+    ([grade subject save-to-file?]
+     (generate-questions-by-curriculum grade subject save-to-file? 2))
+    ([grade subject save-to-file? num-questions]
+     (try
+       ;; Get all topics for the given grade and subject
+       (let [topics (curr/get-curriculum-items grade subject)]
+         (if (seq topics)
+           (let [;; Generate questions for each topic
+                 questions (->> topics
+                                (mapcat #(generate-questions grade subject % num-questions))
+                                (filter identity)  ; Remove any nil results
+                                vec)]
+             ;; Save to file if requested
+             (if save-to-file?
+               (let [file-path (save-questions-to-file questions grade subject)]
+                 {:questions questions
+                  :file-path file-path})
+               questions))
+           ;; No topics found
+           (do
+             (println "No topics found for grade" grade "and subject" subject)
+             (if save-to-file? {:questions [] :file-path nil} []))))
+       (catch Exception e
+         (println "Error generating questions by curriculum:" (.getMessage e))
+         nil))))

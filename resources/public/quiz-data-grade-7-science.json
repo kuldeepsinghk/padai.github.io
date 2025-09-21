@@ -1,1 +1,721 @@
-[{"category":"Matter","question":"Which of the following is NOT an example of matter?","options":["Air","Light","Water","A rock"],"correct":1,"rationale":"Matter is anything that has mass and takes up space. Light is a form of energy, not matter."},{"category":"Matter","question":"What are the three common states of matter on Earth?","options":["Solid, gas, plasma","Liquid, plasma, Bose-Einstein condensate","Solid, liquid, gas","Gas, plasma, liquid crystal"],"correct":2,"rationale":"The three common states of matter on Earth are solid, liquid, and gas. Plasma, Bose-Einstein condensate and liquid crystals are other states of matter, but less common in everyday experience."},{"category":"Matter","question":"Which state of matter has a definite volume but not a definite shape?","options":["Solid","Liquid","Gas","Plasma"],"correct":1,"rationale":"Liquids have a fixed volume but take the shape of their container. Solids have both definite volume and shape, while gases have neither."},{"category":"Matter","question":"The process of a liquid changing into a gas is called:","options":["Melting","Freezing","Evaporation","Condensation"],"correct":3,"rationale":"Evaporation is the process where a liquid changes to a gas. Melting is solid to liquid, Freezing is liquid to solid, and Condensation is gas to liquid."},{"category":"Matter","question":"Which of the following is a mixture?","options":["Pure water (H2O)","Iron (Fe)","Salt (NaCl)","Saltwater"],"correct":3,"rationale":"Saltwater is a mixture because it contains salt (NaCl) and water (H2O) physically combined, but not chemically bonded. Pure water, Iron and Salt are pure substances."},{"category":"Force","question":"Which of the following is the BEST example of a force?","options":["A ball sitting on a table.","The speed of a race car.","A magnet pulling a paperclip.","The color of a flower."],"correct":2,"rationale":"A force is a push or pull. A magnet pulling a paperclip is a direct example of a pulling force."},{"category":"Force","question":"What unit is used to measure force?","options":["Kilogram","Meter","Newton","Liter"],"correct":2,"rationale":"The standard unit of force in the International System of Units (SI) is the Newton (N)."},{"category":"Force","question":"If you push a box with a force of 10 Newtons to the right, and friction acts on the box with a force of 3 Newtons to the left, what is the net force on the box?","options":["3 Newtons to the left","7 Newtons to the right","13 Newtons to the right","30 Newtons to the left"],"correct":1,"rationale":"Net force is the sum of all forces acting on an object. In this case, 10 N (right) - 3 N (left) = 7 N to the right."},{"category":"Force","question":"Which of these situations demonstrates an example of balanced forces?","options":["A car accelerating down the road.","A skydiver falling at a constant speed.","A soccer ball being kicked.","A bicycle slowing to a stop."],"correct":1,"rationale":"Balanced forces result in no change in motion. A skydiver falling at a constant speed is experiencing balanced forces of gravity and air resistance."},{"category":"Force","question":"Which of the following is NOT a type of force?","options":["Gravity","Friction","Inertia","Applied Force"],"correct":2,"rationale":"Inertia is the tendency of an object to resist changes in its state of motion. It is not a force itself, but rather a property related to mass. Gravity, Friction, and Applied Force are types of forces."},{"category":"Energy","question":"Which of the following is the BEST example of potential energy?","options":["A roller coaster car moving down a hill.","A battery sitting on a shelf.","A lightbulb giving off light.","A fan spinning around."],"correct":1,"rationale":"Potential energy is stored energy. A battery has stored chemical energy that can be converted into electrical energy. The other options describe kinetic energy (energy of motion) or energy being used."},{"category":"Energy","question":"What type of energy transformation occurs in a solar panel?","options":["Chemical energy to electrical energy","Electrical energy to light energy","Light energy to electrical energy","Nuclear energy to heat energy"],"correct":2,"rationale":"Solar panels convert light energy from the sun directly into electrical energy that can be used to power devices."},{"category":"Energy","question":"Which of the following is a renewable energy resource?","options":["Coal","Natural Gas","Wind","Petroleum"],"correct":2,"rationale":"Renewable energy resources, like wind, are naturally replenished. Coal, natural gas, and petroleum are fossil fuels that are finite and take millions of years to form."},{"category":"Energy","question":"What happens to the total amount of energy in a closed system?","options":["It increases over time.","It decreases over time.","It stays the same.","It fluctuates randomly."],"correct":2,"rationale":"The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. Therefore, the total amount of energy in a closed system remains constant."},{"category":"Energy","question":"Which of the following actions would BEST conserve energy at home?","options":["Leaving lights on when you leave a room.","Taking long, hot showers.","Turning off electronic devices when not in use.","Using incandescent light bulbs."],"correct":3,"rationale":"Turning off electronic devices when not in use prevents them from consuming energy unnecessarily, which helps to conserve energy and save electricity."},{"category":"Light","question":"Which of the following is NOT a type of electromagnetic wave?","options":["Radio waves","Sound waves","X-rays","Microwaves"],"correct":1,"rationale":"Sound waves are mechanical waves, meaning they require a medium to travel through, unlike electromagnetic waves which can travel through a vacuum."},{"category":"Light","question":"What happens when light passes through a prism?","options":["It slows down","It changes direction","It separates into different colors","All of the above"],"correct":3,"rationale":"When light passes through a prism, it slows down, changes direction due to refraction, and the different wavelengths of light are bent at slightly different angles, separating it into a spectrum of colors."},{"category":"Light","question":"Which color of light has the shortest wavelength?","options":["Red","Yellow","Green","Violet"],"correct":3,"rationale":"Violet light has the shortest wavelength in the visible spectrum, while red light has the longest."},{"category":"Light","question":"What is the process by which plants convert light energy into chemical energy?","options":["Respiration","Photosynthesis","Digestion","Decomposition"],"correct":1,"rationale":"Photosynthesis is the process where plants use light energy, water, and carbon dioxide to create glucose (sugar) for food and release oxygen."},{"category":"Light","question":"Why does a red apple appear red?","options":["It absorbs all colors of light","It reflects all colors of light","It absorbs all colors except red, which it reflects","It emits red light"],"correct":2,"rationale":"An object appears a certain color because it absorbs most of the colors in the visible spectrum and reflects the color we see. The red apple absorbs all colors except red, which it reflects back to our eyes."},{"category":"Sound","question":"Which of the following best describes how sound travels?","options":["As electromagnetic waves through a vacuum.","As mechanical waves through a medium.","As particles moving in a straight line.","As heat transferring from one object to another."],"correct":1,"rationale":"Sound requires a medium (like air, water, or solids) to travel. It travels as a mechanical wave, which means it's a disturbance that transfers energy through the medium."},{"category":"Sound","question":"What property of a sound wave determines its pitch?","options":["Amplitude","Wavelength","Speed","Intensity"],"correct":1,"rationale":"Pitch is determined by the frequency of the sound wave, which is inversely proportional to the wavelength.  Higher frequency (shorter wavelength) means higher pitch."},{"category":"Sound","question":"Sound travels fastest through which of the following mediums?","options":["Air","Water","Steel","Vacuum"],"correct":2,"rationale":"Sound travels fastest through solids because the molecules are more tightly packed together, allowing vibrations to pass more quickly. It cannot travel through a vacuum."},{"category":"Sound","question":"What does the amplitude of a sound wave determine?","options":["The pitch of the sound","The loudness of the sound","The speed of the sound","The timbre of the sound"],"correct":1,"rationale":"The amplitude of a sound wave is related to the energy it carries.  Larger amplitude means more energy, which translates to a louder sound."},{"category":"Sound","question":"Which of the following is an example of sound reflection (echo)?","options":["Hearing your voice in a large, empty room.","The buzzing of a mosquito.","Listening to music through headphones.","Feeling vibrations from a loud speaker."],"correct":0,"rationale":"An echo is a reflected sound wave.  Hearing your voice in a large, empty room is due to the sound reflecting off the walls and returning to your ears."},{"category":"Electricity","question":"Which of the following is the best conductor of electricity?","options":["Rubber","Plastic","Copper","Wood"],"correct":2,"rationale":"Copper allows electricity to flow easily through it because it has many free electrons. Rubber, plastic, and wood are insulators and resist the flow of electricity."},{"category":"Electricity","question":"What is the purpose of a switch in an electrical circuit?","options":["To increase the voltage of the circuit","To protect the circuit from overheating","To open or close the circuit, controlling the flow of electricity","To store electrical energy"],"correct":2,"rationale":"A switch acts as a gate in a circuit. When the switch is closed, the circuit is complete, and electricity can flow. When the switch is open, the circuit is broken, and electricity cannot flow."},{"category":"Electricity","question":"Which of these completes an electrical circuit allowing current to flow?","options":["An open switch","A broken wire","A complete loop of conductive material","A battery with no charge"],"correct":2,"rationale":"An electrical circuit must be a closed loop of conductive material for current to flow. Any break in the loop, like an open switch or broken wire, will stop the flow of current."},{"category":"Electricity","question":"What is the unit used to measure electrical current?","options":["Volt","Watt","Ohm","Ampere"],"correct":3,"rationale":"Electrical current is measured in Amperes (Amps). A Volt measures voltage, a Watt measures power, and an Ohm measures resistance."},{"category":"Electricity","question":"What is the purpose of a fuse or circuit breaker in an electrical circuit?","options":["To increase the amount of current flowing through the circuit","To protect the circuit from excessive current and prevent overheating or fires","To decrease the voltage of the circuit","To store extra electricity for later use"],"correct":1,"rationale":"Fuses and circuit breakers are safety devices that automatically interrupt the flow of electricity when the current exceeds a safe level, protecting the circuit from damage and preventing potential fires."}]
+[ {
+  "category" : "Matter",
+  "question" : "Which of the following is NOT a state of matter?",
+  "options" : [ "Solid", "Liquid", "Gas", "Energy" ],
+  "correct" : 3,
+  "rationale" : "Solid, liquid, and gas are the three common states of matter. Energy is not a state of matter but a property that can cause matter to change state."
+}, {
+  "category" : "Matter",
+  "question" : "The process by which a solid changes directly into a gas is called:",
+  "options" : [ "Melting", "Evaporation", "Sublimation", "Condensation" ],
+  "correct" : 2,
+  "rationale" : "Sublimation is the process where a solid changes directly into a gas without passing through the liquid state.  An example is dry ice."
+}, {
+  "category" : "Matter",
+  "question" : "What is the arrangement of particles in a liquid?",
+  "options" : [ "Tightly packed and ordered", "Loosely packed and ordered", "Tightly packed and disordered", "Loosely packed and disordered" ],
+  "correct" : 3,
+  "rationale" : "In a liquid, particles are close together but can move past each other, so they are described as loosely packed and disordered."
+}, {
+  "category" : "Matter",
+  "question" : "Which of these is a mixture?",
+  "options" : [ "Water", "Salt", "Air", "Copper" ],
+  "correct" : 2,
+  "rationale" : "Air is a mixture of different gases like nitrogen, oxygen, and argon. Water, salt, and copper are pure substances."
+}, {
+  "category" : "Matter",
+  "question" : "What happens to the particles in a substance when it is heated?",
+  "options" : [ "They move slower", "They move faster", "They stay the same", "They disappear" ],
+  "correct" : 1,
+  "rationale" : "Heating a substance increases the kinetic energy of its particles, causing them to move faster."
+}, {
+  "category" : "Matter",
+  "question" : "Which of the following is an example of a chemical change?",
+  "options" : [ "Melting ice", "Boiling water", "Burning wood", "Dissolving salt" ],
+  "correct" : 2,
+  "rationale" : "Burning wood is a chemical change because it results in the formation of new substances (ash, smoke, gases).  The other options are physical changes."
+}, {
+  "category" : "Matter",
+  "question" : "What is the process called when a gas changes into a liquid?",
+  "options" : [ "Melting", "Evaporation", "Condensation", "Freezing" ],
+  "correct" : 2,
+  "rationale" : "Condensation is the change of a substance from the gaseous phase to the liquid phase, typically due to cooling."
+}, {
+  "category" : "Matter",
+  "question" : "Which of the following is a compound?",
+  "options" : [ "Iron", "Oxygen", "Water", "Nitrogen" ],
+  "correct" : 2,
+  "rationale" : "Water (H2O) is a compound because it's made up of two different elements, Hydrogen and Oxygen, chemically bonded together. Iron, Oxygen, and Nitrogen are elements."
+}, {
+  "category" : "Matter",
+  "question" : "Which of the following separation techniques is best for separating salt from saltwater?",
+  "options" : [ "Filtration", "Evaporation", "Decantation", "Sedimentation" ],
+  "correct" : 1,
+  "rationale" : "Evaporation is best for separating a dissolved solid (salt) from a liquid (water) because the water evaporates, leaving the salt behind."
+}, {
+  "category" : "Matter",
+  "question" : "If a substance has a definite volume but no definite shape, it is a:",
+  "options" : [ "Solid", "Liquid", "Gas", "Plasma" ],
+  "correct" : 1,
+  "rationale" : "Liquids have a definite volume but take the shape of their container. Solids have definite shape and volume, while gases have neither."
+}, {
+  "category" : "Matter",
+  "question" : "Which of the following describes the particles in a solid the best?",
+  "options" : [ "Moving freely and randomly", "Closely packed and vibrating in fixed positions", "Widely spaced and rapidly moving", "Moving slowly and colliding frequently" ],
+  "correct" : 1,
+  "rationale" : "In solids, particles are closely packed and vibrate in fixed positions because they have strong intermolecular forces."
+}, {
+  "category" : "Matter",
+  "question" : "A student heats a metal rod. Which property of the metal will change?",
+  "options" : [ "Mass", "Volume", "Density", "Number of atoms" ],
+  "correct" : 1,
+  "rationale" : "Heating the metal rod will cause it to expand slightly, increasing its volume. The mass and number of atoms remain constant. Density will slightly decrease."
+}, {
+  "category" : "Matter",
+  "question" : "What is the mass of 100 mL of water if the density of water is 1 g/mL?",
+  "options" : [ "10 g", "100 g", "1000 g", "0.1 g" ],
+  "correct" : 1,
+  "rationale" : "Density = Mass/Volume, so Mass = Density x Volume. In this case, Mass = 1 g/mL x 100 mL = 100 g."
+}, {
+  "category" : "Matter",
+  "question" : "Which of the following is a physical property of matter?",
+  "options" : [ "Flammability", "Corrosivity", "Density", "Reactivity" ],
+  "correct" : 2,
+  "rationale" : "Density is a physical property that can be observed without changing the substance's chemical composition. Flammability, corrosivity and reactivity are chemical properties."
+}, {
+  "category" : "Matter",
+  "question" : "If you mix sand and water, what type of mixture do you form?",
+  "options" : [ "Solution", "Compound", "Homogeneous Mixture", "Heterogeneous Mixture" ],
+  "correct" : 3,
+  "rationale" : "Sand and water form a heterogeneous mixture because the components are not uniformly distributed and you can easily see the different parts."
+}, {
+  "category" : "Matter",
+  "question" : "A student has a sample of a pure substance. How can they determine if it is an element or a compound?",
+  "options" : [ "Measure its volume", "Observe its color", "Try to decompose it by heating", "Weigh the sample" ],
+  "correct" : 2,
+  "rationale" : "Elements cannot be broken down into simpler substances by chemical means. If heating decomposes the substance into simpler parts, it's a compound."
+}, {
+  "category" : "Matter",
+  "question" : "Which of these best describes a homogeneous mixture?",
+  "options" : [ "A mixture that has visible clumps of different substances.", "A mixture that is the same throughout.", "A mixture that separates over time.", "A mixture of only solids." ],
+  "correct" : 1,
+  "rationale" : "A homogeneous mixture has a uniform composition throughout; you cannot see the individual components."
+}, {
+  "category" : "Matter",
+  "question" : "Two liquids mix completely and cannot be separated by filtration. This suggests they are:",
+  "options" : [ "Immiscible", "Miscible", "Suspensions", "Colloids" ],
+  "correct" : 1,
+  "rationale" : "Miscible liquids are able to mix in all proportions, forming a homogeneous solution. Immiscible liquids do not mix."
+}, {
+  "category" : "Matter",
+  "question" : "What is the primary difference between a mixture and a compound?",
+  "options" : [ "Mixtures are chemically combined, while compounds are physically combined.", "Mixtures can be separated physically, while compounds require chemical reactions to separate.", "Mixtures always contain the same elements, while compounds contain different elements.", "Mixtures are always homogeneous, while compounds are always heterogeneous." ],
+  "correct" : 1,
+  "rationale" : "Mixtures are physically combined and can be separated by physical means, while compounds are chemically combined and require chemical reactions for separation."
+}, {
+  "category" : "Matter",
+  "question" : "A student observes that a solid sinks in water. What can the student conclude about the solid's density relative to water's density?",
+  "options" : [ "The solid's density is less than water's density.", "The solid's density is equal to water's density.", "The solid's density is greater than water's density.", "Density has no relation to whether something floats or sinks." ],
+  "correct" : 2,
+  "rationale" : "Objects sink in a fluid if their density is greater than the fluid's density. Objects float if their density is less."
+}, {
+  "category" : "Force",
+  "question" : "Which of the following is a pull or push acting on an object?",
+  "options" : [ "Energy", "Force", "Mass", "Volume" ],
+  "correct" : 1,
+  "rationale" : "Force is defined as a push or pull exerted on an object. Energy is the capacity to do work, mass is the amount of matter, and volume is the space occupied."
+}, {
+  "category" : "Force",
+  "question" : "What is the SI unit of force?",
+  "options" : [ "Kilogram", "Meter", "Newton", "Joule" ],
+  "correct" : 2,
+  "rationale" : "The standard unit of force in the International System of Units (SI) is the Newton (N). Kilogram is the unit of mass, meter is the unit of length, and Joule is the unit of energy or work."
+}, {
+  "category" : "Force",
+  "question" : "If two forces of 5N and 3N are acting on an object in the same direction, what is the net force?",
+  "options" : [ "2N", "8N", "15N", "5N" ],
+  "correct" : 1,
+  "rationale" : "When forces act in the same direction, they are added together to find the net force.  5N + 3N = 8N."
+}, {
+  "category" : "Force",
+  "question" : "What type of force always opposes motion?",
+  "options" : [ "Gravitational force", "Muscular force", "Frictional force", "Magnetic force" ],
+  "correct" : 2,
+  "rationale" : "Frictional force is a force that opposes motion between two surfaces in contact. The other forces don't necessarily oppose motion."
+}, {
+  "category" : "Force",
+  "question" : "Which of these requires force to occur?",
+  "options" : [ "An object at rest", "A leaf falling from a tree", "Constant speed in space", "Object at a standstill" ],
+  "correct" : 1,
+  "rationale" : "A leaf falls due to the force of gravity. An object at rest, constant speed in space (inertia), and object at a standstill can occur without a continuously applied force."
+}, {
+  "category" : "Force",
+  "question" : "Which of the following is an example of a non-contact force?",
+  "options" : [ "Pushing a wall", "Friction between two blocks", "Magnetic force between two magnets", "Applied force by a person" ],
+  "correct" : 2,
+  "rationale" : "A non-contact force is a force that can act between two objects that are not physically touching. Magnetic force fits this description. The others require physical contact."
+}, {
+  "category" : "Force",
+  "question" : "What is the force that pulls objects towards the center of the Earth?",
+  "options" : [ "Magnetic force", "Electrostatic force", "Gravitational force", "Frictional force" ],
+  "correct" : 2,
+  "rationale" : "The force that pulls objects toward the center of the Earth is called gravitational force.  This is what causes objects to fall when dropped."
+}, {
+  "category" : "Force",
+  "question" : "A boy pushes a box with a force of 10N, but friction opposes with 2N. What is the net force on the box?",
+  "options" : [ "8N", "12N", "20N", "5N" ],
+  "correct" : 0,
+  "rationale" : "Since friction opposes the applied force, we subtract the frictional force from the applied force: 10N - 2N = 8N."
+}, {
+  "category" : "Force",
+  "question" : "Which of the following can a force NOT do?",
+  "options" : [ "Change the speed of an object", "Change the direction of an object", "Change the mass of an object", "Change the shape of an object" ],
+  "correct" : 2,
+  "rationale" : "Force can change the speed, direction, or shape of an object.  However, it cannot change the mass of an object. The mass is a fundamental property of the object itself."
+}, {
+  "category" : "Force",
+  "question" : "What happens to the friction if you double the weight of an object being dragged across a floor?",
+  "options" : [ "Friction halves", "Friction doubles", "Friction remains the same", "Friction becomes zero" ],
+  "correct" : 1,
+  "rationale" : "Friction is directly proportional to the normal force, which is often the weight of the object. Doubling the weight doubles the normal force, therefore doubling the friction."
+}, {
+  "category" : "Force",
+  "question" : "Which of the following reduces friction?",
+  "options" : [ "Rough surfaces", "Increasing weight", "Lubrication", "Increasing speed" ],
+  "correct" : 2,
+  "rationale" : "Lubrication, such as oil or grease, reduces friction by creating a layer between surfaces, allowing them to slide more easily."
+}, {
+  "category" : "Force",
+  "question" : "A rocket launching into space is an example of which of Newton's Laws?",
+  "options" : [ "Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation" ],
+  "correct" : 2,
+  "rationale" : "A rocket launching is an example of Newton's Third Law: For every action, there is an equal and opposite reaction. The rocket expels gases (action), and the gases push the rocket upward (reaction)."
+}, {
+  "category" : "Force",
+  "question" : "If you apply the same force to two objects, one with a larger mass and one with a smaller mass, which one will accelerate more?",
+  "options" : [ "The object with larger mass", "The object with smaller mass", "Both will accelerate equally", "Neither will accelerate" ],
+  "correct" : 1,
+  "rationale" : "According to Newton's Second Law (F=ma), acceleration is inversely proportional to mass. If the force is constant, the object with the smaller mass will have a greater acceleration."
+}, {
+  "category" : "Force",
+  "question" : "What is the effect of increasing the surface area of an object experiencing air resistance?",
+  "options" : [ "Increases air resistance", "Decreases air resistance", "No change in air resistance", "Air resistance becomes zero" ],
+  "correct" : 0,
+  "rationale" : "Increasing the surface area increases the amount of air the object has to push out of the way. Therefore, it increases air resistance."
+}, {
+  "category" : "Force",
+  "question" : "Which force is responsible for keeping the planets in orbit around the Sun?",
+  "options" : [ "Frictional force", "Magnetic force", "Gravitational force", "Nuclear force" ],
+  "correct" : 2,
+  "rationale" : "The gravitational force between the Sun and the planets is responsible for keeping the planets in orbit. This force depends on the masses of the objects and the distance between them."
+}, {
+  "category" : "Force",
+  "question" : "A car accelerates from 0 m/s to 20 m/s in 5 seconds. If the car's mass is 1000 kg, what is the net force acting on it (F=ma)?",
+  "options" : [ "2000 N", "4000 N", "5000 N", "10000 N" ],
+  "correct" : 1,
+  "rationale" : "First calculate the acceleration: a = (20 m/s - 0 m/s) / 5 s = 4 m/s². Then, use Newton's second law: F = ma = 1000 kg * 4 m/s² = 4000 N."
+}, {
+  "category" : "Force",
+  "question" : "Two teams are playing tug-of-war. Team A pulls with a force of 500 N, and Team B pulls with a force of 450 N in the opposite direction. What is the net force and which direction will the rope move?",
+  "options" : [ "50 N, towards Team A", "950 N, towards Team A", "50 N, towards Team B", "950 N, towards Team B" ],
+  "correct" : 0,
+  "rationale" : "The net force is the difference between the two forces: 500 N - 450 N = 50 N. Since Team A's force is greater, the rope will move towards Team A."
+}, {
+  "category" : "Force",
+  "question" : "What is the relationship between force, mass, and acceleration as described by Newton's second law of motion?",
+  "options" : [ "Force is directly proportional to mass and inversely proportional to acceleration", "Force is inversely proportional to mass and directly proportional to acceleration", "Force is directly proportional to both mass and acceleration", "Force is inversely proportional to both mass and acceleration" ],
+  "correct" : 2,
+  "rationale" : "Newton's second law (F=ma) states that force is equal to mass times acceleration. Therefore, force is directly proportional to both mass and acceleration.  If you increase mass or acceleration, you increase the force required."
+}, {
+  "category" : "Force",
+  "question" : "A ball is thrown upwards. At the highest point of its trajectory, what is the net force acting on it?",
+  "options" : [ "Zero N", "Equal to the force applied when throwing the ball", "Equal to the gravitational force acting on the ball", "Equal to the air resistance" ],
+  "correct" : 2,
+  "rationale" : "At the highest point, the ball momentarily stops moving upwards, but gravity is still acting on it, pulling it downwards.  Therefore, the net force is equal to the gravitational force."
+}, {
+  "category" : "Force",
+  "question" : "A parachute helps skydivers slow down. Which force is most responsible for this?",
+  "options" : [ "Gravity", "Friction with the ground", "Air resistance", "Magnetic force" ],
+  "correct" : 2,
+  "rationale" : "The parachute increases the surface area, leading to a large increase in air resistance. This opposes the skydiver's motion and slows them down. While gravity is also acting, it is constant. Air resistance changes with the parachute."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following is the primary source of energy for most ecosystems?",
+  "options" : [ "Fossil fuels", "Geothermal energy", "Solar energy", "Nuclear energy" ],
+  "correct" : 2,
+  "rationale" : "Solar energy is the driving force behind photosynthesis, which is the foundation of most food chains and ecosystems."
+}, {
+  "category" : "Energy",
+  "question" : "What type of energy is stored in food?",
+  "options" : [ "Kinetic energy", "Potential energy", "Chemical energy", "Electrical energy" ],
+  "correct" : 2,
+  "rationale" : "Food stores energy in the form of chemical bonds, which is released when the food is broken down through digestion."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following is an example of kinetic energy?",
+  "options" : [ "A stretched rubber band", "A ball rolling down a hill", "A battery", "Food" ],
+  "correct" : 1,
+  "rationale" : "Kinetic energy is the energy of motion. A ball rolling down a hill is in motion, demonstrating kinetic energy."
+}, {
+  "category" : "Energy",
+  "question" : "What is the process by which plants convert light energy into chemical energy?",
+  "options" : [ "Respiration", "Digestion", "Photosynthesis", "Combustion" ],
+  "correct" : 2,
+  "rationale" : "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to create glucose (sugar), a form of chemical energy."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following is a renewable source of energy?",
+  "options" : [ "Coal", "Petroleum", "Natural gas", "Wind" ],
+  "correct" : 3,
+  "rationale" : "Wind is a renewable source of energy because it is naturally replenished and does not get depleted over time."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following describes the Law of Conservation of Energy?",
+  "options" : [ "Energy can be created but not destroyed.", "Energy can be destroyed but not created.", "Energy can neither be created nor destroyed, but can be transformed from one form to another.", "Energy always decreases over time." ],
+  "correct" : 2,
+  "rationale" : "The Law of Conservation of Energy states that the total energy of an isolated system remains constant—it is said to be conserved over time. Energy can transform from one form to another."
+}, {
+  "category" : "Energy",
+  "question" : "What type of energy is possessed by a moving car?",
+  "options" : [ "Potential energy", "Thermal energy", "Kinetic energy", "Chemical energy" ],
+  "correct" : 2,
+  "rationale" : "A moving car possesses kinetic energy, which is the energy of motion."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following is an example of potential energy?",
+  "options" : [ "A flowing river", "A burning match", "A book on a shelf", "A ringing bell" ],
+  "correct" : 2,
+  "rationale" : "A book on a shelf has potential energy due to its position (height). It has the potential to fall and convert that potential energy to kinetic energy."
+}, {
+  "category" : "Energy",
+  "question" : "Burning wood is an example of converting _______ energy into heat and light energy.",
+  "options" : [ "Kinetic", "Chemical", "Potential", "Nuclear" ],
+  "correct" : 1,
+  "rationale" : "Burning wood releases the chemical energy stored within it as heat and light."
+}, {
+  "category" : "Energy",
+  "question" : "What is the ultimate source of energy for fossil fuels?",
+  "options" : [ "Geothermal energy", "Nuclear energy", "Solar energy", "Tidal energy" ],
+  "correct" : 2,
+  "rationale" : "Fossil fuels are formed from the remains of ancient plants and animals that originally obtained their energy from the sun through photosynthesis."
+}, {
+  "category" : "Energy",
+  "question" : "Which energy conversion takes place in a light bulb?",
+  "options" : [ "Chemical to electrical", "Electrical to light and heat", "Light to electrical", "Heat to mechanical" ],
+  "correct" : 1,
+  "rationale" : "A light bulb converts electrical energy into light energy and heat energy."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following is a non-renewable source of energy?",
+  "options" : [ "Solar energy", "Wind energy", "Hydropower", "Petroleum" ],
+  "correct" : 3,
+  "rationale" : "Petroleum is a fossil fuel, formed over millions of years, and is therefore a non-renewable source of energy."
+}, {
+  "category" : "Energy",
+  "question" : "A hydroelectric power plant uses the energy of flowing water. What type of energy conversion is happening?",
+  "options" : [ "Potential energy to kinetic energy to electrical energy", "Kinetic energy to potential energy to electrical energy", "Chemical energy to kinetic energy to electrical energy", "Nuclear energy to heat energy to electrical energy" ],
+  "correct" : 0,
+  "rationale" : "Water stored at a height has potential energy. As it flows down, potential energy is converted to kinetic energy, which is then used to turn turbines and generate electrical energy."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following best describes the energy transfer in a food chain?",
+  "options" : [ "Energy is created by producers and recycled through consumers.", "Energy flows from producers to consumers and is lost as heat at each level.", "Energy is equally distributed among all organisms in the food chain.", "Energy flows from consumers to producers." ],
+  "correct" : 1,
+  "rationale" : "Energy enters the food chain through producers (plants) and flows to consumers (animals). At each trophic level, some energy is lost as heat due to metabolic processes."
+}, {
+  "category" : "Energy",
+  "question" : "If a machine is only 25% efficient, what does this mean?",
+  "options" : [ "The machine uses 75% of the energy input to perform useful work.", "The machine wastes 25% of the energy input as heat or other forms of energy.", "The machine converts 25% of the energy input into useful work.", "The machine creates 75% more energy than it consumes." ],
+  "correct" : 2,
+  "rationale" : "Efficiency describes how much of the input energy is converted into useful work. A 25% efficiency means that only 25% of the input energy performs the desired task, while the remaining 75% is lost as waste energy."
+}, {
+  "category" : "Energy",
+  "question" : "A coiled spring possesses what type of energy?",
+  "options" : [ "Kinetic Energy", "Potential Energy", "Thermal Energy", "Nuclear Energy" ],
+  "correct" : 1,
+  "rationale" : "A coiled spring possesses elastic potential energy. This is energy stored due to its change in shape (compression or stretching), which can be converted to kinetic energy when released."
+}, {
+  "category" : "Energy",
+  "question" : "When friction slows down a moving object, the kinetic energy is primarily converted into what form of energy?",
+  "options" : [ "Potential Energy", "Chemical Energy", "Thermal Energy", "Nuclear Energy" ],
+  "correct" : 2,
+  "rationale" : "Friction converts kinetic energy into thermal energy (heat). This is because friction causes molecules to move faster, increasing their thermal energy."
+}, {
+  "category" : "Energy",
+  "question" : "Two objects have the same mass. Object A is moving twice as fast as object B. How does the kinetic energy of object A compare to object B?",
+  "options" : [ "Object A has the same kinetic energy as object B", "Object A has twice the kinetic energy of object B", "Object A has four times the kinetic energy of object B", "Object A has half the kinetic energy of object B" ],
+  "correct" : 2,
+  "rationale" : "Kinetic energy (KE) is calculated as 1/2 * mass * velocity^2.  If the velocity is doubled, the KE increases by a factor of 2^2 = 4."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following is an example of radiant energy?",
+  "options" : [ "Sound waves", "Microwaves", "Water flowing downhill", "A compressed spring" ],
+  "correct" : 1,
+  "rationale" : "Radiant energy is a form of electromagnetic radiation. Microwaves are part of the electromagnetic spectrum and therefore are an example of radiant energy."
+}, {
+  "category" : "Energy",
+  "question" : "Which of the following statements best describes the difference between heat and temperature?",
+  "options" : [ "Heat and temperature are the same thing.", "Heat is a measure of the average kinetic energy of molecules, while temperature is the total energy of molecules.", "Temperature is a measure of the average kinetic energy of molecules, while heat is the total energy of molecules.", "Temperature measures energy, while heat measures power." ],
+  "correct" : 2,
+  "rationale" : "Temperature is a measure of the *average* kinetic energy of the molecules in a substance. Heat, on the other hand, refers to the *total* energy of molecular motion in a substance."
+}, {
+  "category" : "Light",
+  "question" : "Which of the following allows us to see objects?",
+  "options" : [ "Sound waves", "Light", "Heat", "Magnetism" ],
+  "correct" : 1,
+  "rationale" : "Light reflects off objects and enters our eyes, allowing us to perceive them. Sound, heat, and magnetism do not directly contribute to our ability to see."
+}, {
+  "category" : "Light",
+  "question" : "What happens when light bounces off a surface?",
+  "options" : [ "Refraction", "Reflection", "Dispersion", "Absorption" ],
+  "correct" : 1,
+  "rationale" : "Reflection is the phenomenon where light bounces back from a surface. Refraction is the bending of light, dispersion is the splitting of white light, and absorption is when light is taken in by a material."
+}, {
+  "category" : "Light",
+  "question" : "A mirror is an example of a:",
+  "options" : [ "Luminous object", "Transparent object", "Opaque object", "Reflecting surface" ],
+  "correct" : 3,
+  "rationale" : "Mirrors are specifically designed to reflect light. Luminous objects produce their own light, transparent objects allow light to pass through, and opaque objects block light."
+}, {
+  "category" : "Light",
+  "question" : "Which type of surface reflects light in a regular manner, creating a clear image?",
+  "options" : [ "Rough surface", "Diffused surface", "Smooth surface", "Opaque surface" ],
+  "correct" : 2,
+  "rationale" : "Smooth surfaces, like mirrors, reflect light in a regular manner, preserving the image. Rough surfaces cause diffused reflection, scattering the light."
+}, {
+  "category" : "Light",
+  "question" : "What is the angle of incidence equal to in regular reflection?",
+  "options" : [ "Angle of refraction", "Angle of dispersion", "Angle of reflection", "Angle of absorption" ],
+  "correct" : 2,
+  "rationale" : "According to the laws of reflection, the angle of incidence (the angle at which light strikes the surface) is equal to the angle of reflection (the angle at which light bounces off)."
+}, {
+  "category" : "Light",
+  "question" : "Which of the following is an example of a luminous object?",
+  "options" : [ "The Moon", "A book", "The Sun", "A table" ],
+  "correct" : 2,
+  "rationale" : "A luminous object produces its own light. The Sun is a star that emits light, while the Moon, a book, and a table reflect light from other sources."
+}, {
+  "category" : "Light",
+  "question" : "What is the splitting of white light into its constituent colors called?",
+  "options" : [ "Reflection", "Refraction", "Dispersion", "Absorption" ],
+  "correct" : 2,
+  "rationale" : "Dispersion is the phenomenon where white light is separated into its different colors (like in a rainbow) due to the different wavelengths of light bending at different angles through a prism or other medium."
+}, {
+  "category" : "Light",
+  "question" : "Which color of light bends the most when passing through a prism?",
+  "options" : [ "Red", "Orange", "Green", "Violet" ],
+  "correct" : 3,
+  "rationale" : "Violet light has the shortest wavelength and bends the most when passing through a prism. Red light has the longest wavelength and bends the least."
+}, {
+  "category" : "Light",
+  "question" : "What type of image is formed by a plane mirror?",
+  "options" : [ "Real and inverted", "Virtual and inverted", "Real and erect", "Virtual and erect" ],
+  "correct" : 3,
+  "rationale" : "Plane mirrors form virtual (not real), erect (upright), and laterally inverted images. The image appears to be behind the mirror."
+}, {
+  "category" : "Light",
+  "question" : "What is lateral inversion?",
+  "options" : [ "The bending of light", "The splitting of light", "The sideways reversal of an image", "The change in the color of light" ],
+  "correct" : 2,
+  "rationale" : "Lateral inversion is the phenomenon where the left and right sides of an image are reversed, as seen in a mirror."
+}, {
+  "category" : "Light",
+  "question" : "What happens when light travels from air to water?",
+  "options" : [ "It speeds up", "It slows down", "It stays at the same speed", "It changes color" ],
+  "correct" : 1,
+  "rationale" : "Light travels slower in denser mediums like water than in air. This change in speed causes refraction (bending) of light."
+}, {
+  "category" : "Light",
+  "question" : "The bending of light as it passes from one medium to another is called:",
+  "options" : [ "Reflection", "Refraction", "Dispersion", "Interference" ],
+  "correct" : 1,
+  "rationale" : "Refraction is the bending of light as it passes from one medium (like air) to another (like water) due to the change in speed of light."
+}, {
+  "category" : "Light",
+  "question" : "A rainbow is an example of which phenomenon?",
+  "options" : [ "Reflection only", "Refraction only", "Dispersion only", "Reflection, Refraction, and Dispersion" ],
+  "correct" : 3,
+  "rationale" : "Rainbows are formed due to the reflection, refraction, and dispersion of sunlight by water droplets in the atmosphere."
+}, {
+  "category" : "Light",
+  "question" : "Which type of mirror is used as a rearview mirror in cars?",
+  "options" : [ "Plane mirror", "Concave mirror", "Convex mirror", "Periscope" ],
+  "correct" : 2,
+  "rationale" : "Convex mirrors provide a wider field of view, allowing drivers to see more of what's behind them, making them suitable for rearview mirrors."
+}, {
+  "category" : "Light",
+  "question" : "What type of lens is used to correct nearsightedness (myopia)?",
+  "options" : [ "Convex lens", "Concave lens", "Plane lens", "Cylindrical lens" ],
+  "correct" : 1,
+  "rationale" : "Concave lenses diverge light rays, helping to focus the image properly on the retina for nearsighted individuals."
+}, {
+  "category" : "Light",
+  "question" : "What part of the eye controls the amount of light entering?",
+  "options" : [ "Lens", "Retina", "Iris", "Cornea" ],
+  "correct" : 2,
+  "rationale" : "The iris is the colored part of the eye and contains muscles that control the size of the pupil, regulating the amount of light that enters the eye."
+}, {
+  "category" : "Light",
+  "question" : "The image formed on the retina is:",
+  "options" : [ "Erect and real", "Inverted and real", "Erect and virtual", "Inverted and virtual" ],
+  "correct" : 1,
+  "rationale" : "The lens of the eye focuses light to form an inverted and real image on the retina. The brain then processes this information to perceive the image correctly."
+}, {
+  "category" : "Light",
+  "question" : "What happens to a red-colored object when illuminated with green light?",
+  "options" : [ "It appears red", "It appears green", "It appears black", "It appears blue" ],
+  "correct" : 2,
+  "rationale" : "A red object absorbs all colors except red, which it reflects. When illuminated with green light (which contains no red), the object absorbs the green light and reflects very little, appearing black."
+}, {
+  "category" : "Light",
+  "question" : "If a ray of light strikes a mirror at an angle of 30 degrees to the normal, what is the angle of reflection?",
+  "options" : [ "30 degrees", "60 degrees", "90 degrees", "0 degrees" ],
+  "correct" : 0,
+  "rationale" : "According to the law of reflection, the angle of incidence is equal to the angle of reflection. Therefore, if the angle of incidence is 30 degrees, the angle of reflection is also 30 degrees."
+}, {
+  "category" : "Light",
+  "question" : "Which of the following uses multiple reflections to allow you to see around corners?",
+  "options" : [ "Microscope", "Telescope", "Periscope", "Spectroscope" ],
+  "correct" : 2,
+  "rationale" : "A periscope uses two mirrors or prisms arranged at a 45-degree angle to each other, allowing light to bounce and enabling viewing around obstacles. Microscopes magnify small objects, telescopes view distant objects, and spectroscopes analyze the spectrum of light."
+}, {
+  "category" : "Sound",
+  "question" : "Sound travels fastest through which of the following mediums?",
+  "options" : [ "Air", "Water", "Steel", "Vacuum" ],
+  "correct" : 2,
+  "rationale" : "Sound travels fastest through solids because the particles are closely packed, allowing vibrations to be transmitted more efficiently. Steel is a solid, while air and water are gases and liquids respectively. Sound cannot travel through a vacuum."
+}, {
+  "category" : "Sound",
+  "question" : "What is the unit of measurement for the frequency of a sound wave?",
+  "options" : [ "Decibel (dB)", "Hertz (Hz)", "Meter (m)", "Kilogram (kg)" ],
+  "correct" : 1,
+  "rationale" : "Frequency is measured in Hertz (Hz), which represents the number of cycles per second. Decibels measure loudness, meters measure distance, and kilograms measure mass."
+}, {
+  "category" : "Sound",
+  "question" : "Which of the following determines the loudness of a sound?",
+  "options" : [ "Frequency", "Wavelength", "Amplitude", "Speed" ],
+  "correct" : 2,
+  "rationale" : "The amplitude of a sound wave determines its loudness. A larger amplitude means a louder sound."
+}, {
+  "category" : "Sound",
+  "question" : "Which part of the human ear vibrates when sound waves reach it?",
+  "options" : [ "Cochlea", "Auditory nerve", "Eardrum", "Brain" ],
+  "correct" : 2,
+  "rationale" : "The eardrum (tympanic membrane) vibrates when sound waves reach it, initiating the process of hearing."
+}, {
+  "category" : "Sound",
+  "question" : "Sound waves are an example of what type of wave?",
+  "options" : [ "Electromagnetic wave", "Transverse wave", "Longitudinal wave", "Radio wave" ],
+  "correct" : 2,
+  "rationale" : "Sound waves are longitudinal waves, meaning that the particles of the medium vibrate parallel to the direction of wave propagation. Electromagnetic waves are a different type of wave (light, radio etc.)"
+}, {
+  "category" : "Sound",
+  "question" : "What is the approximate range of frequencies that humans can typically hear?",
+  "options" : [ "2 Hz to 20 Hz", "20 Hz to 20,000 Hz", "200 Hz to 200,000 Hz", "2000 Hz to 2,000,000 Hz" ],
+  "correct" : 1,
+  "rationale" : "The typical human hearing range is from 20 Hz to 20,000 Hz. Frequencies outside this range are inaudible."
+}, {
+  "category" : "Sound",
+  "question" : "What is the term for sound waves with frequencies above the human hearing range?",
+  "options" : [ "Infrasound", "Ultrasound", "Supersound", "Hypersound" ],
+  "correct" : 1,
+  "rationale" : "Ultrasound refers to sound waves with frequencies above 20,000 Hz, which are beyond the range of human hearing. Infrasound is below the audible range."
+}, {
+  "category" : "Sound",
+  "question" : "Which of the following is NOT a use of ultrasound?",
+  "options" : [ "Medical imaging", "Cleaning jewelry", "Communication in space", "Sonar" ],
+  "correct" : 2,
+  "rationale" : "Ultrasound requires a medium to travel. Space is a vacuum so sound cannot travel. Medical imaging, cleaning jewelry, and sonar are all common applications of ultrasound."
+}, {
+  "category" : "Sound",
+  "question" : "If a sound wave has a frequency of 500 Hz and a wavelength of 0.7 meters, what is the speed of the sound wave? (Speed = Frequency x Wavelength)",
+  "options" : [ "35 m/s", "350 m/s", "500.7 m/s", "714.3 m/s" ],
+  "correct" : 1,
+  "rationale" : "The speed of a sound wave is calculated by multiplying its frequency and wavelength. Speed = 500 Hz * 0.7 m = 350 m/s."
+}, {
+  "category" : "Sound",
+  "question" : "What phenomenon causes echoes?",
+  "options" : [ "Refraction", "Diffraction", "Reflection", "Absorption" ],
+  "correct" : 2,
+  "rationale" : "Echoes are caused by the reflection of sound waves off a surface. The sound wave bounces back towards the source."
+}, {
+  "category" : "Sound",
+  "question" : "Which of the following materials is a good sound absorber?",
+  "options" : [ "Concrete", "Metal", "Foam", "Glass" ],
+  "correct" : 2,
+  "rationale" : "Foam is a good sound absorber because its porous structure traps sound waves and converts them into heat energy. Concrete, metal and glass reflect sound."
+}, {
+  "category" : "Sound",
+  "question" : "The pitch of a sound is most closely related to its:",
+  "options" : [ "Amplitude", "Frequency", "Wavelength", "Speed" ],
+  "correct" : 1,
+  "rationale" : "The pitch of a sound is determined by its frequency. Higher frequency sounds have a higher pitch, and lower frequency sounds have a lower pitch."
+}, {
+  "category" : "Sound",
+  "question" : "A musical instrument produces a sound with a frequency of 440 Hz. If the speed of sound is 340 m/s, what is the wavelength of the sound wave? (Wavelength = Speed / Frequency)",
+  "options" : [ "0.77 m", "1.29 m", "780 m", "151600 m" ],
+  "correct" : 0,
+  "rationale" : "Wavelength = Speed / Frequency = 340 m/s / 440 Hz = 0.77 m (approximately)."
+}, {
+  "category" : "Sound",
+  "question" : "Why does sound travel faster in warm air than in cold air?",
+  "options" : [ "Warm air is denser", "Warm air particles move faster", "Cold air particles move faster", "Warm air is less dense" ],
+  "correct" : 1,
+  "rationale" : "Sound travels faster in warm air because the air particles move faster, allowing vibrations to be transmitted more quickly. The increased kinetic energy facilitates faster transmission."
+}, {
+  "category" : "Sound",
+  "question" : "What is noise pollution?",
+  "options" : [ "Any sound that is pleasant", "Excessive or unwanted sound that can cause harm", "Sound with a high frequency", "Sound with a low frequency" ],
+  "correct" : 1,
+  "rationale" : "Noise pollution is defined as excessive or unwanted sound that can cause harm to human health or the environment. It can disrupt sleep, cause stress, and even lead to hearing loss."
+}, {
+  "category" : "Sound",
+  "question" : "An ambulance siren has a frequency of 800 Hz. As the ambulance moves towards you, the frequency appears to increase. This phenomenon is called:",
+  "options" : [ "Refraction", "Diffraction", "Doppler effect", "Resonance" ],
+  "correct" : 2,
+  "rationale" : "The Doppler effect is the change in frequency or wavelength of a wave in relation to an observer who is moving relative to the wave source. As the ambulance approaches, the sound waves are compressed, resulting in a higher perceived frequency."
+}, {
+  "category" : "Sound",
+  "question" : "Two sound waves have amplitudes of 5 units and 10 units respectively. How many times louder is the second sound wave compared to the first?",
+  "options" : [ "2 times", "4 times", "10 times", "20 times" ],
+  "correct" : 1,
+  "rationale" : "Loudness is proportional to the square of the amplitude. Therefore, the second sound wave is (10/5)^2 = 2^2 = 4 times louder than the first."
+}, {
+  "category" : "Sound",
+  "question" : "A guitar string vibrates at a frequency of 330 Hz. To produce a sound one octave higher (double the frequency), what frequency should the string vibrate at?",
+  "options" : [ "110 Hz", "165 Hz", "660 Hz", "990 Hz" ],
+  "correct" : 2,
+  "rationale" : "An octave higher means double the frequency. Therefore, the new frequency should be 330 Hz * 2 = 660 Hz."
+}, {
+  "category" : "Sound",
+  "question" : "If the time period of a sound wave is 0.002 seconds, what is its frequency? (Frequency = 1 / Time period)",
+  "options" : [ "2 Hz", "50 Hz", "500 Hz", "2000 Hz" ],
+  "correct" : 2,
+  "rationale" : "Frequency is the inverse of the time period. Frequency = 1 / 0.002 seconds = 500 Hz."
+}, {
+  "category" : "Sound",
+  "question" : "Which of the following is a result of destructive interference between two sound waves?",
+  "options" : [ "Increased loudness", "Increased frequency", "Silence or reduced loudness", "Increased speed" ],
+  "correct" : 2,
+  "rationale" : "Destructive interference occurs when two waves combine in a way that their amplitudes cancel each other out, resulting in silence or reduced loudness. Constructive interference causes increased loudness."
+}, {
+  "category" : "Electricity",
+  "question" : "Which of the following materials allows electricity to flow through it easily?",
+  "options" : [ "Rubber", "Plastic", "Copper", "Wood" ],
+  "correct" : 2,
+  "rationale" : "Copper is a good conductor of electricity, meaning it allows electric current to flow through it easily. Rubber, plastic, and wood are insulators and resist the flow of electricity."
+}, {
+  "category" : "Electricity",
+  "question" : "What is the basic unit of electric current?",
+  "options" : [ "Volt", "Ohm", "Ampere", "Watt" ],
+  "correct" : 2,
+  "rationale" : "The basic unit of electric current is the Ampere (A). Volt is the unit of potential difference, Ohm is the unit of resistance, and Watt is the unit of power."
+}, {
+  "category" : "Electricity",
+  "question" : "Which component is used to break or complete an electric circuit?",
+  "options" : [ "Bulb", "Wire", "Switch", "Battery" ],
+  "correct" : 2,
+  "rationale" : "A switch is used to open (break) or close (complete) an electric circuit, controlling the flow of electricity. A bulb is a load, a wire is a conductor, and a battery is a source of energy."
+}, {
+  "category" : "Electricity",
+  "question" : "What is the function of a battery in a circuit?",
+  "options" : [ "To block the current", "To provide energy", "To measure the current", "To control the resistance" ],
+  "correct" : 1,
+  "rationale" : "A battery provides the electrical energy needed for the current to flow in a circuit. It acts as a source of potential difference."
+}, {
+  "category" : "Electricity",
+  "question" : "What type of energy does a bulb convert electrical energy into?",
+  "options" : [ "Chemical energy", "Mechanical energy", "Light and heat energy", "Sound energy" ],
+  "correct" : 2,
+  "rationale" : "A bulb converts electrical energy into light and heat energy. This is why a bulb glows and also becomes warm when it is switched on."
+}, {
+  "category" : "Electricity",
+  "question" : "If you have two bulbs connected in a series circuit, and one bulb burns out, what happens to the other bulb?",
+  "options" : [ "It becomes brighter", "It stops glowing", "It glows with the same brightness", "It glows dimmer" ],
+  "correct" : 1,
+  "rationale" : "In a series circuit, if one component fails (like a bulb burning out), the circuit is broken, and no current can flow through any of the components. Therefore, the other bulb will stop glowing."
+}, {
+  "category" : "Electricity",
+  "question" : "What is the purpose of an electric fuse in a circuit?",
+  "options" : [ "To increase the current", "To decrease the voltage", "To prevent overloading", "To make the circuit more efficient" ],
+  "correct" : 2,
+  "rationale" : "An electric fuse is a safety device that protects the circuit from overloading. When the current exceeds a safe level, the fuse wire melts, breaking the circuit and preventing damage."
+}, {
+  "category" : "Electricity",
+  "question" : "Which of the following circuits provides more than one path for current to flow?",
+  "options" : [ "Series circuit", "Parallel circuit", "Open circuit", "Closed circuit" ],
+  "correct" : 1,
+  "rationale" : "A parallel circuit provides multiple paths for the current to flow. In contrast, a series circuit provides only one path."
+}, {
+  "category" : "Electricity",
+  "question" : "What is the relationship between voltage, current, and resistance in Ohm's Law?",
+  "options" : [ "Voltage = Current x Resistance", "Current = Voltage x Resistance", "Resistance = Voltage x Current", "Voltage = Current / Resistance" ],
+  "correct" : 0,
+  "rationale" : "Ohm's Law states that Voltage (V) is equal to Current (I) multiplied by Resistance (R), written as V = IR."
+}, {
+  "category" : "Electricity",
+  "question" : "What is the resistance of a wire if a voltage of 12V produces a current of 2A?",
+  "options" : [ "6 Ohms", "24 Ohms", "10 Ohms", "4 Ohms" ],
+  "correct" : 0,
+  "rationale" : "Using Ohm's Law (V = IR), we can rearrange to find Resistance (R = V/I). So, R = 12V / 2A = 6 Ohms."
+}, {
+  "category" : "Electricity",
+  "question" : "Which of the following is a disadvantage of using a series circuit for household wiring?",
+  "options" : [ "It is more energy-efficient", "The components are easier to install", "If one component fails, all components stop working", "The current is the same through all components" ],
+  "correct" : 2,
+  "rationale" : "The major disadvantage of a series circuit is that if one component fails, the entire circuit is broken, and all other components stop working. This is impractical for household wiring."
+}, {
+  "category" : "Electricity",
+  "question" : "In a parallel circuit with three identical bulbs, if one bulb burns out, what happens to the brightness of the other two bulbs?",
+  "options" : [ "They become brighter", "They become dimmer", "They stay the same", "They stop glowing" ],
+  "correct" : 2,
+  "rationale" : "In a parallel circuit, each branch receives the full voltage of the source. If one bulb burns out, the other branches continue to function independently without any change in brightness, assuming the voltage source can provide the current demand."
+}, {
+  "category" : "Electricity",
+  "question" : "Which safety device is designed to automatically switch off the electrical supply in case of a fault, such as a short circuit?",
+  "options" : [ "Fuse", "Switch", "MCB (Miniature Circuit Breaker)", "Resistor" ],
+  "correct" : 2,
+  "rationale" : "MCBs (Miniature Circuit Breakers) are designed to automatically switch off the electrical supply in case of a fault, such as a short circuit or overload, providing better protection compared to fuses which need manual replacement after blowing."
+}, {
+  "category" : "Electricity",
+  "question" : "Which of the following is the most effective way to prevent electric shock?",
+  "options" : [ "Using frayed wires", "Working with wet hands", "Ensuring proper earthing", "Ignoring warning signs" ],
+  "correct" : 2,
+  "rationale" : "Proper earthing (grounding) provides a safe path for electrical current to flow in the event of a fault, preventing electric shock. Frayed wires and wet hands increase the risk of electric shock."
+}, {
+  "category" : "Electricity",
+  "question" : "If a circuit has a voltage of 24V and a resistance of 8 Ohms, what is the current flowing through the circuit?",
+  "options" : [ "2 Amps", "3 Amps", "4 Amps", "5 Amps" ],
+  "correct" : 1,
+  "rationale" : "Using Ohm's Law (V = IR), we can find the current (I = V/R). So, I = 24V / 8 Ohms = 3 Amps."
+}, {
+  "category" : "Electricity",
+  "question" : "A wire offers some obstruction to the flow of current. What is this obstruction called?",
+  "options" : [ "Voltage", "Resistance", "Current", "Potential difference" ],
+  "correct" : 1,
+  "rationale" : "Resistance is the property of a material that opposes the flow of electric current. It is measured in Ohms."
+}, {
+  "category" : "Electricity",
+  "question" : "Which of the following is a poor conductor of electricity?",
+  "options" : [ "Silver", "Gold", "Aluminum", "Plastic" ],
+  "correct" : 3,
+  "rationale" : "Plastic is an insulator, which means it is a poor conductor of electricity. Silver, gold, and aluminum are all good conductors."
+}, {
+  "category" : "Electricity",
+  "question" : "If three resistors, each with a resistance of 2 ohms, are connected in series, what is the total resistance of the circuit?",
+  "options" : [ "2/3 Ohms", "6 Ohms", "3 Ohms", "1 Ohm" ],
+  "correct" : 1,
+  "rationale" : "In a series circuit, the total resistance is the sum of individual resistances. Therefore, 2 Ohms + 2 Ohms + 2 Ohms = 6 Ohms."
+}, {
+  "category" : "Electricity",
+  "question" : "If three resistors, each with a resistance of 6 ohms, are connected in parallel, what is the total resistance of the circuit?",
+  "options" : [ "18 Ohms", "2 Ohms", "0.5 Ohms", "6 Ohms" ],
+  "correct" : 1,
+  "rationale" : "For equal resistors in parallel, the total resistance is the resistance of one resistor divided by the number of resistors. Therefore, 6 Ohms / 3 = 2 Ohms."
+}, {
+  "category" : "Electricity",
+  "question" : "A circuit has a bulb rated at 60 Watts and is connected to a 220V supply. What is the current flowing through the bulb?",
+  "options" : [ "0.27 Amps", "3.67 Amps", "13200 Amps", "0.367 Amps" ],
+  "correct" : 0,
+  "rationale" : "Power (P) = Voltage (V) * Current (I).  Therefore, Current (I) = Power (P) / Voltage (V) = 60W / 220V = 0.27 Amps (approximately)."
+} ]
