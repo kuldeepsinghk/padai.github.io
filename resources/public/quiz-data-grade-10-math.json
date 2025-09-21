@@ -1,1 +1,241 @@
-[{"category":"Polynomials","question":"Which of the following is a polynomial?","options":["x + 1/x","√x + 2","x^2 + 3x + 5","x^(3/2) + x"],"correct":2,"rationale":"A polynomial has non-negative integer powers of the variable. Only x^2 + 3x + 5 satisfies this condition."},{"category":"Polynomials","question":"The degree of the polynomial x^5 - x^4 + 3 is:","options":["5","4","3","2"],"correct":0,"rationale":"The degree of a polynomial is the highest power of the variable."},{"category":"Polynomials","question":"The zero of the polynomial p(x) = x - 5 is:","options":["-5","5","0","1"],"correct":1,"rationale":"To find the zero, set p(x) = 0, so x - 5 = 0, which gives x = 5."},{"category":"Polynomials","question":"If p(x) = x^2 - 2x + 1, then p(1) is:","options":["0","1","2","-1"],"correct":0,"rationale":"p(1) = (1)^2 - 2(1) + 1 = 1 - 2 + 1 = 0."},{"category":"Polynomials","question":"A quadratic polynomial can have at most:","options":["1 zero","2 zeros","3 zeros","No zeros"],"correct":1,"rationale":"A polynomial of degree 'n' can have at most 'n' zeros."},{"category":"Polynomials","question":"If α and β are the zeros of the polynomial x^2 + x - 2, then α + β is:","options":["1","-1","2","-2"],"correct":1,"rationale":"For a quadratic polynomial ax^2 + bx + c, the sum of the zeros is -b/a.  Here, a = 1, b = 1, so α + β = -1/1 = -1."},{"category":"Polynomials","question":"If α and β are the zeros of the polynomial x^2 - 5x + 6, then αβ is:","options":["5","-5","6","-6"],"correct":2,"rationale":"For a quadratic polynomial ax^2 + bx + c, the product of the zeros is c/a.  Here, a = 1, c = 6, so αβ = 6/1 = 6."},{"category":"Polynomials","question":"The number of zeros of the polynomial y = p(x) from the graph where the curve intersects the x-axis 3 times and touches it once is:","options":["1","2","3","4"],"correct":3,"rationale":"The number of zeros is equal to the number of points where the graph of the polynomial intersects or touches the x-axis. Touching indicates a repeated zero."},{"category":"Polynomials","question":"If one zero of the polynomial x^2 - 4x + k is 2, then k is:","options":["-12","12","4","-4"],"correct":3,"rationale":"If 2 is a zero, then substituting x = 2 in the polynomial gives 0.  (2)^2 - 4(2) + k = 0  => 4 - 8 + k = 0  => k = 4, so the value is -k=-4."},{"category":"Polynomials","question":"The quadratic polynomial whose sum of zeros is 3 and product of zeros is 2 is:","options":["x^2 + 3x + 2","x^2 - 3x + 2","x^2 - 3x - 2","x^2 + 3x - 2"],"correct":1,"rationale":"A quadratic polynomial with sum of zeros S and product of zeros P is given by x^2 - Sx + P.  Here, S = 3 and P = 2, so the polynomial is x^2 - 3x + 2."},{"category":"Polynomials","question":"The remainder when x^3 + 1 is divided by x + 1 is:","options":["0","1","2","-1"],"correct":0,"rationale":"By the Remainder Theorem, the remainder when p(x) is divided by x - a is p(a). Here, p(x) = x^3 + 1 and x + 1 = x - (-1), so a = -1. Therefore, the remainder is (-1)^3 + 1 = -1 + 1 = 0."},{"category":"Polynomials","question":"The zeros of the quadratic polynomial x^2 + 7x + 10 are:","options":["2 and 5","-2 and -5","2 and -5","-2 and 5"],"correct":1,"rationale":"We need to find two numbers that add up to 7 and multiply to 10. These numbers are 2 and 5. Since the quadratic is x^2 + 7x + 10, the zeros are -2 and -5."},{"category":"Polynomials","question":"If α, β, and γ are the zeros of the cubic polynomial ax^3 + bx^2 + cx + d, then α + β + γ is equal to:","options":["-b/a","b/a","-c/a","c/a"],"correct":0,"rationale":"For a cubic polynomial ax^3 + bx^2 + cx + d, the sum of the zeros is -b/a."},{"category":"Polynomials","question":"If α, β, and γ are the zeros of the cubic polynomial ax^3 + bx^2 + cx + d, then αβ + βγ + γα is equal to:","options":["-b/a","b/a","c/a","-c/a"],"correct":2,"rationale":"For a cubic polynomial ax^3 + bx^2 + cx + d, the sum of the product of the zeros taken two at a time is c/a."},{"category":"Polynomials","question":"If α, β, and γ are the zeros of the cubic polynomial ax^3 + bx^2 + cx + d, then αβγ is equal to:","options":["-d/a","d/a","c/a","-c/a"],"correct":0,"rationale":"For a cubic polynomial ax^3 + bx^2 + cx + d, the product of the zeros is -d/a."},{"category":"Polynomials","question":"The division algorithm states that dividend = divisor × quotient + remainder. Which of the following is true about the remainder r(x)?","options":["degree of r(x) < degree of divisor","degree of r(x) > degree of divisor","degree of r(x) = degree of divisor","r(x) = 0 always"],"correct":0,"rationale":"The degree of the remainder must always be less than the degree of the divisor.  If it's equal or greater, further division is possible."},{"category":"Polynomials","question":"A linear polynomial has:","options":["One zero","Two zeros","Three zeros","No zeros"],"correct":0,"rationale":"A linear polynomial is of the form ax + b, which has degree 1, and therefore has one zero."},{"category":"Polynomials","question":"If the graph of a polynomial touches the x-axis at only one point, then it can be a:","options":["Linear polynomial","Quadratic polynomial","Cubic polynomial","All of the above"],"correct":1,"rationale":"A quadratic polynomial can touch the x-axis at one point. This happens when the quadratic has equal roots."},{"category":"Polynomials","question":"Which of the following is the graph of a quadratic polynomial?","options":["A straight line","A circle","A parabola","A hyperbola"],"correct":2,"rationale":"The graph of a quadratic polynomial is always a parabola."},{"category":"Polynomials","question":"What is the quotient when x^2-4 is divided by x-2?","options":["x-2","x+2","x-4","x+4"],"correct":1,"rationale":"Using the identity a^2 - b^2 = (a-b)(a+b), x^2 - 4 = (x-2)(x+2). Therefore, (x^2-4)/(x-2) = x+2."},{"category":"Polynomials","question":"If x-2 is a factor of p(x) = x^2 + kx - 8, then the value of k is:","options":["0","2","-2","-4"],"correct":0,"rationale":"If x-2 is a factor, then p(2)=0. Substituting x=2, we get 4 + 2k - 8 = 0 => 2k = 4 => k = 2."},{"category":"Polynomials","question":"What is the remainder when x^4 - 3x^2 + 4x - 2 is divided by x-1?","options":["0","1","2","-1"],"correct":0,"rationale":"Using the Remainder Theorem, the remainder is p(1) = (1)^4 - 3(1)^2 + 4(1) - 2 = 1 - 3 + 4 - 2 = 0."},{"category":"Polynomials","question":"If the zeros of the polynomial p(x) = x^2 - 2x + 3 are α and β, find the value of α^2 + β^2.","options":["-2","4","-10","-22"],"correct":"-2","rationale":"We know α + β = 2 and αβ = 3. Also, α^2 + β^2 = (α + β)^2 - 2αβ = (2)^2 - 2(3) = 4 - 6 = -2"},{"category":"Polynomials","question":"If one zero of the polynomial (k-1)x^2 + kx + 1 is -3, then the value of k is:","options":["4/3","-4/3","2/3","-2/3"],"correct":0,"rationale":"Since -3 is a zero, substituting x=-3 in the polynomial gives 0. (k-1)(-3)^2 + k(-3) + 1 = 0 => 9(k-1) -3k + 1 = 0 => 9k - 9 - 3k + 1 = 0 => 6k = 8 => k = 4/3."},{"category":"Polynomials","question":"If α and β are the zeros of the quadratic polynomial f(x) = x^2 - p(x + 1) - c such that (α + 1)(β + 1) = 0, then c = ?","options":["1","0","-1","2"],"correct":"1","rationale":"Expanding, f(x) = x^2 - px - p - c. Therefore, sum of roots α + β = p and product of roots αβ = -p - c. We are given (α+1)(β+1) = αβ + (α+β) + 1 = 0. Substituting, -p-c + p + 1 = 0 => c = 1."},{"category":"Polynomials","question":"The graph of y = p(x) is given in the figure. The number of zeroes of p(x) is:","options":["1","2","3","4"],"correct":"2","rationale":"The number of zeros is the number of times the graph intersects the x-axis."},{"category":"Polynomials","question":"If α and β are the zeros of the polynomial 2x^2 + 5x - 12, then find the value of 1/α + 1/β.","options":["5/12","-5/12","12/5","-12/5"],"correct":"-5/12","rationale":"We know α + β = -5/2 and αβ = -12/2 = -6. Now, 1/α + 1/β = (α + β) / αβ = (-5/2) / (-6) = 5/12"},{"category":"Polynomials","question":"If the polynomial x^2 - 5x + k has zeros α and β such that α - β = 1, then k = ?","options":["4","6","5","12"],"correct":"6","rationale":"We know α + β = 5 and αβ = k. We are given α - β = 1. Solving the system of equations: α + β = 5 and α - β = 1, we get α = 3 and β = 2. Therefore, k = αβ = 3 * 2 = 6."},{"category":"Polynomials","question":"If the zeros of the polynomial x^3 - 3x^2 + x + 1 are a - b, a, a + b, then find the value of a.","options":["1","-1","2","-2"],"correct":"1","rationale":"The sum of the zeros is (a - b) + a + (a + b) = 3a.  Also, the sum of the zeros of the cubic polynomial x^3 - 3x^2 + x + 1 is -(-3)/1 = 3. Therefore, 3a = 3, which gives a = 1."},{"category":"Polynomials","question":"Which of the following statement is correct?","options":["A quadratic polynomial can have at most three zeros.","A cubic polynomial can have at most two zeros.","A quadratic polynomial can have only one zero.","A cubic polynomial can have at most three zeros."],"correct":"A cubic polynomial can have at most three zeros.","rationale":"A polynomial of degree n has at most n zeros."},{"category":"Polynomials","question":"If two zeros of the polynomial x^3 - 4x^2 -3x + 12 are √3 and -√3, then its third zero is:","options":["-4","4","3","-3"],"correct":"4","rationale":"Let the third zero be 'a'.  The sum of the zeros is √3 - √3 + a = a.  Also, the sum of zeros for x^3 - 4x^2 - 3x + 12 is -(-4)/1 = 4. Therefore, a = 4."},{"category":"Polynomials","question":"If α, β are zeros of polynomial x^2 - px + q, then find the value of α^2 + β^2","options":["p^2 - 2q","p^2 + 2q","p - 2q","p + 2q"],"correct":"p^2 - 2q","rationale":"Since α, β are zeros of polynomial x^2 - px + q, we have α + β = p and αβ = q. Now, (α + β)^2 = α^2 + β^2 + 2αβ => α^2 + β^2 = (α + β)^2 - 2αβ = p^2 - 2q."},{"category":"Polynomials","question":"On dividing x^3 - 3x^2 + x + 2 by a polynomial g(x), the quotient and remainder were x - 2 and -2x + 4, respectively. Find g(x)","options":["x^2 - x + 1","x^2 + x + 1","x^2 + x - 1","x^2 - x - 1"],"correct":"x^2 - x + 1","rationale":"Using the division algorithm, dividend = divisor × quotient + remainder => x^3 - 3x^2 + x + 2 = g(x)(x - 2) + (-2x + 4). Rearranging, x^3 - 3x^2 + 3x - 2 = g(x)(x - 2) => g(x) = (x^3 - 3x^2 + 3x - 2) / (x - 2) = x^2 - x + 1"},{"category":"Polynomials","question":"The zeroes of the polynomial p(x) = 3x^2 - 12x + 6 are","options":["real and equal","real and unequal","imaginary","complex"],"correct":"real and unequal","rationale":"We check discriminant D = b^2 - 4ac = (-12)^2 - 4(3)(6) = 144 - 72 = 72 > 0. Since D>0, zeroes are real and unequal."},{"category":"Polynomials","question":"If the product of two zeros of the polynomial 2x^3+3x^2-5x-6 is 2, the third zero is :","options":["1","-1","-3/2","3/2"],"correct":"-3/2","rationale":"Let the zeroes be a, b, c. Given ab = 2. Product of zeroes = abc = -d/a = -(-6)/2 = 3 => 2c = 3 => c = 3/2."},{"category":"Polynomials","question":"If p(x) = x^2 - 2x + 1, find the value of p(p(x))","options":["x^4 - 4x^3 + 6x^2 - 4x + 1","x^4 + 4x^3 + 6x^2 + 4x + 1","x^4 - 4x^3 - 6x^2 + 4x + 1","x^4 + 4x^3 - 6x^2 + 4x - 1"],"correct":"x^4 - 4x^3 + 6x^2 - 4x + 1","rationale":"p(p(x)) = p(x^2 - 2x + 1) = (x^2 - 2x + 1)^2 - 2(x^2 - 2x + 1) + 1 = x^4 - 4x^3 + 6x^2 - 4x + 1"},{"category":"Polynomials","question":"If one of the zeroes of the quadratic polynomial x^2 + ax + b is the negative of the other, then it contains","options":["No linear term and the constant term is negative","No linear term and the constant term is positive","Can have a linear term but the constant term is negative","Can have a linear term but the constant term is positive"],"correct":"No linear term and the constant term is negative","rationale":"If one zero is α, other is -α. So, sum = α + (-α) = 0 = -a/1 => a = 0. product of zeroes = α*(-α) = - α^2 = b. Hence b < 0."},{"category":"Polynomials","question":"If α and β are the zeroes of the polynomial x^2 + 5x + 8, then the value of (α+β)/αβ is:","options":["-5/8","5/8","8/5","-8/5"],"correct":"-5/8","rationale":"Sum of zeros, α + β = -5. Product of zeros αβ = 8. Thus, (α+β)/αβ = -5/8"},{"category":"Polynomials","question":"If the least common multiple of two polynomials is (x - 1)(x + 1)(x^2 + 1) and their highest common factor is (x - 1), then the product of the two polynomials is","options":["(x - 1)^2(x + 1)(x^2 + 1)","(x - 1)(x + 1)(x^2 + 1)","(x + 1)(x^2 + 1)","(x - 1)^2"],"correct":"(x - 1)^2(x + 1)(x^2 + 1)","rationale":"Product of two polynomials = LCM × HCF = (x - 1)(x + 1)(x^2 + 1)(x - 1) = (x - 1)^2(x + 1)(x^2 + 1)"},{"category":"Polynomials","question":"If one of the zeros of a quadratic polynomial is 2 and the sum of its zeros is zero, then the quadratic polynomial is:","options":["x^2 - 4","x^2 + 4","x^2 - 2","x^2 + 2"],"correct":"x^2 - 4","rationale":"If one zero is 2, the other is -2 since their sum is zero. Hence quadratic equation is (x-2)(x+2) = x^2-4"},{"category":"Polynomials","question":"A polynomial of degree 4 is a ________ polynomial.","options":["linear","quadratic","cubic","quartic"],"correct":"quartic","rationale":"A polynomial of degree 4 is called a quartic polynomial."},{"category":"Polynomials","question":"If the zeros of a polynomial are -2 and 3, then the polynomial is","options":["x^2-x+6","x^2+x-6","x^2+x+6","x^2-x-6"],"correct":"x^2+x-6","rationale":"Given roots are -2 and 3, Polynomial = (x-(-2))(x-3) = (x+2)(x-3) = x^2 -3x +2x - 6= x^2 -x -6."},{"category":"Polynomials","question":"If p(x) = x + 3, then p(x) + p(-x) is equal to:","options":["3","2x","0","6"],"correct":"6","rationale":"p(x) = x+3. So, p(-x) = -x+3. Therefore p(x) + p(-x) = x+3 + (-x+3) = 6."},{"category":"Polynomials","question":"The zeroes of the polynomial x^2 - √2x are","options":["√2, 0","√2, √2","√2, 1","1, 0"],"correct":"√2, 0","rationale":"x^2- √2x =0 => x(x- √2)=0, so either x =0 or x = √2."},{"category":"Polynomials","question":"If p(x) = ax^2 + bx + c and a + b + c = 0, then one of the zeroes is","options":["-1","0","1","2"],"correct":"1","rationale":"Since a+b+c=0, that means if x=1, then p(1)= a + b + c = 0. Hence 1 is a zero."},{"category":"Polynomials","question":"If the sum of the zeroes of the quadratic polynomial kx^2 + 2x + 3k is equal to their product, then k =","options":["2/3","-2/3","3/2","-3/2"],"correct":"-2/3","rationale":"The sum of zeroes is -b/a = -2/k and the product of zeroes = c/a = 3k/k = 3. Since these are equal, -2/k = 3. So k=-2/3."},{"category":"Polynomials","question":"If α, β are zeroes of x² - 2x - 8, then value of α² + β²?","options":["2","4","12","20"],"correct":"20","rationale":"Given α and β are zeroes of x² - 2x - 8. So, α + β = 2 and αβ = -8.  α² + β² = (α + β)² - 2αβ = (2)² - 2(-8) = 4 + 16 = 20."},{"category":"Polynomials","question":"A polynomial with one degree is called:","options":["Quadratic Polynomial","Linear Polynomial","Cubic Polynomial","Biquadratic Polynomial"],"correct":1,"rationale":"A polynomial with one degree is called a Linear Polynomial."},{"category":"Polynomials","question":"A bi-quadratic polynomial has degree:","options":["1","2","3","4"],"correct":3,"rationale":"A bi-quadratic polynomial has degree 4."},{"category":"Polynomials","question":"The roots of the quadratic equation are also called:","options":["zeroes of the polynomial","values of the polynomial","degree of the polynomial","derivatives of the polynomial"],"correct":0,"rationale":"The roots of the quadratic equation are also called zeroes of the polynomial."},{"category":"Polynomials","question":"What is the number of zeroes that a linear polynomial has?","options":["0","1","2","3"],"correct":1,"rationale":"A linear polynomial has only 1 zero as its degree is 1."}]
+[ {
+  "category" : "Real Numbers",
+  "question" : "Which of the following is an irrational number?",
+  "options" : [ "√4", "22/7", "3.14", "√2" ],
+  "correct" : 3,
+  "rationale" : "√2 cannot be expressed as a fraction p/q where p and q are integers and q ≠ 0. √4 = 2, 22/7 is a rational approximation of pi, and 3.14 can be written as 314/100."
+}, {
+  "category" : "Real Numbers",
+  "question" : "The decimal expansion of the rational number 14587/1250 will terminate after how many decimal places?",
+  "options" : [ "1", "2", "3", "4" ],
+  "correct" : 3,
+  "rationale" : "1250 = 2 x 5^4. The highest power of 5 is 4. So the denominator needs to be of the form 10^4, thus the decimal expansion will terminate after 4 decimal places."
+}, {
+  "category" : "Real Numbers",
+  "question" : "The HCF of two numbers is 23 and their LCM is 1449. If one of the numbers is 161, then the other number is:",
+  "options" : [ "207", "23", "1449", "161" ],
+  "correct" : 0,
+  "rationale" : "We know that HCF x LCM = Product of the two numbers.  So, 23 x 1449 = 161 x Other number. Therefore, Other number = (23 x 1449)/161 = 207."
+}, {
+  "category" : "Real Numbers",
+  "question" : "If two positive integers a and b are written as a = x^3 y^2 and b = xy^3; where x, y are prime numbers, then HCF(a, b) is:",
+  "options" : [ "xy", "xy^2", "x^3y^3", "x^2y^2" ],
+  "correct" : 1,
+  "rationale" : "HCF is the product of the lowest powers of common prime factors. Common prime factors are x and y.  Lowest power of x is x^1 = x and lowest power of y is y^2.  Therefore, HCF(a, b) = xy^2."
+}, {
+  "category" : "Real Numbers",
+  "question" : "Which of the following is a rational number?",
+  "options" : [ "π", "√2", "√3", "0" ],
+  "correct" : 3,
+  "rationale" : "0 can be expressed as 0/1, where 0 and 1 are integers and 1 ≠ 0. π, √2, and √3 are irrational numbers."
+}, {
+  "category" : "Real Numbers",
+  "question" : "What is the LCM of 12 and 15?",
+  "options" : [ "3", "60", "180", "360" ],
+  "correct" : 1,
+  "rationale" : "The prime factorization of 12 is 2^2 x 3 and of 15 is 3 x 5. The LCM is the product of the highest powers of all prime factors: 2^2 x 3 x 5 = 60."
+}, {
+  "category" : "Real Numbers",
+  "question" : "What is the HCF of 24 and 36?",
+  "options" : [ "6", "12", "24", "36" ],
+  "correct" : 1,
+  "rationale" : "The HCF (Highest Common Factor) is the largest number that divides both 24 and 36.  12 divides both 24 and 36 without leaving a remainder and is the highest such number."
+}, {
+  "category" : "Real Numbers",
+  "question" : "The product of two numbers is 1600 and their HCF is 5. The LCM of the numbers is:",
+  "options" : [ "8000", "1600", "320", "1605" ],
+  "correct" : 2,
+  "rationale" : "We know that Product of two numbers = HCF x LCM. Therefore, LCM = (Product of two numbers) / HCF = 1600 / 5 = 320."
+}, {
+  "category" : "Real Numbers",
+  "question" : "If a number 'p' is divided by 3, the remainder is 2. What is the remainder if 2p is divided by 3?",
+  "options" : [ "1", "2", "3", "4" ],
+  "correct" : 0,
+  "rationale" : "Since p leaves a remainder of 2 when divided by 3, we can write p = 3k + 2 for some integer k.  Then 2p = 2(3k + 2) = 6k + 4 = 3(2k + 1) + 1. Thus, the remainder when 2p is divided by 3 is 1."
+}, {
+  "category" : "Real Numbers",
+  "question" : "Which of the following will have a terminating decimal expansion?",
+  "options" : [ "7/20", "17/6", "3/7", "5/11" ],
+  "correct" : 0,
+  "rationale" : "A rational number will have a terminating decimal expansion if its denominator, when expressed in its prime factorization, is of the form 2^m x 5^n, where m and n are non-negative integers. 20 = 2^2 x 5, so 7/20 has a terminating decimal expansion. 6=2x3, 7=7, 11=11"
+}, {
+  "category" : "Real Numbers",
+  "question" : "The largest number that will divide 398, 436 and 542 leaving remainders 7, 11 and 15 respectively is:",
+  "options" : [ "11", "17", "19", "23" ],
+  "correct" : 1,
+  "rationale" : "We need to find the HCF of (398 - 7), (436 - 11), and (542 - 15), which are 391, 425, and 527. The HCF of these numbers is 17."
+}, {
+  "category" : "Real Numbers",
+  "question" : "If √2 = 1.414, then the value of 1/√2 is:",
+  "options" : [ "0.707", "1.414", "2.828", "0.5" ],
+  "correct" : 0,
+  "rationale" : "1/√2 = √2/2 = 1.414/2 = 0.707"
+}, {
+  "category" : "Real Numbers",
+  "question" : "The number 4^n, where n is a natural number, can end with the digit 0 for any natural number n:",
+  "options" : [ "Always", "Never", "Sometimes", "Only when n is even" ],
+  "correct" : 1,
+  "rationale" : "For 4^n to end with 0, it must be divisible by 5 and 2. 4^n = (2^2)^n = 2^(2n). It only contains the prime factor 2, so it can never be divisible by 5. Therefore, it can never end with the digit 0."
+}, {
+  "category" : "Real Numbers",
+  "question" : "Which of the following is true for any two positive integers a and b?",
+  "options" : [ "LCM(a, b) < HCF(a, b)", "LCM(a, b) > HCF(a, b)", "LCM(a, b) = HCF(a, b)", "LCM(a, b) ≤ HCF(a, b)" ],
+  "correct" : 1,
+  "rationale" : "The Least Common Multiple (LCM) is always greater than or equal to the Highest Common Factor (HCF) for any two positive integers a and b, unless a=b, in which case they are equal. So LCM(a,b) > HCF(a,b)"
+}, {
+  "category" : "Real Numbers",
+  "question" : "If p/q is a rational number such that the prime factorization of q is not of the form 2^m x 5^n, where m and n are non-negative integers, then the decimal expansion of p/q is:",
+  "options" : [ "Terminating", "Non-terminating and repeating", "Non-terminating and non-repeating", "Always an integer" ],
+  "correct" : 1,
+  "rationale" : "If the prime factorization of the denominator q contains prime factors other than 2 and 5, the decimal expansion of the rational number p/q will be non-terminating and repeating."
+}, {
+  "category" : "Real Numbers",
+  "question" : "Which of the following numbers is divisible by 11?",
+  "options" : [ "12345", "123456", "1234567", "1234321" ],
+  "correct" : 3,
+  "rationale" : "A number is divisible by 11 if the difference between the sum of digits at odd places and the sum of digits at even places is either 0 or divisible by 11. For 1234321: (1+3+3+1) - (2+4+2) = 8 - 8 = 0. Hence, it's divisible by 11."
+}, {
+  "category" : "Real Numbers",
+  "question" : "If the HCF of two numbers is 1, then the two numbers are called:",
+  "options" : [ "Composite", "Prime", "Co-prime", "Twin primes" ],
+  "correct" : 2,
+  "rationale" : "Two numbers are called co-prime if their highest common factor (HCF) is 1. They don't necessarily need to be prime numbers themselves, just relatively prime to each other."
+}, {
+  "category" : "Real Numbers",
+  "question" : "What is the value of log_2(8)?",
+  "options" : [ "2", "3", "4", "8" ],
+  "correct" : 1,
+  "rationale" : "log_2(8) asks the question: 2 raised to what power equals 8?  Since 2^3 = 8, then log_2(8) = 3."
+}, {
+  "category" : "Real Numbers",
+  "question" : "Given that LCM (x, 18) = 36 and HCF (x, 18) = 2, then x is equal to:",
+  "options" : [ "2", "3", "4", "6" ],
+  "correct" : 3,
+  "rationale" : "We know that Product of two numbers = HCF x LCM. So, x * 18 = 2 * 36.  Therefore, x = (2 * 36) / 18 = 4."
+}, {
+  "category" : "Real Numbers",
+  "question" : "Which of the following is not a real number?",
+  "options" : [ "-5", "0", "√(-4)", "1/3" ],
+  "correct" : 2,
+  "rationale" : "√(-4) is an imaginary number because the square root of a negative number is not a real number. -5, 0, and 1/3 are all real numbers."
+}, {
+  "category" : "Polynomials",
+  "question" : "What is the degree of the polynomial p(x) = x^3 - 2x^2 + x - 5?",
+  "options" : [ "1", "2", "3", "4" ],
+  "correct" : 2,
+  "rationale" : "The degree of a polynomial is the highest power of the variable. In this case, the highest power of x is 3."
+}, {
+  "category" : "Polynomials",
+  "question" : "Which of the following is a quadratic polynomial?",
+  "options" : [ "x + 1", "x^3 - 2x + 1", "x^2 + 3x + 2", "5" ],
+  "correct" : 2,
+  "rationale" : "A quadratic polynomial is a polynomial of degree 2. x^2 + 3x + 2 has a degree of 2."
+}, {
+  "category" : "Polynomials",
+  "question" : "If one zero of the polynomial p(x) = x^2 - 4x + 3 is 1, what is the other zero?",
+  "options" : [ "-3", "3", "4", "-4" ],
+  "correct" : 1,
+  "rationale" : "Let the zeros be α and β. We know α = 1. The product of the zeros is c/a = 3/1 = 3. Therefore, 1 * β = 3, so β = 3."
+}, {
+  "category" : "Polynomials",
+  "question" : "What is the value of p(x) = x^2 - 3x + 2 at x = 2?",
+  "options" : [ "0", "1", "2", "3" ],
+  "correct" : 0,
+  "rationale" : "p(2) = (2)^2 - 3(2) + 2 = 4 - 6 + 2 = 0."
+}, {
+  "category" : "Polynomials",
+  "question" : "The graph of a linear polynomial intersects the x-axis at how many points?",
+  "options" : [ "0", "1", "2", "3" ],
+  "correct" : 1,
+  "rationale" : "A linear polynomial represents a straight line. A straight line intersects the x-axis at most once (unless it's a horizontal line at y=0, in which case it intersects infinitely). However, for a typical linear polynomial, it intersects once."
+}, {
+  "category" : "Polynomials",
+  "question" : "If α and β are the zeros of the polynomial x^2 + x - 2, then what is the value of α + β?",
+  "options" : [ "-1", "1", "-2", "2" ],
+  "correct" : 0,
+  "rationale" : "For a quadratic polynomial ax^2 + bx + c, the sum of the zeros is -b/a. In this case, a = 1, b = 1, so α + β = -1/1 = -1."
+}, {
+  "category" : "Polynomials",
+  "question" : "Which of the following polynomials has zeros 2 and -3?",
+  "options" : [ "x^2 - x - 6", "x^2 + x - 6", "x^2 - 5x + 6", "x^2 + 5x + 6" ],
+  "correct" : 1,
+  "rationale" : "If the zeros are 2 and -3, the polynomial can be written as (x - 2)(x + 3) = x^2 + 3x - 2x - 6 = x^2 + x - 6."
+}, {
+  "category" : "Polynomials",
+  "question" : "What is the remainder when x^3 - 6x^2 + 11x - 6 is divided by x - 2?",
+  "options" : [ "0", "1", "2", "3" ],
+  "correct" : 0,
+  "rationale" : "By the Remainder Theorem, the remainder when p(x) is divided by x - a is p(a).  p(2) = (2)^3 - 6(2)^2 + 11(2) - 6 = 8 - 24 + 22 - 6 = 0."
+}, {
+  "category" : "Polynomials",
+  "question" : "If the product of the zeros of the polynomial ax^2 - 6x - 6 is 4, then what is the value of a?",
+  "options" : [ "-3/2", "-2/3", "3/2", "2/3" ],
+  "correct" : 0,
+  "rationale" : "The product of the zeros of a quadratic polynomial ax^2 + bx + c is c/a.  Therefore, -6/a = 4, which implies a = -6/4 = -3/2."
+}, {
+  "category" : "Polynomials",
+  "question" : "A quadratic polynomial whose sum and product of zeros are 0 and -3 respectively is:",
+  "options" : [ "x^2 - 3", "x^2 + 3", "x^2", "x^2 - x - 3" ],
+  "correct" : 0,
+  "rationale" : "If α + β = 0 and αβ = -3, the polynomial is x^2 - (α + β)x + αβ = x^2 - (0)x + (-3) = x^2 - 3."
+}, {
+  "category" : "Polynomials",
+  "question" : "If p(x) = x + 3, then p(x) + p(-x) is equal to:",
+  "options" : [ "3", "2x", "0", "6" ],
+  "correct" : 3,
+  "rationale" : "p(x) = x + 3, p(-x) = -x + 3.  p(x) + p(-x) = (x + 3) + (-x + 3) = x + 3 - x + 3 = 6."
+}, {
+  "category" : "Polynomials",
+  "question" : "If one of the zeroes of the quadratic polynomial (k-1)x^2 + kx + 1 is -3, then the value of k is:",
+  "options" : [ "4/3", "-4/3", "2/3", "-2/3" ],
+  "correct" : 0,
+  "rationale" : "Since -3 is a zero, substitute x = -3 in the polynomial: (k-1)(-3)^2 + k(-3) + 1 = 0 => 9(k-1) - 3k + 1 = 0 => 9k - 9 - 3k + 1 = 0 => 6k - 8 = 0 => k = 8/6 = 4/3."
+}, {
+  "category" : "Polynomials",
+  "question" : "If α, β, γ are the zeros of the polynomial x^3 - 3x^2 + x + 1, then the value of α + β + γ is:",
+  "options" : [ "-3", "3", "1", "-1" ],
+  "correct" : 1,
+  "rationale" : "For a cubic polynomial ax^3 + bx^2 + cx + d, the sum of the zeros is -b/a. In this case, a = 1, b = -3, so α + β + γ = -(-3)/1 = 3."
+}, {
+  "category" : "Polynomials",
+  "question" : "What is the number of zeroes that a polynomial of degree 'n' can have?",
+  "options" : [ "n-1", "n+1", "n", "2n" ],
+  "correct" : 2,
+  "rationale" : "A polynomial of degree 'n' can have at most 'n' zeroes. This is a fundamental property of polynomials."
+}, {
+  "category" : "Polynomials",
+  "question" : "If the zeroes of the quadratic polynomial x^2 + (a + 1)x + b are 2 and -3, then:",
+  "options" : [ "a = -7, b = -1", "a = 5, b = -1", "a = 2, b = -6", "a = 0, b = -6" ],
+  "correct" : 3,
+  "rationale" : "Sum of zeroes = -(a+1) = 2 + (-3) = -1 => a+1 = 1 => a = 0. Product of zeroes = b = 2*(-3) = -6."
+}, {
+  "category" : "Polynomials",
+  "question" : "Find the value of k so that x^2 + 4x + k is a perfect square.",
+  "options" : [ "2", "4", "8", "16" ],
+  "correct" : 1,
+  "rationale" : "For x^2 + 4x + k to be a perfect square, it must be of the form (x+a)^2 = x^2 + 2ax + a^2. Comparing coefficients, 2a = 4, so a = 2. Thus k = a^2 = 2^2 = 4."
+}, {
+  "category" : "Polynomials",
+  "question" : "If two of the zeroes of the polynomial x^3 + px^2 + qx + r are equal in magnitude but opposite in sign, then the value of p is equal to",
+  "options" : [ "r", "q", "r/q", "0" ],
+  "correct" : 2,
+  "rationale" : "Let the zeros be α, -α, and β. Sum of zeros = α - α + β = -p => β = -p.  Product of zeros = α(-α)β = -α^2β = -r => -α^2(-p) = -r => α^2 = -r/p. Now sum of products of zeroes taken two at a time α(-α) + αβ + (-α)β = q => -α^2 = q => -( -r/p ) = q => r/p = q => p=r/q"
+}, {
+  "category" : "Polynomials",
+  "question" : "If α and β are the roots of the equation ax^2 + bx + c = 0, then what is the value of 1/α + 1/β?",
+  "options" : [ "-b/c", "b/c", "-c/b", "c/b" ],
+  "correct" : 0,
+  "rationale" : "1/α + 1/β = (α + β) / (αβ). We know α + β = -b/a and αβ = c/a. Therefore, (1/α + 1/β) = (-b/a) / (c/a) = -b/c."
+}, {
+  "category" : "Polynomials",
+  "question" : "If p(x) = ax^2 + bx + c and a + b + c = 0, then one of the zeros of the polynomial is:",
+  "options" : [ "0", "1", "-1", "c/a" ],
+  "correct" : 1,
+  "rationale" : "If a + b + c = 0, then p(1) = a(1)^2 + b(1) + c = a + b + c = 0. Therefore, x = 1 is a zero of the polynomial."
+}, {
+  "category" : "Polynomials",
+  "question" : "Given that one of the zeroes of the cubic polynomial ax^3 + bx^2 + cx + d is zero, then the product of the other two zeroes is:",
+  "options" : [ "-c/a", "c/a", "0", "-b/a" ],
+  "correct" : 1,
+  "rationale" : "Let the zeros be 0, α, and β. Product of all zeroes = 0 * α * β = -d/a = 0 => d = 0. Now, sum of product of zeroes taken two at a time = 0*α + 0*β + αβ = c/a  => αβ = c/a."
+} ]
